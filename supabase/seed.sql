@@ -1,0 +1,1 @@
+-- Demo data is loaded with `pnpm seed` (scripts/seed.ts), not SQL.

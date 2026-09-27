@@ -1,0 +1,490 @@
+[
+ {
+  "key": "data-engineer",
+  "email": "demo.data@jobmatch.local",
+  "locale": "en",
+  "persona": "Data engineer from abroad who needs visa sponsorship (English only)",
+  "headline": "Senior data engineer – pipelines, Python, cloud",
+  "seniority": "senior",
+  "educationLevel": 7,
+  "needsSponsorship": true,
+  "permitType": "needs_permit",
+  "salaryNormCategory": "standard",
+  "preferences": {
+   "desiredOccupations": [
+    "data-engineer"
+   ],
+   "city": "Amsterdam",
+   "maxTravelMinutes": 60,
+   "travelMode": "public_transport",
+   "remote": "hybrid",
+   "minSalaryMonth": 5800,
+   "hoursMin": 36,
+   "hoursMax": 40,
+   "employmentTypes": [
+    "full_time"
+   ],
+   "companySizes": [
+    "medium",
+    "large"
+   ],
+   "companyTypes": [
+    "scaleup",
+    "corporate"
+   ]
+  },
+  "skills": [
+   [
+    "python",
+    2026
+   ],
+   [
+    "sql",
+    2026
+   ],
+   [
+    "airflow",
+    2026
+   ],
+   [
+    "etl",
+    2026
+   ],
+   [
+    "spark",
+    2022
+   ],
+   [
+    "gcp",
+    2024
+   ],
+   [
+    "docker",
+    2025
+   ],
+   [
+    "data-modelling",
+    2025
+   ]
+  ],
+  "experiences": [
+   {
+    "title": "Senior Data Engineer",
+    "occupation": "data-engineer",
+    "start": "2021-03",
+    "end": null,
+    "description": "Designed batch and streaming data pipelines in Python and Airflow for an e-commerce marketplace; migrated the warehouse to BigQuery; mentored three engineers."
+   },
+   {
+    "title": "Data Engineer",
+    "occupation": "data-engineer",
+    "start": "2017-06",
+    "end": "2021-02",
+    "description": "Built Spark ETL jobs and data models for a logistics company; introduced data quality checks and CI for SQL."
+   }
+  ],
+  "languages": [
+   [
+    "en",
+    "C2"
+   ],
+   [
+    "nl",
+    "A1"
+   ]
+  ],
+  "riasec": "ICR",
+  "workValues": [
+   "achievement",
+   "independence",
+   "working_conditions",
+   "recognition",
+   "support",
+   "relationships"
+  ]
+ },
+ {
+  "key": "nurse",
+  "email": "demo.nurse@jobmatch.local",
+  "locale": "nl",
+  "persona": "Dutch-speaking nurse looking for part-time work near Utrecht",
+  "headline": "Verpleegkundige interne geneeskunde",
+  "seniority": "medior",
+  "educationLevel": 6,
+  "needsSponsorship": false,
+  "permitType": "unrestricted",
+  "salaryNormCategory": null,
+  "preferences": {
+   "desiredOccupations": [
+    "nurse"
+   ],
+   "city": "Utrecht",
+   "maxTravelMinutes": 35,
+   "travelMode": "bike",
+   "remote": "onsite",
+   "minSalaryMonth": 3200,
+   "hoursMin": 24,
+   "hoursMax": 32,
+   "employmentTypes": [
+    "part_time"
+   ],
+   "companySizes": [],
+   "companyTypes": [
+    "nonprofit",
+    "public"
+   ]
+  },
+  "skills": [
+   [
+    "patient-care",
+    2026
+   ],
+   [
+    "medication",
+    2026
+   ],
+   [
+    "care-plans",
+    2026
+   ],
+   [
+    "wound-care",
+    2025
+   ],
+   [
+    "medical-records",
+    2026
+   ],
+   [
+    "elderly-care",
+    2021
+   ]
+  ],
+  "experiences": [
+   {
+    "title": "Verpleegkundige",
+    "occupation": "nurse",
+    "start": "2020-09",
+    "end": null,
+    "description": "Zorg voor patiënten op een afdeling interne geneeskunde: medicatie toedienen, zorgplannen opstellen, wondverzorging en rapporteren in het ECD."
+   },
+   {
+    "title": "Verzorgende IG",
+    "occupation": "care-assistant",
+    "start": "2016-01",
+    "end": "2020-08",
+    "description": "Ouderenzorg in een woonzorgcentrum, begeleiding van bewoners met dementie."
+   }
+  ],
+  "languages": [
+   [
+    "nl",
+    "C2"
+   ],
+   [
+    "en",
+    "B2"
+   ]
+  ],
+  "riasec": "SIC",
+  "workValues": [
+   "relationships",
+   "support",
+   "achievement",
+   "working_conditions",
+   "recognition",
+   "independence"
+  ]
+ },
+ {
+  "key": "ux-designer",
+  "email": "demo.ux@jobmatch.local",
+  "locale": "en",
+  "persona": "Recent international graduate (orientation year) in UX design",
+  "headline": "UX designer – research-driven product design",
+  "seniority": "junior",
+  "educationLevel": 7,
+  "needsSponsorship": true,
+  "permitType": "orientation_year",
+  "salaryNormCategory": "graduate",
+  "preferences": {
+   "desiredOccupations": [
+    "ux-designer"
+   ],
+   "city": "Rotterdam",
+   "maxTravelMinutes": 75,
+   "travelMode": "public_transport",
+   "remote": "hybrid",
+   "minSalaryMonth": 3300,
+   "hoursMin": 32,
+   "hoursMax": 40,
+   "employmentTypes": [
+    "full_time"
+   ],
+   "companySizes": [],
+   "companyTypes": [
+    "startup",
+    "scaleup"
+   ]
+  },
+  "skills": [
+   [
+    "ux-design",
+    2026
+   ],
+   [
+    "user-research",
+    2026
+   ],
+   [
+    "figma",
+    2026
+   ],
+   [
+    "prototyping",
+    2026
+   ],
+   [
+    "ui-design",
+    2025
+   ],
+   [
+    "html-css",
+    2024
+   ]
+  ],
+  "experiences": [
+   {
+    "title": "UX Design Intern",
+    "occupation": "ux-designer",
+    "start": "2025-02",
+    "end": "2025-08",
+    "description": "Ran usability tests and interviews for a mobility app, redesigned the booking flow in Figma and validated prototypes with users."
+   },
+   {
+    "title": "Graphic Designer",
+    "occupation": null,
+    "start": "2021-01",
+    "end": "2023-08",
+    "description": "Designed marketing materials and simple websites for small businesses."
+   }
+  ],
+  "languages": [
+   [
+    "es",
+    "C2"
+   ],
+   [
+    "en",
+    "C1"
+   ],
+   [
+    "nl",
+    "A2"
+   ]
+  ],
+  "riasec": "AIS",
+  "workValues": [
+   "independence",
+   "achievement",
+   "relationships",
+   "support",
+   "working_conditions",
+   "recognition"
+  ]
+ },
+ {
+  "key": "finance",
+  "email": "demo.finance@jobmatch.local",
+  "locale": "en",
+  "persona": "Financial analyst with the right to work, learning Dutch (B1)",
+  "headline": "Financial analyst – FP&A, reporting",
+  "seniority": "medior",
+  "educationLevel": 7,
+  "needsSponsorship": false,
+  "permitType": "dependent_free_labour",
+  "salaryNormCategory": null,
+  "preferences": {
+   "desiredOccupations": [
+    "financial-analyst",
+    "financial-controller"
+   ],
+   "city": "Den Haag",
+   "maxTravelMinutes": 60,
+   "travelMode": "public_transport",
+   "remote": "hybrid",
+   "minSalaryMonth": 4200,
+   "hoursMin": 32,
+   "hoursMax": 40,
+   "employmentTypes": [
+    "full_time"
+   ],
+   "companySizes": [],
+   "companyTypes": []
+  },
+  "skills": [
+   [
+    "financial-analysis",
+    2026
+   ],
+   [
+    "excel",
+    2026
+   ],
+   [
+    "budgeting",
+    2026
+   ],
+   [
+    "financial-reporting",
+    2025
+   ],
+   [
+    "ifrs",
+    2023
+   ],
+   [
+    "sql",
+    2024
+   ],
+   [
+    "power-bi",
+    2025
+   ]
+  ],
+  "experiences": [
+   {
+    "title": "Financial Analyst",
+    "occupation": "financial-analyst",
+    "start": "2022-04",
+    "end": null,
+    "description": "Built budget and forecast models, prepared monthly management reporting and analysed product profitability."
+   },
+   {
+    "title": "Junior Accountant",
+    "occupation": "accountant",
+    "start": "2019-09",
+    "end": "2022-03",
+    "description": "Month-end closing and IFRS reporting for a manufacturing group."
+   }
+  ],
+  "languages": [
+   [
+    "uk",
+    "C2"
+   ],
+   [
+    "en",
+    "C1"
+   ],
+   [
+    "nl",
+    "B1"
+   ]
+  ],
+  "riasec": "CIE",
+  "workValues": [
+   "support",
+   "achievement",
+   "working_conditions",
+   "independence",
+   "recognition",
+   "relationships"
+  ]
+ },
+ {
+  "key": "logistics",
+  "email": "demo.logistics@jobmatch.local",
+  "locale": "nl",
+  "persona": "Dutch logistics planner who commutes by car",
+  "headline": "Logistiek planner",
+  "seniority": "medior",
+  "educationLevel": 4,
+  "needsSponsorship": false,
+  "permitType": "unrestricted",
+  "salaryNormCategory": null,
+  "preferences": {
+   "desiredOccupations": [
+    "logistics-planner",
+    "supply-chain-analyst"
+   ],
+   "city": "Breda",
+   "maxTravelMinutes": 50,
+   "travelMode": "car",
+   "remote": "any",
+   "minSalaryMonth": 3100,
+   "hoursMin": 36,
+   "hoursMax": 40,
+   "employmentTypes": [
+    "full_time"
+   ],
+   "companySizes": [],
+   "companyTypes": []
+  },
+  "skills": [
+   [
+    "transport-planning",
+    2026
+   ],
+   [
+    "planning",
+    2026
+   ],
+   [
+    "excel",
+    2026
+   ],
+   [
+    "customs",
+    2023
+   ],
+   [
+    "warehouse-ops",
+    2019
+   ],
+   [
+    "forklift",
+    2019
+   ],
+   [
+    "inventory",
+    2022
+   ]
+  ],
+  "experiences": [
+   {
+    "title": "Transportplanner",
+    "occupation": "logistics-planner",
+    "start": "2019-05",
+    "end": null,
+    "description": "Dagelijkse planning van ritten voor 40 vrachtwagens, contact met chauffeurs en klanten, afhandeling douanedocumenten."
+   },
+   {
+    "title": "Magazijnmedewerker",
+    "occupation": "warehouse-worker",
+    "start": "2015-03",
+    "end": "2019-04",
+    "description": "Orderpicken, heftruck rijden en voorraadtellingen in een distributiecentrum."
+   }
+  ],
+  "languages": [
+   [
+    "nl",
+    "C2"
+   ],
+   [
+    "en",
+    "B1"
+   ]
+  ],
+  "riasec": "CER",
+  "workValues": [
+   "support",
+   "working_conditions",
+   "relationships",
+   "achievement",
+   "recognition",
+   "independence"
+  ]
+ }
+]

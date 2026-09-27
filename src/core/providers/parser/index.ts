@@ -7,7 +7,9 @@ export { ParserError } from "./claude";
 export { MockParserProvider, ClaudeParserProvider };
 
 /** Selected via PARSER_PROVIDER (anthropic | mock). Falls back to mock without an API key. */
-export function createParserProvider(env: Record<string, string | undefined> = process.env): ParserProvider {
+export function createParserProvider(
+  env: Record<string, string | undefined> = process.env,
+): ParserProvider {
   const name = env.PARSER_PROVIDER ?? (env.ANTHROPIC_API_KEY ? "anthropic" : "mock");
   switch (name) {
     case "anthropic":

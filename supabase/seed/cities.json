@@ -1,0 +1,242 @@
+[
+ {
+  "name": "Amsterdam",
+  "province": "Noord-Holland",
+  "lat": 52.3676,
+  "lng": 4.9041
+ },
+ {
+  "name": "Rotterdam",
+  "province": "Zuid-Holland",
+  "lat": 51.9244,
+  "lng": 4.4777
+ },
+ {
+  "name": "Den Haag",
+  "province": "Zuid-Holland",
+  "lat": 52.0705,
+  "lng": 4.3007
+ },
+ {
+  "name": "Utrecht",
+  "province": "Utrecht",
+  "lat": 52.0907,
+  "lng": 5.1214
+ },
+ {
+  "name": "Eindhoven",
+  "province": "Noord-Brabant",
+  "lat": 51.4416,
+  "lng": 5.4697
+ },
+ {
+  "name": "Groningen",
+  "province": "Groningen",
+  "lat": 53.2194,
+  "lng": 6.5665
+ },
+ {
+  "name": "Tilburg",
+  "province": "Noord-Brabant",
+  "lat": 51.5555,
+  "lng": 5.0913
+ },
+ {
+  "name": "Almere",
+  "province": "Flevoland",
+  "lat": 52.3508,
+  "lng": 5.2647
+ },
+ {
+  "name": "Breda",
+  "province": "Noord-Brabant",
+  "lat": 51.5719,
+  "lng": 4.7683
+ },
+ {
+  "name": "Nijmegen",
+  "province": "Gelderland",
+  "lat": 51.8126,
+  "lng": 5.8372
+ },
+ {
+  "name": "Enschede",
+  "province": "Overijssel",
+  "lat": 52.2215,
+  "lng": 6.8937
+ },
+ {
+  "name": "Haarlem",
+  "province": "Noord-Holland",
+  "lat": 52.3874,
+  "lng": 4.6462
+ },
+ {
+  "name": "Arnhem",
+  "province": "Gelderland",
+  "lat": 51.9851,
+  "lng": 5.8987
+ },
+ {
+  "name": "Zaandam",
+  "province": "Noord-Holland",
+  "lat": 52.442,
+  "lng": 4.829
+ },
+ {
+  "name": "Amersfoort",
+  "province": "Utrecht",
+  "lat": 52.1561,
+  "lng": 5.3878
+ },
+ {
+  "name": "Apeldoorn",
+  "province": "Gelderland",
+  "lat": 52.2112,
+  "lng": 5.9699
+ },
+ {
+  "name": "'s-Hertogenbosch",
+  "province": "Noord-Brabant",
+  "lat": 51.6978,
+  "lng": 5.3037
+ },
+ {
+  "name": "Hoofddorp",
+  "province": "Noord-Holland",
+  "lat": 52.3025,
+  "lng": 4.6889
+ },
+ {
+  "name": "Maastricht",
+  "province": "Limburg",
+  "lat": 50.8514,
+  "lng": 5.691
+ },
+ {
+  "name": "Leiden",
+  "province": "Zuid-Holland",
+  "lat": 52.1601,
+  "lng": 4.497
+ },
+ {
+  "name": "Dordrecht",
+  "province": "Zuid-Holland",
+  "lat": 51.8133,
+  "lng": 4.6901
+ },
+ {
+  "name": "Zoetermeer",
+  "province": "Zuid-Holland",
+  "lat": 52.0575,
+  "lng": 4.4931
+ },
+ {
+  "name": "Zwolle",
+  "province": "Overijssel",
+  "lat": 52.5168,
+  "lng": 6.083
+ },
+ {
+  "name": "Deventer",
+  "province": "Overijssel",
+  "lat": 52.2661,
+  "lng": 6.1552
+ },
+ {
+  "name": "Delft",
+  "province": "Zuid-Holland",
+  "lat": 52.0116,
+  "lng": 4.3571
+ },
+ {
+  "name": "Leeuwarden",
+  "province": "Friesland",
+  "lat": 53.2012,
+  "lng": 5.7999
+ },
+ {
+  "name": "Alkmaar",
+  "province": "Noord-Holland",
+  "lat": 52.6324,
+  "lng": 4.7534
+ },
+ {
+  "name": "Hilversum",
+  "province": "Noord-Holland",
+  "lat": 52.2292,
+  "lng": 5.1669
+ },
+ {
+  "name": "Amstelveen",
+  "province": "Noord-Holland",
+  "lat": 52.3114,
+  "lng": 4.8701
+ },
+ {
+  "name": "Wageningen",
+  "province": "Gelderland",
+  "lat": 51.9692,
+  "lng": 5.6654
+ },
+ {
+  "name": "Venlo",
+  "province": "Limburg",
+  "lat": 51.3704,
+  "lng": 6.1724
+ },
+ {
+  "name": "Veldhoven",
+  "province": "Noord-Brabant",
+  "lat": 51.4182,
+  "lng": 5.4028
+ },
+ {
+  "name": "Helmond",
+  "province": "Noord-Brabant",
+  "lat": 51.4793,
+  "lng": 5.657
+ },
+ {
+  "name": "Schiedam",
+  "province": "Zuid-Holland",
+  "lat": 51.9192,
+  "lng": 4.3886
+ },
+ {
+  "name": "Diemen",
+  "province": "Noord-Holland",
+  "lat": 52.3391,
+  "lng": 4.9624
+ },
+ {
+  "name": "Nieuwegein",
+  "province": "Utrecht",
+  "lat": 52.0292,
+  "lng": 5.0808
+ },
+ {
+  "name": "Houten",
+  "province": "Utrecht",
+  "lat": 52.0283,
+  "lng": 5.1686
+ },
+ {
+  "name": "Waalwijk",
+  "province": "Noord-Brabant",
+  "lat": 51.6826,
+  "lng": 5.0706
+ },
+ {
+  "name": "Roosendaal",
+  "province": "Noord-Brabant",
+  "lat": 51.5308,
+  "lng": 4.4653
+ },
+ {
+  "name": "Lelystad",
+  "province": "Flevoland",
+  "lat": 52.5185,
+  "lng": 5.4714
+ }
+]

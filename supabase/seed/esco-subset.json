@@ -1,0 +1,3227 @@
+{
+ "_meta": {
+  "description": "JobMatch ESCO subset for seed data. URIs use a local 'urn:jm:' namespace; preferred labels follow ESCO v1.2 wording where possible so `pnpm esco:import --reconcile` can remap them to official ESCO URIs after a full ESCO import.",
+  "riasec": "Occupation RIASEC codes derived from typical O*NET interest profiles of comparable occupations (indicative).",
+  "workValues": "Heuristic from RIASEC; replace with O*NET work-values data in a full import."
+ },
+ "skills": [
+  {
+   "uri": "urn:jm:skill:grp-programming",
+   "preferredLabelEn": "computer programming",
+   "preferredLabelNl": "programmeren",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-databases",
+   "preferredLabelEn": "database management systems",
+   "preferredLabelNl": "databasebeheersystemen",
+   "altLabels": [
+    "databases"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-cloud",
+   "preferredLabelEn": "cloud technologies",
+   "preferredLabelNl": "cloudtechnologieën",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-data",
+   "preferredLabelEn": "data analytics",
+   "preferredLabelNl": "data-analyse",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-web",
+   "preferredLabelEn": "web development",
+   "preferredLabelNl": "webontwikkeling",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-design",
+   "preferredLabelEn": "design",
+   "preferredLabelNl": "ontwerp",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-projects",
+   "preferredLabelEn": "project management methodologies",
+   "preferredLabelNl": "projectmanagementmethodieken",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-marketing",
+   "preferredLabelEn": "marketing",
+   "preferredLabelNl": "marketing",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-sales",
+   "preferredLabelEn": "sales",
+   "preferredLabelNl": "verkoop",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-finance",
+   "preferredLabelEn": "accounting and finance",
+   "preferredLabelNl": "financiën en administratie",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-hr",
+   "preferredLabelEn": "human resources management",
+   "preferredLabelNl": "personeelsmanagement",
+   "altLabels": [
+    "HRM"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-healthcare",
+   "preferredLabelEn": "health care",
+   "preferredLabelNl": "gezondheidszorg",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-education",
+   "preferredLabelEn": "teaching",
+   "preferredLabelNl": "onderwijzen",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-logistics",
+   "preferredLabelEn": "logistics",
+   "preferredLabelNl": "logistiek",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-engineering",
+   "preferredLabelEn": "engineering",
+   "preferredLabelNl": "engineering",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-manufacturing",
+   "preferredLabelEn": "manufacturing processes",
+   "preferredLabelNl": "productieprocessen",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-hospitality",
+   "preferredLabelEn": "hospitality",
+   "preferredLabelNl": "horeca en gastvrijheid",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-legal",
+   "preferredLabelEn": "law",
+   "preferredLabelNl": "recht",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-science",
+   "preferredLabelEn": "laboratory science",
+   "preferredLabelNl": "laboratoriumwetenschappen",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-energy",
+   "preferredLabelEn": "energy",
+   "preferredLabelNl": "energie",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-security",
+   "preferredLabelEn": "ICT security",
+   "preferredLabelNl": "ICT-beveiliging",
+   "altLabels": [
+    "cybersecurity"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:grp-transversal",
+   "preferredLabelEn": "transversal skills",
+   "preferredLabelNl": "transversale vaardigheden",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": []
+  },
+  {
+   "uri": "urn:jm:skill:python",
+   "preferredLabelEn": "Python (computer programming)",
+   "preferredLabelNl": "Python",
+   "altLabels": [
+    "Python"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:java",
+   "preferredLabelEn": "Java (computer programming)",
+   "preferredLabelNl": "Java",
+   "altLabels": [
+    "Java"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:javascript",
+   "preferredLabelEn": "JavaScript",
+   "preferredLabelNl": "JavaScript",
+   "altLabels": [
+    "JS"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:typescript",
+   "preferredLabelEn": "TypeScript",
+   "preferredLabelNl": "TypeScript",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:csharp",
+   "preferredLabelEn": "C#",
+   "preferredLabelNl": "C#",
+   "altLabels": [
+    ".NET",
+    "dotnet"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:golang",
+   "preferredLabelEn": "Go (programming language)",
+   "preferredLabelNl": "Go",
+   "altLabels": [
+    "Golang"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:kotlin",
+   "preferredLabelEn": "Kotlin",
+   "preferredLabelNl": "Kotlin",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:swift",
+   "preferredLabelEn": "Swift (computer programming)",
+   "preferredLabelNl": "Swift",
+   "altLabels": [
+    "Swift"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:php",
+   "preferredLabelEn": "PHP",
+   "preferredLabelNl": "PHP",
+   "altLabels": [
+    "Laravel"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:scala",
+   "preferredLabelEn": "Scala",
+   "preferredLabelNl": "Scala",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:r-lang",
+   "preferredLabelEn": "R (statistical programming)",
+   "preferredLabelNl": "R",
+   "altLabels": [
+    "R"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:sql",
+   "preferredLabelEn": "SQL",
+   "preferredLabelNl": "SQL",
+   "altLabels": [
+    "structured query language"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-databases"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:postgresql",
+   "preferredLabelEn": "PostgreSQL",
+   "preferredLabelNl": "PostgreSQL",
+   "altLabels": [
+    "Postgres"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-databases"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:mysql",
+   "preferredLabelEn": "MySQL",
+   "preferredLabelNl": "MySQL",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-databases"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:mongodb",
+   "preferredLabelEn": "MongoDB",
+   "preferredLabelNl": "MongoDB",
+   "altLabels": [
+    "NoSQL"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-databases"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:data-modelling",
+   "preferredLabelEn": "data models",
+   "preferredLabelNl": "datamodellen",
+   "altLabels": [
+    "data modelling",
+    "data modeling"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-databases"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:react",
+   "preferredLabelEn": "React",
+   "preferredLabelNl": "React",
+   "altLabels": [
+    "React.js",
+    "ReactJS"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-web"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:nodejs",
+   "preferredLabelEn": "Node.js",
+   "preferredLabelNl": "Node.js",
+   "altLabels": [
+    "NodeJS",
+    "Node"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-web"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:html-css",
+   "preferredLabelEn": "HTML and CSS",
+   "preferredLabelNl": "HTML en CSS",
+   "altLabels": [
+    "HTML",
+    "CSS"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-web"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:rest-api",
+   "preferredLabelEn": "design application interfaces",
+   "preferredLabelNl": "applicatie-interfaces ontwerpen",
+   "altLabels": [
+    "REST API",
+    "REST APIs",
+    "API design",
+    "APIs"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-web"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:graphql",
+   "preferredLabelEn": "GraphQL",
+   "preferredLabelNl": "GraphQL",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-web"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:data-analysis",
+   "preferredLabelEn": "perform data analysis",
+   "preferredLabelNl": "data-analyse uitvoeren",
+   "altLabels": [
+    "data analysis",
+    "data-analyse",
+    "analyse data"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-data"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:statistics",
+   "preferredLabelEn": "statistics",
+   "preferredLabelNl": "statistiek",
+   "altLabels": [
+    "statistical analysis"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-data"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:machine-learning",
+   "preferredLabelEn": "machine learning",
+   "preferredLabelNl": "machine learning",
+   "altLabels": [
+    "ML"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-data"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:etl",
+   "preferredLabelEn": "extract, transform and load (ETL)",
+   "preferredLabelNl": "ETL-processen",
+   "altLabels": [
+    "ETL",
+    "data pipelines",
+    "datapijplijnen"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-data"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:airflow",
+   "preferredLabelEn": "Apache Airflow",
+   "preferredLabelNl": "Apache Airflow",
+   "altLabels": [
+    "Airflow"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-data"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:spark",
+   "preferredLabelEn": "Apache Spark",
+   "preferredLabelNl": "Apache Spark",
+   "altLabels": [
+    "Spark",
+    "PySpark"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-data"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:dbt",
+   "preferredLabelEn": "dbt (data build tool)",
+   "preferredLabelNl": "dbt",
+   "altLabels": [
+    "dbt"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-data"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:data-visualisation",
+   "preferredLabelEn": "data visualisation",
+   "preferredLabelNl": "datavisualisatie",
+   "altLabels": [
+    "data visualization",
+    "dashboards"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-data"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:power-bi",
+   "preferredLabelEn": "Power BI",
+   "preferredLabelNl": "Power BI",
+   "altLabels": [
+    "PowerBI"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-data"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:tableau",
+   "preferredLabelEn": "Tableau",
+   "preferredLabelNl": "Tableau",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-data"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:excel",
+   "preferredLabelEn": "Microsoft Excel",
+   "preferredLabelNl": "Excel",
+   "altLabels": [
+    "Excel",
+    "spreadsheets"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-data"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:aws",
+   "preferredLabelEn": "Amazon Web Services",
+   "preferredLabelNl": "Amazon Web Services",
+   "altLabels": [
+    "AWS"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-cloud"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:azure",
+   "preferredLabelEn": "Microsoft Azure",
+   "preferredLabelNl": "Microsoft Azure",
+   "altLabels": [
+    "Azure"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-cloud"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:gcp",
+   "preferredLabelEn": "Google Cloud Platform",
+   "preferredLabelNl": "Google Cloud",
+   "altLabels": [
+    "GCP",
+    "BigQuery"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-cloud"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:docker",
+   "preferredLabelEn": "Docker",
+   "preferredLabelNl": "Docker",
+   "altLabels": [
+    "containers"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-cloud"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:kubernetes",
+   "preferredLabelEn": "Kubernetes",
+   "preferredLabelNl": "Kubernetes",
+   "altLabels": [
+    "k8s"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-cloud"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:terraform",
+   "preferredLabelEn": "Terraform",
+   "preferredLabelNl": "Terraform",
+   "altLabels": [
+    "infrastructure as code"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-cloud"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:ci-cd",
+   "preferredLabelEn": "continuous integration and delivery",
+   "preferredLabelNl": "continuous integration en delivery",
+   "altLabels": [
+    "CI/CD",
+    "CI CD",
+    "DevOps pipelines"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-cloud"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:linux",
+   "preferredLabelEn": "Linux",
+   "preferredLabelNl": "Linux",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-cloud"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:git",
+   "preferredLabelEn": "Git",
+   "preferredLabelNl": "Git",
+   "altLabels": [
+    "GitHub",
+    "GitLab",
+    "version control"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-programming"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:infosec",
+   "preferredLabelEn": "information security",
+   "preferredLabelNl": "informatiebeveiliging",
+   "altLabels": [
+    "security"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-security"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:iso27001",
+   "preferredLabelEn": "ISO/IEC 27001",
+   "preferredLabelNl": "ISO 27001",
+   "altLabels": [
+    "ISO 27001",
+    "ISO27001"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-security"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:network-security",
+   "preferredLabelEn": "network security",
+   "preferredLabelNl": "netwerkbeveiliging",
+   "altLabels": [
+    "firewalls"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-security"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:incident-response",
+   "preferredLabelEn": "ICT incident response",
+   "preferredLabelNl": "ICT-incidentrespons",
+   "altLabels": [
+    "incident response",
+    "SOC"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-security"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:agile",
+   "preferredLabelEn": "agile project management",
+   "preferredLabelNl": "agile projectmanagement",
+   "altLabels": [
+    "agile",
+    "Agile/Scrum"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-projects"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:scrum",
+   "preferredLabelEn": "Scrum",
+   "preferredLabelNl": "Scrum",
+   "altLabels": [
+    "scrum master"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-projects"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:project-management",
+   "preferredLabelEn": "project management",
+   "preferredLabelNl": "projectmanagement",
+   "altLabels": [
+    "projectleiding",
+    "projects managen"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-projects"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:prince2",
+   "preferredLabelEn": "PRINCE2",
+   "preferredLabelNl": "PRINCE2",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-projects"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:product-management",
+   "preferredLabelEn": "product management",
+   "preferredLabelNl": "productmanagement",
+   "altLabels": [
+    "product roadmap"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-projects"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:stakeholder-management",
+   "preferredLabelEn": "manage stakeholder relationships",
+   "preferredLabelNl": "stakeholdermanagement",
+   "altLabels": [
+    "stakeholder management"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-projects"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:requirements-analysis",
+   "preferredLabelEn": "analyse business requirements",
+   "preferredLabelNl": "bedrijfsbehoeften analyseren",
+   "altLabels": [
+    "requirements analysis",
+    "requirements engineering"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-projects"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:user-research",
+   "preferredLabelEn": "user research",
+   "preferredLabelNl": "gebruikersonderzoek",
+   "altLabels": [
+    "usability testing"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-design"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:ux-design",
+   "preferredLabelEn": "user experience design",
+   "preferredLabelNl": "UX-ontwerp",
+   "altLabels": [
+    "UX design",
+    "UX",
+    "interaction design"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-design"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:ui-design",
+   "preferredLabelEn": "user interface design",
+   "preferredLabelNl": "UI-ontwerp",
+   "altLabels": [
+    "UI design",
+    "visual design"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-design"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:figma",
+   "preferredLabelEn": "Figma",
+   "preferredLabelNl": "Figma",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-design"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:prototyping",
+   "preferredLabelEn": "create prototypes",
+   "preferredLabelNl": "prototypes maken",
+   "altLabels": [
+    "prototyping",
+    "wireframing",
+    "wireframes"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-design"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:digital-marketing",
+   "preferredLabelEn": "digital marketing techniques",
+   "preferredLabelNl": "online marketing",
+   "altLabels": [
+    "digital marketing",
+    "online marketing"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-marketing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:seo",
+   "preferredLabelEn": "search engine optimisation",
+   "preferredLabelNl": "zoekmachineoptimalisatie",
+   "altLabels": [
+    "SEO",
+    "search engine optimization"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-marketing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:sea",
+   "preferredLabelEn": "search engine advertising",
+   "preferredLabelNl": "zoekmachineadverteren",
+   "altLabels": [
+    "SEA",
+    "Google Ads"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-marketing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:content-marketing",
+   "preferredLabelEn": "content marketing",
+   "preferredLabelNl": "contentmarketing",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-marketing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:social-media",
+   "preferredLabelEn": "social media marketing techniques",
+   "preferredLabelNl": "socialemediamarketing",
+   "altLabels": [
+    "social media marketing",
+    "social media"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-marketing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:google-analytics",
+   "preferredLabelEn": "Google Analytics",
+   "preferredLabelNl": "Google Analytics",
+   "altLabels": [
+    "GA4",
+    "web analytics"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-marketing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:copywriting",
+   "preferredLabelEn": "copywriting",
+   "preferredLabelNl": "copywriting",
+   "altLabels": [
+    "tekstschrijven"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-marketing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:brand-management",
+   "preferredLabelEn": "brand management",
+   "preferredLabelNl": "merkmanagement",
+   "altLabels": [
+    "branding"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-marketing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:marketing-strategy",
+   "preferredLabelEn": "marketing strategy",
+   "preferredLabelNl": "marketingstrategie",
+   "altLabels": [
+    "marketing plan"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-marketing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:account-management",
+   "preferredLabelEn": "account management",
+   "preferredLabelNl": "accountmanagement",
+   "altLabels": [
+    "key account management"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-sales"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:b2b-sales",
+   "preferredLabelEn": "business-to-business sales",
+   "preferredLabelNl": "zakelijke verkoop",
+   "altLabels": [
+    "B2B sales",
+    "B2B"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-sales"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:crm",
+   "preferredLabelEn": "customer relationship management",
+   "preferredLabelNl": "klantrelatiebeheer",
+   "altLabels": [
+    "CRM"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-sales"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:salesforce",
+   "preferredLabelEn": "Salesforce",
+   "preferredLabelNl": "Salesforce",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-sales"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:negotiation",
+   "preferredLabelEn": "negotiate sales contracts",
+   "preferredLabelNl": "verkoopcontracten onderhandelen",
+   "altLabels": [
+    "negotiation",
+    "onderhandelen"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-sales"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:lead-generation",
+   "preferredLabelEn": "lead generation",
+   "preferredLabelNl": "leadgeneratie",
+   "altLabels": [
+    "prospecting",
+    "cold calling"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-sales"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:customer-service",
+   "preferredLabelEn": "customer service",
+   "preferredLabelNl": "klantenservice",
+   "altLabels": [
+    "customer support",
+    "klantcontact"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-sales"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:financial-reporting",
+   "preferredLabelEn": "financial reporting",
+   "preferredLabelNl": "financiële verslaglegging",
+   "altLabels": [
+    "reporting",
+    "rapportages",
+    "maandafsluiting",
+    "month-end closing"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-finance"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:accounting",
+   "preferredLabelEn": "accounting",
+   "preferredLabelNl": "boekhouding",
+   "altLabels": [
+    "accountancy",
+    "boekhouden"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-finance"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:bookkeeping",
+   "preferredLabelEn": "keep financial records",
+   "preferredLabelNl": "financiële administratie bijhouden",
+   "altLabels": [
+    "bookkeeping",
+    "financiële administratie"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-finance"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:financial-analysis",
+   "preferredLabelEn": "financial analysis",
+   "preferredLabelNl": "financiële analyse",
+   "altLabels": [
+    "financial modelling",
+    "FP&A"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-finance"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:budgeting",
+   "preferredLabelEn": "budget management",
+   "preferredLabelNl": "budgetbeheer",
+   "altLabels": [
+    "budgeting",
+    "forecasting"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-finance"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:ifrs",
+   "preferredLabelEn": "International Financial Reporting Standards",
+   "preferredLabelNl": "IFRS",
+   "altLabels": [
+    "IFRS"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-finance"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:auditing",
+   "preferredLabelEn": "auditing techniques",
+   "preferredLabelNl": "audittechnieken",
+   "altLabels": [
+    "audit",
+    "controle"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-finance"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:tax",
+   "preferredLabelEn": "tax legislation",
+   "preferredLabelNl": "belastingwetgeving",
+   "altLabels": [
+    "BTW",
+    "VAT",
+    "fiscaal"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-finance"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:payroll",
+   "preferredLabelEn": "payroll administration",
+   "preferredLabelNl": "salarisadministratie",
+   "altLabels": [
+    "payroll",
+    "loonadministratie"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-finance"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:sap",
+   "preferredLabelEn": "SAP ERP",
+   "preferredLabelNl": "SAP",
+   "altLabels": [
+    "SAP"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-finance"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:exact-online",
+   "preferredLabelEn": "Exact Online",
+   "preferredLabelNl": "Exact Online",
+   "altLabels": [
+    "Exact"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-finance"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:recruitment",
+   "preferredLabelEn": "recruit employees",
+   "preferredLabelNl": "werving en selectie",
+   "altLabels": [
+    "recruitment",
+    "werving",
+    "talent acquisition"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-hr"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:onboarding",
+   "preferredLabelEn": "employee onboarding",
+   "preferredLabelNl": "onboarding van medewerkers",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-hr"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:labour-law",
+   "preferredLabelEn": "labour legislation",
+   "preferredLabelNl": "arbeidsrecht",
+   "altLabels": [
+    "employment law"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-hr"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:patient-care",
+   "preferredLabelEn": "provide patient care",
+   "preferredLabelNl": "patiëntenzorg verlenen",
+   "altLabels": [
+    "patient care",
+    "patiëntenzorg",
+    "zorg verlenen"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-healthcare"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:medication",
+   "preferredLabelEn": "administer medication",
+   "preferredLabelNl": "medicatie toedienen",
+   "altLabels": [
+    "medicatiebeheer",
+    "medication administration"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-healthcare"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:wound-care",
+   "preferredLabelEn": "wound care",
+   "preferredLabelNl": "wondzorg",
+   "altLabels": [
+    "wondverzorging"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-healthcare"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:elderly-care",
+   "preferredLabelEn": "elderly care",
+   "preferredLabelNl": "ouderenzorg",
+   "altLabels": [
+    "geriatrie",
+    "geriatric care"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-healthcare"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:dementia-care",
+   "preferredLabelEn": "dementia care",
+   "preferredLabelNl": "dementiezorg",
+   "altLabels": [
+    "psychogeriatrie"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-healthcare"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:care-plans",
+   "preferredLabelEn": "draw up care plans",
+   "preferredLabelNl": "zorgplannen opstellen",
+   "altLabels": [
+    "zorgplan",
+    "care plan"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-healthcare"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:medical-records",
+   "preferredLabelEn": "maintain medical records",
+   "preferredLabelNl": "medische dossiers bijhouden",
+   "altLabels": [
+    "rapporteren in het ECD",
+    "ECD",
+    "electronic health records"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-healthcare"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:clinical-research",
+   "preferredLabelEn": "clinical research",
+   "preferredLabelNl": "klinisch onderzoek",
+   "altLabels": [
+    "clinical trials",
+    "GCP guidelines"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-science"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:lab-techniques",
+   "preferredLabelEn": "laboratory techniques",
+   "preferredLabelNl": "laboratoriumtechnieken",
+   "altLabels": [
+    "lab work",
+    "PCR",
+    "ELISA"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-science"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:gmp",
+   "preferredLabelEn": "good manufacturing practices",
+   "preferredLabelNl": "good manufacturing practices",
+   "altLabels": [
+    "GMP"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-science"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:molecular-biology",
+   "preferredLabelEn": "molecular biology",
+   "preferredLabelNl": "moleculaire biologie",
+   "altLabels": [
+    "cell culture"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-science"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:lesson-planning",
+   "preferredLabelEn": "prepare lesson content",
+   "preferredLabelNl": "lesinhoud voorbereiden",
+   "altLabels": [
+    "lesson planning",
+    "lessen voorbereiden"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-education"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:classroom-management",
+   "preferredLabelEn": "classroom management",
+   "preferredLabelNl": "klassenmanagement",
+   "altLabels": [
+    "orde houden"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-education"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:mathematics",
+   "preferredLabelEn": "mathematics",
+   "preferredLabelNl": "wiskunde",
+   "altLabels": [
+    "maths"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-education"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:childcare",
+   "preferredLabelEn": "childcare",
+   "preferredLabelNl": "kinderopvang",
+   "altLabels": [
+    "kinderen begeleiden",
+    "child development"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-education"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:warehouse-ops",
+   "preferredLabelEn": "warehouse operations",
+   "preferredLabelNl": "magazijnwerkzaamheden",
+   "altLabels": [
+    "orderpicking",
+    "order picking",
+    "magazijn"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-logistics"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:supply-chain",
+   "preferredLabelEn": "supply chain management",
+   "preferredLabelNl": "ketenbeheer",
+   "altLabels": [
+    "supply chain",
+    "supply chain management"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-logistics"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:inventory",
+   "preferredLabelEn": "inventory management",
+   "preferredLabelNl": "voorraadbeheer",
+   "altLabels": [
+    "stock control"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-logistics"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:forklift",
+   "preferredLabelEn": "operate forklift",
+   "preferredLabelNl": "heftruck besturen",
+   "altLabels": [
+    "forklift",
+    "heftruckcertificaat",
+    "reachtruck"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-logistics"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:transport-planning",
+   "preferredLabelEn": "plan transport operations",
+   "preferredLabelNl": "transportplanning",
+   "altLabels": [
+    "route planning",
+    "transport planning",
+    "planning van ritten"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-logistics"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:customs",
+   "preferredLabelEn": "customs regulations",
+   "preferredLabelNl": "douanewetgeving",
+   "altLabels": [
+    "douane",
+    "import/export"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-logistics"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:procurement",
+   "preferredLabelEn": "procurement processes",
+   "preferredLabelNl": "inkoopprocessen",
+   "altLabels": [
+    "procurement",
+    "inkoop",
+    "purchasing"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-logistics"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:mech-engineering",
+   "preferredLabelEn": "mechanical engineering",
+   "preferredLabelNl": "werktuigbouwkunde",
+   "altLabels": [
+    "werktuigbouw"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-engineering"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:elec-engineering",
+   "preferredLabelEn": "electrical engineering",
+   "preferredLabelNl": "elektrotechniek",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-engineering"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:cad",
+   "preferredLabelEn": "CAD software",
+   "preferredLabelNl": "CAD-software",
+   "altLabels": [
+    "AutoCAD",
+    "CAD"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-engineering"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:solidworks",
+   "preferredLabelEn": "SolidWorks",
+   "preferredLabelNl": "SolidWorks",
+   "altLabels": [],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-engineering"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:plc",
+   "preferredLabelEn": "PLC programming",
+   "preferredLabelNl": "PLC-programmering",
+   "altLabels": [
+    "PLC",
+    "Siemens S7"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-engineering"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:machine-maintenance",
+   "preferredLabelEn": "maintain machinery",
+   "preferredLabelNl": "machines onderhouden",
+   "altLabels": [
+    "preventief onderhoud",
+    "preventive maintenance",
+    "storingsdienst"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-manufacturing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:quality-control",
+   "preferredLabelEn": "quality control",
+   "preferredLabelNl": "kwaliteitscontrole",
+   "altLabels": [
+    "quality assurance",
+    "QA"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-manufacturing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:lean",
+   "preferredLabelEn": "lean manufacturing",
+   "preferredLabelNl": "lean manufacturing",
+   "altLabels": [
+    "Lean",
+    "Lean Six Sigma",
+    "Six Sigma"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-manufacturing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:root-cause",
+   "preferredLabelEn": "root cause analysis",
+   "preferredLabelNl": "oorzaakanalyse",
+   "altLabels": [
+    "root cause analysis",
+    "FMEA",
+    "8D"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-manufacturing"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:electrical-installation",
+   "preferredLabelEn": "install electrical systems",
+   "preferredLabelNl": "elektrische installaties aanleggen",
+   "altLabels": [
+    "elektrische installaties",
+    "NEN 1010",
+    "NEN 3140"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-energy"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:solar",
+   "preferredLabelEn": "install solar panels",
+   "preferredLabelNl": "zonnepanelen installeren",
+   "altLabels": [
+    "solar panels",
+    "zonnepanelen",
+    "PV installations"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-energy"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:energy-markets",
+   "preferredLabelEn": "energy markets",
+   "preferredLabelNl": "energiemarkten",
+   "altLabels": [
+    "energy trading"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-energy"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:sustainability",
+   "preferredLabelEn": "environmental sustainability",
+   "preferredLabelNl": "duurzaamheid",
+   "altLabels": [
+    "sustainability",
+    "ESG",
+    "CSRD"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-energy"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:civil-engineering",
+   "preferredLabelEn": "civil engineering",
+   "preferredLabelNl": "civiele techniek",
+   "altLabels": [
+    "infra",
+    "infrastructure design"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-engineering"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:cooking",
+   "preferredLabelEn": "cooking techniques",
+   "preferredLabelNl": "kooktechnieken",
+   "altLabels": [
+    "koken",
+    "culinary"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-hospitality"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:haccp",
+   "preferredLabelEn": "food safety (HACCP)",
+   "preferredLabelNl": "voedselveiligheid (HACCP)",
+   "altLabels": [
+    "HACCP",
+    "food safety"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-hospitality"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:front-desk",
+   "preferredLabelEn": "hotel front office operations",
+   "preferredLabelNl": "receptiewerkzaamheden",
+   "altLabels": [
+    "front desk",
+    "receptie",
+    "check-in"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-hospitality"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:retail-management",
+   "preferredLabelEn": "retail management",
+   "preferredLabelNl": "winkelmanagement",
+   "altLabels": [
+    "store management",
+    "winkelbeheer"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-sales"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:visual-merchandising",
+   "preferredLabelEn": "visual merchandising",
+   "preferredLabelNl": "visual merchandising",
+   "altLabels": [],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-sales"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:gdpr",
+   "preferredLabelEn": "General Data Protection Regulation",
+   "preferredLabelNl": "Algemene verordening gegevensbescherming",
+   "altLabels": [
+    "GDPR",
+    "AVG",
+    "privacy law"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-legal"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:contract-law",
+   "preferredLabelEn": "contract law",
+   "preferredLabelNl": "contractenrecht",
+   "altLabels": [
+    "contracts",
+    "contracten"
+   ],
+   "skillType": "knowledge",
+   "broaderUris": [
+    "urn:jm:skill:grp-legal"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:compliance",
+   "preferredLabelEn": "legal compliance",
+   "preferredLabelNl": "naleving van regelgeving",
+   "altLabels": [
+    "compliance",
+    "regulatory compliance"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-legal"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:team-leadership",
+   "preferredLabelEn": "lead a team",
+   "preferredLabelNl": "een team leiden",
+   "altLabels": [
+    "team leadership",
+    "leidinggeven",
+    "people management"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-transversal"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:planning",
+   "preferredLabelEn": "plan work activities",
+   "preferredLabelNl": "werkzaamheden plannen",
+   "altLabels": [
+    "planning",
+    "plannen"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-transversal"
+   ]
+  },
+  {
+   "uri": "urn:jm:skill:communication",
+   "preferredLabelEn": "communication",
+   "preferredLabelNl": "communicatie",
+   "altLabels": [
+    "communicatieve vaardigheden",
+    "communication skills"
+   ],
+   "skillType": "skill/competence",
+   "broaderUris": [
+    "urn:jm:skill:grp-transversal"
+   ]
+  }
+ ],
+ "occupations": [
+  {
+   "uri": "urn:jm:occupation:software-developer",
+   "iscoCode": "2512",
+   "preferredLabelEn": "software developer",
+   "preferredLabelNl": "softwareontwikkelaar",
+   "altLabels": [
+    "software engineer",
+    "backend developer",
+    "back-end developer",
+    "backend engineer",
+    "java developer",
+    "developer"
+   ],
+   "riasec": {
+    "R": 0.5,
+    "I": 0.9,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.75,
+    "independence": 0.78,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.68,
+    "working_conditions": 0.72
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:git",
+    "urn:jm:skill:rest-api",
+    "urn:jm:skill:ci-cd"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:web-developer",
+   "iscoCode": "2513",
+   "preferredLabelEn": "web developer",
+   "preferredLabelNl": "webontwikkelaar",
+   "altLabels": [
+    "frontend developer",
+    "front-end developer",
+    "full stack developer",
+    "fullstack developer",
+    "full-stack developer"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.9,
+    "A": 0.5,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.81,
+    "independence": 0.85,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.63,
+    "working_conditions": 0.65
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:javascript",
+    "urn:jm:skill:html-css",
+    "urn:jm:skill:react"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:mobile-developer",
+   "iscoCode": "2512",
+   "preferredLabelEn": "mobile app developer",
+   "preferredLabelNl": "ontwikkelaar mobiele apps",
+   "altLabels": [
+    "iOS developer",
+    "Android developer",
+    "mobile developer"
+   ],
+   "riasec": {
+    "R": 0.5,
+    "I": 0.9,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.75,
+    "independence": 0.78,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.68,
+    "working_conditions": 0.72
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:kotlin",
+    "urn:jm:skill:swift"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:data-engineer",
+   "iscoCode": "2521",
+   "preferredLabelEn": "data engineer",
+   "preferredLabelNl": "data engineer",
+   "altLabels": [
+    "big data engineer",
+    "data platform engineer",
+    "analytics engineer"
+   ],
+   "riasec": {
+    "R": 0.5,
+    "I": 0.9,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.75,
+    "independence": 0.78,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.68,
+    "working_conditions": 0.72
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:etl",
+    "urn:jm:skill:sql",
+    "urn:jm:skill:python"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:data-scientist",
+   "iscoCode": "2511",
+   "preferredLabelEn": "data scientist",
+   "preferredLabelNl": "datawetenschapper",
+   "altLabels": [
+    "machine learning engineer",
+    "ML engineer"
+   ],
+   "riasec": {
+    "R": 0.5,
+    "I": 0.9,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.75,
+    "independence": 0.78,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.68,
+    "working_conditions": 0.72
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:machine-learning",
+    "urn:jm:skill:statistics",
+    "urn:jm:skill:python"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:data-analyst",
+   "iscoCode": "2511",
+   "preferredLabelEn": "data analyst",
+   "preferredLabelNl": "data-analist",
+   "altLabels": [
+    "business analyst",
+    "BI analyst",
+    "business intelligence analyst",
+    "BI specialist"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.7,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.5,
+    "C": 0.9
+   },
+   "workValues": {
+    "achievement": 0.68,
+    "independence": 0.69,
+    "recognition": 0.51,
+    "relationships": 0.45,
+    "support": 0.75,
+    "working_conditions": 0.75
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:data-analysis",
+    "urn:jm:skill:sql",
+    "urn:jm:skill:data-visualisation"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:devops-engineer",
+   "iscoCode": "2522",
+   "preferredLabelEn": "DevOps engineer",
+   "preferredLabelNl": "DevOps-engineer",
+   "altLabels": [
+    "cloud engineer",
+    "site reliability engineer",
+    "SRE",
+    "platform engineer"
+   ],
+   "riasec": {
+    "R": 0.9,
+    "I": 0.7,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.63,
+    "independence": 0.73,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.69,
+    "working_conditions": 0.82
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:ci-cd",
+    "urn:jm:skill:docker",
+    "urn:jm:skill:kubernetes"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:security-specialist",
+   "iscoCode": "2529",
+   "preferredLabelEn": "ICT security specialist",
+   "preferredLabelNl": "ICT-beveiligingsspecialist",
+   "altLabels": [
+    "security engineer",
+    "cybersecurity specialist",
+    "security officer",
+    "security analyst"
+   ],
+   "riasec": {
+    "R": 0.5,
+    "I": 0.9,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.75,
+    "independence": 0.78,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.68,
+    "working_conditions": 0.72
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:infosec",
+    "urn:jm:skill:incident-response"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:ict-project-manager",
+   "iscoCode": "1330",
+   "preferredLabelEn": "ICT project manager",
+   "preferredLabelNl": "ICT-projectmanager",
+   "altLabels": [
+    "IT project manager",
+    "projectleider ICT",
+    "IT projectleider"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.5,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.9,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.69,
+    "independence": 0.74,
+    "recognition": 0.75,
+    "relationships": 0.45,
+    "support": 0.63,
+    "working_conditions": 0.65
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:project-management",
+    "urn:jm:skill:stakeholder-management"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:product-manager",
+   "iscoCode": "2421",
+   "preferredLabelEn": "product manager",
+   "preferredLabelNl": "productmanager",
+   "altLabels": [
+    "product owner"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.7,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.9,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.78,
+    "independence": 0.83,
+    "recognition": 0.75,
+    "relationships": 0.45,
+    "support": 0.54,
+    "working_conditions": 0.57
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:product-management",
+    "urn:jm:skill:stakeholder-management"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:ux-designer",
+   "iscoCode": "2166",
+   "preferredLabelEn": "user experience designer",
+   "preferredLabelNl": "UX-designer",
+   "altLabels": [
+    "UX designer",
+    "UX/UI designer",
+    "product designer",
+    "UI designer"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.7,
+    "A": 0.9,
+    "S": 0.15,
+    "E": 0.5,
+    "C": 0.15
+   },
+   "workValues": {
+    "achievement": 0.88,
+    "independence": 1,
+    "recognition": 0.51,
+    "relationships": 0.45,
+    "support": 0.45,
+    "working_conditions": 0.5
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:ux-design",
+    "urn:jm:skill:user-research",
+    "urn:jm:skill:prototyping"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:marketing-manager",
+   "iscoCode": "1221",
+   "preferredLabelEn": "marketing manager",
+   "preferredLabelNl": "marketingmanager",
+   "altLabels": [
+    "head of marketing"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.15,
+    "A": 0.7,
+    "S": 0.15,
+    "E": 0.9,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.72,
+    "independence": 0.86,
+    "recognition": 0.75,
+    "relationships": 0.45,
+    "support": 0.54,
+    "working_conditions": 0.57
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:marketing-strategy",
+    "urn:jm:skill:brand-management"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:digital-marketer",
+   "iscoCode": "2431",
+   "preferredLabelEn": "digital marketing specialist",
+   "preferredLabelNl": "online marketeer",
+   "altLabels": [
+    "digital marketer",
+    "online marketing specialist",
+    "SEO specialist",
+    "performance marketeer",
+    "growth marketer"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.15,
+    "A": 0.7,
+    "S": 0.15,
+    "E": 0.9,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.72,
+    "independence": 0.86,
+    "recognition": 0.75,
+    "relationships": 0.45,
+    "support": 0.54,
+    "working_conditions": 0.57
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:digital-marketing",
+    "urn:jm:skill:seo",
+    "urn:jm:skill:google-analytics"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:account-manager",
+   "iscoCode": "3322",
+   "preferredLabelEn": "account manager",
+   "preferredLabelNl": "accountmanager",
+   "altLabels": [
+    "sales manager",
+    "key account manager",
+    "business developer",
+    "sales development representative",
+    "SDR"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.15,
+    "A": 0.15,
+    "S": 0.5,
+    "E": 0.9,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.65,
+    "independence": 0.65,
+    "recognition": 0.75,
+    "relationships": 0.57,
+    "support": 0.66,
+    "working_conditions": 0.65
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:account-management",
+    "urn:jm:skill:b2b-sales",
+    "urn:jm:skill:crm"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:customer-service-agent",
+   "iscoCode": "4222",
+   "preferredLabelEn": "customer service representative",
+   "preferredLabelNl": "klantenservicemedewerker",
+   "altLabels": [
+    "customer support agent",
+    "customer success agent",
+    "klantenservice medewerker"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.15,
+    "A": 0.15,
+    "S": 0.9,
+    "E": 0.7,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.69,
+    "independence": 0.57,
+    "recognition": 0.61,
+    "relationships": 0.85,
+    "support": 0.64,
+    "working_conditions": 0.57
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:customer-service",
+    "urn:jm:skill:communication"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:accountant",
+   "iscoCode": "2411",
+   "preferredLabelEn": "accountant",
+   "preferredLabelNl": "accountant",
+   "altLabels": [
+    "assistent-accountant",
+    "financial accountant"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.5,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.7,
+    "C": 0.9
+   },
+   "workValues": {
+    "achievement": 0.63,
+    "independence": 0.66,
+    "recognition": 0.61,
+    "relationships": 0.45,
+    "support": 0.75,
+    "working_conditions": 0.75
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:accounting",
+    "urn:jm:skill:financial-reporting",
+    "urn:jm:skill:auditing"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:financial-controller",
+   "iscoCode": "1211",
+   "preferredLabelEn": "financial controller",
+   "preferredLabelNl": "financieel controller",
+   "altLabels": [
+    "controller",
+    "finance manager",
+    "business controller"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.5,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.9,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.69,
+    "independence": 0.74,
+    "recognition": 0.75,
+    "relationships": 0.45,
+    "support": 0.63,
+    "working_conditions": 0.65
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:financial-reporting",
+    "urn:jm:skill:budgeting"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:financial-analyst",
+   "iscoCode": "2413",
+   "preferredLabelEn": "financial analyst",
+   "preferredLabelNl": "financieel analist",
+   "altLabels": [
+    "FP&A analyst"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.7,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.5,
+    "C": 0.9
+   },
+   "workValues": {
+    "achievement": 0.68,
+    "independence": 0.69,
+    "recognition": 0.51,
+    "relationships": 0.45,
+    "support": 0.75,
+    "working_conditions": 0.75
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:financial-analysis",
+    "urn:jm:skill:excel"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:bookkeeper",
+   "iscoCode": "4311",
+   "preferredLabelEn": "bookkeeper",
+   "preferredLabelNl": "boekhouder",
+   "altLabels": [
+    "administratief medewerker financiën",
+    "financieel administratief medewerker"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.15,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.7,
+    "C": 0.9
+   },
+   "workValues": {
+    "achievement": 0.54,
+    "independence": 0.57,
+    "recognition": 0.61,
+    "relationships": 0.45,
+    "support": 0.75,
+    "working_conditions": 0.75
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:bookkeeping",
+    "urn:jm:skill:accounting"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:payroll-specialist",
+   "iscoCode": "4313",
+   "preferredLabelEn": "payroll clerk",
+   "preferredLabelNl": "salarisadministrateur",
+   "altLabels": [
+    "payroll specialist",
+    "salarisadministratie medewerker"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.5,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.7,
+    "C": 0.9
+   },
+   "workValues": {
+    "achievement": 0.63,
+    "independence": 0.66,
+    "recognition": 0.61,
+    "relationships": 0.45,
+    "support": 0.75,
+    "working_conditions": 0.75
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:payroll",
+    "urn:jm:skill:labour-law"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:recruiter",
+   "iscoCode": "2423",
+   "preferredLabelEn": "recruiter",
+   "preferredLabelNl": "recruiter",
+   "altLabels": [
+    "talent acquisition specialist",
+    "corporate recruiter",
+    "HR adviseur",
+    "HR advisor"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.15,
+    "A": 0.15,
+    "S": 0.7,
+    "E": 0.9,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.69,
+    "independence": 0.65,
+    "recognition": 0.75,
+    "relationships": 0.69,
+    "support": 0.6,
+    "working_conditions": 0.57
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:recruitment",
+    "urn:jm:skill:communication"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:nurse",
+   "iscoCode": "2221",
+   "preferredLabelEn": "nurse responsible for general care",
+   "preferredLabelNl": "verpleegkundige",
+   "altLabels": [
+    "nurse",
+    "registered nurse",
+    "wijkverpleegkundige",
+    "verpleegkundige interne geneeskunde"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.7,
+    "A": 0.15,
+    "S": 0.9,
+    "E": 0.15,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.78,
+    "independence": 0.63,
+    "recognition": 0.4,
+    "relationships": 0.85,
+    "support": 0.64,
+    "working_conditions": 0.57
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:patient-care",
+    "urn:jm:skill:medication",
+    "urn:jm:skill:care-plans"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:care-assistant",
+   "iscoCode": "5321",
+   "preferredLabelEn": "healthcare assistant",
+   "preferredLabelNl": "verzorgende",
+   "altLabels": [
+    "verzorgende IG",
+    "zorgmedewerker",
+    "nursing assistant"
+   ],
+   "riasec": {
+    "R": 0.7,
+    "I": 0.15,
+    "A": 0.15,
+    "S": 0.9,
+    "E": 0.15,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.6,
+    "independence": 0.51,
+    "recognition": 0.4,
+    "relationships": 0.85,
+    "support": 0.73,
+    "working_conditions": 0.72
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:patient-care",
+    "urn:jm:skill:elderly-care"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:clinical-research-associate",
+   "iscoCode": "2131",
+   "preferredLabelEn": "clinical research associate",
+   "preferredLabelNl": "klinisch onderzoeksmedewerker",
+   "altLabels": [
+    "CRA",
+    "clinical research coordinator"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.9,
+    "A": 0.15,
+    "S": 0.5,
+    "E": 0.15,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.8,
+    "independence": 0.75,
+    "recognition": 0.4,
+    "relationships": 0.57,
+    "support": 0.66,
+    "working_conditions": 0.65
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:clinical-research",
+    "urn:jm:skill:gmp"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:lab-technician",
+   "iscoCode": "3141",
+   "preferredLabelEn": "laboratory technician",
+   "preferredLabelNl": "laboratoriumanalist",
+   "altLabels": [
+    "lab technician",
+    "research technician",
+    "analist"
+   ],
+   "riasec": {
+    "R": 0.7,
+    "I": 0.9,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.75,
+    "independence": 0.81,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.63,
+    "working_conditions": 0.72
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:lab-techniques"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:secondary-teacher",
+   "iscoCode": "2330",
+   "preferredLabelEn": "secondary school teacher",
+   "preferredLabelNl": "docent voortgezet onderwijs",
+   "altLabels": [
+    "docent wiskunde",
+    "leraar",
+    "teacher"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.5,
+    "A": 0.7,
+    "S": 0.9,
+    "E": 0.15,
+    "C": 0.15
+   },
+   "workValues": {
+    "achievement": 0.81,
+    "independence": 0.75,
+    "recognition": 0.4,
+    "relationships": 0.85,
+    "support": 0.55,
+    "working_conditions": 0.5
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:lesson-planning",
+    "urn:jm:skill:classroom-management"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:childcare-worker",
+   "iscoCode": "5311",
+   "preferredLabelEn": "child care worker",
+   "preferredLabelNl": "pedagogisch medewerker",
+   "altLabels": [
+    "pedagogisch medewerker kinderopvang",
+    "childcare worker"
+   ],
+   "riasec": {
+    "R": 0.5,
+    "I": 0.15,
+    "A": 0.7,
+    "S": 0.9,
+    "E": 0.15,
+    "C": 0.15
+   },
+   "workValues": {
+    "achievement": 0.72,
+    "independence": 0.69,
+    "recognition": 0.4,
+    "relationships": 0.85,
+    "support": 0.6,
+    "working_conditions": 0.57
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:childcare"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:warehouse-worker",
+   "iscoCode": "4321",
+   "preferredLabelEn": "warehouse worker",
+   "preferredLabelNl": "magazijnmedewerker",
+   "altLabels": [
+    "warehouse operative",
+    "orderpicker",
+    "logistiek medewerker"
+   ],
+   "riasec": {
+    "R": 0.9,
+    "I": 0.15,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.45,
+    "independence": 0.55,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.78,
+    "working_conditions": 0.9
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:warehouse-ops",
+    "urn:jm:skill:forklift"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:logistics-planner",
+   "iscoCode": "4323",
+   "preferredLabelEn": "logistics planner",
+   "preferredLabelNl": "logistiek planner",
+   "altLabels": [
+    "transport planner",
+    "planner logistiek",
+    "transportplanner"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.15,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.7,
+    "C": 0.9
+   },
+   "workValues": {
+    "achievement": 0.54,
+    "independence": 0.57,
+    "recognition": 0.61,
+    "relationships": 0.45,
+    "support": 0.75,
+    "working_conditions": 0.75
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:transport-planning",
+    "urn:jm:skill:planning"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:supply-chain-analyst",
+   "iscoCode": "2421",
+   "preferredLabelEn": "supply chain analyst",
+   "preferredLabelNl": "supply chain analist",
+   "altLabels": [
+    "supply chain planner",
+    "demand planner"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.7,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.5,
+    "C": 0.9
+   },
+   "workValues": {
+    "achievement": 0.68,
+    "independence": 0.69,
+    "recognition": 0.51,
+    "relationships": 0.45,
+    "support": 0.75,
+    "working_conditions": 0.75
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:supply-chain",
+    "urn:jm:skill:data-analysis",
+    "urn:jm:skill:excel"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:mechanical-engineer",
+   "iscoCode": "2144",
+   "preferredLabelEn": "mechanical engineer",
+   "preferredLabelNl": "werktuigbouwkundig ingenieur",
+   "altLabels": [
+    "mechanical design engineer",
+    "werktuigbouwkundig engineer"
+   ],
+   "riasec": {
+    "R": 0.9,
+    "I": 0.7,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.63,
+    "independence": 0.73,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.69,
+    "working_conditions": 0.82
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:mech-engineering",
+    "urn:jm:skill:cad"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:electrical-engineer",
+   "iscoCode": "2151",
+   "preferredLabelEn": "electrical engineer",
+   "preferredLabelNl": "elektrotechnisch ingenieur",
+   "altLabels": [
+    "elektrotechnisch engineer",
+    "E-engineer",
+    "electrical design engineer"
+   ],
+   "riasec": {
+    "R": 0.7,
+    "I": 0.9,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.75,
+    "independence": 0.81,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.63,
+    "working_conditions": 0.72
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:elec-engineering",
+    "urn:jm:skill:plc"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:maintenance-technician",
+   "iscoCode": "7233",
+   "preferredLabelEn": "industrial machinery mechanic",
+   "preferredLabelNl": "onderhoudsmonteur",
+   "altLabels": [
+    "onderhoudsmonteur",
+    "maintenance technician",
+    "storingsmonteur",
+    "service engineer"
+   ],
+   "riasec": {
+    "R": 0.9,
+    "I": 0.7,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.63,
+    "independence": 0.73,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.69,
+    "working_conditions": 0.82
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:machine-maintenance"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:quality-engineer",
+   "iscoCode": "2141",
+   "preferredLabelEn": "quality engineer",
+   "preferredLabelNl": "kwaliteitsingenieur",
+   "altLabels": [
+    "quality assurance engineer",
+    "QA engineer",
+    "process engineer"
+   ],
+   "riasec": {
+    "R": 0.5,
+    "I": 0.9,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.75,
+    "independence": 0.78,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.68,
+    "working_conditions": 0.72
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:quality-control",
+    "urn:jm:skill:root-cause"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:automation-engineer",
+   "iscoCode": "2152",
+   "preferredLabelEn": "automation engineer",
+   "preferredLabelNl": "automatiseringsingenieur",
+   "altLabels": [
+    "PLC engineer",
+    "PLC programmeur",
+    "besturingstechnicus"
+   ],
+   "riasec": {
+    "R": 0.9,
+    "I": 0.7,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.63,
+    "independence": 0.73,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.69,
+    "working_conditions": 0.82
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:plc"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:solar-installer",
+   "iscoCode": "7411",
+   "preferredLabelEn": "solar panel installer",
+   "preferredLabelNl": "installateur zonnepanelen",
+   "altLabels": [
+    "zonnepanelen monteur",
+    "solar installer",
+    "elektromonteur"
+   ],
+   "riasec": {
+    "R": 0.9,
+    "I": 0.15,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.7
+   },
+   "workValues": {
+    "achievement": 0.45,
+    "independence": 0.55,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.78,
+    "working_conditions": 0.9
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:solar",
+    "urn:jm:skill:electrical-installation"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:energy-analyst",
+   "iscoCode": "2413",
+   "preferredLabelEn": "energy analyst",
+   "preferredLabelNl": "energieanalist",
+   "altLabels": [
+    "energy market analyst"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.9,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.7,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.84,
+    "independence": 0.87,
+    "recognition": 0.61,
+    "relationships": 0.45,
+    "support": 0.54,
+    "working_conditions": 0.57
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:energy-markets",
+    "urn:jm:skill:data-analysis"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:chef",
+   "iscoCode": "3434",
+   "preferredLabelEn": "chef",
+   "preferredLabelNl": "chef-kok",
+   "altLabels": [
+    "chef-kok",
+    "sous-chef",
+    "kok",
+    "cook"
+   ],
+   "riasec": {
+    "R": 0.9,
+    "I": 0.15,
+    "A": 0.7,
+    "S": 0.15,
+    "E": 0.5,
+    "C": 0.15
+   },
+   "workValues": {
+    "achievement": 0.61,
+    "independence": 0.82,
+    "recognition": 0.51,
+    "relationships": 0.45,
+    "support": 0.6,
+    "working_conditions": 0.75
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:cooking",
+    "urn:jm:skill:haccp"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:hotel-receptionist",
+   "iscoCode": "4224",
+   "preferredLabelEn": "hotel receptionist",
+   "preferredLabelNl": "hotelreceptionist",
+   "altLabels": [
+    "receptionist",
+    "front office medewerker",
+    "front desk agent"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.15,
+    "A": 0.15,
+    "S": 0.7,
+    "E": 0.5,
+    "C": 0.9
+   },
+   "workValues": {
+    "achievement": 0.59,
+    "independence": 0.51,
+    "recognition": 0.51,
+    "relationships": 0.69,
+    "support": 0.81,
+    "working_conditions": 0.75
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:front-desk",
+    "urn:jm:skill:customer-service"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:store-manager",
+   "iscoCode": "1420",
+   "preferredLabelEn": "shop manager",
+   "preferredLabelNl": "winkelmanager",
+   "altLabels": [
+    "store manager",
+    "filiaalmanager",
+    "bedrijfsleider winkel"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.15,
+    "A": 0.15,
+    "S": 0.7,
+    "E": 0.9,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.69,
+    "independence": 0.65,
+    "recognition": 0.75,
+    "relationships": 0.69,
+    "support": 0.6,
+    "working_conditions": 0.57
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:retail-management",
+    "urn:jm:skill:team-leadership"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:privacy-officer",
+   "iscoCode": "2619",
+   "preferredLabelEn": "data protection officer",
+   "preferredLabelNl": "functionaris gegevensbescherming",
+   "altLabels": [
+    "privacy officer",
+    "legal counsel",
+    "privacy counsel",
+    "compliance officer"
+   ],
+   "riasec": {
+    "R": 0.15,
+    "I": 0.7,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.9,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.78,
+    "independence": 0.83,
+    "recognition": 0.75,
+    "relationships": 0.45,
+    "support": 0.54,
+    "working_conditions": 0.57
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:gdpr",
+    "urn:jm:skill:compliance"
+   ],
+   "optionalSkillUris": []
+  },
+  {
+   "uri": "urn:jm:occupation:civil-engineer",
+   "iscoCode": "2142",
+   "preferredLabelEn": "civil engineer",
+   "preferredLabelNl": "civiel ingenieur",
+   "altLabels": [
+    "infra engineer",
+    "projectleider infra"
+   ],
+   "riasec": {
+    "R": 0.9,
+    "I": 0.7,
+    "A": 0.15,
+    "S": 0.15,
+    "E": 0.15,
+    "C": 0.5
+   },
+   "workValues": {
+    "achievement": 0.63,
+    "independence": 0.73,
+    "recognition": 0.4,
+    "relationships": 0.45,
+    "support": 0.69,
+    "working_conditions": 0.82
+   },
+   "essentialSkillUris": [
+    "urn:jm:skill:civil-engineering",
+    "urn:jm:skill:project-management"
+   ],
+   "optionalSkillUris": []
+  }
+ ]
+}
