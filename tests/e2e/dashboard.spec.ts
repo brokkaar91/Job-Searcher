@@ -42,6 +42,8 @@ test.describe("dashboard (seeded demo candidate)", () => {
     await expect(
       page.getByRole("region", { name: "Gesolliciteerd" }).getByText(firstTitle),
     ).toBeVisible();
+    // Wait until the move is persisted before reloading.
+    await expect(page.locator("[data-saving]")).toHaveCount(0);
     await page.reload();
     await expect(
       page.getByRole("region", { name: "Gesolliciteerd" }).getByText(firstTitle),

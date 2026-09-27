@@ -2,43 +2,45 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/brand/logo";
 import { Button } from "@/components/ui/button";
-import { getUser } from "@/server/auth";
+import { getProfile, getUser } from "@/server/auth";
+import { CommandMenu } from "./command-menu";
 import { LocaleSwitcher } from "./locale-switcher";
-import { ThemeToggle } from "./theme-toggle";
 import { MobileNav } from "./mobile-nav";
+import { NavLinks } from "./nav-links";
+import { ThemeToggle } from "./theme-toggle";
 
 export async function SiteHeader() {
   const t = await getTranslations("nav");
   const user = await getUser();
+  const profile = user ? await getProfile() : null;
   const links = [
-    { href: "/how-matching-works", label: t("howItWorks") },
-    { href: "/employers", label: t("employers") },
-    { href: "/faq", label: t("faq") },
-  ] as const;
+    { href: "/how-matching-works" as const, label: t("howItWorks") },
+    { href: "/employers" as const, label: t("employers") },
+    { href: "/faq" as const, label: t("faq") },
+  ];
 
   return (
-    <header className="bg-background/80 supports-[backdrop-filter]:bg-background/70 sticky top-0 z-40 border-b border-transparent backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link href="/" className="rounded-lg" aria-label="JobMatch – home">
+    <header className="sticky top-0 z-40 px-3 pt-3">
+      <div className="glass shadow-soft mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 rounded-full border px-3 sm:px-4">
+        <Link href="/" className="rounded-full pl-1" aria-label="JobMatch – home">
           <Logo />
         </Link>
-        <nav aria-label={t("main")} className="hidden items-center gap-1 md:flex">
-          {links.map((l) => (
-            <Button key={l.href} asChild variant="ghost" size="sm">
-              <Link href={l.href}>{l.label}</Link>
-            </Button>
-          ))}
+        <nav aria-label={t("main")} className="hidden md:block">
+          <NavLinks links={links} />
         </nav>
         <div className="flex items-center gap-1">
-          <LocaleSwitcher />
-          <ThemeToggle />
+          <CommandMenu signedIn={!!user} isAdmin={profile?.role === "admin"} />
+          <div className="hidden items-center sm:flex">
+            <LocaleSwitcher />
+            <ThemeToggle />
+          </div>
           {user ? (
             <Button asChild size="sm" className="ml-1">
               <Link href="/matches">{t("myMatches")}</Link>
             </Button>
           ) : (
             <>
-              <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
+              <Button asChild variant="ghost" size="sm" className="hidden md:inline-flex">
                 <Link href="/login">{t("login")}</Link>
               </Button>
               <Button asChild size="sm" className="ml-1">
@@ -46,7 +48,7 @@ export async function SiteHeader() {
               </Button>
             </>
           )}
-          <MobileNav links={links.map((l) => ({ ...l }))} menuLabel={t("menu")} />
+          <MobileNav links={links} menuLabel={t("menu")} signedIn={!!user} />
         </div>
       </div>
     </header>

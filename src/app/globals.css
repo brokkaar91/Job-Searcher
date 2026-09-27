@@ -30,6 +30,18 @@
   --input: oklch(0.88 0.01 230);
   --ring: oklch(0.55 0.1 190);
   --shadow-soft: 0 1px 2px oklch(0.2 0.02 250 / 0.04), 0 8px 24px -8px oklch(0.2 0.02 250 / 0.08);
+  --shadow-lift:
+    0 1px 2px oklch(0.2 0.02 250 / 0.05), 0 24px 48px -16px oklch(0.35 0.08 190 / 0.25);
+  /* Warm "oranje" highlight next to the teal brand colour. */
+  --highlight: oklch(0.72 0.17 55);
+  --highlight-foreground: oklch(0.25 0.06 50);
+  --brand-gradient: linear-gradient(
+    120deg,
+    oklch(0.47 0.09 190),
+    oklch(0.55 0.12 165) 55%,
+    oklch(0.68 0.16 60)
+  );
+  --grid-line: oklch(0.21 0.015 250 / 0.06);
 }
 
 .dark {
@@ -55,6 +67,16 @@
   --input: oklch(0.34 0.014 250);
   --ring: oklch(0.7 0.1 185);
   --shadow-soft: 0 1px 2px oklch(0 0 0 / 0.3), 0 8px 24px -8px oklch(0 0 0 / 0.5);
+  --shadow-lift: 0 1px 2px oklch(0 0 0 / 0.4), 0 24px 48px -16px oklch(0.6 0.12 185 / 0.25);
+  --highlight: oklch(0.78 0.15 60);
+  --highlight-foreground: oklch(0.22 0.05 50);
+  --brand-gradient: linear-gradient(
+    120deg,
+    oklch(0.78 0.11 185),
+    oklch(0.8 0.13 160) 55%,
+    oklch(0.82 0.14 70)
+  );
+  --grid-line: oklch(0.95 0.005 250 / 0.06);
 }
 
 @theme inline {
@@ -76,6 +98,8 @@
   --color-destructive-foreground: var(--destructive-foreground);
   --color-success: var(--success);
   --color-warning: var(--warning);
+  --color-highlight: var(--highlight);
+  --color-highlight-foreground: var(--highlight-foreground);
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
@@ -84,12 +108,75 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --shadow-soft: var(--shadow-soft);
+  --shadow-lift: var(--shadow-lift);
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
 @theme {
   --animate-fade-up: fade-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-aurora: aurora 18s ease-in-out infinite alternate;
+  --animate-shimmer: shimmer 2.4s linear infinite;
+  --animate-accordion-down: accordion-down 0.22s ease-out;
+  --animate-accordion-up: accordion-up 0.22s ease-out;
+  --animate-pulse-ring: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  @keyframes marquee {
+    to {
+      transform: translateX(calc(-50% - 0.75rem));
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes aurora {
+    from {
+      transform: translate3d(-4%, -2%, 0) rotate(0deg) scale(1);
+    }
+    to {
+      transform: translate3d(4%, 3%, 0) rotate(8deg) scale(1.08);
+    }
+  }
+  @keyframes shimmer {
+    from {
+      background-position: 200% 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes pulse-ring {
+    0% {
+      box-shadow: 0 0 0 0 color-mix(in oklch, var(--success) 45%, transparent);
+    }
+    70%,
+    100% {
+      box-shadow: 0 0 0 8px transparent;
+    }
+  }
   @keyframes fade-up {
     from {
       opacity: 0;
@@ -121,6 +208,137 @@
   h3 {
     @apply tracking-tight text-balance;
   }
+}
+
+@utility text-gradient {
+  background-image: var(--brand-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@utility bg-brand-gradient {
+  background-image: var(--brand-gradient);
+}
+
+/* Faint square grid that fades out towards the edges. */
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 40%, transparent 100%);
+}
+
+@utility bg-dots {
+  background-image: radial-gradient(var(--grid-line) 1.2px, transparent 1.2px);
+  background-size: 18px 18px;
+}
+
+/* Glassy surface for floating chrome (header, popovers over gradients). */
+@utility glass {
+  background-color: color-mix(in oklch, var(--background) 72%, transparent);
+  backdrop-filter: saturate(1.6) blur(14px);
+  -webkit-backdrop-filter: saturate(1.6) blur(14px);
+}
+
+@utility shimmer-bg {
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in oklch, var(--foreground) 6%, transparent) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+}
+
+/* Sheet (side panel) enter/exit animations, keyed on Radix data-state. */
+@keyframes sheet-in-right {
+  from {
+    transform: translateX(100%);
+  }
+}
+@keyframes sheet-out-right {
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes sheet-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+}
+@keyframes sheet-out-left {
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes sheet-in-bottom {
+  from {
+    transform: translateY(100%);
+  }
+}
+@keyframes sheet-out-bottom {
+  to {
+    transform: translateY(100%);
+  }
+}
+@keyframes overlay-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes overlay-out {
+  to {
+    opacity: 0;
+  }
+}
+.sheet-right[data-state="open"] {
+  animation: sheet-in-right 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.sheet-right[data-state="closed"] {
+  animation: sheet-out-right 0.2s ease-in;
+}
+.sheet-left[data-state="open"] {
+  animation: sheet-in-left 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.sheet-left[data-state="closed"] {
+  animation: sheet-out-left 0.2s ease-in;
+}
+.sheet-bottom[data-state="open"] {
+  animation: sheet-in-bottom 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.sheet-bottom[data-state="closed"] {
+  animation: sheet-out-bottom 0.2s ease-in;
+}
+.sheet-overlay[data-state="open"] {
+  animation: overlay-in 0.2s ease-out;
+}
+.sheet-overlay[data-state="closed"] {
+  animation: overlay-out 0.2s ease-in;
+}
+
+/* Rotating gradient border (see components/magic/border-beam.tsx). */
+@property --beam-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes beam-spin {
+  to {
+    --beam-angle: 360deg;
+  }
+}
+.border-beam {
+  background: conic-gradient(
+    from var(--beam-angle),
+    var(--border) 0deg,
+    var(--border) 250deg,
+    var(--primary) 300deg,
+    var(--highlight) 330deg,
+    var(--border) 360deg
+  );
+  animation: beam-spin 6s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

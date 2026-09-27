@@ -17,6 +17,7 @@ import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/ca
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CvVersions } from "@/components/profile/cv-versions";
+import { ProfileStrength } from "@/components/profile/profile-strength";
 import { ReviewStep } from "@/components/onboarding/review-step";
 import { StatusStep } from "@/components/onboarding/status-step";
 import { PreferencesStep } from "@/components/onboarding/preferences-step";
@@ -69,7 +70,7 @@ export default async function ProfilePage({ params }: PageProps<"/[locale]/profi
     <div className="space-y-6">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="space-y-1">
-          <h1 className="text-3xl font-semibold">{t("title")}</h1>
+          <h1 className="text-3xl font-semibold sm:text-4xl">{t("title")}</h1>
           <p className="text-muted-foreground">{t("subtitle")}</p>
         </div>
         <Button asChild variant="outline" size="sm">
@@ -78,6 +79,16 @@ export default async function ProfilePage({ params }: PageProps<"/[locale]/profi
           </Link>
         </Button>
       </div>
+      <ProfileStrength
+        done={{
+          skills: (skills ?? []).length >= 5,
+          experience: (experiences ?? []).length > 0,
+          languages: (languages ?? []).length > 0,
+          location: prefs.success && !!prefs.data.location,
+          interests: !!riasec,
+          values: parseWorkValueRanking(profile?.work_values) != null,
+        }}
+      />
       <Tabs defaultValue="skills">
         <div className="-mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0">
           <TabsList>

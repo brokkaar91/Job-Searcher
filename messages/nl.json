@@ -123,7 +123,10 @@
     "myMatches": "Mijn matches",
     "menu": "Menu",
     "switchLanguage": "Switch to English",
-    "toggleTheme": "Wissel licht/donker thema"
+    "toggleTheme": "Wissel licht/donker thema",
+    "search": "Zoeken",
+    "searchShort": "Zoek of ga naar…",
+    "close": "Sluiten"
   },
   "footer": {
     "tagline": "Uitlegbare vacaturematches voor iedereen die in Nederland werk zoekt.",
@@ -138,7 +141,6 @@
   },
   "home": {
     "badge": "Alle vacatures in Nederland, eerlijk gematcht",
-    "title": "Vind werk dat bij je past – en begrijp waarom.",
     "subtitle": "Upload je cv, beantwoord een paar korte vragen en ontvang matches uit vacatures van heel Nederland. Bij elke match zie je welke vaardigheden passen, wat nog ontbreekt en hoe de score tot stand komt.",
     "ctaPrimary": "Start gratis",
     "ctaSecondary": "Zo werkt het",
@@ -146,14 +148,14 @@
     "preview": {
       "aria": "Voorbeeld van een match",
       "label": "Sterke match",
-      "new": "Nieuw",
       "hybrid": "Hybride",
-      "r1": "Je hebt alle 3 vereiste vaardigheden, zoals projectmanagement en PRINCE2.",
+      "r1": "Je hebt alle 3 vereiste vaardigheden, zoals Python en Apache Airflow.",
       "r2": "Korte reistijd: circa 25 minuten.",
       "r3": "Je eerdere werk lijkt sterk op deze functie.",
       "skills": "Vaardigheden",
       "experience": "Ervaring",
-      "practical": "Praktisch"
+      "practical": "Praktisch",
+      "score": "Matchscore {score} van 100"
     },
     "pillarsTitle": "Waarom JobMatch",
     "pillars": {
@@ -194,7 +196,73 @@
       "title": "Klaar om te beginnen?",
       "text": "Maak gratis een account en zie vandaag nog je eerste matches."
     },
-    "deleted": "Je account en al je gegevens zijn verwijderd."
+    "deleted": "Je account en al je gegevens zijn verwijderd.",
+    "badgeNew": "Nieuw",
+    "titleLead": "Vind werk dat",
+    "titleHighlight": "echt bij je past",
+    "titleTail": "– en begrijp waarom.",
+    "assurances": {
+      "quick": "Klaar in 10 minuten",
+      "free": "Gratis voor werkzoekenden",
+      "fair": "Geen foto, leeftijd of geslacht"
+    },
+    "float": {
+      "newMatches": "3 nieuwe matches vandaag",
+      "privacy": "Alleen wat telt voor het werk"
+    },
+    "stats": {
+      "title": "JobMatch in cijfers",
+      "jobs": "actuele vacatures",
+      "companies": "werkgevers",
+      "cities": "steden",
+      "protected": "persoonskenmerken in de matching"
+    },
+    "marqueeTitle": "Vacatures van onder meer",
+    "bento": {
+      "title": "Gebouwd om eerlijk én duidelijk te zijn",
+      "subtitle": "Geen zwarte doos: je ziet precies hoe elke match tot stand komt, en jij houdt de regie.",
+      "travel": {
+        "title": "Reistijd telt mee",
+        "text": "Kies je vervoer en maximale reistijd. Remote en hybride werk wegen we automatisch mee."
+      },
+      "tracker": {
+        "title": "Houd overzicht",
+        "text": "Bewaar vacatures en volg je sollicitaties op een overzichtelijk kanbanbord."
+      },
+      "privacy": {
+        "title": "Jouw data, in de EU",
+        "text": "Je cv staat versleuteld in de EU. Download of verwijder je gegevens wanneer je wilt.",
+        "tags": {
+          "eu": "Gehost in de EU",
+          "encrypted": "Versleuteld",
+          "export": "Exporteer alles",
+          "delete": "Verwijder met één klik"
+        }
+      },
+      "alerts": {
+        "title": "Nooit meer iets missen",
+        "text": "Ontvang nieuwe matches boven jouw drempel, direct, dagelijks of wekelijks."
+      }
+    },
+    "stepsEyebrow": "Hoe het werkt",
+    "demo": {
+      "eyebrow": "Onder de motorkap",
+      "title": "Elke match legt zichzelf uit",
+      "subtitle": "Per vacature zie je de belangrijkste redenen, wat er nog ontbreekt en hoe de score is opgebouwd uit zes factoren. Zo weet je precies waar je staat.",
+      "tabs": {
+        "reasons": "Waarom",
+        "gaps": "Wat ontbreekt",
+        "score": "Score-opbouw"
+      },
+      "g1": "dbt – gevraagd als pré",
+      "g2": "Google Cloud (BigQuery) – gevraagd als pré",
+      "gapsHint": "Heb je dit wel? Voeg het toe aan je profiel en je score wordt direct herberekend."
+    },
+    "faqTeaser": {
+      "eyebrow": "Vragen",
+      "title": "Goed om te weten",
+      "more": "Alle vragen bekijken"
+    }
   },
   "howItWorks": {
     "title": "Zo werkt onze matching",
@@ -272,6 +340,13 @@
         "q": "Hoe verwijder ik mijn account?",
         "a": "In het Privacycentrum kun je al je gegevens downloaden of je account met alle data verwijderen. Inactieve accounts verwijderen we na 12 maanden, na een waarschuwing per e-mail."
       }
+    },
+    "eyebrow": "Hulp",
+    "subtitle": "Alles over hoe JobMatch werkt, welke gegevens we gebruiken en wat je rechten zijn.",
+    "more": {
+      "title": "Staat je vraag er niet bij?",
+      "text": "Lees precies hoe we matchen, met alle gewichten en regels.",
+      "cta": "Zo werkt onze matching"
     }
   },
   "privacyPage": {
@@ -414,7 +489,14 @@
     "consentTitle": "Nog één stap",
     "consentSubtitle": "Om je matches te kunnen berekenen hebben we je toestemming nodig.",
     "consentSubmit": "Toestemming geven en doorgaan",
-    "consentPrivacyLink": "Liever je account verwijderen of je gegevens downloaden? Ga naar het privacycentrum."
+    "consentPrivacyLink": "Liever je account verwijderen of je gegevens downloaden? Ga naar het privacycentrum.",
+    "shell": {
+      "aria": "Voordelen van JobMatch",
+      "title": "Matches die je begrijpt",
+      "b1": "Uitleg bij elke match: waarom hij past en wat ontbreekt",
+      "b2": "Geen foto, leeftijd, geslacht of nationaliteit nodig",
+      "b3": "Jouw gegevens blijven in de EU en zijn altijd te verwijderen"
+    }
   },
   "app": {
     "nav": {
@@ -425,7 +507,9 @@
       "alerts": "Alerts",
       "privacy": "Privacy",
       "admin": "Beheer",
-      "signOut": "Uitloggen"
+      "signOut": "Uitloggen",
+      "account": "Account",
+      "signedInAs": "Ingelogd als"
     }
   },
   "languages": {
@@ -645,6 +729,13 @@
       "error": "Opslaan is niet gelukt.",
       "save": "Opslaan",
       "saved": "Opgeslagen"
+    },
+    "stepNames": {
+      "cv": "Cv",
+      "status": "Talen",
+      "preferences": "Voorkeuren",
+      "interests": "Interesses",
+      "values": "Waarden"
     }
   },
   "feed": {
@@ -690,7 +781,10 @@
         "score": "Beste match",
         "new": "Nieuwste",
         "salary": "Salaris"
-      }
+      },
+      "search": "Zoek in je matches",
+      "searchPlaceholder": "Zoek op functie of werkgever…",
+      "clear": "Wis filters ({count})"
     },
     "actions": {
       "save": "Bewaren",
@@ -722,7 +816,14 @@
         "other": "Anders"
       }
     },
-    "listLabel": "Matchlijst"
+    "listLabel": "Matchlijst",
+    "scoreAria": "Matchscore {score} van 100",
+    "limitedData": "Beperkte gegevens – vul je profiel aan voor een nauwkeuriger score.",
+    "stats": {
+      "total": "matches in totaal",
+      "new": "nieuw voor jou",
+      "strong": "sterke matches"
+    }
   },
   "detail": {
     "metaTitle": "Vacature",
@@ -791,7 +892,8 @@
     "remove": "Verwijderen uit tracker",
     "save": "Opslaan",
     "saved": "Opgeslagen",
-    "error": "Verplaatsen mislukt. Probeer het opnieuw."
+    "error": "Verplaatsen mislukt. Probeer het opnieuw.",
+    "saving": "Opslaan…"
   },
   "profile": {
     "title": "Profiel",
@@ -834,6 +936,22 @@
     "values": {
       "title": "Werkwaarden",
       "help": "Wat vind je het belangrijkst? Sleep om de volgorde te wijzigen."
+    },
+    "strength": {
+      "title": "Profielsterkte",
+      "aria": "Profiel {pct}% compleet",
+      "text": "Hoe completer je profiel, hoe nauwkeuriger je matches.",
+      "complete": "Top! Je profiel is compleet.",
+      "done": "(gedaan)",
+      "todo": "(nog te doen)",
+      "items": {
+        "skills": "5+ vaardigheden",
+        "experience": "Werkervaring",
+        "languages": "Talen",
+        "location": "Woonplaats",
+        "interests": "Interessetest",
+        "values": "Werkwaarden"
+      }
     }
   },
   "alerts": {
@@ -1250,5 +1368,26 @@
       "prev": "Vorige",
       "next": "Volgende"
     }
+  },
+  "command": {
+    "placeholder": "Waar wil je naartoe?",
+    "empty": "Niets gevonden.",
+    "pages": "Pagina’s",
+    "app": "Mijn JobMatch",
+    "actions": "Acties",
+    "toggleTheme": "Wissel licht/donker",
+    "switchLanguage": "Switch to English",
+    "home": "Home"
+  },
+  "notFound": {
+    "title": "Deze pagina bestaat niet",
+    "text": "Misschien is de link verouderd of is de vacature verlopen. Ga terug naar de homepage of zoek met ⌘K.",
+    "home": "Naar de homepage"
+  },
+  "errorPage": {
+    "title": "Er ging iets mis",
+    "text": "Probeer het opnieuw. Blijft het misgaan, kom dan later terug – je gegevens zijn veilig.",
+    "retry": "Opnieuw proberen",
+    "reference": "Referentie"
   }
 }

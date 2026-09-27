@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { EyeOff, PartyPopper, SearchX } from "lucide-react";
+import { EyeOff, PartyPopper, SearchX, Sparkles, Star, Target } from "lucide-react";
 import { redirect, Link } from "@/i18n/navigation";
 import { resolveLocale } from "@/i18n/locale";
 import { createClient } from "@/lib/supabase/server";
@@ -10,7 +10,7 @@ import { MatchCard } from "@/components/matches/match-card";
 import { FeedFilters } from "@/components/matches/feed-filters";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { EmptyState } from "@/components/magic/empty-state";
 
 export async function generateMetadata({
   params,
@@ -38,19 +38,45 @@ export default async function MatchesPage({
     Object.fromEntries(Object.entries(sp).map(([k, v]) => [k, Array.isArray(v) ? v[0] : v])),
   );
   const t = await getTranslations("feed");
-  const { items, hiddenCount, total, newCount } = await loadFeed(user.id, filters);
+  const { items, hiddenCount, total, newCount, strongCount, visibleCount } = await loadFeed(
+    user.id,
+    filters,
+  );
 
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="space-y-1">
-          <h1 className="text-3xl font-semibold">{t("title")}</h1>
+          <h1 className="text-3xl font-semibold sm:text-4xl">{t("title")}</h1>
           <p className="text-muted-foreground">{t("summary", { count: items.length, newCount })}</p>
         </div>
         <Button asChild variant="outline" size="sm">
           <Link href="/how-matching-works">{t("howScored")}</Link>
         </Button>
       </div>
+
+      <dl className="grid grid-cols-3 gap-3">
+        {(
+          [
+            ["total", visibleCount, Target],
+            ["new", newCount, Sparkles],
+            ["strong", strongCount, Star],
+          ] as const
+        ).map(([k, v, Icon]) => (
+          <div
+            key={k}
+            className="bg-card shadow-soft relative overflow-hidden rounded-2xl border p-4 sm:p-5"
+          >
+            <div
+              aria-hidden
+              className="bg-brand-gradient absolute -top-8 -right-8 size-20 rounded-full opacity-10 blur-xl"
+            />
+            <Icon aria-hidden className="text-primary mb-2 size-5" />
+            <dd className="text-2xl font-semibold tabular-nums sm:text-3xl">{v}</dd>
+            <dt className="text-muted-foreground text-xs sm:text-sm">{t(`stats.${k}`)}</dt>
+          </div>
+        ))}
+      </dl>
 
       {sp.welcome && (
         <Alert variant="info">
@@ -76,24 +102,25 @@ export default async function MatchesPage({
       )}
 
       {items.length === 0 ? (
-        <Card className="items-center py-14 text-center">
-          <SearchX aria-hidden className="text-muted-foreground size-10" />
-          <h2 className="text-lg font-semibold">
-            {total === 0 ? t("empty.noneTitle") : t("empty.filteredTitle")}
-          </h2>
-          <p className="text-muted-foreground max-w-md text-sm">
-            {total === 0 ? t("empty.noneText") : t("empty.filteredText")}
-          </p>
+        <EmptyState
+          icon={SearchX}
+          title={total === 0 ? t("empty.noneTitle") : t("empty.filteredTitle")}
+          text={total === 0 ? t("empty.noneText") : t("empty.filteredText")}
+        >
           <Button asChild variant="outline">
             <Link href={total === 0 ? "/profile" : "/matches"}>
               {total === 0 ? t("empty.editProfile") : t("empty.reset")}
             </Link>
           </Button>
-        </Card>
+        </EmptyState>
       ) : (
         <ul className="grid gap-4 md:grid-cols-2" aria-label={t("listLabel")}>
-          {items.map((item) => (
-            <li key={item.matchId}>
+          {items.map((item, i) => (
+            <li
+              key={item.matchId}
+              className="animate-fade-up"
+              style={{ animationDelay: `${Math.min(i, 8) * 40}ms` }}
+            >
               <MatchCard item={item} />
             </li>
           ))}

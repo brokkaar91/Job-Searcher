@@ -4,7 +4,9 @@ import { resolveLocale } from "@/i18n/locale";
 import { requireCandidate } from "@/server/auth";
 import { createClient } from "@/lib/supabase/server";
 import { localizedSkillLabels } from "@/server/esco-labels";
+import { Check } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
+import { cn } from "@/lib/utils";
 import { candidatePreferencesSchema, parseWorkValueRanking } from "@/server/matching/mappers";
 import { CvStep } from "@/components/onboarding/cv-step";
 import { ReviewStep } from "@/components/onboarding/review-step";
@@ -142,9 +144,36 @@ export default async function OnboardingStepPage({
           <span>{t("minutesLeft", { minutes: minutesLeft })}</span>
         </div>
         <Progress value={(idx / ONBOARDING_STEPS.length) * 100} aria-label={t("progress")} />
+        <ol className="hidden grid-cols-5 gap-2 pt-1 sm:grid" aria-label={t("progress")}>
+          {(["cv", "status", "preferences", "interests", "values"] as const).map((k, i) => {
+            const n = i + 1;
+            const state = n < visible ? "done" : n === visible ? "current" : "todo";
+            return (
+              <li
+                key={k}
+                aria-current={state === "current" ? "step" : undefined}
+                className={cn(
+                  "flex items-center gap-2 text-xs",
+                  state === "todo" ? "text-muted-foreground" : "text-foreground font-medium",
+                )}
+              >
+                <span
+                  className={cn(
+                    "flex size-6 shrink-0 items-center justify-center rounded-full border text-[11px] font-semibold transition-colors",
+                    state === "done" && "bg-primary border-primary text-primary-foreground",
+                    state === "current" && "border-primary text-primary ring-primary/20 ring-4",
+                  )}
+                >
+                  {state === "done" ? <Check aria-hidden className="size-3.5" /> : n}
+                </span>
+                <span className="truncate">{t(`stepNames.${k}`)}</span>
+              </li>
+            );
+          })}
+        </ol>
       </div>
       <div className="space-y-2">
-        <h1 className="text-3xl font-semibold">{t(`${step}.title`)}</h1>
+        <h1 className="text-3xl font-semibold sm:text-4xl">{t(`${step}.title`)}</h1>
         <p className="text-muted-foreground">{t(`${step}.subtitle`)}</p>
       </div>
       {body}

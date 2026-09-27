@@ -67,7 +67,10 @@ export function StatusStep({
         <legend className="text-lg font-semibold">{t("languages")}</legend>
         <p className="text-muted-foreground text-sm">{t("languagesHelp")}</p>
         {langs.map((l, i) => (
-          <Card key={i} className="grid grid-cols-[1fr_7rem_auto] items-end gap-3 p-3">
+          <Card
+            key={i}
+            className="grid grid-cols-[minmax(0,1fr)_minmax(7rem,12rem)_auto] items-end gap-3 p-3"
+          >
             <div className="grid gap-1.5">
               <Label htmlFor={`lang-${i}`} className="text-xs">
                 {t("language")}

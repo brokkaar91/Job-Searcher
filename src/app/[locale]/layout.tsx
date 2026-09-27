@@ -7,6 +7,7 @@ import { GeistMono } from "geist/font/mono";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -41,7 +42,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
         </a>
         <NextIntlClientProvider>
           <ThemeProvider>
-            {children}
+            <TooltipProvider>{children}</TooltipProvider>
             <Toaster position="bottom-center" />
           </ThemeProvider>
         </NextIntlClientProvider>

@@ -5,6 +5,8 @@ import { Logo } from "@/components/brand/logo";
 import { AppNav } from "@/components/app/app-nav";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { CommandMenu } from "@/components/layout/command-menu";
+import { UserMenu } from "@/components/app/user-menu";
 import { getProfile, requireUser } from "@/server/auth";
 import { createClient } from "@/lib/supabase/server";
 
@@ -14,7 +16,7 @@ import { createClient } from "@/lib/supabase/server";
  */
 export default async function AppLayout({ children, params }: LayoutProps<"/[locale]">) {
   const locale = await resolveLocale(params);
-  await requireUser(locale);
+  const user = await requireUser(locale);
   const profile = await getProfile();
   const supabase = await createClient();
   await supabase.rpc("touch_last_active");
@@ -22,20 +24,19 @@ export default async function AppLayout({ children, params }: LayoutProps<"/[loc
 
   return (
     <div className="flex min-h-dvh flex-col">
-      <header className="bg-background/80 sticky top-0 z-40 border-b backdrop-blur">
+      <header className="glass sticky top-0 z-40 border-b">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
           <Link href="/matches" aria-label="JobMatch">
             <Logo />
           </Link>
           <AppNav isAdmin={profile?.role === "admin"} />
           <div className="flex items-center gap-1">
-            <LocaleSwitcher />
-            <ThemeToggle />
-            <form action="/auth/signout" method="post">
-              <button className="text-muted-foreground hover:bg-accent hover:text-foreground rounded-full px-3 py-1.5 text-sm">
-                {t("signOut")}
-              </button>
-            </form>
+            <CommandMenu signedIn isAdmin={profile?.role === "admin"} compact />
+            <div className="hidden items-center sm:flex">
+              <LocaleSwitcher />
+              <ThemeToggle />
+            </div>
+            <UserMenu email={user.email ?? ""} signOutLabel={t("signOut")} />
           </div>
         </div>
       </header>

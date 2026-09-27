@@ -1,7 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getFormatter, getTranslations } from "next-intl/server";
-import { AlertTriangle, ArrowLeft, CheckCircle2, CircleDashed, Info, XCircle } from "lucide-react";
+import {
+  AlertTriangle,
+  CalendarDays,
+  CheckCircle2,
+  CircleDashed,
+  Clock,
+  Info,
+  Languages,
+  Wallet,
+  XCircle,
+} from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { resolveLocale } from "@/i18n/locale";
 import { requireCandidate } from "@/server/auth";
@@ -11,7 +21,16 @@ import { loadMatchDetail } from "@/server/matches";
 import { renderMessage } from "@/lib/messages";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { ScoreRing } from "@/components/magic/score-ring";
+import { CompanyAvatar } from "@/components/matches/company-avatar";
 import { JobBadges, LabelBadge } from "@/components/matches/badges";
 import { ComponentBreakdown } from "@/components/matches/component-breakdown";
 import { ApplyButton, MatchQuickActions } from "@/components/matches/match-actions";
@@ -66,28 +85,45 @@ export default async function MatchDetailPage({ params }: PageProps<"/[locale]/m
 
   return (
     <div className="space-y-6">
-      <Button asChild variant="ghost" size="sm" className="-ml-3">
-        <Link href="/matches">
-          <ArrowLeft aria-hidden /> {t("back")}
-        </Link>
-      </Button>
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <Link href="/matches" className="hover:text-foreground transition-colors">
+              {t("back")}
+            </Link>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>{job.title}</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
 
       <div className="grid gap-6 lg:grid-cols-[1fr_22rem]">
         <div className="space-y-6">
-          <Card>
+          <Card className="relative overflow-hidden">
+            <div aria-hidden className="bg-brand-gradient absolute inset-x-0 top-0 h-1" />
             <div className="flex flex-wrap items-start justify-between gap-3">
-              <div className="space-y-1">
-                <p className="text-muted-foreground text-sm">
-                  {company?.name ?? job.hiring_organization_name}
-                </p>
-                <h1 className="text-2xl font-semibold sm:text-3xl">{job.title}</h1>
+              <div className="flex items-start gap-4">
+                <CompanyAvatar
+                  name={company?.name ?? job.hiring_organization_name}
+                  className="size-14 rounded-2xl text-base"
+                />
+                <div className="space-y-1">
+                  <p className="text-muted-foreground text-sm">
+                    {company?.name ?? job.hiring_organization_name}
+                  </p>
+                  <h1 className="text-2xl font-semibold sm:text-3xl">{job.title}</h1>
+                </div>
               </div>
               {match && <LabelBadge label={match.label} score={match.score} />}
             </div>
             <JobBadges remotePolicy={job.remote_policy} language={job.language} city={job.city} />
-            <dl className="grid grid-cols-2 gap-4 text-sm sm:grid-cols-4">
+            <dl className="bg-muted/50 grid grid-cols-2 gap-4 rounded-xl p-4 text-sm sm:grid-cols-4">
               <div>
-                <dt className="text-muted-foreground">{t("salary")}</dt>
+                <dt className="text-muted-foreground flex items-center gap-1.5">
+                  <Wallet aria-hidden className="size-3.5" /> {t("salary")}
+                </dt>
                 <dd className="font-medium">
                   {job.salary_min_month && job.salary_max_month
                     ? `${eur(job.salary_min_month)} – ${eur(job.salary_max_month)}`
@@ -95,7 +131,9 @@ export default async function MatchDetailPage({ params }: PageProps<"/[locale]/m
                 </dd>
               </div>
               <div>
-                <dt className="text-muted-foreground">{t("hours")}</dt>
+                <dt className="text-muted-foreground flex items-center gap-1.5">
+                  <Clock aria-hidden className="size-3.5" /> {t("hours")}
+                </dt>
                 <dd className="font-medium">
                   {job.hours_min
                     ? `${job.hours_min}${job.hours_max && job.hours_max !== job.hours_min ? `–${job.hours_max}` : ""} ${t("hoursUnit")}`
@@ -103,7 +141,9 @@ export default async function MatchDetailPage({ params }: PageProps<"/[locale]/m
                 </dd>
               </div>
               <div>
-                <dt className="text-muted-foreground">{t("languages")}</dt>
+                <dt className="text-muted-foreground flex items-center gap-1.5">
+                  <Languages aria-hidden className="size-3.5" /> {t("languages")}
+                </dt>
                 <dd className="font-medium">
                   {(
                     job.language_requirements as {
@@ -120,7 +160,9 @@ export default async function MatchDetailPage({ params }: PageProps<"/[locale]/m
                 </dd>
               </div>
               <div>
-                <dt className="text-muted-foreground">{t("posted")}</dt>
+                <dt className="text-muted-foreground flex items-center gap-1.5">
+                  <CalendarDays aria-hidden className="size-3.5" /> {t("posted")}
+                </dt>
                 <dd className="font-medium">
                   {job.date_posted
                     ? format.dateTime(new Date(job.date_posted), { dateStyle: "medium" })
@@ -218,15 +260,22 @@ export default async function MatchDetailPage({ params }: PageProps<"/[locale]/m
           </Card>
         </div>
 
-        <aside className="space-y-6">
+        <aside className="space-y-6 lg:sticky lg:top-20 lg:self-start">
           {match ? (
             <>
               <Card>
-                <div className="flex items-baseline justify-between">
-                  <CardTitle>{t("score")}</CardTitle>
-                  <span className="text-primary text-3xl font-semibold tabular-nums">
-                    {Math.round(match.score)}
-                  </span>
+                <div className="flex items-center justify-between gap-4">
+                  <div className="space-y-1.5">
+                    <CardTitle>{t("score")}</CardTitle>
+                    <LabelBadge label={match.label} />
+                  </div>
+                  <ScoreRing
+                    score={match.score}
+                    size={84}
+                    stroke={7}
+                    className="[&>span]:text-xl"
+                    label={tf("scoreAria", { score: Math.round(match.score) })}
+                  />
                 </div>
                 <ComponentBreakdown components={match.components} />
                 {match.limitedData && (
@@ -242,16 +291,24 @@ export default async function MatchDetailPage({ params }: PageProps<"/[locale]/m
                     const Icon = STATUS_ICON[k.status];
                     return (
                       <li key={k.rule} className="flex gap-2.5 text-sm">
-                        <Icon
-                          aria-label={t(`status.${k.status}`)}
-                          className={
-                            k.status === "pass"
-                              ? "text-success mt-0.5 size-4 shrink-0"
-                              : k.status === "fail"
-                                ? "text-destructive mt-0.5 size-4 shrink-0"
-                                : "text-muted-foreground mt-0.5 size-4 shrink-0"
-                          }
-                        />
+                        <Tooltip>
+                          <TooltipTrigger
+                            aria-label={t(`status.${k.status}`)}
+                            className="focus-visible:ring-ring mt-0.5 h-fit shrink-0 rounded-full focus-visible:ring-2 focus-visible:outline-none"
+                          >
+                            <Icon
+                              aria-hidden
+                              className={
+                                k.status === "pass"
+                                  ? "text-success size-4"
+                                  : k.status === "fail"
+                                    ? "text-destructive size-4"
+                                    : "text-muted-foreground size-4"
+                              }
+                            />
+                          </TooltipTrigger>
+                          <TooltipContent>{t(`status.${k.status}`)}</TooltipContent>
+                        </Tooltip>
                         <span>
                           <span className="font-medium">{tm(`rules.${k.rule}`)}</span>
                           <span className="text-muted-foreground block">

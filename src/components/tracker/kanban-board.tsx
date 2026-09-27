@@ -22,7 +22,15 @@ import {
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
-import { ExternalLink, GripVertical, NotebookPen, Trash2 } from "lucide-react";
+import {
+  ExternalLink,
+  GripVertical,
+  KanbanSquare,
+  Loader2,
+  NotebookPen,
+  Trash2,
+} from "lucide-react";
+import { EmptyState } from "@/components/magic/empty-state";
 import { toast } from "sonner";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
@@ -46,6 +54,14 @@ import {
 
 export const COLUMNS = ["saved", "applied", "interview", "offer", "rejected"] as const;
 export type Column = (typeof COLUMNS)[number];
+
+const COLUMN_ACCENT: Record<Column, string> = {
+  saved: "var(--primary)",
+  applied: "oklch(0.62 0.1 230)",
+  interview: "var(--highlight)",
+  offer: "var(--success)",
+  rejected: "var(--muted-foreground)",
+};
 
 export interface TrackerCard {
   id: string;
@@ -89,8 +105,8 @@ function CardView({
   return (
     <div
       className={cn(
-        "bg-card shadow-soft space-y-2 rounded-xl border p-3 text-sm",
-        dragging && "ring-primary rotate-1 ring-2",
+        "bg-card shadow-soft hover:shadow-lift hover:border-primary/30 space-y-2 rounded-xl border p-3 text-sm transition-all",
+        dragging && "ring-primary shadow-lift rotate-2 ring-2",
       )}
     >
       <div className="min-w-0">
@@ -201,19 +217,23 @@ function ColumnView({
 }) {
   const t = useTranslations("tracker");
   const { setNodeRef, isOver } = useDroppable({ id: column });
+  const accent = COLUMN_ACCENT[column];
   return (
     <section
       aria-labelledby={`col-${column}`}
       className={cn(
-        "bg-muted/60 flex w-72 shrink-0 flex-col gap-3 rounded-2xl p-3 md:w-auto",
-        isOver && "ring-primary/40 ring-2",
+        "bg-muted/60 relative flex w-72 shrink-0 flex-col gap-3 overflow-hidden rounded-2xl p-3 transition-colors md:w-auto",
+        isOver && "ring-primary/40 bg-accent/60 ring-2",
       )}
     >
       <h2
         id={`col-${column}`}
         className="flex items-center justify-between px-1 text-sm font-semibold"
       >
-        {t(`columns.${column}`)}
+        <span className="flex items-center gap-2">
+          <span aria-hidden className="size-2.5 rounded-full" style={{ background: accent }} />
+          {t(`columns.${column}`)}
+        </span>
         <span className="bg-background text-muted-foreground rounded-full px-2 py-0.5 text-xs tabular-nums">
           {cards.length}
         </span>
@@ -319,7 +339,7 @@ export function KanbanBoard({ initial }: { initial: TrackerCard[] }) {
   const [board, setBoard] = useState<Board>(() => toBoard(initial));
   const [activeId, setActiveId] = useState<string | null>(null);
   const [openCard, setOpenCard] = useState<TrackerCard | null>(null);
-  const [, start] = useTransition();
+  const [saving, start] = useTransition();
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 6 } }),
     useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates }),
@@ -396,11 +416,18 @@ export function KanbanBoard({ initial }: { initial: TrackerCard[] }) {
 
   return (
     <>
-      {total === 0 && (
-        <p className="text-muted-foreground rounded-xl border border-dashed p-6 text-center text-sm">
-          {t("empty")}
-        </p>
-      )}
+      <p
+        role="status"
+        data-saving={saving || undefined}
+        className="text-muted-foreground flex h-5 items-center gap-2 text-xs"
+      >
+        {saving && (
+          <>
+            <Loader2 aria-hidden className="size-3.5 animate-spin" /> {t("saving")}
+          </>
+        )}
+      </p>
+      {total === 0 && <EmptyState icon={KanbanSquare} title={t("empty")} className="py-10" />}
       <DndContext
         sensors={sensors}
         collisionDetection={closestCorners}

@@ -36,7 +36,7 @@ export default async function PrivacyCenterPage({ params }: PageProps<"/[locale]
   return (
     <div className="mx-auto max-w-3xl space-y-6">
       <div className="space-y-1">
-        <h1 className="text-3xl font-semibold">{t("title")}</h1>
+        <h1 className="text-3xl font-semibold sm:text-4xl">{t("title")}</h1>
         <p className="text-muted-foreground">{t("subtitle")}</p>
       </div>
       <Card>

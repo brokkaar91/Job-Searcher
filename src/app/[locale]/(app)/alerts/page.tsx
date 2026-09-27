@@ -28,7 +28,7 @@ export default async function AlertsPage({ params }: PageProps<"/[locale]/alerts
   return (
     <div className="mx-auto max-w-2xl space-y-6">
       <div className="space-y-1">
-        <h1 className="text-3xl font-semibold">{t("title")}</h1>
+        <h1 className="text-3xl font-semibold sm:text-4xl">{t("title")}</h1>
         <p className="text-muted-foreground">{t("subtitle")}</p>
       </div>
       <Alert variant="info">

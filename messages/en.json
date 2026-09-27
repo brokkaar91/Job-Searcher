@@ -123,7 +123,10 @@
     "myMatches": "My matches",
     "menu": "Menu",
     "switchLanguage": "Schakel naar Nederlands",
-    "toggleTheme": "Toggle light/dark theme"
+    "toggleTheme": "Toggle light/dark theme",
+    "search": "Search",
+    "searchShort": "Search or jump to…",
+    "close": "Close"
   },
   "footer": {
     "tagline": "Explainable job matches for everyone looking for work in the Netherlands.",
@@ -138,7 +141,6 @@
   },
   "home": {
     "badge": "Every job in the Netherlands, fairly matched",
-    "title": "Find work that fits you – and understand why.",
     "subtitle": "Upload your CV, answer a few short questions and get matches from vacancies all over the Netherlands. Every match shows which skills fit, what is still missing and how the score was calculated.",
     "ctaPrimary": "Start for free",
     "ctaSecondary": "How it works",
@@ -146,14 +148,14 @@
     "preview": {
       "aria": "Example of a match",
       "label": "Strong match",
-      "new": "New",
       "hybrid": "Hybrid",
-      "r1": "You have all 3 required skills, such as project management and PRINCE2.",
+      "r1": "You have all 3 required skills, such as Python and Apache Airflow.",
       "r2": "Short commute: about 25 minutes.",
       "r3": "Your previous work closely resembles this role.",
       "skills": "Skills",
       "experience": "Experience",
-      "practical": "Practical"
+      "practical": "Practical",
+      "score": "Match score {score} out of 100"
     },
     "pillarsTitle": "Why JobMatch",
     "pillars": {
@@ -194,7 +196,73 @@
       "title": "Ready to start?",
       "text": "Create a free account and see your first matches today."
     },
-    "deleted": "Your account and all your data have been deleted."
+    "deleted": "Your account and all your data have been deleted.",
+    "badgeNew": "New",
+    "titleLead": "Find work that",
+    "titleHighlight": "truly fits you",
+    "titleTail": "– and understand why.",
+    "assurances": {
+      "quick": "Done in 10 minutes",
+      "free": "Free for job seekers",
+      "fair": "No photo, age or gender"
+    },
+    "float": {
+      "newMatches": "3 new matches today",
+      "privacy": "Only what matters for the job"
+    },
+    "stats": {
+      "title": "JobMatch in numbers",
+      "jobs": "current vacancies",
+      "companies": "employers",
+      "cities": "cities",
+      "protected": "personal traits used in matching"
+    },
+    "marqueeTitle": "Vacancies from employers such as",
+    "bento": {
+      "title": "Built to be fair and clear",
+      "subtitle": "No black box: you see exactly how every match is made, and you stay in control.",
+      "travel": {
+        "title": "Travel time counts",
+        "text": "Choose your mode of transport and maximum travel time. Remote and hybrid work are taken into account automatically."
+      },
+      "tracker": {
+        "title": "Stay organised",
+        "text": "Save vacancies and track your applications on a clear kanban board."
+      },
+      "privacy": {
+        "title": "Your data, in the EU",
+        "text": "Your CV is stored encrypted in the EU. Download or delete your data whenever you like.",
+        "tags": {
+          "eu": "Hosted in the EU",
+          "encrypted": "Encrypted",
+          "export": "Export everything",
+          "delete": "Delete in one click"
+        }
+      },
+      "alerts": {
+        "title": "Never miss a thing",
+        "text": "Get new matches above your threshold – instantly, daily or weekly."
+      }
+    },
+    "stepsEyebrow": "How it works",
+    "demo": {
+      "eyebrow": "Under the hood",
+      "title": "Every match explains itself",
+      "subtitle": "For each vacancy you see the main reasons, what is still missing and how the score is built from six factors. So you always know where you stand.",
+      "tabs": {
+        "reasons": "Why",
+        "gaps": "What’s missing",
+        "score": "Score breakdown"
+      },
+      "g1": "dbt – asked as a nice-to-have",
+      "g2": "Google Cloud (BigQuery) – asked as a nice-to-have",
+      "gapsHint": "Do you have these? Add them to your profile and your score is recalculated right away."
+    },
+    "faqTeaser": {
+      "eyebrow": "Questions",
+      "title": "Good to know",
+      "more": "See all questions"
+    }
   },
   "howItWorks": {
     "title": "How our matching works",
@@ -272,6 +340,13 @@
         "q": "How do I delete my account?",
         "a": "In the Privacy centre you can download all your data or delete your account including all data. We delete inactive accounts after 12 months, after an e-mail warning."
       }
+    },
+    "eyebrow": "Help",
+    "subtitle": "Everything about how JobMatch works, which data we use and what your rights are.",
+    "more": {
+      "title": "Question not listed?",
+      "text": "Read exactly how we match, including all weights and rules.",
+      "cta": "How our matching works"
     }
   },
   "privacyPage": {
@@ -414,7 +489,14 @@
     "consentTitle": "One more step",
     "consentSubtitle": "We need your consent to calculate your matches.",
     "consentSubmit": "Give consent and continue",
-    "consentPrivacyLink": "Prefer to delete your account or download your data? Go to the privacy centre."
+    "consentPrivacyLink": "Prefer to delete your account or download your data? Go to the privacy centre.",
+    "shell": {
+      "aria": "Benefits of JobMatch",
+      "title": "Matches you understand",
+      "b1": "An explanation with every match: why it fits and what is missing",
+      "b2": "No photo, age, gender or nationality needed",
+      "b3": "Your data stays in the EU and can be deleted at any time"
+    }
   },
   "app": {
     "nav": {
@@ -425,7 +507,9 @@
       "alerts": "Alerts",
       "privacy": "Privacy",
       "admin": "Admin",
-      "signOut": "Sign out"
+      "signOut": "Sign out",
+      "account": "Account",
+      "signedInAs": "Signed in as"
     }
   },
   "languages": {
@@ -645,6 +729,13 @@
       "error": "Saving failed.",
       "save": "Save",
       "saved": "Saved"
+    },
+    "stepNames": {
+      "cv": "CV",
+      "status": "Languages",
+      "preferences": "Preferences",
+      "interests": "Interests",
+      "values": "Values"
     }
   },
   "feed": {
@@ -690,7 +781,10 @@
         "score": "Best match",
         "new": "Newest",
         "salary": "Salary"
-      }
+      },
+      "search": "Search your matches",
+      "searchPlaceholder": "Search by job title or employer…",
+      "clear": "Clear filters ({count})"
     },
     "actions": {
       "save": "Save",
@@ -722,7 +816,14 @@
         "other": "Other"
       }
     },
-    "listLabel": "Match list"
+    "listLabel": "Match list",
+    "scoreAria": "Match score {score} out of 100",
+    "limitedData": "Limited data – complete your profile for a more accurate score.",
+    "stats": {
+      "total": "matches in total",
+      "new": "new for you",
+      "strong": "strong matches"
+    }
   },
   "detail": {
     "metaTitle": "Job",
@@ -791,7 +892,8 @@
     "remove": "Remove from tracker",
     "save": "Save",
     "saved": "Saved",
-    "error": "Moving failed. Please try again."
+    "error": "Moving failed. Please try again.",
+    "saving": "Saving…"
   },
   "profile": {
     "title": "Profile",
@@ -834,6 +936,22 @@
     "values": {
       "title": "Work values",
       "help": "What matters most to you? Drag to change the order."
+    },
+    "strength": {
+      "title": "Profile strength",
+      "aria": "Profile {pct}% complete",
+      "text": "The more complete your profile, the more accurate your matches.",
+      "complete": "Great! Your profile is complete.",
+      "done": "(done)",
+      "todo": "(to do)",
+      "items": {
+        "skills": "5+ skills",
+        "experience": "Work experience",
+        "languages": "Languages",
+        "location": "Home town",
+        "interests": "Interest test",
+        "values": "Work values"
+      }
     }
   },
   "alerts": {
@@ -1250,5 +1368,26 @@
       "prev": "Previous",
       "next": "Next"
     }
+  },
+  "command": {
+    "placeholder": "Where do you want to go?",
+    "empty": "Nothing found.",
+    "pages": "Pages",
+    "app": "My JobMatch",
+    "actions": "Actions",
+    "toggleTheme": "Toggle light/dark",
+    "switchLanguage": "Schakel naar Nederlands",
+    "home": "Home"
+  },
+  "notFound": {
+    "title": "This page does not exist",
+    "text": "The link may be outdated or the vacancy may have expired. Go back to the homepage or search with ⌘K.",
+    "home": "Back to the homepage"
+  },
+  "errorPage": {
+    "title": "Something went wrong",
+    "text": "Please try again. If it keeps failing, come back later – your data is safe.",
+    "retry": "Try again",
+    "reference": "Reference"
   }
 }

@@ -21,6 +21,7 @@ export const feedFiltersSchema = z.object({
     ),
   remote: z.enum(["onsite", "hybrid", "remote"]).optional(),
   hidden: z.literal("1").optional(),
+  q: z.string().trim().max(100).optional(),
   view: z.enum(["all", "saved", "dismissed"]).catch("all").default("all"),
   sort: z.enum(["score", "new", "salary"]).catch("score").default("score"),
 });
@@ -120,6 +121,14 @@ export async function loadFeed(userId: string, filters: FeedFilters) {
   let items = byView.filter((i) => (filters.hidden ? true : !i.knockedOut));
   if (filters.label.length) items = items.filter((i) => filters.label.includes(i.label));
   if (filters.remote) items = items.filter((i) => i.job.remotePolicy === filters.remote);
+  if (filters.q) {
+    const needle = filters.q.toLocaleLowerCase();
+    items = items.filter((i) =>
+      `${i.job.title} ${i.job.companyName ?? ""} ${i.job.city ?? ""}`
+        .toLocaleLowerCase()
+        .includes(needle),
+    );
+  }
 
   items.sort((a, b) => {
     if (a.knockedOut !== b.knockedOut) return a.knockedOut ? 1 : -1;
@@ -135,6 +144,8 @@ export async function loadFeed(userId: string, filters: FeedFilters) {
     hiddenCount,
     total: all.length,
     newCount: all.filter((i) => i.isNew && !i.knockedOut).length,
+    visibleCount: all.filter((i) => !i.knockedOut && i.feedback !== "dismissed").length,
+    strongCount: all.filter((i) => i.label === "strong" && !i.knockedOut).length,
   };
 }
 

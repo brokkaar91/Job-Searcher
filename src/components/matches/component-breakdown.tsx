@@ -34,7 +34,7 @@ export async function ComponentBreakdown({
               className="bg-muted h-2 overflow-hidden rounded-full"
             >
               <div
-                className="bg-primary h-full rounded-full transition-[width] duration-700"
+                className="bg-brand-gradient h-full rounded-full transition-[width] duration-700"
                 style={{ width: `${pct}%` }}
               />
             </div>
