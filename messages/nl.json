@@ -425,5 +425,277 @@
     "consentTitle": "Nog één stap",
     "consentSubtitle": "Om je matches te kunnen berekenen hebben we je toestemming nodig.",
     "consentSubmit": "Toestemming geven en doorgaan"
+  },
+  "app": {
+    "nav": {
+      "label": "Navigatie",
+      "matches": "Matches",
+      "tracker": "Tracker",
+      "profile": "Profiel",
+      "alerts": "Alerts",
+      "privacy": "Privacy",
+      "admin": "Beheer",
+      "signOut": "Uitloggen"
+    }
+  },
+  "languages": {
+    "nl": "Nederlands",
+    "en": "Engels",
+    "de": "Duits",
+    "fr": "Frans",
+    "es": "Spaans",
+    "it": "Italiaans",
+    "pt": "Portugees",
+    "pl": "Pools",
+    "ro": "Roemeens",
+    "tr": "Turks",
+    "ar": "Arabisch",
+    "uk": "Oekraïens",
+    "ru": "Russisch",
+    "hi": "Hindi",
+    "zh": "Chinees"
+  },
+  "workValues": {
+    "achievement": {
+      "label": "Prestatie",
+      "description": "Resultaten zien van je werk en je vaardigheden benutten."
+    },
+    "independence": {
+      "label": "Onafhankelijkheid",
+      "description": "Zelfstandig werken en eigen beslissingen nemen."
+    },
+    "recognition": {
+      "label": "Erkenning",
+      "description": "Doorgroeimogelijkheden, waardering en een zichtbare rol."
+    },
+    "relationships": {
+      "label": "Relaties",
+      "description": "Fijne collega's en anderen kunnen helpen."
+    },
+    "support": {
+      "label": "Ondersteuning",
+      "description": "Een leidinggevende en organisatie die je steunen en ontwikkelen."
+    },
+    "working_conditions": {
+      "label": "Werkomstandigheden",
+      "description": "Zekerheid, goede arbeidsvoorwaarden en een prettige werkomgeving."
+    }
+  },
+  "onboarding": {
+    "stepOf": "Stap {current} van {total}",
+    "minutesLeft": "nog ± {minutes} min",
+    "progress": "Voortgang onboarding",
+    "back": "Terug",
+    "next": "Volgende",
+    "saving": "Opslaan…",
+    "autosave": "Je voortgang wordt na elke stap opgeslagen. Je kunt later verdergaan.",
+    "cv": {
+      "title": "Upload je cv",
+      "subtitle": "We lezen je vaardigheden, werkervaring en talen uit. Daarna controleer je alles zelf.",
+      "drop": "Sleep je cv hierheen of klik om te kiezen",
+      "formats": "PDF of Word (.docx), max. 10 MB",
+      "current": "Huidige versie: {file}",
+      "upload": "Uploaden en analyseren",
+      "parsing": "Je cv wordt geanalyseerd… dit kan tot een minuut duren.",
+      "privacy": "Vóór de analyse halen we je naam, contactgegevens, adres en geboortedatum uit de tekst. Je cv staat versleuteld opgeslagen in de EU.",
+      "skip": "Ik heb geen cv bij de hand – vul handmatig in",
+      "errors": {
+        "empty": "Kies eerst een bestand.",
+        "type": "Alleen PDF of Word (.docx) wordt ondersteund.",
+        "size": "Het bestand is groter dan 10 MB.",
+        "parse": "We konden je cv niet goed uitlezen. Je kunt je gegevens in de volgende stap handmatig invullen.",
+        "failed": "Uploaden is mislukt. Probeer het opnieuw."
+      }
+    },
+    "review": {
+      "title": "Controleer je profiel",
+      "subtitle": "Klopt dit? Pas vaardigheden, ervaring en opleiding aan waar nodig.",
+      "fromCv": "Dit hebben we uit je cv gehaald. Vaardigheden met een kleur zijn gekoppeld aan de Europese ESCO-standaard.",
+      "manual": "Voeg je belangrijkste vaardigheden en werkervaring toe.",
+      "skills": "Vaardigheden",
+      "skillsHelp": "Kies bij voorkeur uit de suggesties en geef aan wanneer je een vaardigheid voor het laatst gebruikte.",
+      "addSkill": "Vaardigheid toevoegen (bv. Python, patiëntenzorg, Excel)",
+      "lastUsed": "Laatst gebruikt: {skill}",
+      "yearUnknown": "jaar?",
+      "now": "nu",
+      "remove": "Verwijder {skill}",
+      "noSkills": "Nog geen vaardigheden.",
+      "unmappedHint": "Tip: vaardigheden zonder kleur staan niet in ESCO en tellen minder zwaar mee.",
+      "experience": "Werkervaring",
+      "jobTitle": "Functietitel",
+      "organisation": "Organisatie (optioneel)",
+      "start": "Begin",
+      "end": "Einde",
+      "current": "Dit is mijn huidige functie",
+      "tasks": "Taken en verantwoordelijkheden",
+      "removeExperience": "Verwijderen",
+      "addExperience": "Werkervaring toevoegen",
+      "education": "Hoogst afgeronde opleiding",
+      "educationHelp": "Optioneel. We gebruiken dit alleen als een vacature expliciet een diploma eist – nooit voor bonuspunten.",
+      "educationSkip": "Zeg ik liever niet",
+      "eqf": {
+        "2": "Basisvaardigheden / vmbo (EQF 2)",
+        "3": "MBO niveau 2-3 (EQF 3)",
+        "4": "MBO niveau 4 / havo / vwo (EQF 4)",
+        "5": "Associate degree (EQF 5)",
+        "6": "Bachelor / HBO (EQF 6)",
+        "7": "Master / WO (EQF 7)",
+        "8": "Doctoraat / PhD (EQF 8)"
+      },
+      "error": "Opslaan is niet gelukt. Controleer de velden.",
+      "save": "Opslaan",
+      "saved": "Opgeslagen"
+    },
+    "status": {
+      "title": "Werkstatus en talen",
+      "subtitle": "Zo tonen we alleen vacatures die voor jou haalbaar zijn. We vragen nooit naar je nationaliteit.",
+      "sponsorship": "Heb je visumsponsoring nodig om in Nederland te werken?",
+      "sponsorshipHelp": "Bijvoorbeeld als kennismigrant. Dan heb je een werkgever nodig die erkend referent is bij de IND.",
+      "sponsorshipOptions": {
+        "yes": "Ja, ik heb sponsoring nodig",
+        "no": "Nee, ik mag al werken in Nederland"
+      },
+      "permit": "Welk verblijfs- of werkdocument heb je?",
+      "permitHelp": "Optioneel. Dit helpt ons om de juiste vacatures te tonen.",
+      "permitSkip": "Zeg ik liever niet",
+      "permits": {
+        "unrestricted": "Vrije toegang tot de arbeidsmarkt (geen vergunning nodig)",
+        "highly_skilled_migrant": "Verblijfsvergunning kennismigrant",
+        "eu_blue_card": "Europese blauwe kaart",
+        "orientation_year": "Zoekjaar hoogopgeleiden",
+        "dependent_free_labour": "Verblijf met 'arbeid vrij toegestaan' (bv. partner)",
+        "intra_company_transfer": "Overplaatsing binnen een onderneming (ICT)",
+        "student": "Studentenvergunning",
+        "needs_permit": "Ik heb nog geen vergunning",
+        "other": "Anders"
+      },
+      "norm": "Welke salarisnorm is op jou van toepassing?",
+      "normHelp": "De IND hanteert verschillende minimumsalarissen voor kennismigranten. We vragen geen leeftijd; kies wat voor jou geldt. Weet je het niet, dan gebruiken we de laagste norm zodat je niets misloopt.",
+      "norms": {
+        "standard": {
+          "title": "Standaardnorm",
+          "text": "De gewone kennismigrantnorm."
+        },
+        "reduced": {
+          "title": "Verlaagde norm",
+          "text": "De lagere norm die voor jongere kennismigranten geldt."
+        },
+        "graduate": {
+          "title": "Norm voor afgestudeerden",
+          "text": "Na een zoekjaar of recente studie in Nederland of aan een topuniversiteit."
+        },
+        "unknown": {
+          "title": "Weet ik niet",
+          "text": "We gebruiken de laagste norm."
+        }
+      },
+      "languages": "Welke talen spreek je?",
+      "languagesHelp": "Kies je niveau volgens het Europees Referentiekader (ERK/CEFR).",
+      "language": "Taal",
+      "level": "Niveau",
+      "addLanguage": "Taal toevoegen",
+      "removeLanguage": "Taal verwijderen",
+      "cefr": {
+        "A1": "beginner",
+        "A2": "basis",
+        "B1": "redelijk",
+        "B2": "goed",
+        "C1": "vloeiend",
+        "C2": "moedertaal/uitstekend"
+      },
+      "errors": {
+        "sponsorship": "Geef aan of je sponsoring nodig hebt.",
+        "save": "Opslaan is niet gelukt."
+      },
+      "save": "Opslaan",
+      "saved": "Opgeslagen"
+    },
+    "preferences": {
+      "title": "Wat zoek je?",
+      "subtitle": "Je voorkeuren bepalen je harde eisen en de praktische fit.",
+      "roles": "Gewenste functie(s)",
+      "rolesHelp": "Kies maximaal drie beroepen.",
+      "addRole": "Zoek een beroep (bv. data engineer, verpleegkundige)",
+      "removeRole": "Verwijder {role}",
+      "location": "Waar woon je?",
+      "cityPlaceholder": "Kies een plaats",
+      "travelMode": "Hoe reis je meestal?",
+      "modes": {
+        "public_transport": "OV",
+        "car": "Auto",
+        "bike": "Fiets"
+      },
+      "maxTravel": "Maximale reistijd enkele reis: {minutes} min",
+      "maxTravelShort": "Maximale reistijd",
+      "remote": "Waar wil je werken?",
+      "remoteOptions": {
+        "onsite": "Op locatie",
+        "hybrid": "Hybride",
+        "remote": "Volledig remote",
+        "any": "Maakt niet uit"
+      },
+      "salary": "Minimum brutosalaris per maand",
+      "salaryHelp": "Exclusief vakantiegeld. Laat leeg als je geen minimum hebt.",
+      "hours": "Uren per week: {min}–{max}",
+      "hoursShort": "Uren per week",
+      "contract": "Contractvorm",
+      "employment": {
+        "full_time": "Fulltime",
+        "part_time": "Parttime",
+        "contract": "Contract",
+        "temporary": "Tijdelijk",
+        "internship": "Stage",
+        "freelance": "Freelance"
+      },
+      "company": "Soort organisatie",
+      "companyHelp": "Optioneel – telt licht mee in de praktische fit.",
+      "sizes": {
+        "micro": "1-10",
+        "small": "11-50",
+        "medium": "51-250",
+        "large": "251-1000",
+        "enterprise": "1000+"
+      },
+      "types": {
+        "startup": "Startup",
+        "scaleup": "Scale-up",
+        "sme": "Mkb",
+        "corporate": "Corporate",
+        "public": "Overheid/publiek",
+        "nonprofit": "Non-profit",
+        "agency": "Bureau"
+      },
+      "error": "Opslaan is niet gelukt. Controleer je invoer.",
+      "save": "Opslaan",
+      "saved": "Opgeslagen"
+    },
+    "interests": {
+      "title": "Wat vind je leuk om te doen?",
+      "subtitle": "Geef bij 30 activiteiten aan hoe leuk je ze zou vinden – ongeacht opleiding of salaris. Er zijn geen goede of foute antwoorden.",
+      "progress": "{answered} van {total} beantwoord · pagina {page} van {pages}",
+      "scale": {
+        "1": "Helemaal niet",
+        "2": "Niet",
+        "3": "Weet niet",
+        "4": "Leuk",
+        "5": "Heel leuk"
+      },
+      "answerAll": "Beantwoord alle vragen op deze pagina.",
+      "nextPage": "Volgende vragen",
+      "previousPage": "Vorige vragen",
+      "error": "Opslaan is niet gelukt."
+    },
+    "values": {
+      "title": "Wat vind je belangrijk in werk?",
+      "subtitle": "Zet de zes werkwaarden in volgorde: de belangrijkste bovenaan. Sleep of gebruik de pijltjes.",
+      "listLabel": "Werkwaarden in volgorde van belangrijkheid",
+      "drag": "Verplaats {value}",
+      "up": "{value} omhoog",
+      "down": "{value} omlaag",
+      "finish": "Afronden en matches bekijken",
+      "error": "Opslaan is niet gelukt.",
+      "save": "Opslaan",
+      "saved": "Opgeslagen"
+    }
   }
 }

@@ -425,5 +425,277 @@
     "consentTitle": "One more step",
     "consentSubtitle": "We need your consent to calculate your matches.",
     "consentSubmit": "Give consent and continue"
+  },
+  "app": {
+    "nav": {
+      "label": "Navigation",
+      "matches": "Matches",
+      "tracker": "Tracker",
+      "profile": "Profile",
+      "alerts": "Alerts",
+      "privacy": "Privacy",
+      "admin": "Admin",
+      "signOut": "Sign out"
+    }
+  },
+  "languages": {
+    "nl": "Dutch",
+    "en": "English",
+    "de": "German",
+    "fr": "French",
+    "es": "Spanish",
+    "it": "Italian",
+    "pt": "Portuguese",
+    "pl": "Polish",
+    "ro": "Romanian",
+    "tr": "Turkish",
+    "ar": "Arabic",
+    "uk": "Ukrainian",
+    "ru": "Russian",
+    "hi": "Hindi",
+    "zh": "Chinese"
+  },
+  "workValues": {
+    "achievement": {
+      "label": "Achievement",
+      "description": "Seeing results of your work and using your abilities."
+    },
+    "independence": {
+      "label": "Independence",
+      "description": "Working on your own and making your own decisions."
+    },
+    "recognition": {
+      "label": "Recognition",
+      "description": "Advancement, appreciation and a visible role."
+    },
+    "relationships": {
+      "label": "Relationships",
+      "description": "Friendly co-workers and being able to help others."
+    },
+    "support": {
+      "label": "Support",
+      "description": "A manager and organisation that back you and help you grow."
+    },
+    "working_conditions": {
+      "label": "Working conditions",
+      "description": "Job security, good terms and a pleasant work environment."
+    }
+  },
+  "onboarding": {
+    "stepOf": "Step {current} of {total}",
+    "minutesLeft": "about {minutes} min left",
+    "progress": "Onboarding progress",
+    "back": "Back",
+    "next": "Next",
+    "saving": "Saving…",
+    "autosave": "Your progress is saved after every step. You can continue later.",
+    "cv": {
+      "title": "Upload your CV",
+      "subtitle": "We extract your skills, work experience and languages. Afterwards you review everything yourself.",
+      "drop": "Drag your CV here or click to choose",
+      "formats": "PDF or Word (.docx), max 10 MB",
+      "current": "Current version: {file}",
+      "upload": "Upload and analyse",
+      "parsing": "Analysing your CV… this can take up to a minute.",
+      "privacy": "Before analysis we remove your name, contact details, address and date of birth from the text. Your CV is stored encrypted in the EU.",
+      "skip": "I don't have my CV at hand – fill in manually",
+      "errors": {
+        "empty": "Please choose a file first.",
+        "type": "Only PDF or Word (.docx) is supported.",
+        "size": "The file is larger than 10 MB.",
+        "parse": "We couldn't read your CV properly. You can enter your details manually in the next step.",
+        "failed": "Upload failed. Please try again."
+      }
+    },
+    "review": {
+      "title": "Review your profile",
+      "subtitle": "Is this correct? Adjust skills, experience and education where needed.",
+      "fromCv": "This is what we found in your CV. Coloured skills are linked to the European ESCO standard.",
+      "manual": "Add your most important skills and work experience.",
+      "skills": "Skills",
+      "skillsHelp": "Preferably pick from the suggestions and indicate when you last used a skill.",
+      "addSkill": "Add a skill (e.g. Python, patient care, Excel)",
+      "lastUsed": "Last used: {skill}",
+      "yearUnknown": "year?",
+      "now": "now",
+      "remove": "Remove {skill}",
+      "noSkills": "No skills yet.",
+      "unmappedHint": "Tip: skills without colour are not in ESCO and count less.",
+      "experience": "Work experience",
+      "jobTitle": "Job title",
+      "organisation": "Organisation (optional)",
+      "start": "Start",
+      "end": "End",
+      "current": "This is my current role",
+      "tasks": "Tasks and responsibilities",
+      "removeExperience": "Remove",
+      "addExperience": "Add work experience",
+      "education": "Highest completed education",
+      "educationHelp": "Optional. We only use this when a job explicitly requires a degree – never for bonus points.",
+      "educationSkip": "Prefer not to say",
+      "eqf": {
+        "2": "Basic / lower secondary (EQF 2)",
+        "3": "Vocational level 2-3 (EQF 3)",
+        "4": "Vocational level 4 / upper secondary (EQF 4)",
+        "5": "Associate degree (EQF 5)",
+        "6": "Bachelor's (EQF 6)",
+        "7": "Master's (EQF 7)",
+        "8": "Doctorate / PhD (EQF 8)"
+      },
+      "error": "Saving failed. Please check the fields.",
+      "save": "Save",
+      "saved": "Saved"
+    },
+    "status": {
+      "title": "Work status and languages",
+      "subtitle": "So we only show jobs that are feasible for you. We never ask for your nationality.",
+      "sponsorship": "Do you need visa sponsorship to work in the Netherlands?",
+      "sponsorshipHelp": "For example as a highly skilled migrant. You then need an employer that is an IND recognised sponsor.",
+      "sponsorshipOptions": {
+        "yes": "Yes, I need sponsorship",
+        "no": "No, I can already work in the Netherlands"
+      },
+      "permit": "Which residence or work document do you have?",
+      "permitHelp": "Optional. This helps us show the right jobs.",
+      "permitSkip": "Prefer not to say",
+      "permits": {
+        "unrestricted": "Free access to the labour market (no permit needed)",
+        "highly_skilled_migrant": "Highly skilled migrant residence permit",
+        "eu_blue_card": "EU Blue Card",
+        "orientation_year": "Orientation year (zoekjaar)",
+        "dependent_free_labour": "Residence with 'work freely permitted' (e.g. partner)",
+        "intra_company_transfer": "Intra-corporate transfer (ICT)",
+        "student": "Student permit",
+        "needs_permit": "I don't have a permit yet",
+        "other": "Other"
+      },
+      "norm": "Which salary threshold applies to you?",
+      "normHelp": "The IND uses different minimum salaries for highly skilled migrants. We don't ask your age; choose what applies. If you don't know, we use the lowest threshold so you don't miss out.",
+      "norms": {
+        "standard": {
+          "title": "Standard threshold",
+          "text": "The regular highly skilled migrant threshold."
+        },
+        "reduced": {
+          "title": "Reduced threshold",
+          "text": "The lower threshold that applies to younger highly skilled migrants."
+        },
+        "graduate": {
+          "title": "Graduate threshold",
+          "text": "After an orientation year or a recent degree in the Netherlands or at a top university."
+        },
+        "unknown": {
+          "title": "I don't know",
+          "text": "We use the lowest threshold."
+        }
+      },
+      "languages": "Which languages do you speak?",
+      "languagesHelp": "Choose your level using the Common European Framework (CEFR).",
+      "language": "Language",
+      "level": "Level",
+      "addLanguage": "Add language",
+      "removeLanguage": "Remove language",
+      "cefr": {
+        "A1": "beginner",
+        "A2": "elementary",
+        "B1": "intermediate",
+        "B2": "upper intermediate",
+        "C1": "fluent",
+        "C2": "native/proficient"
+      },
+      "errors": {
+        "sponsorship": "Please indicate whether you need sponsorship.",
+        "save": "Saving failed."
+      },
+      "save": "Save",
+      "saved": "Saved"
+    },
+    "preferences": {
+      "title": "What are you looking for?",
+      "subtitle": "Your preferences define your hard requirements and the practical fit.",
+      "roles": "Desired role(s)",
+      "rolesHelp": "Choose up to three occupations.",
+      "addRole": "Search an occupation (e.g. data engineer, nurse)",
+      "removeRole": "Remove {role}",
+      "location": "Where do you live?",
+      "cityPlaceholder": "Choose a place",
+      "travelMode": "How do you usually travel?",
+      "modes": {
+        "public_transport": "Public transport",
+        "car": "Car",
+        "bike": "Bike"
+      },
+      "maxTravel": "Maximum one-way travel time: {minutes} min",
+      "maxTravelShort": "Maximum travel time",
+      "remote": "Where do you want to work?",
+      "remoteOptions": {
+        "onsite": "On-site",
+        "hybrid": "Hybrid",
+        "remote": "Fully remote",
+        "any": "No preference"
+      },
+      "salary": "Minimum gross salary per month",
+      "salaryHelp": "Excluding holiday allowance. Leave empty if you have no minimum.",
+      "hours": "Hours per week: {min}–{max}",
+      "hoursShort": "Hours per week",
+      "contract": "Contract type",
+      "employment": {
+        "full_time": "Full-time",
+        "part_time": "Part-time",
+        "contract": "Contract",
+        "temporary": "Temporary",
+        "internship": "Internship",
+        "freelance": "Freelance"
+      },
+      "company": "Type of organisation",
+      "companyHelp": "Optional – counts lightly in the practical fit.",
+      "sizes": {
+        "micro": "1-10",
+        "small": "11-50",
+        "medium": "51-250",
+        "large": "251-1000",
+        "enterprise": "1000+"
+      },
+      "types": {
+        "startup": "Startup",
+        "scaleup": "Scale-up",
+        "sme": "SME",
+        "corporate": "Corporate",
+        "public": "Public sector",
+        "nonprofit": "Non-profit",
+        "agency": "Agency"
+      },
+      "error": "Saving failed. Please check your input.",
+      "save": "Save",
+      "saved": "Saved"
+    },
+    "interests": {
+      "title": "What do you enjoy doing?",
+      "subtitle": "Rate 30 activities by how much you would enjoy them – regardless of education or pay. There are no right or wrong answers.",
+      "progress": "{answered} of {total} answered · page {page} of {pages}",
+      "scale": {
+        "1": "Strongly dislike",
+        "2": "Dislike",
+        "3": "Unsure",
+        "4": "Like",
+        "5": "Strongly like"
+      },
+      "answerAll": "Please answer all questions on this page.",
+      "nextPage": "Next questions",
+      "previousPage": "Previous questions",
+      "error": "Saving failed."
+    },
+    "values": {
+      "title": "What matters to you at work?",
+      "subtitle": "Put the six work values in order: most important at the top. Drag or use the arrows.",
+      "listLabel": "Work values in order of importance",
+      "drag": "Move {value}",
+      "up": "Move {value} up",
+      "down": "Move {value} down",
+      "finish": "Finish and see matches",
+      "error": "Saving failed.",
+      "save": "Save",
+      "saved": "Saved"
+    }
   }
 }
