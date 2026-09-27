@@ -1,0 +1,10 @@
+onlyBuiltDependencies:
+  - esbuild
+  - supabase
+  - onnxruntime-node
+  - protobufjs
+ignoredBuiltDependencies:
+  - sharp
+  - unrs-resolver
+  - "@parcel/watcher"
+  - "@swc/core"
