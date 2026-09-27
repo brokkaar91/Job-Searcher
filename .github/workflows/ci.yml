@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    name: Lint, typecheck, unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test # DB integration tests are skipped without DATABASE_URL
+
+  integration:
+    name: DB integration + E2E
+    runs-on: ubuntu-latest
+    needs: check
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - name: Start local Supabase
+        run: npx supabase start -x studio,imgproxy,edge-runtime,logflare,vector,supavisor
+      - name: Write .env.local from supabase status
+        run: |
+          eval "$(npx supabase status -o env)"
+          cat > .env.local <<ENV
+          NEXT_PUBLIC_SUPABASE_URL=$API_URL
+          NEXT_PUBLIC_SUPABASE_ANON_KEY=$ANON_KEY
+          SUPABASE_SERVICE_ROLE_KEY=$SERVICE_ROLE_KEY
+          DATABASE_URL=$DB_URL
+          NEXT_PUBLIC_SITE_URL=http://localhost:3100
+          PARSER_PROVIDER=mock
+          EMBEDDING_PROVIDER=fake
+          CONNECTOR_ENCRYPTION_KEY=$(openssl rand -base64 32)
+          ENV
+      - run: pnpm seed
+      - run: pnpm test
+      - run: npx playwright install --with-deps chromium
+      - run: pnpm build
+      - run: pnpm test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with: { name: playwright-report, path: test-results, retention-days: 7 }

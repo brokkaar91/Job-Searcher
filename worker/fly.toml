@@ -1,0 +1,17 @@
+# Fly.io config for the worker (EU: Amsterdam). Deploy from the repo root:
+#   fly deploy --config worker/fly.toml --dockerfile worker/Dockerfile
+app = "jobmatch-worker"
+primary_region = "ams"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[[vm]]
+  size = "shared-cpu-2x"
+  memory = "2gb"
+
+[mounts]
+  source = "hf_cache"
+  destination = "/data"
+
+# No [http_service]: the worker only talks to Postgres (pg-boss) and Supabase.
