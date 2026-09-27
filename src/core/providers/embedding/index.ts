@@ -45,7 +45,7 @@ function hash(s: string): number {
 export class FakeEmbeddingProvider implements EmbeddingProvider {
   readonly name = "fake";
   readonly model = "fake-hashing-768";
-  async embed(texts: string[]): Promise<number[][]> {
+  async embed(texts: string[], _kind?: EmbeddingKind): Promise<number[][]> {
     return texts.map((t) => {
       const words = t
         .toLowerCase()
@@ -110,7 +110,7 @@ export class OpenAIEmbeddingProvider implements EmbeddingProvider {
     private readonly apiKey: string,
     readonly model = "text-embedding-3-small",
   ) {}
-  async embed(texts: string[]): Promise<number[][]> {
+  async embed(texts: string[], _kind?: EmbeddingKind): Promise<number[][]> {
     const res = await fetch("https://api.openai.com/v1/embeddings", {
       method: "POST",
       headers: { "content-type": "application/json", authorization: `Bearer ${this.apiKey}` },
@@ -122,7 +122,9 @@ export class OpenAIEmbeddingProvider implements EmbeddingProvider {
   }
 }
 
-export function createEmbeddingProvider(env: NodeJS.ProcessEnv = process.env): EmbeddingProvider {
+export type Env = Record<string, string | undefined>;
+
+export function createEmbeddingProvider(env: Env = process.env): EmbeddingProvider {
   switch (env.EMBEDDING_PROVIDER ?? "fake") {
     case "local":
       return new LocalE5EmbeddingProvider(env.EMBEDDING_MODEL || undefined);
