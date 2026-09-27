@@ -52,3 +52,4 @@ supabase/.branches
 !.env.example
 test-results
 shot.mjs
+ashot.mjs

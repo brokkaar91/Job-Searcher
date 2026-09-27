@@ -30,9 +30,13 @@ interface ReasonInput {
   knockouts: KnockoutResult[];
 }
 
+/** Short display label: "Python (computer programming)" → "Python". */
+export const shortLabel = (s: string) => s.replace(/\s*\([^)]*\)\s*/g, " ").trim();
+
 const labelList = (xs: (string | null | undefined)[], n = 2) =>
   xs
     .filter((x): x is string => !!x)
+    .map(shortLabel)
     .slice(0, n)
     .join(", ");
 

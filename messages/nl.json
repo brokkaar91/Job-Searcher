@@ -204,7 +204,8 @@
     "ctaBlock": {
       "title": "Klaar om te beginnen?",
       "text": "Maak gratis een account en zie vandaag nog je eerste matches."
-    }
+    },
+    "deleted": "Je account en al je gegevens zijn verwijderd."
   },
   "howItWorks": {
     "title": "Zo werkt onze matching",
@@ -424,7 +425,8 @@
     },
     "consentTitle": "Nog één stap",
     "consentSubtitle": "Om je matches te kunnen berekenen hebben we je toestemming nodig.",
-    "consentSubmit": "Toestemming geven en doorgaan"
+    "consentSubmit": "Toestemming geven en doorgaan",
+    "consentPrivacyLink": "Liever je account verwijderen of je gegevens downloaden? Ga naar het privacycentrum."
   },
   "app": {
     "nav": {
@@ -696,6 +698,268 @@
       "error": "Opslaan is niet gelukt.",
       "save": "Opslaan",
       "saved": "Opgeslagen"
+    }
+  },
+  "feed": {
+    "title": "Jouw matches",
+    "summary": "{count, plural, =0 {Geen matches} one {# match} other {# matches}}{newCount, plural, =0 {} other { · # nieuw}}",
+    "howScored": "Hoe wordt dit berekend?",
+    "welcome": {
+      "title": "Welkom! Je eerste matches staan klaar.",
+      "text": "Bij elke match zie je waarom hij past. Bewaar interessante vacatures of wijs ze af – dat helpt ons ook."
+    },
+    "hiddenCount": "{count, plural, one {# vacature verborgen} other {# vacatures verborgen}} omdat ze buiten je harde eisen vallen.",
+    "showAnyway": "Toch tonen",
+    "hiddenReason": "Valt buiten een harde eis – bekijk de details.",
+    "salaryUnknown": "Salaris niet vermeld",
+    "empty": {
+      "noneTitle": "Nog geen matches",
+      "noneText": "We vinden nog geen vacatures die passen. Voeg vaardigheden toe of verruim je voorkeuren – nieuwe vacatures komen dagelijks binnen.",
+      "filteredTitle": "Geen matches met deze filters",
+      "filteredText": "Pas je filters aan om meer te zien.",
+      "editProfile": "Profiel aanpassen",
+      "reset": "Filters wissen"
+    },
+    "badges": {
+      "new": "Nieuw",
+      "sponsors": "Erkend referent · sponsort visum",
+      "recognised": "Erkend referent",
+      "remote": {
+        "onsite": "Op locatie",
+        "hybrid": "Hybride",
+        "remote": "Remote"
+      },
+      "languageTitle": "Taal van de vacature"
+    },
+    "filters": {
+      "view": "Weergave",
+      "views": {
+        "all": "Alle",
+        "saved": "Bewaard",
+        "dismissed": "Afgewezen"
+      },
+      "sponsor": "Sponsort visum",
+      "remote": "Remote",
+      "english": "Engelstalig",
+      "showHidden": "Toon verborgen",
+      "sort": "Sorteer",
+      "sorts": {
+        "score": "Beste match",
+        "new": "Nieuwste",
+        "salary": "Salaris"
+      }
+    },
+    "actions": {
+      "save": "Bewaren",
+      "saved": "Bewaard",
+      "dismiss": "Niet interessant",
+      "undoDismiss": "Terugzetten",
+      "savedToast": "Bewaard in je tracker",
+      "apply": "Solliciteren",
+      "applyAgain": "Naar vacature",
+      "appliedToast": "Sollicitatie gelogd in je tracker"
+    },
+    "dismiss": {
+      "title": "Waarom past deze vacature niet?",
+      "description": "Je reden helpt ons de matching te verbeteren. Je kunt dit altijd terugdraaien.",
+      "comment": "Toelichting (optioneel)",
+      "cancel": "Annuleren",
+      "confirm": "Afwijzen",
+      "done": "Vacature afgewezen",
+      "undo": "Ongedaan maken",
+      "reasons": {
+        "salary": "Salaris",
+        "location": "Locatie/reistijd",
+        "role": "Functie past niet",
+        "language": "Taal",
+        "sponsorship": "Geen sponsoring",
+        "seniority": "Niveau",
+        "company": "Organisatie",
+        "contract": "Contract/uren",
+        "already_applied": "Al gesolliciteerd",
+        "other": "Anders"
+      }
+    },
+    "listLabel": "Matchlijst"
+  },
+  "detail": {
+    "metaTitle": "Vacature",
+    "back": "Terug naar matches",
+    "salary": "Salaris (bruto/mnd)",
+    "hours": "Uren",
+    "hoursUnit": "u/week",
+    "languages": "Taaleisen",
+    "posted": "Geplaatst",
+    "why": "Waarom dit een match is",
+    "score": "Matchscore",
+    "gaps": {
+      "title": "Wat ontbreekt er nog?",
+      "intro": "Dit vraagt de vacature en vonden we (nog) niet in je profiel. Klopt dat niet? Voeg het toe in je profiel.",
+      "must": "Vereist",
+      "nice": "Pluspunten",
+      "related": "verwante vaardigheid gevonden",
+      "language": "Taal: {language} op niveau {required} gevraagd (jij: {actual})."
+    },
+    "description": "Over de vacature",
+    "about": "Over {company}",
+    "requirements": "Je harde eisen",
+    "status": {
+      "pass": "Voldoet",
+      "fail": "Voldoet niet",
+      "unknown": "Onbekend"
+    },
+    "knockedOutNote": "Deze vacature valt buiten een van je harde eisen en is daarom standaard verborgen. Jij beslist of je toch solliciteert.",
+    "noData": "geen gegevens",
+    "weight": "weegt {weight}%",
+    "noMatch": "Voor deze vacature is (nog) geen match berekend.",
+    "audit": "Berekend op {date} met de actieve modelversie.",
+    "optional": "pré"
+  },
+  "tracker": {
+    "title": "Sollicitatietracker",
+    "subtitle": "Houd bij waar je staat. Sleep kaarten naar een andere kolom of gebruik het keuzemenu.",
+    "columns": {
+      "saved": "Opgeslagen",
+      "applied": "Gesolliciteerd",
+      "interview": "Gesprek",
+      "offer": "Aanbod",
+      "rejected": "Afgewezen"
+    },
+    "since": {
+      "saved": "Opgeslagen op {date}",
+      "applied": "Gesolliciteerd op {date}",
+      "interview": "Gesprek op {date}",
+      "offer": "Aanbod op {date}",
+      "rejected": "Afgewezen op {date}"
+    },
+    "moveTo": "Verplaats naar",
+    "details": "Notities en datums",
+    "openJob": "Open vacature",
+    "drag": "Versleep {title}",
+    "emptyColumn": "Sleep een kaart hierheen",
+    "empty": "Nog niets in je tracker. Bewaar een match om te beginnen.",
+    "notes": "Notities",
+    "notesPlaceholder": "Bijv. contactpersoon, vragen voor het gesprek…",
+    "dates": {
+      "applied": "Gesolliciteerd",
+      "interview": "Gesprek",
+      "offer": "Aanbod",
+      "rejected": "Afgewezen"
+    },
+    "remove": "Verwijderen uit tracker",
+    "save": "Opslaan",
+    "saved": "Opgeslagen",
+    "error": "Verplaatsen mislukt. Probeer het opnieuw."
+  },
+  "profile": {
+    "title": "Profiel",
+    "subtitle": "Pas je gegevens aan. Je matches worden daarna automatisch opnieuw berekend.",
+    "redo": "Onboarding opnieuw doen",
+    "tabs": {
+      "skills": "Vaardigheden & ervaring",
+      "cv": "Cv-versies",
+      "status": "Werkstatus & talen",
+      "preferences": "Voorkeuren",
+      "interests": "Interesses & waarden"
+    },
+    "cv": {
+      "none": "Nog geen cv geüpload.",
+      "version": "Versie {version}",
+      "current": "Huidig",
+      "parseFailed": "Niet uitgelezen",
+      "download": "Download versie {version}",
+      "delete": "Verwijder versie {version}",
+      "confirmDelete": "Deze cv-versie definitief verwijderen?",
+      "uploadLabel": "Nieuwe cv-versie",
+      "upload": "Nieuwe versie uploaden",
+      "uploaded": "Nieuwe versie verwerkt – controleer je vaardigheden en ervaring.",
+      "help": "Een nieuwe versie vervangt je werkervaring en niet-bevestigde vaardigheden. Zelf toegevoegde vaardigheden blijven staan."
+    },
+    "interests": {
+      "title": "Interesseprofiel (RIASEC)",
+      "code": "Jouw Holland-code: {code}",
+      "none": "Je hebt de interessetest nog niet gedaan.",
+      "retake": "Test opnieuw doen",
+      "types": {
+        "R": "Praktisch (R)",
+        "I": "Onderzoekend (I)",
+        "A": "Artistiek (A)",
+        "S": "Sociaal (S)",
+        "E": "Ondernemend (E)",
+        "C": "Conventioneel (C)"
+      }
+    },
+    "values": {
+      "title": "Werkwaarden",
+      "help": "Wat vind je het belangrijkst? Sleep om de volgorde te wijzigen."
+    }
+  },
+  "alerts": {
+    "title": "Alerts",
+    "subtitle": "Ontvang een bericht wanneer er nieuwe matches zijn.",
+    "comingSoon": "Het versturen van alerts volgt binnenkort. Je instellingen worden al bewaard.",
+    "enabled": "Alerts inschakelen",
+    "frequency": "Hoe vaak?",
+    "frequencies": {
+      "instant": "Direct",
+      "daily": "Dagelijks",
+      "weekly": "Wekelijks"
+    },
+    "minScore": "Alleen matches vanaf score {score}",
+    "minScoreShort": "Minimale score",
+    "onlySponsoring": "Alleen vacatures met visumsponsoring",
+    "save": "Opslaan",
+    "saved": "Instellingen opgeslagen"
+  },
+  "privacyCenter": {
+    "title": "Privacycentrum",
+    "subtitle": "Jouw gegevens, jouw keuzes.",
+    "export": {
+      "title": "Download je gegevens",
+      "text": "Een JSON-bestand met alles wat we over je opslaan: profiel, vaardigheden, matches, feedback, tracker en toestemmingen.",
+      "button": "Download (JSON)"
+    },
+    "consents": {
+      "title": "Toestemmingen",
+      "text": "Je kunt toestemmingen op elk moment intrekken. We bewaren een geschiedenis met datum.",
+      "types": {
+        "terms_privacy": {
+          "title": "Voorwaarden en privacyverklaring",
+          "text": "Nodig om een account te hebben."
+        },
+        "ai_processing": {
+          "title": "Geautomatiseerde matching",
+          "text": "Analyse van je cv en antwoorden om matches te berekenen. Zonder deze toestemming berekenen we geen matches."
+        },
+        "employer_sharing": {
+          "title": "Delen met werkgevers",
+          "text": "Nog niet beschikbaar. We vragen hier later apart om."
+        },
+        "marketing": {
+          "title": "Tips en nieuws per e-mail",
+          "text": "Af en toe tips over solliciteren in Nederland."
+        }
+      },
+      "grantedAt": "Gegeven op {date}",
+      "revokedAt": "Ingetrokken op {date}",
+      "confirmRevoke": "Weet je het zeker? Zonder deze toestemming kunnen we je geen matches meer tonen.",
+      "updated": "Toestemming bijgewerkt"
+    },
+    "retention": {
+      "title": "Bewaartermijn",
+      "text": "Als je 12 maanden niet inlogt, verwijderen we je account automatisch. Je krijgt 30 dagen vooraf een e-mail.",
+      "link": "Lees de privacyverklaring"
+    },
+    "delete": {
+      "title": "Account verwijderen",
+      "text": "Dit verwijdert je account, cv's en alle gegevens definitief. Dit kan niet ongedaan worden gemaakt.",
+      "button": "Account en gegevens verwijderen",
+      "description": "Al je gegevens worden direct en definitief verwijderd.",
+      "typeToConfirm": "Typ {word} om te bevestigen",
+      "word": "VERWIJDER",
+      "mismatch": "Dat klopt niet.",
+      "cancel": "Annuleren",
+      "confirm": "Definitief verwijderen"
     }
   }
 }

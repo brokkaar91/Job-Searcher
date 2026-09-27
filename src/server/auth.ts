@@ -53,3 +53,13 @@ export async function hasRequiredConsents(userId: string): Promise<boolean> {
     .eq("user_id", userId);
   return REQUIRED_CONSENTS.every((t) => data?.some((c) => c.type === t && c.granted));
 }
+
+/** Signed-in user who gave the required consents (otherwise → /consent). */
+export async function requireCandidate(locale: Locale, next?: string) {
+  const user = await requireUser(locale, next);
+  if (!(await hasRequiredConsents(user.id))) {
+    redirect({ href: "/consent", locale });
+    throw new Error("unreachable");
+  }
+  return user;
+}

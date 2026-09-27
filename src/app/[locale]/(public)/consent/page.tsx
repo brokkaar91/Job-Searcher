@@ -3,6 +3,7 @@ import { resolveLocale } from "@/i18n/locale";
 import { Card } from "@/components/ui/card";
 import { ConsentForm } from "@/components/auth/consent-form";
 import { requireUser } from "@/server/auth";
+import { Link } from "@/i18n/navigation";
 
 /** Shown to signed-in users without the required consents (e.g. after Google sign-in). */
 export default async function ConsentPage({ params }: PageProps<"/[locale]/consent">) {
@@ -18,6 +19,12 @@ export default async function ConsentPage({ params }: PageProps<"/[locale]/conse
       <Card>
         <ConsentForm />
       </Card>
+      <Link
+        href="/privacy-center"
+        className="text-muted-foreground text-center text-sm underline-offset-2 hover:underline"
+      >
+        {t("consentPrivacyLink")}
+      </Link>
     </div>
   );
 }

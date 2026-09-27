@@ -7,8 +7,9 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { FadeIn } from "@/components/motion/fade-in";
 
-export default async function HomePage({ params }: PageProps<"/[locale]">) {
+export default async function HomePage({ params, searchParams }: PageProps<"/[locale]">) {
   await resolveLocale(params);
+  const { deleted } = await searchParams;
   const t = await getTranslations("home");
 
   const pillars = [
@@ -20,6 +21,11 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
   return (
     <>
+      {deleted && (
+        <p role="status" className="bg-accent text-accent-foreground px-4 py-3 text-center text-sm">
+          {t("deleted")}
+        </p>
+      )}
       <section className="relative overflow-hidden">
         <div
           aria-hidden

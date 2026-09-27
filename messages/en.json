@@ -204,7 +204,8 @@
     "ctaBlock": {
       "title": "Ready to start?",
       "text": "Create a free account and see your first matches today."
-    }
+    },
+    "deleted": "Your account and all your data have been deleted."
   },
   "howItWorks": {
     "title": "How our matching works",
@@ -424,7 +425,8 @@
     },
     "consentTitle": "One more step",
     "consentSubtitle": "We need your consent to calculate your matches.",
-    "consentSubmit": "Give consent and continue"
+    "consentSubmit": "Give consent and continue",
+    "consentPrivacyLink": "Prefer to delete your account or download your data? Go to the privacy centre."
   },
   "app": {
     "nav": {
@@ -696,6 +698,268 @@
       "error": "Saving failed.",
       "save": "Save",
       "saved": "Saved"
+    }
+  },
+  "feed": {
+    "title": "Your matches",
+    "summary": "{count, plural, =0 {No matches} one {# match} other {# matches}}{newCount, plural, =0 {} other { · # new}}",
+    "howScored": "How is this calculated?",
+    "welcome": {
+      "title": "Welcome! Your first matches are ready.",
+      "text": "Each match shows why it fits. Save interesting jobs or dismiss them – that helps us too."
+    },
+    "hiddenCount": "{count, plural, one {# job hidden} other {# jobs hidden}} because they fall outside your hard requirements.",
+    "showAnyway": "Show anyway",
+    "hiddenReason": "Falls outside a hard requirement – see details.",
+    "salaryUnknown": "Salary not stated",
+    "empty": {
+      "noneTitle": "No matches yet",
+      "noneText": "We haven't found fitting jobs yet. Add skills or broaden your preferences – new jobs arrive daily.",
+      "filteredTitle": "No matches with these filters",
+      "filteredText": "Adjust your filters to see more.",
+      "editProfile": "Edit profile",
+      "reset": "Clear filters"
+    },
+    "badges": {
+      "new": "New",
+      "sponsors": "Recognised sponsor · sponsors visa",
+      "recognised": "Recognised sponsor",
+      "remote": {
+        "onsite": "On-site",
+        "hybrid": "Hybrid",
+        "remote": "Remote"
+      },
+      "languageTitle": "Language of the job ad"
+    },
+    "filters": {
+      "view": "View",
+      "views": {
+        "all": "All",
+        "saved": "Saved",
+        "dismissed": "Dismissed"
+      },
+      "sponsor": "Sponsors visa",
+      "remote": "Remote",
+      "english": "English-language",
+      "showHidden": "Show hidden",
+      "sort": "Sort",
+      "sorts": {
+        "score": "Best match",
+        "new": "Newest",
+        "salary": "Salary"
+      }
+    },
+    "actions": {
+      "save": "Save",
+      "saved": "Saved",
+      "dismiss": "Not interested",
+      "undoDismiss": "Restore",
+      "savedToast": "Saved to your tracker",
+      "apply": "Apply",
+      "applyAgain": "Go to job",
+      "appliedToast": "Application logged in your tracker"
+    },
+    "dismiss": {
+      "title": "Why doesn't this job fit?",
+      "description": "Your reason helps us improve matching. You can always undo this.",
+      "comment": "Comment (optional)",
+      "cancel": "Cancel",
+      "confirm": "Dismiss",
+      "done": "Job dismissed",
+      "undo": "Undo",
+      "reasons": {
+        "salary": "Salary",
+        "location": "Location/commute",
+        "role": "Role doesn't fit",
+        "language": "Language",
+        "sponsorship": "No sponsorship",
+        "seniority": "Level",
+        "company": "Organisation",
+        "contract": "Contract/hours",
+        "already_applied": "Already applied",
+        "other": "Other"
+      }
+    },
+    "listLabel": "Match list"
+  },
+  "detail": {
+    "metaTitle": "Job",
+    "back": "Back to matches",
+    "salary": "Salary (gross/month)",
+    "hours": "Hours",
+    "hoursUnit": "h/week",
+    "languages": "Language requirements",
+    "posted": "Posted",
+    "why": "Why this is a match",
+    "score": "Match score",
+    "gaps": {
+      "title": "What's still missing?",
+      "intro": "The job asks for this and we didn't (yet) find it in your profile. Not correct? Add it in your profile.",
+      "must": "Required",
+      "nice": "Nice to have",
+      "related": "related skill found",
+      "language": "Language: {language} at level {required} requested (you: {actual})."
+    },
+    "description": "About the job",
+    "about": "About {company}",
+    "requirements": "Your hard requirements",
+    "status": {
+      "pass": "Meets",
+      "fail": "Does not meet",
+      "unknown": "Unknown"
+    },
+    "knockedOutNote": "This job falls outside one of your hard requirements and is therefore hidden by default. You decide whether to apply anyway.",
+    "noData": "no data",
+    "weight": "weighs {weight}%",
+    "noMatch": "No match has been calculated for this job (yet).",
+    "audit": "Calculated on {date} with the active model version.",
+    "optional": "a plus"
+  },
+  "tracker": {
+    "title": "Application tracker",
+    "subtitle": "Keep track of where you are. Drag cards to another column or use the menu.",
+    "columns": {
+      "saved": "Saved",
+      "applied": "Applied",
+      "interview": "Interview",
+      "offer": "Offer",
+      "rejected": "Rejected"
+    },
+    "since": {
+      "saved": "Saved on {date}",
+      "applied": "Applied on {date}",
+      "interview": "Interview on {date}",
+      "offer": "Offer on {date}",
+      "rejected": "Rejected on {date}"
+    },
+    "moveTo": "Move to",
+    "details": "Notes and dates",
+    "openJob": "Open job",
+    "drag": "Drag {title}",
+    "emptyColumn": "Drop a card here",
+    "empty": "Nothing in your tracker yet. Save a match to get started.",
+    "notes": "Notes",
+    "notesPlaceholder": "E.g. contact person, questions for the interview…",
+    "dates": {
+      "applied": "Applied",
+      "interview": "Interview",
+      "offer": "Offer",
+      "rejected": "Rejected"
+    },
+    "remove": "Remove from tracker",
+    "save": "Save",
+    "saved": "Saved",
+    "error": "Moving failed. Please try again."
+  },
+  "profile": {
+    "title": "Profile",
+    "subtitle": "Update your details. Your matches are recalculated automatically.",
+    "redo": "Redo onboarding",
+    "tabs": {
+      "skills": "Skills & experience",
+      "cv": "CV versions",
+      "status": "Work status & languages",
+      "preferences": "Preferences",
+      "interests": "Interests & values"
+    },
+    "cv": {
+      "none": "No CV uploaded yet.",
+      "version": "Version {version}",
+      "current": "Current",
+      "parseFailed": "Not parsed",
+      "download": "Download version {version}",
+      "delete": "Delete version {version}",
+      "confirmDelete": "Permanently delete this CV version?",
+      "uploadLabel": "New CV version",
+      "upload": "Upload new version",
+      "uploaded": "New version processed – please review your skills and experience.",
+      "help": "A new version replaces your work experience and unconfirmed skills. Skills you added yourself are kept."
+    },
+    "interests": {
+      "title": "Interest profile (RIASEC)",
+      "code": "Your Holland code: {code}",
+      "none": "You haven't taken the interest profiler yet.",
+      "retake": "Retake the profiler",
+      "types": {
+        "R": "Realistic (R)",
+        "I": "Investigative (I)",
+        "A": "Artistic (A)",
+        "S": "Social (S)",
+        "E": "Enterprising (E)",
+        "C": "Conventional (C)"
+      }
+    },
+    "values": {
+      "title": "Work values",
+      "help": "What matters most to you? Drag to change the order."
+    }
+  },
+  "alerts": {
+    "title": "Alerts",
+    "subtitle": "Get notified when there are new matches.",
+    "comingSoon": "Sending alerts is coming soon. Your settings are already saved.",
+    "enabled": "Enable alerts",
+    "frequency": "How often?",
+    "frequencies": {
+      "instant": "Instantly",
+      "daily": "Daily",
+      "weekly": "Weekly"
+    },
+    "minScore": "Only matches from score {score}",
+    "minScoreShort": "Minimum score",
+    "onlySponsoring": "Only jobs with visa sponsorship",
+    "save": "Save",
+    "saved": "Settings saved"
+  },
+  "privacyCenter": {
+    "title": "Privacy centre",
+    "subtitle": "Your data, your choices.",
+    "export": {
+      "title": "Download your data",
+      "text": "A JSON file with everything we store about you: profile, skills, matches, feedback, tracker and consents.",
+      "button": "Download (JSON)"
+    },
+    "consents": {
+      "title": "Consents",
+      "text": "You can withdraw consent at any time. We keep a dated history.",
+      "types": {
+        "terms_privacy": {
+          "title": "Terms and privacy statement",
+          "text": "Required to have an account."
+        },
+        "ai_processing": {
+          "title": "Automated matching",
+          "text": "Analysis of your CV and answers to calculate matches. Without this consent we calculate no matches."
+        },
+        "employer_sharing": {
+          "title": "Sharing with employers",
+          "text": "Not available yet. We will ask for this separately later."
+        },
+        "marketing": {
+          "title": "Tips and news by e-mail",
+          "text": "Occasional tips about applying for jobs in the Netherlands."
+        }
+      },
+      "grantedAt": "Given on {date}",
+      "revokedAt": "Withdrawn on {date}",
+      "confirmRevoke": "Are you sure? Without this consent we can no longer show you matches.",
+      "updated": "Consent updated"
+    },
+    "retention": {
+      "title": "Retention",
+      "text": "If you don't log in for 12 months, we delete your account automatically. You'll get an e-mail 30 days in advance.",
+      "link": "Read the privacy statement"
+    },
+    "delete": {
+      "title": "Delete account",
+      "text": "This permanently deletes your account, CVs and all data. This cannot be undone.",
+      "button": "Delete account and data",
+      "description": "All your data will be deleted immediately and permanently.",
+      "typeToConfirm": "Type {word} to confirm",
+      "word": "DELETE",
+      "mismatch": "That doesn't match.",
+      "cancel": "Cancel",
+      "confirm": "Delete permanently"
     }
   }
 }

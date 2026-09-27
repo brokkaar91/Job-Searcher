@@ -1,19 +1,20 @@
 import { getTranslations } from "next-intl/server";
-import { redirect } from "@/i18n/navigation";
 import { resolveLocale } from "@/i18n/locale";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/brand/logo";
 import { AppNav } from "@/components/app/app-nav";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
-import { getProfile, hasRequiredConsents, requireUser } from "@/server/auth";
+import { getProfile, requireUser } from "@/server/auth";
 import { createClient } from "@/lib/supabase/server";
 
-/** Authenticated area. Every page below also calls requireUser() implicitly via this layout. */
+/**
+ * Authenticated area. Pages call requireCandidate() (login + consent), except the privacy centre
+ * which must stay reachable after consent is withdrawn.
+ */
 export default async function AppLayout({ children, params }: LayoutProps<"/[locale]">) {
   const locale = await resolveLocale(params);
-  const user = await requireUser(locale);
-  if (!(await hasRequiredConsents(user.id))) redirect({ href: "/consent", locale });
+  await requireUser(locale);
   const profile = await getProfile();
   const supabase = await createClient();
   await supabase.rpc("touch_last_active");

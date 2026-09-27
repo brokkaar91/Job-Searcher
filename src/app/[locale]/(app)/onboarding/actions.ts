@@ -20,6 +20,17 @@ import { ONBOARDING_STEPS, nextStep, type OnboardingStep } from "./steps";
 
 export type ActionResult = { ok: true } | { ok: false; error: string };
 
+/** After onboarding, profile edits trigger a match refresh (inline + queued embeddings). */
+async function refreshIfOnboarded(userId: string) {
+  const supabase = await createClient();
+  const { data } = await supabase
+    .from("candidate_profiles")
+    .select("onboarding_completed_at")
+    .eq("user_id", userId)
+    .single();
+  if (data?.onboarding_completed_at) await requestCandidateRefresh(createAdminClient(), userId);
+}
+
 async function authed() {
   const user = await getUser();
   if (!user) throw new Error("not authenticated");
@@ -168,6 +179,7 @@ export async function saveReviewData(input: ReviewInput): Promise<ActionResult> 
     .from("candidate_profiles")
     .update({ education_level: educationLevel })
     .eq("user_id", user.id);
+  await refreshIfOnboarded(user.id);
   return { ok: true };
 }
 
@@ -210,6 +222,7 @@ export async function saveStatusData(input: StatusInput): Promise<ActionResult> 
     await supabase
       .from("candidate_languages")
       .insert(langs.map((l) => ({ user_id: user.id, ...l })));
+  await refreshIfOnboarded(user.id);
   return { ok: true };
 }
 
@@ -235,7 +248,9 @@ export async function savePreferencesData(input: PreferencesInput): Promise<Acti
     .from("candidate_profiles")
     .update({ preferences: asJson(p) })
     .eq("user_id", user.id);
-  return error ? { ok: false, error: error.message } : { ok: true };
+  if (error) return { ok: false, error: error.message };
+  await refreshIfOnboarded(user.id);
+  return { ok: true };
 }
 
 export async function savePreferences(input: PreferencesInput): Promise<ActionResult> {
@@ -286,7 +301,9 @@ export async function saveValuesData(ranking: string[]): Promise<ActionResult> {
     .from("candidate_profiles")
     .update({ work_values: asJson(parsed.data) })
     .eq("user_id", user.id);
-  return error ? { ok: false, error: error.message } : { ok: true };
+  if (error) return { ok: false, error: error.message };
+  await refreshIfOnboarded(user.id);
+  return { ok: true };
 }
 
 export async function completeOnboarding(ranking: string[]): Promise<ActionResult> {

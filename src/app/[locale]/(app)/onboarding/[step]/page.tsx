@@ -1,8 +1,9 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { resolveLocale } from "@/i18n/locale";
-import { requireUser } from "@/server/auth";
+import { requireCandidate } from "@/server/auth";
 import { createClient } from "@/lib/supabase/server";
+import { localizedSkillLabels } from "@/server/esco-labels";
 import { Progress } from "@/components/ui/progress";
 import { candidatePreferencesSchema, parseWorkValueRanking } from "@/server/matching/mappers";
 import { CvStep } from "@/components/onboarding/cv-step";
@@ -20,7 +21,7 @@ export default async function OnboardingStepPage({
   const locale = await resolveLocale(params);
   const { step } = await params;
   if (!isStep(step)) notFound();
-  const user = await requireUser(locale);
+  const user = await requireCandidate(locale);
   const t = await getTranslations("onboarding");
   const supabase = await createClient();
 
@@ -63,13 +64,18 @@ export default async function OnboardingStepPage({
           .limit(1)
           .maybeSingle(),
       ]);
+    const labels = await localizedSkillLabels(
+      supabase,
+      (skills ?? []).map((s) => s.esco_uri),
+      locale,
+    );
     body = (
       <ReviewStep
         fromCv={cv?.parse_status === "parsed"}
         initial={{
           skills: (skills ?? []).map((s) => ({
             escoUri: s.esco_uri,
-            label: s.label,
+            label: (s.esco_uri && labels.get(s.esco_uri)) || s.label,
             lastUsedYear: s.last_used_year,
           })),
           experiences: (experiences ?? []).map((e) => ({
