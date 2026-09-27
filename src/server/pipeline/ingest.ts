@@ -287,7 +287,6 @@ export async function ingestJob(
     salary_raw: job.salary ? asJson(job.salary) : null,
     language,
     language_requirements: asJson(cls.languageRequirements),
-    visa_sponsorship: cls.visaSponsorship,
     esco_occupation_uri: cls.escoOccupationUri,
     isco_code: cls.iscoCode,
     seniority: cls.seniority,

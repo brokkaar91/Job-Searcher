@@ -4,9 +4,7 @@ import {
   COMPANY_SIZES,
   COMPANY_TYPES,
   EMPLOYMENT_TYPES,
-  PERMIT_TYPES,
   REMOTE_POLICIES,
-  SALARY_NORM_CATEGORIES,
   SENIORITY_LEVELS,
   TRAVEL_MODES,
   WORK_VALUES,
@@ -37,11 +35,6 @@ export const matchCandidateSchema = z.object({
     }),
   ),
   languages: z.array(z.object({ language: z.string().length(2), level: z.enum(CEFR_LEVELS) })),
-  workStatus: z.object({
-    needsSponsorship: z.boolean().nullable(),
-    permitType: z.enum(PERMIT_TYPES).nullable(),
-    salaryNormCategory: z.enum(SALARY_NORM_CATEGORIES).nullable(),
-  }),
   preferences: z.object({
     desiredOccupations: z
       .array(z.object({ uri: z.string(), iscoCode: z.string(), label: z.string().nullish() }))

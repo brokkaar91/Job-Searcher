@@ -128,9 +128,6 @@ export default async function ProfilePage({ params }: PageProps<"/[locale]/profi
           <StatusStep
             mode="profile"
             initial={{
-              needsSponsorship: profile?.needs_sponsorship ?? null,
-              permitType: profile?.permit_type ?? null,
-              salaryNormCategory: profile?.salary_norm_category ?? null,
               languages: languages ?? [],
             }}
           />

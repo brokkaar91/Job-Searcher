@@ -15,7 +15,7 @@ export default async function HomePage({ params, searchParams }: PageProps<"/[lo
   const pillars = [
     { icon: Eye, title: t("pillars.explainable.title"), text: t("pillars.explainable.text") },
     { icon: Scale, title: t("pillars.fair.title"), text: t("pillars.fair.text") },
-    { icon: BadgeCheck, title: t("pillars.sponsor.title"), text: t("pillars.sponsor.text") },
+    { icon: BadgeCheck, title: t("pillars.sources.title"), text: t("pillars.sources.text") },
   ];
   const steps = ["cv", "check", "preferences", "matches"] as const;
 
@@ -64,7 +64,7 @@ export default async function HomePage({ params, searchParams }: PageProps<"/[lo
               </div>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="accent">
-                  <ShieldCheck aria-hidden /> {t("preview.sponsor")}
+                  <ShieldCheck aria-hidden /> {t("preview.new")}
                 </Badge>
                 <Badge variant="outline">€6.200 – €7.800</Badge>
                 <Badge variant="outline">{t("preview.hybrid")}</Badge>

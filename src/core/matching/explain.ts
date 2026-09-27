@@ -44,12 +44,6 @@ export function buildReasons(i: ReasonInput): Message[] {
   const out: Candidate[] = [];
   const { components: comp, candidate: c, job: j } = i;
 
-  // Sponsorship is the #1 concern for internationals who need it.
-  const sponsor = i.knockouts.find((k) => k.rule === "sponsorship");
-  if (c.workStatus.needsSponsorship && sponsor?.status === "pass") {
-    out.push({ key: "reason.sponsor", strength: 50 });
-  }
-
   const s = comp.skills;
   if (s.score != null && s.score >= 0.5) {
     const mustTotal = j.skills.filter((x) => x.importance === "must").length;
@@ -117,14 +111,6 @@ export function buildReasons(i: ReasonInput): Message[] {
       strength: pw * 0.4,
     });
   }
-
-  // English-language ad without Dutch requirement: relevant for internationals.
-  const needsDutch = j.languageRequirements.some((r) => r.required && r.language === "nl");
-  const speaksDutch = c.languages.some(
-    (l) => l.language === "nl" && ["B2", "C1", "C2"].includes(l.level),
-  );
-  if (c.languages.length > 0 && j.language === "en" && !needsDutch && !speaksDutch)
-    out.push({ key: "reason.englishFriendly", strength: 6 });
 
   out.sort((a, b) => b.strength - a.strength || a.key.localeCompare(b.key));
   const top = out.slice(0, 3).map(({ key, params }) => (params ? { key, params } : { key }));

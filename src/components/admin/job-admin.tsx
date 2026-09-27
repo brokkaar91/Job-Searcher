@@ -54,7 +54,6 @@ interface Classification {
   escoOccupationUri: string | null;
   occupationLabel: string | null;
   seniority: Seniority | null;
-  visaSponsorship: boolean | null;
   skills: { uri: string; label: string; importance: "must" | "nice" }[];
   languageRequirements: { language: string; level: Cefr; required: boolean }[];
 }
@@ -100,24 +99,6 @@ export function ClassificationEditor({ id, initial }: { id: string; initial: Cla
                 {s}
               </option>
             ))}
-          </select>
-        </div>
-        <div className="grid gap-1.5">
-          <Label htmlFor="sponsor">{t("sponsorship")}</Label>
-          <select
-            id="sponsor"
-            className={sel}
-            value={c.visaSponsorship == null ? "" : String(c.visaSponsorship)}
-            onChange={(e) =>
-              setC({
-                ...c,
-                visaSponsorship: e.target.value === "" ? null : e.target.value === "true",
-              })
-            }
-          >
-            <option value="">{t("unknown")}</option>
-            <option value="true">{t("yes")}</option>
-            <option value="false">{t("no")}</option>
           </select>
         </div>
       </div>
@@ -270,7 +251,6 @@ export function ClassificationEditor({ id, initial }: { id: string; initial: Cla
               id,
               escoOccupationUri: c.escoOccupationUri,
               seniority: c.seniority,
-              visaSponsorship: c.visaSponsorship,
               skills: c.skills,
               languageRequirements: c.languageRequirements,
               publish,

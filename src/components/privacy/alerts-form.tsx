@@ -13,7 +13,6 @@ type Settings = {
   enabled: boolean;
   frequency: "instant" | "daily" | "weekly";
   minScore: number;
-  onlySponsoring: boolean;
 };
 
 export function AlertsForm({ initial }: { initial: Settings }) {
@@ -69,17 +68,6 @@ export function AlertsForm({ initial }: { initial: Settings }) {
           step={5}
           value={[s.minScore]}
           onValueChange={([v]) => setS({ ...s, minScore: v ?? s.minScore })}
-        />
-      </div>
-      <div className="flex items-center justify-between gap-4">
-        <Label htmlFor="sponsor" className="font-normal">
-          {t("onlySponsoring")}
-        </Label>
-        <Switch
-          id="sponsor"
-          disabled={!s.enabled}
-          checked={s.onlySponsoring}
-          onCheckedChange={(onlySponsoring) => setS({ ...s, onlySponsoring })}
         />
       </div>
       <Button type="submit" disabled={pending}>

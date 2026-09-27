@@ -93,20 +93,13 @@ export default async function OnboardingStepPage({
       />
     );
   } else if (step === "status") {
-    const [{ data: profile }, { data: languages }] = await Promise.all([
-      supabase
-        .from("candidate_profiles")
-        .select("needs_sponsorship, permit_type, salary_norm_category")
-        .eq("user_id", user.id)
-        .single(),
-      supabase.from("candidate_languages").select("language, level").eq("user_id", user.id),
-    ]);
+    const { data: languages } = await supabase
+      .from("candidate_languages")
+      .select("language, level")
+      .eq("user_id", user.id);
     body = (
       <StatusStep
         initial={{
-          needsSponsorship: profile?.needs_sponsorship ?? null,
-          permitType: profile?.permit_type ?? null,
-          salaryNormCategory: profile?.salary_norm_category ?? null,
           languages: languages ?? [],
         }}
       />

@@ -45,14 +45,14 @@ describe("MockParserProvider.parseCv", () => {
 });
 
 describe("MockParserProvider.classifyJob", () => {
-  it("classifies an English data engineering ad with sponsorship", async () => {
+  it("classifies an English data engineering ad", async () => {
     const r = await parser.classifyJob(
       {
         title: "Senior Data Engineer",
         description: `We are looking for a data engineer (32-40 hours, full-time, hybrid: 2 days in the office).
 Requirements: Python, SQL and Airflow. Fluent English.
 Nice to have: Kubernetes. Dutch is a plus.
-We offer visa sponsorship and a learning budget. A master's degree is required.`,
+We offer a learning budget. A master's degree is required.`,
       },
       { esco },
     );
@@ -68,7 +68,6 @@ We offer visa sponsorship and a learning budget. A master's degree is required.`
       { language: "en", level: "C1", required: true },
       { language: "nl", level: "B2", required: false },
     ]);
-    expect(r.visaSponsorship).toBe(true);
     expect(r.remotePolicy).toBe("hybrid");
     expect([r.hoursMin, r.hoursMax]).toEqual([32, 40]);
     expect(r.employmentTypes).toEqual(["full_time"]);
@@ -86,16 +85,5 @@ We offer visa sponsorship and a learning budget. A master's degree is required.`
     );
     expect(r.educationRequirement).toBeNull();
     expect(r.skills.map((s) => s.uri)).toEqual(["esco:project-mgmt"]);
-  });
-
-  it("detects explicit no-sponsorship", async () => {
-    const r = await parser.classifyJob(
-      {
-        title: "Nurse",
-        description: "You must already have a valid work permit for the Netherlands.",
-      },
-      { esco },
-    );
-    expect(r.visaSponsorship).toBe(false);
   });
 });

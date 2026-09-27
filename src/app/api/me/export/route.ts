@@ -36,7 +36,7 @@ export async function GET() {
       .single(),
     q(
       "candidate_profiles",
-      "headline, summary, seniority, education_level, needs_sponsorship, permit_type, salary_norm_category, preferences, riasec, riasec_answers, work_values, onboarding_completed_at, parsed_cv, created_at, updated_at",
+      "headline, summary, seniority, education_level, preferences, riasec, riasec_answers, work_values, onboarding_completed_at, parsed_cv, created_at, updated_at",
     ),
     q(
       "candidate_skills",

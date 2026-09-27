@@ -75,14 +75,7 @@ export function toVectorLiteral(v: number[]): string {
 export interface CandidateRows {
   profile: Pick<
     Tables<"candidate_profiles">,
-    | "seniority"
-    | "education_level"
-    | "needs_sponsorship"
-    | "permit_type"
-    | "salary_norm_category"
-    | "preferences"
-    | "riasec"
-    | "work_values"
+    "seniority" | "education_level" | "preferences" | "riasec" | "work_values"
   >;
   skills: Pick<Tables<"candidate_skills">, "esco_uri" | "label" | "last_used_year" | "confirmed">[];
   experiences: Pick<Tables<"candidate_experiences">, "isco_code">[];
@@ -99,11 +92,6 @@ export function toMatchCandidate(rows: CandidateRows): MatchCandidate {
     languages: rows.languages
       .filter((l) => (CEFR_LEVELS as readonly string[]).includes(l.level))
       .map((l) => ({ language: l.language, level: l.level })),
-    workStatus: {
-      needsSponsorship: rows.profile.needs_sponsorship,
-      permitType: rows.profile.permit_type,
-      salaryNormCategory: rows.profile.salary_norm_category,
-    },
     preferences: p,
     seniority: rows.profile.seniority,
     educationLevel: rows.profile.education_level,
@@ -143,7 +131,6 @@ export interface JobRows {
     | "language"
     | "esco_skills"
     | "language_requirements"
-    | "visa_sponsorship"
     | "lat"
     | "lng"
     | "city"
@@ -158,7 +145,7 @@ export interface JobRows {
     | "work_values"
     | "education_requirement"
   >;
-  company: Pick<Tables<"companies">, "name" | "is_recognised_sponsor" | "size" | "type"> | null;
+  company: Pick<Tables<"companies">, "name" | "size" | "type"> | null;
   occupation: Pick<Tables<"esco_occupations">, "riasec" | "work_values"> | null;
 }
 
@@ -172,11 +159,9 @@ export function toMatchJob({ job, company, occupation }: JobRows): MatchJob {
     language: job.language,
     skills: parseEach(jobSkillSchema, job.esco_skills),
     languageRequirements: parseEach(languageReqSchema, job.language_requirements),
-    visaSponsorship: job.visa_sponsorship,
     company: company
       ? {
           name: company.name,
-          isRecognisedSponsor: company.is_recognised_sponsor,
           size: company.size,
           type: company.type,
         }

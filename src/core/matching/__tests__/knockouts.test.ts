@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { evaluateKnockouts, salaryNormFor } from "../knockouts";
+import { evaluateKnockouts } from "../knockouts";
 import {
   AMSTERDAM,
   GRONINGEN,
@@ -10,73 +10,12 @@ import {
   job,
   minimal,
   nurse,
-  sponsorDataJob,
+  dataJob,
 } from "../__fixtures__";
 import type { KnockoutRule } from "../types";
 
 const status = (rule: KnockoutRule, ...args: Parameters<typeof evaluateKnockouts>) =>
   evaluateKnockouts(...args).find((k) => k.rule === rule)?.status;
-
-describe("knock-out: sponsorship", () => {
-  it("passes for a recognised sponsor paying above the norm", () => {
-    expect(status("sponsorship", dataEngineer, sponsorDataJob, cfg, ctx())).toBe("pass");
-  });
-
-  it("fails when the company is not an IND recognised sponsor", () => {
-    const j = job({ ...sponsorDataJob, company: { isRecognisedSponsor: false } });
-    expect(status("sponsorship", dataEngineer, j, cfg, ctx())).toBe("fail");
-  });
-
-  it("fails when the job explicitly offers no sponsorship, even at a recognised sponsor", () => {
-    const j = job({ ...sponsorDataJob, visaSponsorship: false });
-    expect(status("sponsorship", dataEngineer, j, cfg, ctx())).toBe("fail");
-  });
-
-  it("fails when the salary is below the applicable knowledge-migrant norm", () => {
-    const j = job({ ...sponsorDataJob, salaryMinMonth: 4000, salaryMaxMonth: 4500 });
-    const r = evaluateKnockouts(dataEngineer, j, cfg, ctx()).find((k) => k.rule === "sponsorship")!;
-    expect(r.status).toBe("fail");
-    expect(r.message).toEqual({
-      key: "knockout.sponsorship.belowNorm",
-      params: { norm: 5942, offered: 4500 },
-    });
-  });
-
-  it("uses the reduced norm when the user selected it", () => {
-    const c = {
-      ...dataEngineer,
-      workStatus: { ...dataEngineer.workStatus, salaryNormCategory: "reduced" as const },
-    };
-    const j = job({ ...sponsorDataJob, salaryMinMonth: 4000, salaryMaxMonth: 4500 });
-    expect(status("sponsorship", c, j, cfg, ctx())).toBe("pass");
-  });
-
-  it("falls back to the LOWEST norm when the category is unknown (never wrongly excludes)", () => {
-    const c = {
-      ...dataEngineer,
-      workStatus: { ...dataEngineer.workStatus, salaryNormCategory: null },
-    };
-    expect(salaryNormFor(c, cfg)).toBe(cfg.salaryNorms.graduate);
-  });
-
-  it("is unknown (not fail) when the salary is not published", () => {
-    const j = job({ ...sponsorDataJob, salaryMinMonth: null, salaryMaxMonth: null });
-    expect(status("sponsorship", dataEngineer, j, cfg, ctx())).toBe("unknown");
-  });
-
-  it("can skip the salary-norm check via config", () => {
-    const c2 = {
-      ...cfg,
-      knockouts: { ...cfg.knockouts, sponsorship: { enabled: true, requireSalaryNorm: false } },
-    };
-    const j = job({ ...sponsorDataJob, salaryMinMonth: 3000, salaryMaxMonth: 3500 });
-    expect(status("sponsorship", dataEngineer, j, c2, ctx())).toBe("pass");
-  });
-
-  it("passes when no sponsorship is needed", () => {
-    expect(status("sponsorship", nurse, sponsorDataJob, cfg, ctx())).toBe("pass");
-  });
-});
 
 describe("knock-out: language", () => {
   it("fails when a required language is missing", () => {
@@ -85,12 +24,12 @@ describe("knock-out: language", () => {
 
   it("fails when the level is too low and passes with tolerance", () => {
     const c = { ...dataEngineer, languages: [{ language: "en", level: "B2" as const }] };
-    expect(status("language", c, sponsorDataJob, cfg, ctx())).toBe("fail");
+    expect(status("language", c, dataJob, cfg, ctx())).toBe("fail");
     const tolerant = {
       ...cfg,
       knockouts: { ...cfg.knockouts, language: { enabled: true, toleranceLevels: 1 } },
     };
-    expect(status("language", c, sponsorDataJob, tolerant, ctx())).toBe("pass");
+    expect(status("language", c, dataJob, tolerant, ctx())).toBe("pass");
   });
 
   it("ignores non-required (nice-to-have) languages", () => {
@@ -225,7 +164,7 @@ describe("knock-out: education", () => {
 
 describe("knock-outs with missing data", () => {
   it("never fails a minimal profile on anything", () => {
-    const res = evaluateKnockouts(minimal, sponsorDataJob, cfg, ctx());
+    const res = evaluateKnockouts(minimal, dataJob, cfg, ctx());
     expect(res.filter((r) => r.status === "fail")).toEqual([]);
     expect(res.find((r) => r.rule === "language")?.status).toBe("unknown");
   });

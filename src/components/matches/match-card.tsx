@@ -43,8 +43,6 @@ export async function MatchCard({ item }: { item: FeedItem }) {
         <LabelBadge label={item.label} score={item.score} />
       </div>
       <JobBadges
-        recognisedSponsor={item.job.recognisedSponsor}
-        visaSponsorship={item.job.visaSponsorship}
         remotePolicy={item.job.remotePolicy}
         language={item.job.language}
         city={item.job.city}

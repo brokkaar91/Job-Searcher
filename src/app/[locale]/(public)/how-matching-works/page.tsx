@@ -71,11 +71,7 @@ export default async function HowMatchingWorksPage({
             <li key={rule}>
               <Card className="h-full gap-2 p-5">
                 <h3 className="font-semibold">{tm(`rules.${rule}`)}</h3>
-                <p className="text-muted-foreground text-sm">
-                  {t(`layerA.rules.${rule}`, {
-                    norm: format.number(model.config.salaryNorms.graduate),
-                  })}
-                </p>
+                <p className="text-muted-foreground text-sm">{t(`layerA.rules.${rule}`)}</p>
               </Card>
             </li>
           ))}

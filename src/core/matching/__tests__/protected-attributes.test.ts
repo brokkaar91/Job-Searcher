@@ -8,7 +8,7 @@ import fc from "fast-check";
 import { describe, expect, it } from "vitest";
 import { matchJob } from "../engine";
 import { PROTECTED_ATTRIBUTES, matchCandidateSchema, sanitizeCandidate } from "../sanitize";
-import { cfg, ctx, dataEngineer, dutchNurseJob, nurse, sponsorDataJob } from "../__fixtures__";
+import { cfg, ctx, dataEngineer, dutchNurseJob, nurse, dataJob } from "../__fixtures__";
 import type { MatchCandidate } from "../types";
 
 function allKeys(schema: unknown, acc = new Set<string>()): Set<string> {
@@ -64,7 +64,7 @@ describe("protected attributes are never used", () => {
       nationality: "IN",
       photo: "https://x/y.jpg",
       preferences: { ...dataEngineer.preferences, nationality: "IN", age: 31 },
-      workStatus: { ...dataEngineer.workStatus, nationality: "IN" },
+      languages: dataEngineer.languages.map((l) => ({ ...l, nationality: "IN" })),
       skills: dataEngineer.skills.map((s) => ({ ...s, gender: "f" })),
     };
     const clean = sanitizeCandidate(dirty);
@@ -76,7 +76,7 @@ describe("protected attributes are never used", () => {
 
   it("adding any protected attribute values never changes any match output", () => {
     const base = [dataEngineer, nurse].flatMap((c) =>
-      [sponsorDataJob, dutchNurseJob].map((j) => ({ c, j, expected: matchJob(c, j, cfg, ctx()) })),
+      [dataJob, dutchNurseJob].map((j) => ({ c, j, expected: matchJob(c, j, cfg, ctx()) })),
     );
     fc.assert(
       fc.property(protectedArb, protectedArb, (topLevel, nested) => {

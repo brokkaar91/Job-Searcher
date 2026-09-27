@@ -220,17 +220,6 @@ export class MockParserProvider implements ParserProvider {
       }
     }
 
-    const visaSponsorship =
-      /visa sponsorship|sponsor (?:your|a) visa|relocation (?:support|package|assistance)|kennismigrant|highly skilled migrant|we sponsor|sponsoring mogelijk/i.test(
-        text,
-      )
-        ? true
-        : /no (?:visa )?sponsorship|(?:must|should) (?:already )?(?:have|hold) (?:a valid )?(?:eu )?(?:work|residence) permit|geen (?:visum)?sponsoring|eu work permit required|werkvergunning (?:is )?vereist/i.test(
-              text,
-            )
-          ? false
-          : null;
-
     const remotePolicy: RemotePolicy | null =
       /fully remote|100% remote|remote[- ]first|volledig (?:vanuit huis|thuis|remote)|work from anywhere/i.test(
         text,
@@ -316,7 +305,6 @@ export class MockParserProvider implements ParserProvider {
       seniority,
       skills,
       languageRequirements,
-      visaSponsorship,
       remotePolicy,
       employmentTypes: [...employmentTypes],
       hoursMin,

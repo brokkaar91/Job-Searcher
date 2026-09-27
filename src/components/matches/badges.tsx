@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { Globe2, Home, MapPin, ShieldCheck, Sparkles } from "lucide-react";
+import { Globe2, Home, MapPin, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import type { MatchLabel } from "@/core/matching/types";
 
@@ -21,15 +21,11 @@ export async function LabelBadge({ label, score }: { label: MatchLabel; score?: 
 }
 
 export async function JobBadges({
-  recognisedSponsor,
-  visaSponsorship,
   remotePolicy,
   language,
   city,
   isNew,
 }: {
-  recognisedSponsor: boolean;
-  visaSponsorship: boolean | null;
   remotePolicy: string | null;
   language: string | null;
   city: string | null;
@@ -41,11 +37,6 @@ export async function JobBadges({
       {isNew && (
         <Badge variant="default">
           <Sparkles aria-hidden /> {t("new")}
-        </Badge>
-      )}
-      {recognisedSponsor && visaSponsorship !== false && (
-        <Badge variant="accent">
-          <ShieldCheck aria-hidden /> {visaSponsorship ? t("sponsors") : t("recognised")}
         </Badge>
       )}
       {city && (

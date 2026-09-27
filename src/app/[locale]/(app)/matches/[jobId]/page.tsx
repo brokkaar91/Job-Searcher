@@ -84,13 +84,7 @@ export default async function MatchDetailPage({ params }: PageProps<"/[locale]/m
               </div>
               {match && <LabelBadge label={match.label} score={match.score} />}
             </div>
-            <JobBadges
-              recognisedSponsor={company?.is_recognised_sponsor ?? false}
-              visaSponsorship={job.visa_sponsorship}
-              remotePolicy={job.remote_policy}
-              language={job.language}
-              city={job.city}
-            />
+            <JobBadges remotePolicy={job.remote_policy} language={job.language} city={job.city} />
             <dl className="grid grid-cols-2 gap-4 text-sm sm:grid-cols-4">
               <div>
                 <dt className="text-muted-foreground">{t("salary")}</dt>

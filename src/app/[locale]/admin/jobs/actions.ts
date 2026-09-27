@@ -56,7 +56,6 @@ const classificationSchema = z.object({
   id: z.uuid(),
   escoOccupationUri: z.string().nullable(),
   seniority: z.enum(SENIORITY_LEVELS).nullable(),
-  visaSponsorship: z.boolean().nullable(),
   skills: z
     .array(z.object({ uri: z.string(), label: z.string(), importance: z.enum(["must", "nice"]) }))
     .max(60),
@@ -85,7 +84,6 @@ export async function updateJobClassification(input: z.input<typeof classificati
       esco_occupation_uri: occ?.uri ?? null,
       isco_code: occ?.iscoCode ?? null,
       seniority: d.seniority,
-      visa_sponsorship: d.visaSponsorship,
       esco_skills: asJson(d.skills),
       language_requirements: asJson(d.languageRequirements),
       classification_confidence: 1,

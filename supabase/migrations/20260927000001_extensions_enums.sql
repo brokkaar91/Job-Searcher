@@ -7,22 +7,6 @@ create type public.user_role as enum ('user', 'admin');
 
 create type public.cefr_level as enum ('A1', 'A2', 'B1', 'B2', 'C1', 'C2');
 
--- Labour-market status. Deliberately NOT nationality: we only ask whether/which permit applies.
-create type public.work_permit_type as enum (
-  'unrestricted',          -- free access to the Dutch labour market (no permit needed)
-  'highly_skilled_migrant',-- kennismigrant (needs recognised sponsor)
-  'eu_blue_card',
-  'orientation_year',      -- zoekjaar hoogopgeleiden
-  'dependent_free_labour', -- residence permit with "arbeid vrij toegestaan"
-  'intra_company_transfer',
-  'student',
-  'needs_permit',          -- no permit yet, needs sponsorship
-  'other'
-);
-
--- IND salary norm category the user says applies to them (we never ask age).
-create type public.salary_norm_category as enum ('standard', 'reduced', 'graduate');
-
 create type public.remote_policy as enum ('onsite', 'hybrid', 'remote');
 
 create type public.employment_type as enum (

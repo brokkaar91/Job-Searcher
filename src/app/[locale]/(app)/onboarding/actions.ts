@@ -9,12 +9,7 @@ import { getUser } from "@/server/auth";
 import { MAX_CV_BYTES, processCvUpload, requestCandidateRefresh } from "@/server/candidate";
 import { CV_MIME_TYPES } from "@/core/providers/parser/extract";
 import { candidatePreferencesSchema } from "@/server/matching/mappers";
-import {
-  CEFR_LEVELS,
-  PERMIT_TYPES,
-  SALARY_NORM_CATEGORIES,
-  WORK_VALUES,
-} from "@/core/matching/types";
+import { CEFR_LEVELS, WORK_VALUES } from "@/core/matching/types";
 import { MINI_IP_ITEMS, scoreInterests } from "@/core/assessments/mini-ip";
 import { ONBOARDING_STEPS, nextStep, type OnboardingStep } from "./steps";
 
@@ -190,12 +185,9 @@ export async function saveReview(input: ReviewInput): Promise<ActionResult> {
   return r;
 }
 
-// ─── Step 2: work status + languages ─────────────────────────────────────────
+// ─── Step 2: languages ─────────────────────────────────────────
 
 const statusSchema = z.object({
-  needsSponsorship: z.boolean(),
-  permitType: z.enum(PERMIT_TYPES).nullable(),
-  salaryNormCategory: z.enum(SALARY_NORM_CATEGORIES).nullable(),
   languages: z
     .array(z.object({ language: z.string().regex(/^[a-z]{2}$/), level: z.enum(CEFR_LEVELS) }))
     .max(12),
@@ -207,16 +199,8 @@ export async function saveStatusData(input: StatusInput): Promise<ActionResult> 
   if (!parsed.success) return { ok: false, error: "invalid" };
   const { user, supabase } = await authed();
   const d = parsed.data;
-  const { error } = await supabase
-    .from("candidate_profiles")
-    .update({
-      needs_sponsorship: d.needsSponsorship,
-      permit_type: d.permitType,
-      salary_norm_category: d.needsSponsorship ? d.salaryNormCategory : null,
-    })
-    .eq("user_id", user.id);
+  const { error } = await supabase.from("candidate_languages").delete().eq("user_id", user.id);
   if (error) return { ok: false, error: error.message };
-  await supabase.from("candidate_languages").delete().eq("user_id", user.id);
   const langs = [...new Map(d.languages.map((l) => [l.language, l])).values()];
   if (langs.length)
     await supabase

@@ -63,22 +63,6 @@ export const COMPANY_TYPES = [
 ] as const;
 export type CompanyType = (typeof COMPANY_TYPES)[number];
 
-export const PERMIT_TYPES = [
-  "unrestricted",
-  "highly_skilled_migrant",
-  "eu_blue_card",
-  "orientation_year",
-  "dependent_free_labour",
-  "intra_company_transfer",
-  "student",
-  "needs_permit",
-  "other",
-] as const;
-export type PermitType = (typeof PERMIT_TYPES)[number];
-
-export const SALARY_NORM_CATEGORIES = ["standard", "reduced", "graduate"] as const;
-export type SalaryNormCategory = (typeof SALARY_NORM_CATEGORIES)[number];
-
 export const TRAVEL_MODES = ["public_transport", "car", "bike"] as const;
 export type TravelMode = (typeof TRAVEL_MODES)[number];
 
@@ -117,11 +101,6 @@ export interface CandidatePreferences {
 export interface MatchCandidate {
   skills: CandidateSkill[];
   languages: CandidateLanguage[];
-  workStatus: {
-    needsSponsorship: boolean | null;
-    permitType: PermitType | null;
-    salaryNormCategory: SalaryNormCategory | null;
-  };
   preferences: CandidatePreferences;
   seniority: Seniority | null;
   /** EQF level 1..8; only used when a job explicitly requires a minimum level. */
@@ -152,10 +131,8 @@ export interface MatchJob {
   language: string | null;
   skills: JobSkill[];
   languageRequirements: LanguageRequirement[];
-  visaSponsorship: boolean | null;
   company: {
     name?: string | null;
-    isRecognisedSponsor: boolean;
     size?: CompanySize | null;
     type?: CompanyType | null;
   } | null;
@@ -196,14 +173,7 @@ export interface Message {
   params?: Record<string, string | number>;
 }
 
-export const KNOCKOUT_RULES = [
-  "sponsorship",
-  "language",
-  "location",
-  "salary",
-  "contract",
-  "education",
-] as const;
+export const KNOCKOUT_RULES = ["language", "location", "salary", "contract", "education"] as const;
 export type KnockoutRule = (typeof KNOCKOUT_RULES)[number];
 export type KnockoutStatus = "pass" | "fail" | "unknown";
 

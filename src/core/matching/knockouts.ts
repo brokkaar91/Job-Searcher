@@ -21,53 +21,6 @@ export function effectiveTravelMinutes(
   return estimateTravelMinutes(from, j.location, c.preferences.travelMode ?? "public_transport");
 }
 
-export function salaryNormFor(c: MatchCandidate, cfg: ModelConfig): number {
-  const norms = cfg.salaryNorms;
-  // Unknown category → lowest norm, so nobody is wrongly excluded.
-  switch (c.workStatus.salaryNormCategory) {
-    case "standard":
-      return norms.standard;
-    case "reduced":
-      return norms.reduced;
-    case "graduate":
-      return norms.graduate;
-    default:
-      return Math.min(norms.standard, norms.reduced, norms.graduate);
-  }
-}
-
-function sponsorship(c: MatchCandidate, j: MatchJob, cfg: ModelConfig): KnockoutResult {
-  const rule = "sponsorship" as const;
-  if (c.workStatus.needsSponsorship !== true) {
-    return { rule, status: "pass", message: { key: "knockout.sponsorship.notNeeded" } };
-  }
-  if (j.visaSponsorship === false) {
-    return { rule, status: "fail", message: { key: "knockout.sponsorship.noSponsorship" } };
-  }
-  if (!j.company?.isRecognisedSponsor) {
-    return { rule, status: "fail", message: { key: "knockout.sponsorship.notRecognised" } };
-  }
-  if (cfg.knockouts.sponsorship.requireSalaryNorm) {
-    const norm = salaryNormFor(c, cfg);
-    const offered = j.salaryMaxMonth ?? j.salaryMinMonth;
-    if (offered == null) {
-      return {
-        rule,
-        status: "unknown",
-        message: { key: "knockout.sponsorship.salaryUnknown", params: { norm } },
-      };
-    }
-    if (offered < norm) {
-      return {
-        rule,
-        status: "fail",
-        message: { key: "knockout.sponsorship.belowNorm", params: { norm, offered } },
-      };
-    }
-  }
-  return { rule, status: "pass", message: { key: "knockout.sponsorship.recognised" } };
-}
-
 function language(c: MatchCandidate, j: MatchJob, cfg: ModelConfig): KnockoutResult {
   const rule = "language" as const;
   const required = j.languageRequirements.filter((r) => r.required);
@@ -220,7 +173,6 @@ export function evaluateKnockouts(
 ): KnockoutResult[] {
   const k = cfg.knockouts;
   const results: KnockoutResult[] = [];
-  if (k.sponsorship.enabled) results.push(sponsorship(c, j, cfg));
   if (k.language.enabled) results.push(language(c, j, cfg));
   if (k.location.enabled) results.push(location(c, j, cfg, ctx));
   if (k.salary.enabled) results.push(salary(c, j, cfg));

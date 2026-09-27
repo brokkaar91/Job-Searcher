@@ -1,6 +1,6 @@
 {
   "meta": {
-    "description": "Uitlegbare vacaturematches voor internationale professionals in Nederland."
+    "description": "Uitlegbare vacaturematches voor werkzoekenden in Nederland – alle vacatures op één plek, eerlijk gematcht."
   },
   "common": {
     "skipToContent": "Naar de inhoud"
@@ -21,7 +21,6 @@
       "practical": "Praktische fit"
     },
     "rules": {
-      "sponsorship": "Visumsponsoring",
       "language": "Taaleis",
       "location": "Locatie en reistijd",
       "salary": "Salaris",
@@ -29,14 +28,6 @@
       "education": "Opleidingseis"
     },
     "knockout": {
-      "sponsorship": {
-        "notNeeded": "Je hebt geen sponsoring nodig.",
-        "noSponsorship": "Deze vacature biedt geen visumsponsoring.",
-        "notRecognised": "Deze werkgever is geen erkend referent bij de IND.",
-        "salaryUnknown": "Salaris onbekend – controleer of het de kennismigrantnorm (€ {norm, number, integer}) haalt.",
-        "belowNorm": "Het salaris (€ {offered, number, integer}) ligt onder de kennismigrantnorm van € {norm, number, integer}.",
-        "recognised": "Erkend referent – kan je visum sponsoren."
-      },
       "language": {
         "none": "Geen harde taaleis.",
         "unknown": "Je hebt nog geen talen opgegeven.",
@@ -105,7 +96,6 @@
       }
     },
     "reason": {
-      "sponsor": "Erkend referent – deze werkgever kan je visum sponsoren.",
       "skillsAllMust": "Je hebt alle {count} vereiste vaardigheden, zoals {examples}.",
       "skills": "Je hebt {matched} van de {total} gevraagde vaardigheden, zoals {examples}.",
       "experience": "Je eerdere werk lijkt sterk op deze functie.",
@@ -116,7 +106,6 @@
       "salary": "Salaris tot € {amount, number, integer} per maand past bij je wens.",
       "remote": "Je kunt volledig remote werken.",
       "travel": "Korte reistijd: circa {minutes} minuten.",
-      "englishFriendly": "Engelstalige vacature zonder Nederlandse taaleis.",
       "fallback": "Deze vacature past gedeeltelijk bij je profiel."
     },
     "note": {
@@ -137,7 +126,7 @@
     "toggleTheme": "Wissel licht/donker thema"
   },
   "footer": {
-    "tagline": "Uitlegbare vacaturematches voor internationale professionals in Nederland.",
+    "tagline": "Uitlegbare vacaturematches voor iedereen die in Nederland werk zoekt.",
     "product": "Product",
     "legal": "Juridisch",
     "howItWorks": "Zo werkt onze matching",
@@ -148,19 +137,19 @@
     "euHosted": "Gehost in de EU"
   },
   "home": {
-    "badge": "Voor internationale professionals in Nederland",
+    "badge": "Alle vacatures in Nederland, eerlijk gematcht",
     "title": "Vind werk dat bij je past – en begrijp waarom.",
-    "subtitle": "Upload je cv, beantwoord een paar korte vragen en ontvang matches met een heldere uitleg: welke vaardigheden passen, wat nog ontbreekt en of de werkgever je visum kan sponsoren.",
+    "subtitle": "Upload je cv, beantwoord een paar korte vragen en ontvang matches uit vacatures van heel Nederland. Bij elke match zie je welke vaardigheden passen, wat nog ontbreekt en hoe de score tot stand komt.",
     "ctaPrimary": "Start gratis",
     "ctaSecondary": "Zo werkt het",
-    "reassurance": "Klaar in minder dan 10 minuten. Geen foto, leeftijd of nationaliteit nodig.",
+    "reassurance": "Klaar in minder dan 10 minuten. Geen foto, leeftijd of geslacht nodig.",
     "preview": {
       "aria": "Voorbeeld van een match",
       "label": "Sterke match",
-      "sponsor": "Erkend referent",
+      "new": "Nieuw",
       "hybrid": "Hybride",
-      "r1": "Je hebt alle 3 vereiste vaardigheden, zoals Python en SQL.",
-      "r2": "Erkend referent – kan je visum sponsoren.",
+      "r1": "Je hebt alle 3 vereiste vaardigheden, zoals projectmanagement en PRINCE2.",
+      "r2": "Korte reistijd: circa 25 minuten.",
       "r3": "Je eerdere werk lijkt sterk op deze functie.",
       "skills": "Vaardigheden",
       "experience": "Ervaring",
@@ -176,9 +165,9 @@
         "title": "Eerlijk",
         "text": "We gebruiken nooit je naam, leeftijd, geslacht, foto of nationaliteit. Alleen wat relevant is voor het werk."
       },
-      "sponsor": {
-        "title": "Visum-bewust",
-        "text": "Heb je sponsoring nodig? Dan zie je alleen vacatures van erkend referenten die de salarisnorm halen."
+      "sources": {
+        "title": "Alles op één plek",
+        "text": "We verzamelen vacatures van werkgevers en vacaturesites, halen dubbelingen weg en tonen alleen wat bij jou past."
       }
     },
     "stepsTitle": "In vier stappen naar je matches",
@@ -194,7 +183,7 @@
       },
       "preferences": {
         "title": "Voorkeuren en interesses",
-        "text": "Werkstatus, reistijd, salaris en een korte interessetest (O*NET)."
+        "text": "Werkvoorkeuren, reistijd, salaris en een korte interessetest (O*NET)."
       },
       "matches": {
         "title": "Ontvang uitlegbare matches",
@@ -215,7 +204,6 @@
       "title": "Laag 1 – harde eisen (knock-outs)",
       "intro": "Eerst controleren we je harde eisen. Valt een vacature daarbuiten, dan verbergen we haar standaard – met uitleg. Je kunt altijd kiezen om haar toch te tonen. Ontbrekende gegevens sluiten nooit uit.",
       "rules": {
-        "sponsorship": "Heb je sponsoring nodig? Dan tonen we alleen vacatures van IND-erkend referenten, en alleen als het salaris de kennismigrantnorm haalt (vanaf € {norm} bruto per maand, afhankelijk van jouw situatie).",
         "language": "Vraagt de vacature een taal op een bepaald niveau (ERK/CEFR), dan vergelijken we dat met jouw niveau.",
         "location": "Je maximale reistijd en voorkeur voor op locatie, hybride of remote werken.",
         "salary": "Je minimumsalaris, als de vacature een salaris noemt.",
@@ -256,17 +244,17 @@
         "q": "Kost JobMatch iets?",
         "a": "Nee, JobMatch is gratis voor werkzoekenden."
       },
-      "sponsor": {
-        "q": "Wat betekent 'erkend referent'?",
-        "a": "Werkgevers die door de IND zijn erkend, mogen kennismigranten sponsoren. Heb je sponsoring nodig, dan tonen we standaard alleen hun vacatures, en alleen als het salaris de kennismigrantnorm haalt."
+      "sources": {
+        "q": "Waar komen de vacatures vandaan?",
+        "a": "We verzamelen vacatures rechtstreeks bij werkgevers en via vacaturesites en koppelingen. Dubbele vacatures voegen we samen, en verlopen vacatures verdwijnen automatisch."
       },
       "data": {
         "q": "Welke gegevens gebruiken jullie voor de matching?",
-        "a": "Je vaardigheden, werkervaring, talen, werkstatus, voorkeuren, interesseprofiel en werkwaarden. Meer niet."
+        "a": "Je vaardigheden, werkervaring, talen, voorkeuren, interesseprofiel en werkwaarden. Meer niet."
       },
       "photo": {
         "q": "Waarom vragen jullie geen foto, leeftijd of nationaliteit?",
-        "a": "Omdat die niets zeggen over hoe goed je bij een functie past, en tot discriminatie kunnen leiden. We vragen alleen of je sponsoring nodig hebt en welk verblijfsdocument je hebt."
+        "a": "Omdat die niets zeggen over hoe goed je bij een functie past, en tot discriminatie kunnen leiden. We vragen alleen wat nodig is om passende vacatures te tonen."
       },
       "cv": {
         "q": "Wat gebeurt er met mijn cv?",
@@ -295,7 +283,7 @@
     },
     "data": {
       "title": "Welke gegevens",
-      "text": "Accountgegevens (e-mailadres, taalvoorkeur), je cv, de daaruit afgeleide vaardigheden, werkervaring en talen, je werkstatus (sponsoring nodig en verblijfsdocument – geen nationaliteit), voorkeuren, interesseprofiel, werkwaarden, je feedback op matches, je sollicitatietracker en je toestemmingen."
+      "text": "Accountgegevens (e-mailadres, taalvoorkeur), je cv, de daaruit afgeleide vaardigheden, werkervaring en talen, je voorkeuren, interesseprofiel, werkwaarden, je feedback op matches, je sollicitatietracker en je toestemmingen."
     },
     "purposes": {
       "title": "Waarvoor",
@@ -361,7 +349,7 @@
   "employers": {
     "title": "Voor werkgevers",
     "soon": "Binnenkort",
-    "intro": "JobMatch verbindt je met internationale professionals die al in Nederland zijn of willen komen. Het werkgeversportaal is in ontwikkeling – laat je gegevens achter en we nemen contact op.",
+    "intro": "JobMatch verbindt je met werkzoekenden in heel Nederland die echt bij je vacature passen. Het werkgeversportaal is in ontwikkeling – laat je gegevens achter en we nemen contact op.",
     "points": {
       "quality": {
         "title": "Kandidaten die passen",
@@ -371,9 +359,9 @@
         "title": "Eerlijk en uitlegbaar",
         "text": "Geen beschermde kenmerken in de matching en volledige transparantie."
       },
-      "sponsor": {
-        "title": "Erkend referent?",
-        "text": "Kandidaten die sponsoring nodig hebben zien jouw vacatures juist wel."
+      "reach": {
+        "title": "Je vacatures, overal gevonden",
+        "text": "Koppel je vacaturefeed of ATS en bereik kandidaten die op vaardigheden matchen."
       }
     },
     "form": {
@@ -549,48 +537,8 @@
       "saved": "Opgeslagen"
     },
     "status": {
-      "title": "Werkstatus en talen",
-      "subtitle": "Zo tonen we alleen vacatures die voor jou haalbaar zijn. We vragen nooit naar je nationaliteit.",
-      "sponsorship": "Heb je visumsponsoring nodig om in Nederland te werken?",
-      "sponsorshipHelp": "Bijvoorbeeld als kennismigrant. Dan heb je een werkgever nodig die erkend referent is bij de IND.",
-      "sponsorshipOptions": {
-        "yes": "Ja, ik heb sponsoring nodig",
-        "no": "Nee, ik mag al werken in Nederland"
-      },
-      "permit": "Welk verblijfs- of werkdocument heb je?",
-      "permitHelp": "Optioneel. Dit helpt ons om de juiste vacatures te tonen.",
-      "permitSkip": "Zeg ik liever niet",
-      "permits": {
-        "unrestricted": "Vrije toegang tot de arbeidsmarkt (geen vergunning nodig)",
-        "highly_skilled_migrant": "Verblijfsvergunning kennismigrant",
-        "eu_blue_card": "Europese blauwe kaart",
-        "orientation_year": "Zoekjaar hoogopgeleiden",
-        "dependent_free_labour": "Verblijf met 'arbeid vrij toegestaan' (bv. partner)",
-        "intra_company_transfer": "Overplaatsing binnen een onderneming (ICT)",
-        "student": "Studentenvergunning",
-        "needs_permit": "Ik heb nog geen vergunning",
-        "other": "Anders"
-      },
-      "norm": "Welke salarisnorm is op jou van toepassing?",
-      "normHelp": "De IND hanteert verschillende minimumsalarissen voor kennismigranten. We vragen geen leeftijd; kies wat voor jou geldt. Weet je het niet, dan gebruiken we de laagste norm zodat je niets misloopt.",
-      "norms": {
-        "standard": {
-          "title": "Standaardnorm",
-          "text": "De gewone kennismigrantnorm."
-        },
-        "reduced": {
-          "title": "Verlaagde norm",
-          "text": "De lagere norm die voor jongere kennismigranten geldt."
-        },
-        "graduate": {
-          "title": "Norm voor afgestudeerden",
-          "text": "Na een zoekjaar of recente studie in Nederland of aan een topuniversiteit."
-        },
-        "unknown": {
-          "title": "Weet ik niet",
-          "text": "We gebruiken de laagste norm."
-        }
-      },
+      "title": "Talen",
+      "subtitle": "Welke talen spreek je, en hoe goed? Zo tonen we vacatures waarvan je de taaleis haalt.",
       "languages": "Welke talen spreek je?",
       "languagesHelp": "Kies je niveau volgens het Europees Referentiekader (ERK/CEFR).",
       "language": "Taal",
@@ -606,7 +554,6 @@
         "C2": "moedertaal/uitstekend"
       },
       "errors": {
-        "sponsorship": "Geef aan of je sponsoring nodig hebt.",
         "save": "Opslaan is niet gelukt."
       },
       "save": "Opslaan",
@@ -722,8 +669,6 @@
     },
     "badges": {
       "new": "Nieuw",
-      "sponsors": "Erkend referent · sponsort visum",
-      "recognised": "Erkend referent",
       "remote": {
         "onsite": "Op locatie",
         "hybrid": "Hybride",
@@ -738,9 +683,7 @@
         "saved": "Bewaard",
         "dismissed": "Afgewezen"
       },
-      "sponsor": "Sponsort visum",
       "remote": "Remote",
-      "english": "Engelstalig",
       "showHidden": "Toon verborgen",
       "sort": "Sorteer",
       "sorts": {
@@ -772,7 +715,6 @@
         "location": "Locatie/reistijd",
         "role": "Functie past niet",
         "language": "Taal",
-        "sponsorship": "Geen sponsoring",
         "seniority": "Niveau",
         "company": "Organisatie",
         "contract": "Contract/uren",
@@ -858,7 +800,7 @@
     "tabs": {
       "skills": "Vaardigheden & ervaring",
       "cv": "Cv-versies",
-      "status": "Werkstatus & talen",
+      "status": "Talen",
       "preferences": "Voorkeuren",
       "interests": "Interesses & waarden"
     },
@@ -907,7 +849,6 @@
     },
     "minScore": "Alleen matches vanaf score {score}",
     "minScoreShort": "Minimale score",
-    "onlySponsoring": "Alleen vacatures met visumsponsoring",
     "save": "Opslaan",
     "saved": "Instellingen opgeslagen"
   },
@@ -1146,17 +1087,9 @@
       "weights": "Gewichten",
       "sum": "Totaal {sum}%",
       "knockouts": "Knock-outs",
-      "requireNorm": "ook kennismigrantnorm",
       "tolerance": "CEFR-tolerantie",
       "grace": "marge (min)",
       "salaryTolerance": "marge (%)",
-      "thresholdsAndNorms": "Labeldrempels en IND-normen",
-      "norms": {
-        "year": "Jaar",
-        "standard": "Standaard (€/mnd)",
-        "reduced": "Verlaagd (€/mnd)",
-        "graduate": "Afgestudeerd (€/mnd)"
-      },
       "name": "Naam",
       "namePlaceholder": "bv. Meer gewicht op ervaring",
       "notes": "Toelichting (waarom deze wijziging?)",
@@ -1172,7 +1105,8 @@
         "current": "Actief",
         "draft": "Concept",
         "note": "Doorgestreept = knock-out. Alleen demoprofielen (@jobmatch.local) kunnen worden gebruikt."
-      }
+      },
+      "thresholds": "Labeldrempels"
     },
     "jobs": {
       "title": "Vacatures",
@@ -1206,7 +1140,6 @@
         "archived": "Gearchiveerd"
       },
       "priority": "prioriteit {priority}",
-      "sponsor": "Erkend referent",
       "matchCount": "{count} matches",
       "moderation": "Moderatie",
       "note": "Notitie (optioneel)",
@@ -1237,7 +1170,6 @@
         "none": "geen",
         "searchOccupation": "Zoek een beroep",
         "seniority": "Niveau",
-        "sponsorship": "Visumsponsoring",
         "unknown": "Onbekend",
         "yes": "Ja",
         "no": "Nee",

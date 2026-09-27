@@ -3,7 +3,7 @@ import type { EmploymentType, RemotePolicy } from "../matching/types";
 
 /**
  * Canonical job produced by every connector's `map()`. Loosely follows schema.org JobPosting;
- * enrichment (ESCO, languages, sponsorship, …) happens later in the pipeline.
+ * enrichment (ESCO, languages, salary, …) happens later in the pipeline.
  */
 export interface CanonicalJob {
   externalId: string;

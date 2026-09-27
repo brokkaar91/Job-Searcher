@@ -19,9 +19,7 @@ export const feedFiltersSchema = z.object({
         ? s.split(",").filter((x): x is MatchLabel => ["strong", "good", "possible"].includes(x))
         : [],
     ),
-  sponsor: z.literal("1").optional(),
   remote: z.enum(["onsite", "hybrid", "remote"]).optional(),
-  lang: z.enum(["nl", "en"]).optional(),
   hidden: z.literal("1").optional(),
   view: z.enum(["all", "saved", "dismissed"]).catch("all").default("all"),
   sort: z.enum(["score", "new", "salary"]).catch("score").default("score"),
@@ -55,13 +53,11 @@ export interface FeedItem {
     language: string | null;
     datePosted: string | null;
     companyName: string | null;
-    recognisedSponsor: boolean;
-    visaSponsorship: boolean | null;
   };
 }
 
 const MATCH_SELECT =
-  "id, job_id, total_score, label, explanation, knocked_out, limited_data, seen_at, created_at, jobs!inner(title, city, remote_policy, salary_min_month, salary_max_month, language, date_posted, visa_sponsorship, status, hiring_organization_name, companies(name, is_recognised_sponsor))";
+  "id, job_id, total_score, label, explanation, knocked_out, limited_data, seen_at, created_at, jobs!inner(title, city, remote_policy, salary_min_month, salary_max_month, language, date_posted, status, hiring_organization_name, companies(name))";
 
 /** Latest feedback per job for the current user. */
 async function latestFeedback(supabase: Awaited<ReturnType<typeof createClient>>, userId: string) {
@@ -110,8 +106,6 @@ export async function loadFeed(userId: string, filters: FeedFilters) {
       language: m.jobs.language,
       datePosted: m.jobs.date_posted,
       companyName: m.jobs.companies?.name ?? m.jobs.hiring_organization_name,
-      recognisedSponsor: m.jobs.companies?.is_recognised_sponsor ?? false,
-      visaSponsorship: m.jobs.visa_sponsorship,
     },
   }));
 
@@ -125,10 +119,7 @@ export async function loadFeed(userId: string, filters: FeedFilters) {
   const hiddenCount = byView.filter((i) => i.knockedOut).length;
   let items = byView.filter((i) => (filters.hidden ? true : !i.knockedOut));
   if (filters.label.length) items = items.filter((i) => filters.label.includes(i.label));
-  if (filters.sponsor)
-    items = items.filter((i) => i.job.recognisedSponsor && i.job.visaSponsorship !== false);
   if (filters.remote) items = items.filter((i) => i.job.remotePolicy === filters.remote);
-  if (filters.lang) items = items.filter((i) => i.job.language === filters.lang);
 
   items.sort((a, b) => {
     if (a.knockedOut !== b.knockedOut) return a.knockedOut ? 1 : -1;
@@ -153,7 +144,7 @@ export async function loadMatchDetail(userId: string, jobId: string) {
     supabase.from("matches").select("*").eq("user_id", userId).eq("job_id", jobId).maybeSingle(),
     supabase
       .from("jobs")
-      .select("*, companies(name, domain, website, is_recognised_sponsor, size, type, description)")
+      .select("*, companies(name, domain, website, size, type, description)")
       .eq("id", jobId)
       .maybeSingle(),
     supabase

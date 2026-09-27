@@ -18,9 +18,7 @@ export default async function AdminJobDetail({ params }: PageProps<"/[locale]/ad
   const db = createAdminClient();
   const { data: job } = await db
     .from("jobs")
-    .select(
-      "*, companies(name, domain, is_recognised_sponsor), connectors(name), esco_occupations(preferred_label_en)",
-    )
+    .select("*, companies(name, domain), connectors(name), esco_occupations(preferred_label_en)")
     .eq("id", id)
     .maybeSingle();
   if (!job) notFound();
@@ -57,7 +55,6 @@ export default async function AdminJobDetail({ params }: PageProps<"/[locale]/ad
             {job.connectors?.name ?? t("manual")} ·{" "}
             {t("priority", { priority: job.source_priority })}
           </Badge>
-          {job.companies?.is_recognised_sponsor && <Badge variant="accent">{t("sponsor")}</Badge>}
           {job.review_reasons.map((r) => (
             <Badge key={r} variant="warning">
               {r}
@@ -78,7 +75,6 @@ export default async function AdminJobDetail({ params }: PageProps<"/[locale]/ad
                 escoOccupationUri: job.esco_occupation_uri,
                 occupationLabel: job.esco_occupations?.preferred_label_en ?? null,
                 seniority: job.seniority,
-                visaSponsorship: job.visa_sponsorship,
                 skills:
                   (job.esco_skills as {
                     uri: string;

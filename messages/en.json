@@ -1,6 +1,6 @@
 {
   "meta": {
-    "description": "Explainable job matches for international professionals in the Netherlands."
+    "description": "Explainable job matches for job seekers in the Netherlands – all vacancies in one place, fairly matched."
   },
   "common": {
     "skipToContent": "Skip to content"
@@ -21,7 +21,6 @@
       "practical": "Practical fit"
     },
     "rules": {
-      "sponsorship": "Visa sponsorship",
       "language": "Language requirement",
       "location": "Location & travel time",
       "salary": "Salary",
@@ -29,14 +28,6 @@
       "education": "Education requirement"
     },
     "knockout": {
-      "sponsorship": {
-        "notNeeded": "You don't need sponsorship.",
-        "noSponsorship": "This job does not offer visa sponsorship.",
-        "notRecognised": "This employer is not an IND recognised sponsor.",
-        "salaryUnknown": "Salary unknown – check it meets the highly skilled migrant threshold (€{norm, number, integer}).",
-        "belowNorm": "The salary (€{offered, number, integer}) is below the highly skilled migrant threshold of €{norm, number, integer}.",
-        "recognised": "Recognised sponsor – can sponsor your visa."
-      },
       "language": {
         "none": "No hard language requirement.",
         "unknown": "You haven't added your languages yet.",
@@ -105,7 +96,6 @@
       }
     },
     "reason": {
-      "sponsor": "Recognised sponsor – this employer can sponsor your visa.",
       "skillsAllMust": "You have all {count} required skills, such as {examples}.",
       "skills": "You have {matched} of the {total} requested skills, such as {examples}.",
       "experience": "Your previous work closely resembles this role.",
@@ -116,7 +106,6 @@
       "salary": "Salary up to €{amount, number, integer} per month fits your wish.",
       "remote": "You can work fully remotely.",
       "travel": "Short commute: about {minutes} minutes.",
-      "englishFriendly": "English-language job without a Dutch requirement.",
       "fallback": "This job partly fits your profile."
     },
     "note": {
@@ -137,7 +126,7 @@
     "toggleTheme": "Toggle light/dark theme"
   },
   "footer": {
-    "tagline": "Explainable job matches for international professionals in the Netherlands.",
+    "tagline": "Explainable job matches for everyone looking for work in the Netherlands.",
     "product": "Product",
     "legal": "Legal",
     "howItWorks": "How our matching works",
@@ -148,19 +137,19 @@
     "euHosted": "Hosted in the EU"
   },
   "home": {
-    "badge": "For international professionals in the Netherlands",
+    "badge": "Every job in the Netherlands, fairly matched",
     "title": "Find work that fits you – and understand why.",
-    "subtitle": "Upload your CV, answer a few short questions and get matches with a clear explanation: which skills fit, what is still missing and whether the employer can sponsor your visa.",
+    "subtitle": "Upload your CV, answer a few short questions and get matches from vacancies all over the Netherlands. Every match shows which skills fit, what is still missing and how the score was calculated.",
     "ctaPrimary": "Start for free",
     "ctaSecondary": "How it works",
-    "reassurance": "Done in under 10 minutes. No photo, age or nationality needed.",
+    "reassurance": "Done in under 10 minutes. No photo, age or gender needed.",
     "preview": {
       "aria": "Example of a match",
       "label": "Strong match",
-      "sponsor": "Recognised sponsor",
+      "new": "New",
       "hybrid": "Hybrid",
-      "r1": "You have all 3 required skills, such as Python and SQL.",
-      "r2": "Recognised sponsor – can sponsor your visa.",
+      "r1": "You have all 3 required skills, such as project management and PRINCE2.",
+      "r2": "Short commute: about 25 minutes.",
       "r3": "Your previous work closely resembles this role.",
       "skills": "Skills",
       "experience": "Experience",
@@ -176,9 +165,9 @@
         "title": "Fair",
         "text": "We never use your name, age, gender, photo or nationality. Only what matters for the job."
       },
-      "sponsor": {
-        "title": "Visa-aware",
-        "text": "Need sponsorship? You only see jobs from recognised sponsors that meet the salary threshold."
+      "sources": {
+        "title": "Everything in one place",
+        "text": "We collect vacancies from employers and job sites, remove duplicates and only show what fits you."
       }
     },
     "stepsTitle": "Four steps to your matches",
@@ -194,7 +183,7 @@
       },
       "preferences": {
         "title": "Preferences and interests",
-        "text": "Work status, commute, salary and a short interest profiler (O*NET)."
+        "text": "Work preferences, commute, salary and a short interest profiler (O*NET)."
       },
       "matches": {
         "title": "Get explainable matches",
@@ -215,7 +204,6 @@
       "title": "Layer 1 – hard requirements (knock-outs)",
       "intro": "First we check your hard requirements. If a job falls outside them, we hide it by default – with an explanation. You can always choose to show it anyway. Missing data never excludes a job.",
       "rules": {
-        "sponsorship": "Need sponsorship? Then we only show jobs from IND recognised sponsors, and only if the salary meets the highly skilled migrant threshold (from €{norm} gross per month, depending on your situation).",
         "language": "If the job requires a language at a certain level (CEFR), we compare it with your level.",
         "location": "Your maximum travel time and preference for on-site, hybrid or remote work.",
         "salary": "Your minimum salary, if the job states a salary.",
@@ -256,17 +244,17 @@
         "q": "Does JobMatch cost anything?",
         "a": "No, JobMatch is free for job seekers."
       },
-      "sponsor": {
-        "q": "What is a 'recognised sponsor'?",
-        "a": "Employers recognised by the IND (Dutch immigration service) may sponsor highly skilled migrants. If you need sponsorship, we show only their jobs by default, and only if the salary meets the threshold."
+      "sources": {
+        "q": "Where do the vacancies come from?",
+        "a": "We collect vacancies directly from employers and through job sites and integrations. Duplicate postings are merged and expired vacancies disappear automatically."
       },
       "data": {
         "q": "Which data do you use for matching?",
-        "a": "Your skills, work experience, languages, work status, preferences, interest profile and work values. Nothing else."
+        "a": "Your skills, work experience, languages, preferences, interest profile and work values. Nothing else."
       },
       "photo": {
         "q": "Why don't you ask for a photo, age or nationality?",
-        "a": "Because they say nothing about how well you fit a job and can lead to discrimination. We only ask whether you need sponsorship and which residence document you hold."
+        "a": "Because they say nothing about how well you fit a job and can lead to discrimination. We only ask what we need to show you fitting vacancies."
       },
       "cv": {
         "q": "What happens to my CV?",
@@ -295,7 +283,7 @@
     },
     "data": {
       "title": "Which data",
-      "text": "Account data (e-mail address, language preference), your CV, the skills, work experience and languages derived from it, your work status (sponsorship needed and residence document – no nationality), preferences, interest profile, work values, your feedback on matches, your application tracker and your consents."
+      "text": "Account data (e-mail address, language preference), your CV, the skills, work experience and languages derived from it, your preferences, interest profile, work values, your feedback on matches, your application tracker and your consents."
     },
     "purposes": {
       "title": "Purposes",
@@ -361,7 +349,7 @@
   "employers": {
     "title": "For employers",
     "soon": "Coming soon",
-    "intro": "JobMatch connects you with international professionals who are in the Netherlands or want to come here. The employer portal is under development – leave your details and we'll get in touch.",
+    "intro": "JobMatch connects you with job seekers across the Netherlands who genuinely fit your vacancy. The employer portal is under development – leave your details and we'll get in touch.",
     "points": {
       "quality": {
         "title": "Candidates who fit",
@@ -371,9 +359,9 @@
         "title": "Fair and explainable",
         "text": "No protected characteristics in matching and full transparency."
       },
-      "sponsor": {
-        "title": "Recognised sponsor?",
-        "text": "Candidates who need sponsorship will see your jobs."
+      "reach": {
+        "title": "Your jobs, found everywhere",
+        "text": "Connect your job feed or ATS and reach candidates matched on skills."
       }
     },
     "form": {
@@ -549,48 +537,8 @@
       "saved": "Saved"
     },
     "status": {
-      "title": "Work status and languages",
-      "subtitle": "So we only show jobs that are feasible for you. We never ask for your nationality.",
-      "sponsorship": "Do you need visa sponsorship to work in the Netherlands?",
-      "sponsorshipHelp": "For example as a highly skilled migrant. You then need an employer that is an IND recognised sponsor.",
-      "sponsorshipOptions": {
-        "yes": "Yes, I need sponsorship",
-        "no": "No, I can already work in the Netherlands"
-      },
-      "permit": "Which residence or work document do you have?",
-      "permitHelp": "Optional. This helps us show the right jobs.",
-      "permitSkip": "Prefer not to say",
-      "permits": {
-        "unrestricted": "Free access to the labour market (no permit needed)",
-        "highly_skilled_migrant": "Highly skilled migrant residence permit",
-        "eu_blue_card": "EU Blue Card",
-        "orientation_year": "Orientation year (zoekjaar)",
-        "dependent_free_labour": "Residence with 'work freely permitted' (e.g. partner)",
-        "intra_company_transfer": "Intra-corporate transfer (ICT)",
-        "student": "Student permit",
-        "needs_permit": "I don't have a permit yet",
-        "other": "Other"
-      },
-      "norm": "Which salary threshold applies to you?",
-      "normHelp": "The IND uses different minimum salaries for highly skilled migrants. We don't ask your age; choose what applies. If you don't know, we use the lowest threshold so you don't miss out.",
-      "norms": {
-        "standard": {
-          "title": "Standard threshold",
-          "text": "The regular highly skilled migrant threshold."
-        },
-        "reduced": {
-          "title": "Reduced threshold",
-          "text": "The lower threshold that applies to younger highly skilled migrants."
-        },
-        "graduate": {
-          "title": "Graduate threshold",
-          "text": "After an orientation year or a recent degree in the Netherlands or at a top university."
-        },
-        "unknown": {
-          "title": "I don't know",
-          "text": "We use the lowest threshold."
-        }
-      },
+      "title": "Languages",
+      "subtitle": "Which languages do you speak, and how well? That way we show jobs whose language requirements you meet.",
       "languages": "Which languages do you speak?",
       "languagesHelp": "Choose your level using the Common European Framework (CEFR).",
       "language": "Language",
@@ -606,7 +554,6 @@
         "C2": "native/proficient"
       },
       "errors": {
-        "sponsorship": "Please indicate whether you need sponsorship.",
         "save": "Saving failed."
       },
       "save": "Save",
@@ -722,8 +669,6 @@
     },
     "badges": {
       "new": "New",
-      "sponsors": "Recognised sponsor · sponsors visa",
-      "recognised": "Recognised sponsor",
       "remote": {
         "onsite": "On-site",
         "hybrid": "Hybrid",
@@ -738,9 +683,7 @@
         "saved": "Saved",
         "dismissed": "Dismissed"
       },
-      "sponsor": "Sponsors visa",
       "remote": "Remote",
-      "english": "English-language",
       "showHidden": "Show hidden",
       "sort": "Sort",
       "sorts": {
@@ -772,7 +715,6 @@
         "location": "Location/commute",
         "role": "Role doesn't fit",
         "language": "Language",
-        "sponsorship": "No sponsorship",
         "seniority": "Level",
         "company": "Organisation",
         "contract": "Contract/hours",
@@ -858,7 +800,7 @@
     "tabs": {
       "skills": "Skills & experience",
       "cv": "CV versions",
-      "status": "Work status & languages",
+      "status": "Languages",
       "preferences": "Preferences",
       "interests": "Interests & values"
     },
@@ -907,7 +849,6 @@
     },
     "minScore": "Only matches from score {score}",
     "minScoreShort": "Minimum score",
-    "onlySponsoring": "Only jobs with visa sponsorship",
     "save": "Save",
     "saved": "Settings saved"
   },
@@ -1146,17 +1087,9 @@
       "weights": "Weights",
       "sum": "Total {sum}%",
       "knockouts": "Knock-outs",
-      "requireNorm": "also salary threshold",
       "tolerance": "CEFR tolerance",
       "grace": "grace (min)",
       "salaryTolerance": "tolerance (%)",
-      "thresholdsAndNorms": "Label thresholds and IND norms",
-      "norms": {
-        "year": "Year",
-        "standard": "Standard (€/month)",
-        "reduced": "Reduced (€/month)",
-        "graduate": "Graduate (€/month)"
-      },
       "name": "Name",
       "namePlaceholder": "e.g. More weight on experience",
       "notes": "Notes (why this change?)",
@@ -1172,7 +1105,8 @@
         "current": "Active",
         "draft": "Draft",
         "note": "Struck through = knock-out. Only demo profiles (@jobmatch.local) can be used."
-      }
+      },
+      "thresholds": "Label thresholds"
     },
     "jobs": {
       "title": "Jobs",
@@ -1206,7 +1140,6 @@
         "archived": "Archived"
       },
       "priority": "priority {priority}",
-      "sponsor": "Recognised sponsor",
       "matchCount": "{count} matches",
       "moderation": "Moderation",
       "note": "Note (optional)",
@@ -1237,7 +1170,6 @@
         "none": "none",
         "searchOccupation": "Search an occupation",
         "seniority": "Seniority",
-        "sponsorship": "Visa sponsorship",
         "unknown": "Unknown",
         "yes": "Yes",
         "no": "No",

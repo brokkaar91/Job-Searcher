@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { ChevronDown } from "lucide-react";
 import { resolveLocale } from "@/i18n/locale";
 
-const QUESTIONS = ["free", "sponsor", "data", "photo", "cv", "score", "reject", "delete"] as const;
+const QUESTIONS = ["free", "sources", "data", "photo", "cv", "score", "reject", "delete"] as const;
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/faq">): Promise<Metadata> {
   const locale = await resolveLocale(params);

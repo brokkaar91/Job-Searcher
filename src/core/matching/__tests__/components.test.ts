@@ -23,13 +23,13 @@ import {
   minimal,
   nurse,
   riasec,
-  sponsorDataJob,
+  dataJob,
   values,
 } from "../__fixtures__";
 
 describe("skills component", () => {
   it("weights must-haves double and applies recency", () => {
-    const r = scoreSkills(dataEngineer, sponsorDataJob, cfg, ctx());
+    const r = scoreSkills(dataEngineer, dataJob, cfg, ctx());
     // python (must, 2026 → 1.0) + postgresql (must, 2025 → 1.0) + airflow (nice, 1.0) = 5/5
     expect(r.score).toBeCloseTo(1);
     expect(r.gaps).toEqual([]);
@@ -102,7 +102,7 @@ describe("occupation component", () => {
   });
 
   it("combines family (75%) and seniority (25%)", () => {
-    expect(scoreOccupation(dataEngineer, sponsorDataJob).score).toBe(1);
+    expect(scoreOccupation(dataEngineer, dataJob).score).toBe(1);
     expect(
       scoreOccupation(dataEngineer, job({ iscoCode: "2522", seniority: "junior" })).score,
     ).toBeCloseTo(0.75 * 0.75 + 0.25 * 0.5);
@@ -131,7 +131,7 @@ describe("interests component (RIASEC)", () => {
   });
 
   it("is null when either profile is missing", () => {
-    expect(scoreInterests(minimal, sponsorDataJob).score).toBeNull();
+    expect(scoreInterests(minimal, dataJob).score).toBeNull();
     expect(scoreInterests(dataEngineer, job({ riasec: null })).score).toBeNull();
   });
 });
@@ -161,7 +161,7 @@ describe("values component", () => {
 
 describe("practical component", () => {
   it("scores salary, travel, remote and hours", () => {
-    const r = scorePractical(dataEngineer, sponsorDataJob, ctx({ travelMinutes: 20 }));
+    const r = scorePractical(dataEngineer, dataJob, ctx({ travelMinutes: 20 }));
     expect(r.parts).toEqual({ salary: 1, travel: 1, remote: 1, hours: 1, company: null });
     expect(r.score).toBe(1);
   });

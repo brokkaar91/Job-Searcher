@@ -5,15 +5,7 @@ import { Plus, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import {
-  CEFR_LEVELS,
-  PERMIT_TYPES,
-  SALARY_NORM_CATEGORIES,
-  type Cefr,
-  type PermitType,
-  type SalaryNormCategory,
-} from "@/core/matching/types";
+import { CEFR_LEVELS, type Cefr } from "@/core/matching/types";
 import { saveStatus, saveStatusData } from "@/app/[locale]/(app)/onboarding/actions";
 import { StepFooter } from "./step-footer";
 
@@ -36,9 +28,6 @@ export const LANGUAGE_CODES = [
 ] as const;
 
 interface Initial {
-  needsSponsorship: boolean | null;
-  permitType: PermitType | null;
-  salaryNormCategory: SalaryNormCategory | null;
   languages: { language: string; level: Cefr }[];
 }
 
@@ -53,11 +42,8 @@ export function StatusStep({
 }) {
   const t = useTranslations("onboarding.status");
   const tl = useTranslations("languages");
-  const [needs, setNeeds] = useState<boolean | null>(initial.needsSponsorship);
-  const [permit, setPermit] = useState<PermitType | null>(initial.permitType);
-  const [norm, setNorm] = useState<SalaryNormCategory | null>(initial.salaryNormCategory);
   const [langs, setLangs] = useState(
-    initial.languages.length ? initial.languages : [{ language: "en", level: "B2" as Cefr }],
+    initial.languages.length ? initial.languages : [{ language: "nl", level: "B2" as Cefr }],
   );
   const [error, setError] = useState<string | null>(null);
   const [saved, setSaved] = useState(false);
@@ -68,85 +54,15 @@ export function StatusStep({
       className="space-y-8"
       onSubmit={(e) => {
         e.preventDefault();
-        if (needs == null) return setError(t("errors.sponsorship"));
         setError(null);
         start(async () => {
-          const input = {
-            needsSponsorship: needs,
-            permitType: permit,
-            salaryNormCategory: norm,
-            languages: langs,
-          };
+          const input = { languages: langs };
           const r = mode === "onboarding" ? await saveStatus(input) : await saveStatusData(input);
           if (r && !r.ok) setError(t("errors.save"));
           else setSaved(true);
         });
       }}
     >
-      <fieldset className="space-y-3">
-        <legend className="text-lg font-semibold">{t("sponsorship")}</legend>
-        <p className="text-muted-foreground text-sm">{t("sponsorshipHelp")}</p>
-        <RadioGroup
-          value={needs == null ? "" : needs ? "yes" : "no"}
-          onValueChange={(v) => setNeeds(v === "yes")}
-          className="grid gap-2 sm:grid-cols-2"
-        >
-          {(["yes", "no"] as const).map((v) => (
-            <Label
-              key={v}
-              className="bg-card has-[[data-state=checked]]:border-primary has-[[data-state=checked]]:bg-accent flex cursor-pointer items-center gap-3 rounded-xl border p-4"
-            >
-              <RadioGroupItem value={v} /> {t(`sponsorshipOptions.${v}`)}
-            </Label>
-          ))}
-        </RadioGroup>
-      </fieldset>
-
-      <div className="space-y-2">
-        <Label htmlFor="permit" className="text-lg font-semibold">
-          {t("permit")}
-        </Label>
-        <p className="text-muted-foreground text-sm">{t("permitHelp")}</p>
-        <select
-          id="permit"
-          className={selectCls}
-          value={permit ?? ""}
-          onChange={(e) => setPermit((e.target.value || null) as PermitType | null)}
-        >
-          <option value="">{t("permitSkip")}</option>
-          {PERMIT_TYPES.map((p) => (
-            <option key={p} value={p}>
-              {t(`permits.${p}`)}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      {needs && (
-        <fieldset className="space-y-3">
-          <legend className="text-lg font-semibold">{t("norm")}</legend>
-          <p className="text-muted-foreground text-sm">{t("normHelp")}</p>
-          <RadioGroup
-            value={norm ?? "unknown"}
-            onValueChange={(v) => setNorm(v === "unknown" ? null : (v as SalaryNormCategory))}
-            className="gap-2"
-          >
-            {([...SALARY_NORM_CATEGORIES, "unknown"] as const).map((v) => (
-              <Label
-                key={v}
-                className="bg-card has-[[data-state=checked]]:border-primary has-[[data-state=checked]]:bg-accent flex cursor-pointer items-start gap-3 rounded-xl border p-4 font-normal"
-              >
-                <RadioGroupItem value={v} className="mt-0.5" />
-                <span>
-                  <span className="block font-medium">{t(`norms.${v}.title`)}</span>
-                  <span className="text-muted-foreground text-sm">{t(`norms.${v}.text`)}</span>
-                </span>
-              </Label>
-            ))}
-          </RadioGroup>
-        </fieldset>
-      )}
-
       <fieldset className="space-y-3">
         <legend className="text-lg font-semibold">{t("languages")}</legend>
         <p className="text-muted-foreground text-sm">{t("languagesHelp")}</p>
@@ -208,7 +124,7 @@ export function StatusStep({
         <Button
           type="button"
           variant="outline"
-          onClick={() => setLangs((xs) => [...xs, { language: "nl", level: "A2" }])}
+          onClick={() => setLangs((xs) => [...xs, { language: "en", level: "B2" }])}
         >
           <Plus aria-hidden /> {t("addLanguage")}
         </Button>

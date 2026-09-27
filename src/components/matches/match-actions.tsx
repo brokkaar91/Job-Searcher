@@ -28,7 +28,6 @@ const REASONS = [
   "location",
   "role",
   "language",
-  "sponsorship",
   "seniority",
   "company",
   "contract",

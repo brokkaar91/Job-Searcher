@@ -9,17 +9,17 @@ import {
   job,
   minimal,
   nurse,
-  sponsorDataJob,
+  dataJob,
 } from "../__fixtures__";
 
 describe("matchJob – end to end", () => {
-  it("gives the data engineer a strong match at a recognised sponsor", () => {
-    const r = matchJob(dataEngineer, sponsorDataJob, cfg, ctx({ travelMinutes: 25 }));
+  it("gives the data engineer a strong match for a well-fitting job", () => {
+    const r = matchJob(dataEngineer, dataJob, cfg, ctx({ travelMinutes: 25 }));
     expect(r.knockedOut).toBe(false);
     expect(r.label).toBe("strong");
     expect(r.totalScore).toBeGreaterThanOrEqual(85);
     expect(r.reasons).toHaveLength(3);
-    expect(r.reasons[0]).toEqual({ key: "reason.sponsor" });
+    expect(r.reasons[0]?.key).toBe("reason.skillsAllMust");
     expect(r.gaps).toEqual([]);
   });
 
@@ -27,7 +27,7 @@ describe("matchJob – end to end", () => {
     const r = matchJob(dataEngineer, dutchNurseJob, cfg, ctx());
     expect(r.knockedOut).toBe(true);
     const failed = r.knockouts.filter((k) => k.status === "fail").map((k) => k.rule);
-    expect(failed).toEqual(expect.arrayContaining(["sponsorship", "language"]));
+    expect(failed).toEqual(expect.arrayContaining(["language"]));
     expect(r.label).toBe("weak");
     expect(r.notes[0]).toEqual({ key: "note.knockedOut" });
     expect(r.languageGaps).toEqual([{ language: "nl", required: "C1", actual: null }]);
@@ -43,7 +43,7 @@ describe("matchJob – end to end", () => {
   });
 
   it("uses the default weights 35/20/15/10/10/10 when all data is present", () => {
-    const r = matchJob(dataEngineer, sponsorDataJob, cfg, ctx({ travelMinutes: 25 }));
+    const r = matchJob(dataEngineer, dataJob, cfg, ctx({ travelMinutes: 25 }));
     expect(r.components.skills.weight).toBe(0.35);
     expect(r.components.experience.weight).toBe(0.2);
     expect(r.components.occupation.weight).toBe(0.15);
@@ -83,14 +83,14 @@ describe("matchJob – end to end", () => {
   });
 
   it("is deterministic", () => {
-    const a = matchJob(dataEngineer, sponsorDataJob, cfg, ctx());
-    const b = matchJob(structuredClone(dataEngineer), structuredClone(sponsorDataJob), cfg, ctx());
+    const a = matchJob(dataEngineer, dataJob, cfg, ctx());
+    const b = matchJob(structuredClone(dataEngineer), structuredClone(dataJob), cfg, ctx());
     expect(a).toEqual(b);
   });
 
   it("keeps scores within 0..100 and components within 0..1", () => {
     for (const c of [dataEngineer, nurse, minimal]) {
-      for (const j of [sponsorDataJob, dutchNurseJob]) {
+      for (const j of [dataJob, dutchNurseJob]) {
         const r = matchJob(c, j, cfg, ctx());
         expect(r.totalScore).toBeGreaterThanOrEqual(0);
         expect(r.totalScore).toBeLessThanOrEqual(100);
@@ -104,16 +104,16 @@ describe("matchJob – end to end", () => {
   });
 
   it("does not reward education: a higher degree never raises the score", () => {
-    const low = matchJob({ ...dataEngineer, educationLevel: 4 }, sponsorDataJob, cfg, ctx());
-    const high = matchJob({ ...dataEngineer, educationLevel: 8 }, sponsorDataJob, cfg, ctx());
+    const low = matchJob({ ...dataEngineer, educationLevel: 4 }, dataJob, cfg, ctx());
+    const high = matchJob({ ...dataEngineer, educationLevel: 8 }, dataJob, cfg, ctx());
     expect(high.totalScore).toBe(low.totalScore);
   });
 
   it("does not use years of experience (only semantic relevance)", () => {
     // Same similarity, different number of previous roles → same experience score.
     const many = { ...dataEngineer, experienceIscoCodes: ["2521", "2521", "2521", "2521"] };
-    expect(matchJob(many, sponsorDataJob, cfg, ctx()).components.experience).toEqual(
-      matchJob(dataEngineer, sponsorDataJob, cfg, ctx()).components.experience,
+    expect(matchJob(many, dataJob, cfg, ctx()).components.experience).toEqual(
+      matchJob(dataEngineer, dataJob, cfg, ctx()).components.experience,
     );
   });
 });
@@ -138,17 +138,11 @@ describe("rankJobs", () => {
         { uri: "skill:kubernetes", importance: "must" },
       ],
       iscoCode: "2522",
-      company: { isRecognisedSponsor: true },
-      visaSponsorship: true,
       salaryMaxMonth: 6200,
     });
-    const ranked = rankJobs(dataEngineer, [dutchNurseJob, weaker, sponsorDataJob], cfg, () =>
+    const ranked = rankJobs(dataEngineer, [dutchNurseJob, weaker, dataJob], cfg, () =>
       ctx({ travelMinutes: 25 }),
     );
-    expect(ranked.map((r) => r.jobId)).toEqual([
-      "job-data-sponsor",
-      "job-weaker",
-      "job-nurse-utrecht",
-    ]);
+    expect(ranked.map((r) => r.jobId)).toEqual(["job-data", "job-weaker", "job-nurse-utrecht"]);
   });
 });

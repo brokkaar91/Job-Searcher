@@ -74,22 +74,10 @@ export function FeedFilters() {
           </Chip>
         ))}
         <Chip
-          active={params.get("sponsor") === "1"}
-          onClick={() => set("sponsor", params.get("sponsor") ? null : "1")}
-        >
-          {t("sponsor")}
-        </Chip>
-        <Chip
           active={params.get("remote") === "remote"}
           onClick={() => set("remote", params.get("remote") === "remote" ? null : "remote")}
         >
           {t("remote")}
-        </Chip>
-        <Chip
-          active={params.get("lang") === "en"}
-          onClick={() => set("lang", params.get("lang") === "en" ? null : "en")}
-        >
-          {t("english")}
         </Chip>
         <Chip
           active={params.get("hidden") === "1"}

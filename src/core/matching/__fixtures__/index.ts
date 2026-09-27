@@ -52,7 +52,7 @@ export const ctx = (extra: Partial<MatchContext> = {}): MatchContext => ({
 
 // ─── Candidates ──────────────────────────────────────────────────────────────
 
-/** Priya – data engineer, needs sponsorship, English only, lives in Amsterdam. */
+/** Data engineer, English only, lives in Amsterdam. */
 export const dataEngineer: MatchCandidate = {
   skills: [
     { uri: "skill:python", label: "Python", lastUsedYear: 2026 },
@@ -61,11 +61,6 @@ export const dataEngineer: MatchCandidate = {
     { uri: "skill:spark", label: "Apache Spark", lastUsedYear: 2019 },
   ],
   languages: [{ language: "en", level: "C2" }],
-  workStatus: {
-    needsSponsorship: true,
-    permitType: "needs_permit",
-    salaryNormCategory: "standard",
-  },
   preferences: {
     desiredOccupations: [{ uri: "occ:data-engineer", iscoCode: "2521" }],
     location: AMSTERDAM,
@@ -91,7 +86,7 @@ export const dataEngineer: MatchCandidate = {
   ],
 };
 
-/** Sanne – nurse, Dutch C2, no sponsorship, Utrecht, part-time. */
+/** Nurse, Dutch C2, Utrecht, part-time. */
 export const nurse: MatchCandidate = {
   skills: [
     { uri: "skill:patient-care", label: "patiëntenzorg", lastUsedYear: 2026 },
@@ -101,7 +96,6 @@ export const nurse: MatchCandidate = {
     { language: "nl", level: "C2" },
     { language: "en", level: "B2" },
   ],
-  workStatus: { needsSponsorship: false, permitType: "unrestricted", salaryNormCategory: null },
   preferences: {
     desiredOccupations: [{ uri: "occ:nurse", iscoCode: "2221" }],
     location: UTRECHT,
@@ -131,7 +125,6 @@ export const nurse: MatchCandidate = {
 export const minimal: MatchCandidate = {
   skills: [{ uri: "skill:python", lastUsedYear: null }],
   languages: [],
-  workStatus: { needsSponsorship: null, permitType: null, salaryNormCategory: null },
   preferences: {},
   seniority: null,
   educationLevel: null,
@@ -148,8 +141,7 @@ const baseJob: MatchJob = {
   language: "en",
   skills: [],
   languageRequirements: [],
-  visaSponsorship: null,
-  company: { name: "Acme", isRecognisedSponsor: false, size: "medium", type: "scaleup" },
+  company: { name: "Acme", size: "medium", type: "scaleup" },
   location: AMSTERDAM,
   remotePolicy: "hybrid",
   salaryMinMonth: null,
@@ -166,9 +158,9 @@ const baseJob: MatchJob = {
 
 export const job = (over: Partial<MatchJob>): MatchJob => ({ ...baseJob, ...over });
 
-/** A near-perfect job for the data engineer at a recognised sponsor. */
-export const sponsorDataJob = job({
-  id: "job-data-sponsor",
+/** A near-perfect job for the data engineer. */
+export const dataJob = job({
+  id: "job-data",
   title: "Senior Data Engineer",
   skills: [
     { uri: "skill:python", label: "Python", importance: "must" },
@@ -176,8 +168,7 @@ export const sponsorDataJob = job({
     { uri: "skill:airflow", label: "Apache Airflow", importance: "nice" },
   ],
   languageRequirements: [{ language: "en", level: "C1", required: true }],
-  visaSponsorship: true,
-  company: { name: "Canal Analytics", isRecognisedSponsor: true, size: "large", type: "scaleup" },
+  company: { name: "Canal Analytics", size: "large", type: "scaleup" },
   salaryMinMonth: 6000,
   salaryMaxMonth: 7500,
   iscoCode: "2521",
@@ -198,7 +189,7 @@ export const dutchNurseJob = job({
   languageRequirements: [{ language: "nl", level: "C1", required: true }],
   company: {
     name: "Ziekenhuis Domstad",
-    isRecognisedSponsor: false,
+
     size: "enterprise",
     type: "public",
   },

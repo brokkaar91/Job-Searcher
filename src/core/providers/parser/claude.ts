@@ -19,7 +19,6 @@ const JOB_SYSTEM = `You classify job postings for a job-matching service in the 
 Rules:
 - skills: concrete skills/tools/knowledge the ad asks for; "must" when required ("vereist", "you have", "requirements"), "nice" when optional ("pré", "nice to have", "bonus").
 - languageRequirements: only languages the ad mentions; required=false when it is a plus.
-- visaSponsorship: true only if the ad offers sponsorship/relocation for non-EU candidates; false if it says candidates must already have the right to work; otherwise null.
 - explicitMinEducationEqf: ONLY when the ad explicitly states a minimum degree as a requirement ("HBO werk- en denkniveau" is NOT explicit; "WO-diploma vereist" is). Otherwise null.
 - workValues: 0-1 how strongly the role offers each O*NET work value (achievement, independence, recognition, relationships, support, working_conditions), judged from the ad.
 - Never infer anything about protected characteristics.`;

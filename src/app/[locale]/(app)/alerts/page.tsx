@@ -41,7 +41,6 @@ export default async function AlertsPage({ params }: PageProps<"/[locale]/alerts
             enabled: data?.enabled ?? false,
             frequency: data?.frequency ?? "weekly",
             minScore: data?.min_score ?? 70,
-            onlySponsoring: data?.only_sponsoring ?? false,
           }}
         />
       </Card>

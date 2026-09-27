@@ -2,7 +2,8 @@
 
 # JobMatch – project context for Claude
 
-Bilingual (NL/EN) job-matching web app for international professionals in the Netherlands.
+Job-matching web app for **all job seekers in the Netherlands** (Dutch first, English UI as secondary locale).
+The goal is to aggregate the major Dutch job boards and employer ATSs via connectors (APIs added over time).
 Users upload a CV, complete a short evidence-based onboarding and get **explainable** matches.
 Admins manage job-source connectors and the (versioned) matching model.
 
@@ -77,11 +78,10 @@ scripts/                      seed.ts, import-esco.ts, make-admin.ts
    infra; free. Column type is `vector(768)` – any other provider must output 768 dims
    (Voyage/OpenAI adapters request/truncate to 768). `fake` provider = deterministic hashing
    embedding for tests/offline. e5 needs prefixes: `query: ` for candidate text, `passage: ` for jobs.
-3. **Knowledge-migrant salary norm**: we never ask age. The user self-selects which IND norm
-   applies (`standard` / `reduced` (<30) / `graduate` (zoekjaar)); if unknown we use the **lowest**
-   norm so nobody is wrongly excluded. Norm amounts live in the matching model version config.
-4. **Seed companies are fictional** (no risk of wrongly labelling a real company as
-   IND-recognised sponsor).
+3. **No visa / sponsorship / work-permit features** (product decision, Sept 2026): the product targets the
+   Dutch labour market in general. There is no sponsorship knock-out, no IND norms and no permit questions;
+   do not reintroduce them. Language requirements remain a normal knock-out.
+4. **Seed companies are fictional** (no risk of misrepresenting a real employer).
 5. Travel time in the MVP = haversine distance between city coordinates × mode factor
    (`TravelTimeProvider`), a routing API can be plugged in later.
 6. Connector credentials: AES-256-GCM with `CONNECTOR_ENCRYPTION_KEY`, stored in
@@ -90,6 +90,10 @@ scripts/                      seed.ts, import-esco.ts, make-admin.ts
    reproducible and auditable, rendered in NL or EN.
 8. Missing data never excludes: knock-outs return `pass | fail | unknown`; a component without
    data is `null` and its weight is redistributed (match flagged `limitedData`).
+9. **Adding Dutch job boards**: implement a `Connector` in `src/core/connectors/<name>.ts` (fetch → raw,
+   map → `NormalizedJob`, healthcheck), register it in `CONNECTORS` in `index.ts`, add a zod config schema,
+   a recorded fixture under `__fixtures__` and a test. Feeds without an SDK can use the generic JSON/XML
+   connector + mapping editor. Credentials always go to `connector_secrets` (encrypted).
 
 ## Compliance rules (must hold in every change)
 

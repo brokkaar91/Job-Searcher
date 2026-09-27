@@ -92,10 +92,6 @@ create table public.candidate_profiles (
   summary text,
   seniority public.seniority_level,
   education_level smallint check (education_level between 1 and 8), -- EQF level, only used when a job explicitly requires it
-  -- Work status (never nationality)
-  needs_sponsorship boolean,
-  permit_type public.work_permit_type,
-  salary_norm_category public.salary_norm_category,
   -- Preferences: see src/core/matching/types.ts (CandidatePreferences) for the zod schema
   preferences jsonb not null default '{}'::jsonb,
   -- Interests / values
@@ -161,8 +157,6 @@ create table public.companies (
   name text not null,
   domain text unique,
   kvk_number text,
-  is_recognised_sponsor boolean not null default false, -- IND erkend referent
-  sponsor_checked_at timestamptz,
   size public.company_size,
   type public.company_type,
   website text,
@@ -278,7 +272,6 @@ create table public.jobs (
   -- language of the ad + required languages
   language char(2),
   language_requirements jsonb not null default '[]'::jsonb, -- [{"language":"nl","level":"B2","required":true}]
-  visa_sponsorship boolean,
   -- classification
   esco_occupation_uri text references public.esco_occupations (uri) on delete set null,
   isco_code char(4),
@@ -374,7 +367,7 @@ create table public.match_feedback (
   job_id uuid not null references public.jobs (id) on delete cascade,
   match_id uuid references public.matches (id) on delete set null,
   type public.feedback_type not null,
-  reason text check (reason in ('salary', 'location', 'role', 'language', 'sponsorship', 'seniority', 'company', 'contract', 'already_applied', 'other')),
+  reason text check (reason in ('salary', 'location', 'role', 'language', 'seniority', 'company', 'contract', 'already_applied', 'other')),
   comment text check (char_length(comment) <= 1000),
   created_at timestamptz not null default now()
 );
@@ -404,7 +397,6 @@ create table public.alert_settings (
   enabled boolean not null default false,
   frequency public.alert_frequency not null default 'weekly',
   min_score smallint not null default 70 check (min_score between 0 and 100),
-  only_sponsoring boolean not null default false,
   updated_at timestamptz not null default now()
 );
 create trigger alert_settings_updated_at before update on public.alert_settings

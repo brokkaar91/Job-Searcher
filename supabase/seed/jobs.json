@@ -1,2426 +1,2325 @@
 [
- {
-  "key": "canal-senior-de",
-  "title": "Senior Data Engineer",
-  "company": "canal",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 36,
-  "hoursMax": 40,
-  "salaryMinMonth": 6200,
-  "salaryMaxMonth": 7800,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
+  {
+    "key": "canal-senior-de",
+    "title": "Senior Data Engineer",
+    "company": "canal",
+    "city": "Amsterdam",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 36,
+    "hoursMax": 40,
+    "salaryMinMonth": 6200,
+    "salaryMaxMonth": 7800,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "data-engineer",
+    "seniority": "senior",
+    "skills": [
+      {
+        "skill": "python",
+        "importance": "must"
+      },
+      {
+        "skill": "sql",
+        "importance": "must"
+      },
+      {
+        "skill": "airflow",
+        "importance": "must"
+      },
+      {
+        "skill": "etl",
+        "importance": "must"
+      },
+      {
+        "skill": "dbt",
+        "importance": "nice"
+      },
+      {
+        "skill": "gcp",
+        "importance": "nice"
+      },
+      {
+        "skill": "docker",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 2,
+    "validForDays": 45,
+    "description": "Canal Analytics zoekt een Senior Data Engineer die het dataplatform achter onze retail-forecastingproducten bouwt en beheert.\nJe ontwerpt batch- en streamingpipelines, bepaalt de standaarden voor datakwaliteit en coacht twee medior engineers.\nWat je meebrengt: 5+ jaar ervaring met Python en SQL, orkestratie met Apache Airflow en sterke ETL-vaardigheden.\nPré: dbt, Google Cloud (BigQuery) en Docker. Je spreekt goed Nederlands; veel documentatie is in het Engels.\nWij bieden een opleidingsbudget van € 2.000, 28 vakantiedagen en hybride werken (2 dagen op ons kantoor in Amsterdam)."
+  },
+  {
+    "key": "brightlane-de",
+    "title": "Data Engineer – Payments Platform",
+    "company": "brightlane",
+    "city": "Amsterdam",
     "language": "en",
-    "level": "C1",
-    "required": true
-   },
-   {
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 5000,
+    "salaryMaxMonth": 6400,
+    "languageRequirements": [
+      {
+        "language": "en",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "data-engineer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "python",
+        "importance": "must"
+      },
+      {
+        "skill": "sql",
+        "importance": "must"
+      },
+      {
+        "skill": "spark",
+        "importance": "must"
+      },
+      {
+        "skill": "aws",
+        "importance": "nice"
+      },
+      {
+        "skill": "kubernetes",
+        "importance": "nice"
+      },
+      {
+        "skill": "data-modelling",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 9,
+    "validForDays": 45,
+    "description": "Join Brightlane's data team and help merchants across Europe understand their payments.\nYou will build reliable pipelines with Python, SQL and Apache Spark and model data for finance and risk teams.\nExperience with AWS or Kubernetes is a bonus. English is our company language.\nHybrid: 3 days in the office in Amsterdam-Zuid."
+  },
+  {
+    "key": "noordzee-de",
+    "title": "Data Engineer",
+    "company": "noordzee",
+    "city": "Rotterdam",
     "language": "nl",
-    "level": "B1",
-    "required": false
-   }
-  ],
-  "occupation": "data-engineer",
-  "seniority": "senior",
-  "skills": [
-   {
-    "skill": "python",
-    "importance": "must"
-   },
-   {
-    "skill": "sql",
-    "importance": "must"
-   },
-   {
-    "skill": "airflow",
-    "importance": "must"
-   },
-   {
-    "skill": "etl",
-    "importance": "must"
-   },
-   {
-    "skill": "dbt",
-    "importance": "nice"
-   },
-   {
-    "skill": "gcp",
-    "importance": "nice"
-   },
-   {
-    "skill": "docker",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 2,
-  "validForDays": 45,
-  "description": "Canal Analytics is looking for a Senior Data Engineer to build and own the data platform behind our retail forecasting products.\nYou design batch and streaming pipelines, set standards for data quality and mentor two medior engineers.\nWhat you bring: 5+ years of experience with Python and SQL, orchestration with Apache Airflow and solid ETL design skills.\nNice to have: dbt, Google Cloud (BigQuery) and Docker. Dutch is a plus but not required – our working language is English.\nWe offer visa sponsorship as an IND recognised sponsor, a €2,000 learning budget, 28 holidays and hybrid work (2 days in our Amsterdam office)."
- },
- {
-  "key": "brightlane-de",
-  "title": "Data Engineer – Payments Platform",
-  "company": "brightlane",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 5000,
-  "salaryMaxMonth": 6400,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 36,
+    "hoursMax": 40,
+    "salaryMinMonth": 4300,
+    "salaryMaxMonth": 5600,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "data-engineer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "sql",
+        "importance": "must"
+      },
+      {
+        "skill": "etl",
+        "importance": "must"
+      },
+      {
+        "skill": "azure",
+        "importance": "must"
+      },
+      {
+        "skill": "python",
+        "importance": "nice"
+      },
+      {
+        "skill": "power-bi",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 14,
+    "validForDays": 45,
+    "description": "Als Data Engineer bij Noordzee Logistics bouw je de datastromen tussen onze warehouse- en transportsystemen.\nJe ontwikkelt ETL-processen in Microsoft Azure en zorgt dat planners en managers dagelijks betrouwbare cijfers hebben.\nJe hebt minimaal 2 jaar ervaring met SQL en Azure; kennis van Python en Power BI is een pré.\nJe spreekt vloeiend Nederlands.\nHybride werken (2 dagen thuis), 36-40 uur, goede pensioenregeling."
+  },
+  {
+    "key": "canal-ds",
+    "title": "Data Scientist – Vraagvoorspelling",
+    "company": "canal",
+    "city": "Amsterdam",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 32,
+    "hoursMax": 40,
+    "salaryMinMonth": 5200,
+    "salaryMaxMonth": 6800,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "data-scientist",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "python",
+        "importance": "must"
+      },
+      {
+        "skill": "machine-learning",
+        "importance": "must"
+      },
+      {
+        "skill": "statistics",
+        "importance": "must"
+      },
+      {
+        "skill": "sql",
+        "importance": "nice"
+      },
+      {
+        "skill": "spark",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 4,
+    "validForDays": 45,
+    "description": "Als Data Scientist bouw je voorspelmodellen waarmee supermarkten voedselverspilling terugdringen.\nJe vertaalt businessvragen naar experimenten, ontwikkelt machine-learningmodellen in Python en legt resultaten helder uit aan niet-technische collega's.\nJe hebt een sterke achtergrond in statistiek en minimaal 2 jaar praktijkervaring met modelleren. SQL en Spark zijn een pré.\n32-40 uur, flexibele werktijden en een jaarlijks congresbudget."
+  },
+  {
+    "key": "atlas-ds",
+    "title": "Machine Learning Engineer (Bioinformatics)",
+    "company": "atlas",
+    "city": "Leiden",
     "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "data-engineer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "python",
-    "importance": "must"
-   },
-   {
-    "skill": "sql",
-    "importance": "must"
-   },
-   {
-    "skill": "spark",
-    "importance": "must"
-   },
-   {
-    "skill": "aws",
-    "importance": "nice"
-   },
-   {
-    "skill": "kubernetes",
-    "importance": "nice"
-   },
-   {
-    "skill": "data-modelling",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 9,
-  "validForDays": 45,
-  "description": "Join Brightlane's data team and help merchants across Europe understand their payments.\nYou will build reliable pipelines with Python, SQL and Apache Spark and model data for finance and risk teams.\nExperience with AWS or Kubernetes is a bonus. English is our company language.\nRelocation support and visa sponsorship available. Hybrid: 3 days in the office in Amsterdam-Zuid."
- },
- {
-  "key": "noordzee-de",
-  "title": "Data Engineer",
-  "company": "noordzee",
-  "city": "Rotterdam",
-  "language": "nl",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 36,
-  "hoursMax": 40,
-  "salaryMinMonth": 4300,
-  "salaryMaxMonth": 5600,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 5800,
+    "salaryMaxMonth": 7200,
+    "languageRequirements": [
+      {
+        "language": "en",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "data-scientist",
+    "seniority": "senior",
+    "skills": [
+      {
+        "skill": "python",
+        "importance": "must"
+      },
+      {
+        "skill": "machine-learning",
+        "importance": "must"
+      },
+      {
+        "skill": "docker",
+        "importance": "must"
+      },
+      {
+        "skill": "molecular-biology",
+        "importance": "nice"
+      },
+      {
+        "skill": "aws",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 20,
+    "validForDays": 45,
+    "description": "Atlas BioLabs is scaling its diagnostic platform. We are looking for a senior Machine Learning Engineer to productionise models that detect rare diseases from lab data.\nYou bring 5+ years of Python and machine learning experience and you are comfortable deploying with Docker.\nKnowledge of molecular biology or AWS is a bonus. Our team works in English."
+  },
+  {
+    "key": "groen-da",
+    "title": "Data-analist E-commerce",
+    "company": "groen",
+    "city": "Den Haag",
     "language": "nl",
-    "level": "C1",
-    "required": true
-   },
-   {
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 32,
+    "hoursMax": 36,
+    "salaryMinMonth": 3600,
+    "salaryMaxMonth": 4600,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "data-analyst",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "data-analysis",
+        "importance": "must"
+      },
+      {
+        "skill": "sql",
+        "importance": "must"
+      },
+      {
+        "skill": "power-bi",
+        "importance": "must"
+      },
+      {
+        "skill": "google-analytics",
+        "importance": "nice"
+      },
+      {
+        "skill": "excel",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 6,
+    "validForDays": 45,
+    "description": "Ben jij de analist die van data concrete verbeteringen maakt voor onze webshop?\nBij Groen & Co analyseer je klantgedrag, bouw je dashboards in Power BI en adviseer je het e-commerceteam.\nJe beheerst SQL en hebt ervaring met data-analyse; Google Analytics en Excel zijn een pré.\nJe werkt 32-36 uur, hybride vanuit ons hoofdkantoor in Den Haag."
+  },
+  {
+    "key": "tulip-backend",
+    "title": "Senior Backend Engineer (Java)",
+    "company": "tulip",
+    "city": "Utrecht",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 5800,
+    "salaryMaxMonth": 7400,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "software-developer",
+    "seniority": "senior",
+    "skills": [
+      {
+        "skill": "java",
+        "importance": "must"
+      },
+      {
+        "skill": "rest-api",
+        "importance": "must"
+      },
+      {
+        "skill": "postgresql",
+        "importance": "must"
+      },
+      {
+        "skill": "kubernetes",
+        "importance": "nice"
+      },
+      {
+        "skill": "ci-cd",
+        "importance": "nice"
+      },
+      {
+        "skill": "typescript",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 1,
+    "validForDays": 45,
+    "description": "Tulip Tech bouwt planningssoftware die door 900 zorgorganisaties wordt gebruikt. Wij zoeken een Senior Backend Engineer.\nJe ontwerpt en bouwt services in Java, bent eigenaar van onze REST API's en werkt met PostgreSQL op schaal.\nErvaring met Kubernetes en CI/CD-pipelines is een pré; kennis van TypeScript helpt.\nOpleidingsbudget en een hybride ritme (1 kantoordag per week in Utrecht)."
+  },
+  {
+    "key": "groen-php",
+    "title": "PHP Developer",
+    "company": "groen",
+    "city": "Den Haag",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 36,
+    "hoursMax": 40,
+    "salaryMinMonth": 3800,
+    "salaryMaxMonth": 5000,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "software-developer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "php",
+        "importance": "must"
+      },
+      {
+        "skill": "mysql",
+        "importance": "must"
+      },
+      {
+        "skill": "git",
+        "importance": "must"
+      },
+      {
+        "skill": "javascript",
+        "importance": "nice"
+      },
+      {
+        "skill": "rest-api",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 11,
+    "validForDays": 45,
+    "description": "Voor onze webshop zoeken wij een PHP Developer (Laravel).\nJe ontwikkelt nieuwe functionaliteit, werkt met MySQL en Git en denkt mee over de architectuur.\nJavaScript-kennis en ervaring met REST API's zijn een pré. Je spreekt goed Nederlands."
+  },
+  {
+    "key": "tulip-frontend",
+    "title": "Frontend Developer (React)",
+    "company": "tulip",
+    "city": "Utrecht",
+    "language": "nl",
+    "remotePolicy": "remote",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 32,
+    "hoursMax": 40,
+    "salaryMinMonth": 4200,
+    "salaryMaxMonth": 5600,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "web-developer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "react",
+        "importance": "must"
+      },
+      {
+        "skill": "typescript",
+        "importance": "must"
+      },
+      {
+        "skill": "html-css",
+        "importance": "must"
+      },
+      {
+        "skill": "figma",
+        "importance": "nice"
+      },
+      {
+        "skill": "graphql",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 3,
+    "validForDays": 45,
+    "description": "Wij zoeken een Frontend Developer die geeft om toegankelijke, snelle interfaces.\nJe bouwt features in React en TypeScript, schrijft nette HTML en CSS en werkt nauw samen met onze designers in Figma.\nErvaring met GraphQL is mooi meegenomen. Volledig remote binnen Nederland – eens per maand zien we elkaar in Utrecht."
+  },
+  {
+    "key": "brightlane-fullstack",
+    "title": "Full Stack Engineer",
+    "company": "brightlane",
+    "city": "Amsterdam",
     "language": "en",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "data-engineer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "sql",
-    "importance": "must"
-   },
-   {
-    "skill": "etl",
-    "importance": "must"
-   },
-   {
-    "skill": "azure",
-    "importance": "must"
-   },
-   {
-    "skill": "python",
-    "importance": "nice"
-   },
-   {
-    "skill": "power-bi",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 14,
-  "validForDays": 45,
-  "description": "Als Data Engineer bij Noordzee Logistics bouw je de datastromen tussen onze warehouse- en transportsystemen.\nJe ontwikkelt ETL-processen in Microsoft Azure en zorgt dat planners en managers dagelijks betrouwbare cijfers hebben.\nJe hebt minimaal 2 jaar ervaring met SQL en Azure; kennis van Python en Power BI is een pré.\nJe spreekt vloeiend Nederlands. Je moet in het bezit zijn van een geldige werkvergunning; wij bieden geen sponsoring.\nHybride werken (2 dagen thuis), 36-40 uur, goede pensioenregeling."
- },
- {
-  "key": "canal-ds",
-  "title": "Data Scientist – Demand Forecasting",
-  "company": "canal",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 32,
-  "hoursMax": 40,
-  "salaryMinMonth": 5200,
-  "salaryMaxMonth": 6800,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 5000,
+    "salaryMaxMonth": 6600,
+    "languageRequirements": [
+      {
+        "language": "en",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "web-developer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "typescript",
+        "importance": "must"
+      },
+      {
+        "skill": "nodejs",
+        "importance": "must"
+      },
+      {
+        "skill": "react",
+        "importance": "must"
+      },
+      {
+        "skill": "postgresql",
+        "importance": "nice"
+      },
+      {
+        "skill": "aws",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 8,
+    "validForDays": 45,
+    "description": "Brightlane is hiring a Full Stack Engineer for the merchant dashboard team.\nYou build end-to-end features with TypeScript, Node.js and React, from API to UI.\nPostgreSQL and AWS experience are a bonus. We offer a hybrid setup in Amsterdam."
+  },
+  {
+    "key": "lumen-devops",
+    "title": "DevOps Engineer",
+    "company": "lumen",
+    "city": "Veldhoven",
     "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "data-scientist",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "python",
-    "importance": "must"
-   },
-   {
-    "skill": "machine-learning",
-    "importance": "must"
-   },
-   {
-    "skill": "statistics",
-    "importance": "must"
-   },
-   {
-    "skill": "sql",
-    "importance": "nice"
-   },
-   {
-    "skill": "spark",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 4,
-  "validForDays": 45,
-  "description": "As a Data Scientist you build forecasting models that help supermarkets reduce food waste.\nYou translate business questions into experiments, develop machine learning models in Python and explain results to non-technical stakeholders.\nYou have a strong background in statistics and at least 2 years of hands-on modelling. SQL and Spark are a plus.\nWe sponsor visas (recognised sponsor) and offer 32-40 hours, flexible hours and a yearly conference budget."
- },
- {
-  "key": "atlas-ds",
-  "title": "Machine Learning Engineer (Bioinformatics)",
-  "company": "atlas",
-  "city": "Leiden",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 5800,
-  "salaryMaxMonth": 7200,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 5400,
+    "salaryMaxMonth": 7000,
+    "languageRequirements": [
+      {
+        "language": "en",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "devops-engineer",
+    "seniority": "senior",
+    "skills": [
+      {
+        "skill": "kubernetes",
+        "importance": "must"
+      },
+      {
+        "skill": "ci-cd",
+        "importance": "must"
+      },
+      {
+        "skill": "linux",
+        "importance": "must"
+      },
+      {
+        "skill": "terraform",
+        "importance": "must"
+      },
+      {
+        "skill": "azure",
+        "importance": "nice"
+      },
+      {
+        "skill": "python",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 12,
+    "validForDays": 45,
+    "description": "Lumen Semiconductors is looking for a DevOps Engineer to run the build and test infrastructure for our machine software.\nYou automate CI/CD pipelines, manage Kubernetes clusters on Linux and codify infrastructure with Terraform.\nAzure and Python scripting are nice to have. Our team works in English."
+  },
+  {
+    "key": "polder-security",
+    "title": "Security Specialist OT/IT",
+    "company": "polder",
+    "city": "Rotterdam",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 36,
+    "hoursMax": 40,
+    "salaryMinMonth": 5000,
+    "salaryMaxMonth": 6500,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "security-specialist",
+    "seniority": "senior",
+    "skills": [
+      {
+        "skill": "infosec",
+        "importance": "must"
+      },
+      {
+        "skill": "iso27001",
+        "importance": "must"
+      },
+      {
+        "skill": "incident-response",
+        "importance": "must"
+      },
+      {
+        "skill": "network-security",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 15,
+    "validForDays": 45,
+    "description": "Als Security Specialist bij Polder Energy bescherm je de systemen achter onze wind- en zonneparken.\nJe voert risicoanalyses uit, coördineert incident response en borgt ISO 27001.\nKennis van netwerkbeveiliging in OT-omgevingen is een pré. Je spreekt Nederlands (B2) en Engels."
+  },
+  {
+    "key": "hbi-ictpm",
+    "title": "ICT Projectmanager",
+    "company": "hbi",
+    "city": "Zwolle",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 36,
+    "hoursMax": 40,
+    "salaryMinMonth": 5000,
+    "salaryMaxMonth": 6200,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "ict-project-manager",
+    "seniority": "senior",
+    "skills": [
+      {
+        "skill": "project-management",
+        "importance": "must"
+      },
+      {
+        "skill": "stakeholder-management",
+        "importance": "must"
+      },
+      {
+        "skill": "prince2",
+        "importance": "must"
+      },
+      {
+        "skill": "agile",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 18,
+    "validForDays": 45,
+    "description": "Hollandse Bouw & Infra digitaliseert haar bouwprocessen. Als ICT Projectmanager leid je de invoering van een nieuw ERP-systeem.\nJe stuurt leveranciers aan, managet stakeholders van directie tot uitvoering en werkt volgens PRINCE2.\nErvaring met agile werken is een pré. Uitstekende beheersing van het Nederlands is vereist."
+  },
+  {
+    "key": "brightlane-pm",
+    "title": "Product Manager – Merchant Onboarding",
+    "company": "brightlane",
+    "city": "Amsterdam",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 6000,
+    "salaryMaxMonth": 7600,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "product-manager",
+    "seniority": "senior",
+    "skills": [
+      {
+        "skill": "product-management",
+        "importance": "must"
+      },
+      {
+        "skill": "stakeholder-management",
+        "importance": "must"
+      },
+      {
+        "skill": "requirements-analysis",
+        "importance": "must"
+      },
+      {
+        "skill": "user-research",
+        "importance": "nice"
+      },
+      {
+        "skill": "sql",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 7,
+    "validForDays": 45,
+    "description": "Word eigenaar van de onboarding van duizenden Europese webshops.\nJe bepaalt de roadmap, analyseert requirements met compliance en engineering en meet de impact.\nErvaring met gebruikersonderzoek en basiskennis van SQL zijn een pré. Hybride werken in Amsterdam."
+  },
+  {
+    "key": "tulip-ux",
+    "title": "UX Designer",
+    "company": "tulip",
+    "city": "Utrecht",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 32,
+    "hoursMax": 40,
+    "salaryMinMonth": 4000,
+    "salaryMaxMonth": 5300,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "ux-designer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "ux-design",
+        "importance": "must"
+      },
+      {
+        "skill": "user-research",
+        "importance": "must"
+      },
+      {
+        "skill": "figma",
+        "importance": "must"
+      },
+      {
+        "skill": "prototyping",
+        "importance": "nice"
+      },
+      {
+        "skill": "html-css",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 5,
+    "validForDays": 45,
+    "description": "Ontwerp planningstools die het werk van verpleegkundigen en pedagogisch medewerkers makkelijker maken.\nJe doet gebruikersonderzoek, vertaalt inzichten naar flows en ontwerpen in Figma en test prototypes met echte gebruikers.\nJe voert interviews in het Nederlands. Starters met een relevante hbo-opleiding zijn van harte welkom."
+  },
+  {
+    "key": "groen-ux",
+    "title": "UX/UI Designer E-commerce",
+    "company": "groen",
+    "city": "Den Haag",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 32,
+    "hoursMax": 40,
+    "salaryMinMonth": 3500,
+    "salaryMaxMonth": 4500,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "ux-designer",
+    "seniority": "junior",
+    "skills": [
+      {
+        "skill": "ui-design",
+        "importance": "must"
+      },
+      {
+        "skill": "figma",
+        "importance": "must"
+      },
+      {
+        "skill": "user-research",
+        "importance": "nice"
+      },
+      {
+        "skill": "prototyping",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 10,
+    "validForDays": 45,
+    "description": "Als UX/UI Designer ontwerp je de webshop en app van Groen & Co.\nJe maakt ontwerpen in Figma, werkt nauw samen met developers en test met klanten.\nErvaring met gebruikersonderzoek en prototypes is een pré. Starters met een sterk portfolio zijn welkom."
+  },
+  {
+    "key": "maasoever-vpk",
+    "title": "Verpleegkundige Interne Geneeskunde",
+    "company": "maasoever",
+    "city": "Rotterdam",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time", "part_time"],
+    "hoursMin": 24,
+    "hoursMax": 36,
+    "salaryMinMonth": 3300,
+    "salaryMaxMonth": 4700,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "nurse",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "patient-care",
+        "importance": "must"
+      },
+      {
+        "skill": "medication",
+        "importance": "must"
+      },
+      {
+        "skill": "care-plans",
+        "importance": "must"
+      },
+      {
+        "skill": "wound-care",
+        "importance": "nice"
+      },
+      {
+        "skill": "medical-records",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 3,
+    "validForDays": 45,
+    "description": "Op onze afdeling Interne Geneeskunde zorg je voor patiënten met complexe ziektebeelden.\nJe verleent patiëntenzorg, dient medicatie toe en stelt zorgplannen op in samenwerking met artsen.\nErvaring met wondverzorging en rapporteren in het ECD is een pré. BIG-registratie is vereist.\n24-36 uur, onregelmatigheidstoeslag en een eigen opleidingsbudget."
+  },
+  {
+    "key": "dijkstra-wijk",
+    "title": "Wijkverpleegkundige",
+    "company": "dijkstra",
+    "city": "Utrecht",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["part_time"],
+    "hoursMin": 24,
+    "hoursMax": 32,
+    "salaryMinMonth": 3400,
+    "salaryMaxMonth": 4800,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "nurse",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "patient-care",
+        "importance": "must"
+      },
+      {
+        "skill": "care-plans",
+        "importance": "must"
+      },
+      {
+        "skill": "medication",
+        "importance": "must"
+      },
+      {
+        "skill": "elderly-care",
+        "importance": "nice"
+      },
+      {
+        "skill": "dementia-care",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 6,
+    "validForDays": 45,
+    "description": "Als wijkverpleegkundige in Utrecht-Oost bezoek je cliënten thuis en stel je zorgplannen op.\nJe werkt zelfstandig in een klein team en hebt veel contact met huisartsen en mantelzorgers.\nKennis van ouderenzorg en dementiezorg is een pré. Fiets of e-bike van de zaak."
+  },
+  {
+    "key": "dijkstra-vig",
+    "title": "Verzorgende IG",
+    "company": "dijkstra",
+    "city": "Nieuwegein",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["part_time"],
+    "hoursMin": 16,
+    "hoursMax": 28,
+    "salaryMinMonth": 2600,
+    "salaryMaxMonth": 3400,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "care-assistant",
+    "seniority": "junior",
+    "skills": [
+      {
+        "skill": "elderly-care",
+        "importance": "must"
+      },
+      {
+        "skill": "patient-care",
+        "importance": "must"
+      },
+      {
+        "skill": "dementia-care",
+        "importance": "nice"
+      },
+      {
+        "skill": "medication",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 2,
+    "validForDays": 45,
+    "description": "Voor ons woonzorgcentrum in Nieuwegein zoeken wij een Verzorgende IG.\nJe ondersteunt bewoners bij de dagelijkse zorg en bent een vertrouwd gezicht voor familie.\nErvaring in de psychogeriatrie is een pré. Ook herintreders zijn welkom; wij bieden begeleiding."
+  },
+  {
+    "key": "atlas-cra",
+    "title": "Clinical Research Associate",
+    "company": "atlas",
+    "city": "Leiden",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 4200,
+    "salaryMaxMonth": 5400,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "clinical-research-associate",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "clinical-research",
+        "importance": "must"
+      },
+      {
+        "skill": "gmp",
+        "importance": "must"
+      },
+      {
+        "skill": "medical-records",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 21,
+    "validForDays": 45,
+    "description": "Je monitort klinische studies voor onze diagnostische tests in Nederlandse en Belgische ziekenhuizen.\nJe zorgt dat studies voldoen aan ICH-GCP en GMP, bezoekt onderzoekslocaties en werkt samen met onderzoekers.\nGoede beheersing van Nederlands en Engels is vereist."
+  },
+  {
+    "key": "atlas-lab",
+    "title": "Analist Moleculaire Diagnostiek",
+    "company": "atlas",
+    "city": "Leiden",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 36,
+    "hoursMax": 40,
+    "salaryMinMonth": 3300,
+    "salaryMaxMonth": 4200,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "lab-technician",
+    "seniority": "junior",
+    "skills": [
+      {
+        "skill": "lab-techniques",
+        "importance": "must"
+      },
+      {
+        "skill": "gmp",
+        "importance": "must"
+      },
+      {
+        "skill": "molecular-biology",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 4,
+    "validForDays": 45,
+    "description": "Je voert PCR- en ELISA-bepalingen uit in ons GMP-laboratorium op het Leiden Bio Science Park.\nJe documenteert resultaten zorgvuldig en helpt labprocedures te verbeteren. Kennis van moleculaire biologie of celkweek is een pré.\nPas afgestudeerd (mbo/hbo)? Ook dan nodigen we je graag uit."
+  },
+  {
+    "key": "maasoever-lab",
+    "title": "Analist Klinisch Chemisch Laboratorium",
+    "company": "maasoever",
+    "city": "Rotterdam",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time", "part_time"],
+    "hoursMin": 32,
+    "hoursMax": 36,
+    "salaryMinMonth": 3000,
+    "salaryMaxMonth": 4100,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "lab-technician",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "lab-techniques",
+        "importance": "must"
+      },
+      {
+        "skill": "quality-control",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": 4,
+    "postedDaysAgo": 16,
+    "validForDays": 45,
+    "description": "Je voert analyses uit in ons klinisch chemisch laboratorium en werkt in een rooster inclusief avonddiensten.\nEen afgeronde MLO-opleiding is vereist; ervaring met kwaliteitscontrole is een pré."
+  },
+  {
+    "key": "finwise-acc",
+    "title": "Assistent-accountant",
+    "company": "finwise",
+    "city": "Amersfoort",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time", "part_time"],
+    "hoursMin": 32,
+    "hoursMax": 40,
+    "salaryMinMonth": 3200,
+    "salaryMaxMonth": 4300,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "accountant",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "accounting",
+        "importance": "must"
+      },
+      {
+        "skill": "financial-reporting",
+        "importance": "must"
+      },
+      {
+        "skill": "tax",
+        "importance": "must"
+      },
+      {
+        "skill": "exact-online",
+        "importance": "nice"
+      },
+      {
+        "skill": "auditing",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": 6,
+    "postedDaysAgo": 9,
+    "validForDays": 45,
+    "description": "Bij FinWise stel je jaarrekeningen op voor mkb-klanten, verzorg je aangiften en adviseer je ondernemers.\nKennis van Exact Online en controlewerkzaamheden is een pré. Een HBO-diploma Accountancy is vereist."
+  },
+  {
+    "key": "polder-controller",
+    "title": "Financial Controller",
+    "company": "polder",
+    "city": "Rotterdam",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 6000,
+    "salaryMaxMonth": 7800,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "financial-controller",
+    "seniority": "senior",
+    "skills": [
+      {
+        "skill": "financial-reporting",
+        "importance": "must"
+      },
+      {
+        "skill": "budgeting",
+        "importance": "must"
+      },
+      {
+        "skill": "ifrs",
+        "importance": "must"
+      },
+      {
+        "skill": "sap",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 13,
+    "validForDays": 45,
+    "description": "Polder Energy zoekt een Financial Controller voor de divisie duurzame assets.\nJe bent verantwoordelijk voor de maandafsluiting en IFRS-rapportage en stuurt budgettering en forecasting aan met de business.\nKennis van SAP is een pré."
+  },
+  {
+    "key": "brightlane-fa",
+    "title": "Financial Analyst (FP&A)",
+    "company": "brightlane",
+    "city": "Amsterdam",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 4800,
+    "salaryMaxMonth": 6000,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "financial-analyst",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "financial-analysis",
+        "importance": "must"
+      },
+      {
+        "skill": "excel",
+        "importance": "must"
+      },
+      {
+        "skill": "budgeting",
+        "importance": "must"
+      },
+      {
+        "skill": "sql",
+        "importance": "nice"
+      },
+      {
+        "skill": "power-bi",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 5,
+    "validForDays": 45,
+    "description": "Bouw de financiële modellen die de groei van Brightlane sturen.\nJe analyseert unit economics, bereidt rapportages voor de directie voor en ondersteunt de budgetcyclus.\nVaardigheid in SQL of Power BI is een pré."
+  },
+  {
+    "key": "finwise-boekhouder",
+    "title": "Boekhouder (parttime)",
+    "company": "finwise",
+    "city": "Amersfoort",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["part_time"],
+    "hoursMin": 20,
+    "hoursMax": 28,
+    "salaryMinMonth": 2800,
+    "salaryMaxMonth": 3500,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "bookkeeper",
+    "seniority": "junior",
+    "skills": [
+      {
+        "skill": "bookkeeping",
+        "importance": "must"
+      },
+      {
+        "skill": "exact-online",
+        "importance": "must"
+      },
+      {
+        "skill": "tax",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 12,
+    "validForDays": 45,
+    "description": "Voor 20-28 uur per week zoeken wij een boekhouder die de financiële administratie van klanten verzorgt in Exact Online.\nKennis van btw-aangiftes is een pré. Flexibele werktijden, deels thuiswerken mogelijk."
+  },
+  {
+    "key": "noordzee-payroll",
+    "title": "Salarisadministrateur",
+    "company": "noordzee",
+    "city": "Rotterdam",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 36,
+    "hoursMax": 40,
+    "salaryMinMonth": 3300,
+    "salaryMaxMonth": 4200,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "payroll-specialist",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "payroll",
+        "importance": "must"
+      },
+      {
+        "skill": "labour-law",
+        "importance": "must"
+      },
+      {
+        "skill": "excel",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 19,
+    "validForDays": 45,
+    "description": "Je verzorgt de salarisadministratie voor 1.200 medewerkers en bent aanspreekpunt voor vragen over loon en cao.\nKennis van arbeidsrecht en Excel is een pré."
+  },
+  {
+    "key": "canal-marketing",
+    "title": "Digital Marketing Specialist",
+    "company": "canal",
+    "city": "Amsterdam",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 32,
+    "hoursMax": 40,
+    "salaryMinMonth": 3800,
+    "salaryMaxMonth": 4800,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "digital-marketer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "digital-marketing",
+        "importance": "must"
+      },
+      {
+        "skill": "seo",
+        "importance": "must"
+      },
+      {
+        "skill": "google-analytics",
+        "importance": "must"
+      },
+      {
+        "skill": "content-marketing",
+        "importance": "nice"
+      },
+      {
+        "skill": "copywriting",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 6,
+    "validForDays": 45,
+    "description": "Laat het merk van Canal Analytics groeien in de Benelux.\nJe draait campagnes, verbetert de SEO en meet alles in Google Analytics. Contentmarketing en sterke copywriting zijn een pré."
+  },
+  {
+    "key": "groen-seo",
+    "title": "SEO/SEA Specialist",
+    "company": "groen",
+    "city": "Den Haag",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 32,
+    "hoursMax": 40,
+    "salaryMinMonth": 3400,
+    "salaryMaxMonth": 4400,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "digital-marketer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "seo",
+        "importance": "must"
+      },
+      {
+        "skill": "sea",
+        "importance": "must"
+      },
+      {
+        "skill": "google-analytics",
+        "importance": "must"
+      },
+      {
+        "skill": "content-marketing",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 8,
+    "validForDays": 45,
+    "description": "Je optimaliseert de vindbaarheid van onze webshop en beheert Google Ads-campagnes.\nJe rapporteert in Google Analytics en werkt samen met het contentteam."
+  },
+  {
+    "key": "vanhouten-am",
+    "title": "Accountmanager Industrie",
+    "company": "vanhouten",
+    "city": "Helmond",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 4200,
+    "salaryMaxMonth": 5500,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "de",
+        "level": "B1",
+        "required": false
+      }
+    ],
+    "occupation": "account-manager",
+    "seniority": "senior",
+    "skills": [
+      {
+        "skill": "account-management",
+        "importance": "must"
+      },
+      {
+        "skill": "b2b-sales",
+        "importance": "must"
+      },
+      {
+        "skill": "negotiation",
+        "importance": "must"
+      },
+      {
+        "skill": "crm",
+        "importance": "nice"
+      },
+      {
+        "skill": "mech-engineering",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 17,
+    "validForDays": 45,
+    "description": "Als accountmanager bouw je relaties op met industriële klanten in Nederland en Duitsland.\nJe onderhandelt over contracten en werkt nauw samen met onze engineers. Duits is een pré, technische affiniteit ook.\nAuto van de zaak."
+  },
+  {
+    "key": "brightlane-sdr",
+    "title": "Sales Development Representative (DACH)",
+    "company": "brightlane",
+    "city": "Amsterdam",
     "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "data-scientist",
-  "seniority": "senior",
-  "skills": [
-   {
-    "skill": "python",
-    "importance": "must"
-   },
-   {
-    "skill": "machine-learning",
-    "importance": "must"
-   },
-   {
-    "skill": "docker",
-    "importance": "must"
-   },
-   {
-    "skill": "molecular-biology",
-    "importance": "nice"
-   },
-   {
-    "skill": "aws",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 20,
-  "validForDays": 45,
-  "description": "Atlas BioLabs is scaling its diagnostic platform. We are looking for a senior Machine Learning Engineer to productionise models that detect rare diseases from lab data.\nYou bring 5+ years of Python and machine learning experience and you are comfortable deploying with Docker.\nKnowledge of molecular biology or AWS is a bonus. Our team is international and works in English.\nWe are an IND recognised sponsor and support relocation."
- },
- {
-  "key": "groen-da",
-  "title": "Data-analist E-commerce",
-  "company": "groen",
-  "city": "Den Haag",
-  "language": "nl",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 32,
-  "hoursMax": 36,
-  "salaryMinMonth": 3600,
-  "salaryMaxMonth": 4600,
-  "visaSponsorship": null,
-  "languageRequirements": [
-   {
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 3300,
+    "salaryMaxMonth": 4000,
+    "languageRequirements": [
+      {
+        "language": "en",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "de",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "account-manager",
+    "seniority": "junior",
+    "skills": [
+      {
+        "skill": "lead-generation",
+        "importance": "must"
+      },
+      {
+        "skill": "crm",
+        "importance": "must"
+      },
+      {
+        "skill": "salesforce",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 3,
+    "validForDays": 45,
+    "description": "Generate new business with online merchants in Germany, Austria and Switzerland.\nYou prospect, qualify leads and book meetings for our account executives. Salesforce experience is a plus.\nFluent German and English required."
+  },
+  {
+    "key": "brightlane-cs",
+    "title": "Klantenservicemedewerker",
+    "company": "brightlane",
+    "city": "Amsterdam",
     "language": "nl",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "data-analyst",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "data-analysis",
-    "importance": "must"
-   },
-   {
-    "skill": "sql",
-    "importance": "must"
-   },
-   {
-    "skill": "power-bi",
-    "importance": "must"
-   },
-   {
-    "skill": "google-analytics",
-    "importance": "nice"
-   },
-   {
-    "skill": "excel",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 6,
-  "validForDays": 45,
-  "description": "Ben jij de analist die van data concrete verbeteringen maakt voor onze webshop?\nBij Groen & Co analyseer je klantgedrag, bouw je dashboards in Power BI en adviseer je het e-commerceteam.\nJe beheerst SQL en hebt ervaring met data-analyse; Google Analytics en Excel zijn een pré.\nJe werkt 32-36 uur, hybride vanuit ons hoofdkantoor in Den Haag."
- },
- {
-  "key": "tulip-backend",
-  "title": "Senior Backend Engineer (Java)",
-  "company": "tulip",
-  "city": "Utrecht",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 5800,
-  "salaryMaxMonth": 7400,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time", "part_time"],
+    "hoursMin": 24,
+    "hoursMax": 40,
+    "salaryMinMonth": 2800,
+    "salaryMaxMonth": 3300,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "customer-service-agent",
+    "seniority": "junior",
+    "skills": [
+      {
+        "skill": "customer-service",
+        "importance": "must"
+      },
+      {
+        "skill": "communication",
+        "importance": "must"
+      },
+      {
+        "skill": "crm",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 1,
+    "validForDays": 45,
+    "description": "Help onze webshops met betaalvragen via chat, e-mail en telefoon.\nJe bent klantgericht, communiceert helder en lost graag puzzels op. Parttime is mogelijk."
+  },
+  {
+    "key": "frisia-marketing",
+    "title": "Marketingmanager Consumentenmerken",
+    "company": "frisia",
+    "city": "Leeuwarden",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 5200,
+    "salaryMaxMonth": 6600,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "marketing-manager",
+    "seniority": "lead",
+    "skills": [
+      {
+        "skill": "marketing-strategy",
+        "importance": "must"
+      },
+      {
+        "skill": "brand-management",
+        "importance": "must"
+      },
+      {
+        "skill": "team-leadership",
+        "importance": "must"
+      },
+      {
+        "skill": "digital-marketing",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 22,
+    "validForDays": 45,
+    "description": "Je bent verantwoordelijk voor de marketingstrategie van onze zuivelmerken in Nederland en geeft leiding aan een team van zes marketeers.\nErvaring met digitale marketing is een pré."
+  },
+  {
+    "key": "noordzee-planner",
+    "title": "Logistiek Planner",
+    "company": "noordzee",
+    "city": "Rotterdam",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 3200,
+    "salaryMaxMonth": 4000,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "logistics-planner",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "transport-planning",
+        "importance": "must"
+      },
+      {
+        "skill": "planning",
+        "importance": "must"
+      },
+      {
+        "skill": "customs",
+        "importance": "nice"
+      },
+      {
+        "skill": "excel",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 4,
+    "validForDays": 45,
+    "description": "Je plant dagelijks de ritten van 60 vrachtwagens tussen de haven en onze klanten.\nKennis van douaneprocessen en Excel is een pré. Werken in ploegendienst (vroeg/laat)."
+  },
+  {
+    "key": "noordzee-warehouse",
+    "title": "Magazijnmedewerker (heftruck)",
+    "company": "noordzee",
+    "city": "Waalwijk",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 38,
+    "hoursMax": 40,
+    "salaryMinMonth": 2500,
+    "salaryMaxMonth": 2900,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "A2",
+        "required": true
+      }
+    ],
+    "occupation": "warehouse-worker",
+    "seniority": "junior",
+    "skills": [
+      {
+        "skill": "warehouse-ops",
+        "importance": "must"
+      },
+      {
+        "skill": "forklift",
+        "importance": "must"
+      },
+      {
+        "skill": "inventory",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 2,
+    "validForDays": 45,
+    "description": "Orderpicken, laden en lossen in ons distributiecentrum in Waalwijk. Een geldig heftruckcertificaat is vereist.\nBasiskennis Nederlands is voldoende; je werkt in een internationaal team."
+  },
+  {
+    "key": "frisia-sc",
+    "title": "Supply Chain Analist",
+    "company": "frisia",
+    "city": "Leeuwarden",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 4200,
+    "salaryMaxMonth": 5400,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "supply-chain-analyst",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "supply-chain",
+        "importance": "must"
+      },
+      {
+        "skill": "data-analysis",
+        "importance": "must"
+      },
+      {
+        "skill": "excel",
+        "importance": "must"
+      },
+      {
+        "skill": "sap",
+        "importance": "nice"
+      },
+      {
+        "skill": "power-bi",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 10,
+    "validForDays": 45,
+    "description": "Optimaliseer onze zuivelketen van boerderij tot export.\nJe analyseert vraag-, voorraad- en transportdata en maakt forecasts met de planners. SAP en Power BI zijn een pré."
+  },
+  {
+    "key": "lumen-mech",
+    "title": "Mechanical Design Engineer",
+    "company": "lumen",
+    "city": "Veldhoven",
     "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "software-developer",
-  "seniority": "senior",
-  "skills": [
-   {
-    "skill": "java",
-    "importance": "must"
-   },
-   {
-    "skill": "rest-api",
-    "importance": "must"
-   },
-   {
-    "skill": "postgresql",
-    "importance": "must"
-   },
-   {
-    "skill": "kubernetes",
-    "importance": "nice"
-   },
-   {
-    "skill": "ci-cd",
-    "importance": "nice"
-   },
-   {
-    "skill": "typescript",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 1,
-  "validForDays": 45,
-  "description": "Tulip Tech builds planning software used by 900 care organisations. We are hiring a Senior Backend Engineer.\nYou design and build services in Java, own our REST APIs and work with PostgreSQL at scale.\nExperience with Kubernetes and CI/CD pipelines is a plus; some TypeScript knowledge helps.\nEnglish is our working language. We sponsor visas, offer an education budget and a 4-day hybrid rhythm (1 office day in Utrecht)."
- },
- {
-  "key": "groen-php",
-  "title": "PHP Developer",
-  "company": "groen",
-  "city": "Den Haag",
-  "language": "nl",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 36,
-  "hoursMax": 40,
-  "salaryMinMonth": 3800,
-  "salaryMaxMonth": 5000,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 5000,
+    "salaryMaxMonth": 6600,
+    "languageRequirements": [
+      {
+        "language": "en",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "mechanical-engineer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "mech-engineering",
+        "importance": "must"
+      },
+      {
+        "skill": "cad",
+        "importance": "must"
+      },
+      {
+        "skill": "solidworks",
+        "importance": "must"
+      },
+      {
+        "skill": "root-cause",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": 7,
+    "postedDaysAgo": 5,
+    "validForDays": 45,
+    "description": "Design precision modules for our lithography systems.\nYou work in SolidWorks, perform tolerance analyses and collaborate with suppliers. Root cause analysis experience is a plus.\nA master's degree in mechanical engineering is required."
+  },
+  {
+    "key": "vanhouten-e",
+    "title": "Elektrotechnisch Engineer",
+    "company": "vanhouten",
+    "city": "Helmond",
     "language": "nl",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "software-developer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "php",
-    "importance": "must"
-   },
-   {
-    "skill": "mysql",
-    "importance": "must"
-   },
-   {
-    "skill": "git",
-    "importance": "must"
-   },
-   {
-    "skill": "javascript",
-    "importance": "nice"
-   },
-   {
-    "skill": "rest-api",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 11,
-  "validForDays": 45,
-  "description": "Voor onze webshop zoeken wij een PHP Developer (Laravel).\nJe ontwikkelt nieuwe functionaliteit, werkt met MySQL en Git en denkt mee over de architectuur.\nJavaScript-kennis en ervaring met REST API's zijn een pré. Je spreekt goed Nederlands.\nWij bieden geen visumsponsoring; een geldige werkvergunning is vereist."
- },
- {
-  "key": "tulip-frontend",
-  "title": "Frontend Developer (React)",
-  "company": "tulip",
-  "city": "Utrecht",
-  "language": "en",
-  "remotePolicy": "remote",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 32,
-  "hoursMax": 40,
-  "salaryMinMonth": 4200,
-  "salaryMaxMonth": 5600,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 4000,
+    "salaryMaxMonth": 5200,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "electrical-engineer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "elec-engineering",
+        "importance": "must"
+      },
+      {
+        "skill": "plc",
+        "importance": "must"
+      },
+      {
+        "skill": "cad",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 11,
+    "validForDays": 45,
+    "description": "Je ontwerpt de elektrotechnische installaties en besturingen van onze machines en programmeert PLC's (Siemens S7).\nErvaring met AutoCAD Electrical is een pré."
+  },
+  {
+    "key": "vanhouten-monteur",
+    "title": "Onderhoudsmonteur",
+    "company": "vanhouten",
+    "city": "Helmond",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 3000,
+    "salaryMaxMonth": 3800,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B1",
+        "required": true
+      }
+    ],
+    "occupation": "maintenance-technician",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "machine-maintenance",
+        "importance": "must"
+      },
+      {
+        "skill": "plc",
+        "importance": "nice"
+      },
+      {
+        "skill": "electrical-installation",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 7,
+    "validForDays": 45,
+    "description": "Je zorgt voor preventief onderhoud en lost storingen op aan onze productielijnen.\nKennis van PLC's en NEN 3140 is een pré. Storingsdienst eens per zes weken."
+  },
+  {
+    "key": "lumen-quality",
+    "title": "Quality Engineer",
+    "company": "lumen",
+    "city": "Veldhoven",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 4800,
+    "salaryMaxMonth": 6200,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "quality-engineer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "quality-control",
+        "importance": "must"
+      },
+      {
+        "skill": "root-cause",
+        "importance": "must"
+      },
+      {
+        "skill": "lean",
+        "importance": "must"
+      },
+      {
+        "skill": "mech-engineering",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 9,
+    "validForDays": 45,
+    "description": "Verbeter de kwaliteit van onze toeleveranciers en productie.\nJe leidt oorzaakanalyses (8D, FMEA), stuurt Lean-verbeteringen aan en werkt samen met leveranciers wereldwijd."
+  },
+  {
+    "key": "frisia-plc",
+    "title": "PLC Engineer",
+    "company": "frisia",
+    "city": "Leeuwarden",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 4200,
+    "salaryMaxMonth": 5400,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "automation-engineer",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "plc",
+        "importance": "must"
+      },
+      {
+        "skill": "elec-engineering",
+        "importance": "must"
+      },
+      {
+        "skill": "machine-maintenance",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 15,
+    "validForDays": 45,
+    "description": "Als PLC Engineer programmeer en optimaliseer je de besturingen van onze productielijnen.\nJe werkt aan nieuwe installaties en verbeteringen."
+  },
+  {
+    "key": "polder-solar",
+    "title": "Monteur Zonnepanelen",
+    "company": "polder",
+    "city": "Dordrecht",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 2900,
+    "salaryMaxMonth": 3600,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B1",
+        "required": true
+      }
+    ],
+    "occupation": "solar-installer",
+    "seniority": "junior",
+    "skills": [
+      {
+        "skill": "solar",
+        "importance": "must"
+      },
+      {
+        "skill": "electrical-installation",
+        "importance": "must"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 3,
+    "validForDays": 45,
+    "description": "Je installeert zonnepanelen op daken van woningen en bedrijven in de regio Rotterdam-Dordrecht.\nJe werkt veilig volgens NEN 1010. Starters met een MBO-diploma Elektrotechniek zijn welkom, wij leiden je op."
+  },
+  {
+    "key": "polder-energy-analyst",
+    "title": "Energy Market Analyst",
+    "company": "polder",
+    "city": "Rotterdam",
     "language": "en",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "web-developer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "react",
-    "importance": "must"
-   },
-   {
-    "skill": "typescript",
-    "importance": "must"
-   },
-   {
-    "skill": "html-css",
-    "importance": "must"
-   },
-   {
-    "skill": "figma",
-    "importance": "nice"
-   },
-   {
-    "skill": "graphql",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 3,
-  "validForDays": 45,
-  "description": "We are looking for a Frontend Developer who cares about accessible, fast interfaces.\nYou build features in React and TypeScript, write clean HTML and CSS and work closely with our designers in Figma.\nGraphQL experience is nice to have. Fully remote within the Netherlands – we meet in Utrecht once a month.\nVisa sponsorship is possible for the right candidate."
- },
- {
-  "key": "brightlane-fullstack",
-  "title": "Full Stack Engineer",
-  "company": "brightlane",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 5000,
-  "salaryMaxMonth": 6600,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 5200,
+    "salaryMaxMonth": 6800,
+    "languageRequirements": [
+      {
+        "language": "en",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "energy-analyst",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "energy-markets",
+        "importance": "must"
+      },
+      {
+        "skill": "data-analysis",
+        "importance": "must"
+      },
+      {
+        "skill": "python",
+        "importance": "must"
+      },
+      {
+        "skill": "sustainability",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 6,
+    "validForDays": 45,
+    "description": "Analyse European power markets and support our trading desk with forecasts.\nYou combine market knowledge with data analysis in Python. Knowledge of ESG / sustainability reporting is a plus."
+  },
+  {
+    "key": "rijnland-wiskunde",
+    "title": "Docent Wiskunde",
+    "company": "rijnland",
+    "city": "Leiden",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time", "part_time"],
+    "hoursMin": 24,
+    "hoursMax": 40,
+    "salaryMinMonth": 3600,
+    "salaryMaxMonth": 5600,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C2",
+        "required": true
+      }
+    ],
+    "occupation": "secondary-teacher",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "mathematics",
+        "importance": "must"
+      },
+      {
+        "skill": "lesson-planning",
+        "importance": "must"
+      },
+      {
+        "skill": "classroom-management",
+        "importance": "must"
+      }
+    ],
+    "educationRequirementEqf": 7,
+    "postedDaysAgo": 20,
+    "validForDays": 45,
+    "description": "Voor ons gymnasium zoeken wij een enthousiaste docent wiskunde voor de bovenbouw.\nEen eerstegraads bevoegdheid (WO-master) is vereist. Je spreekt Nederlands op moedertaalniveau."
+  },
+  {
+    "key": "rijnland-pm",
+    "title": "Pedagogisch Medewerker Kinderopvang",
+    "company": "rijnland",
+    "city": "Leiden",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["part_time"],
+    "hoursMin": 24,
+    "hoursMax": 32,
+    "salaryMinMonth": 2600,
+    "salaryMaxMonth": 3200,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "childcare-worker",
+    "seniority": "junior",
+    "skills": [
+      {
+        "skill": "childcare",
+        "importance": "must"
+      },
+      {
+        "skill": "communication",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": 4,
+    "postedDaysAgo": 8,
+    "validForDays": 45,
+    "description": "Je begeleidt kinderen van 0-4 jaar op ons kinderdagverblijf en onderhoudt contact met ouders.\nEen relevant MBO-diploma is vereist volgens de cao Kinderopvang."
+  },
+  {
+    "key": "gracht-chef",
+    "title": "Sous-chef",
+    "company": "gracht",
+    "city": "Amsterdam",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 38,
+    "hoursMax": 40,
+    "salaryMinMonth": 3000,
+    "salaryMaxMonth": 3700,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "B1",
+        "required": false
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "chef",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "cooking",
+        "importance": "must"
+      },
+      {
+        "skill": "haccp",
+        "importance": "must"
+      },
+      {
+        "skill": "team-leadership",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 5,
+    "validForDays": 45,
+    "description": "Our boutique hotel restaurant is looking for a sous-chef. You run the kitchen during service and work with seasonal Dutch produce.\nHACCP knowledge required; leadership experience is a plus. Our kitchen team speaks English; Dutch is a plus."
+  },
+  {
+    "key": "gracht-reception",
+    "title": "Front Office Medewerker",
+    "company": "gracht",
+    "city": "Amsterdam",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time", "part_time"],
+    "hoursMin": 24,
+    "hoursMax": 38,
+    "salaryMinMonth": 2500,
+    "salaryMaxMonth": 2900,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": true
+      }
+    ],
+    "occupation": "hotel-receptionist",
+    "seniority": "junior",
+    "skills": [
+      {
+        "skill": "front-desk",
+        "importance": "must"
+      },
+      {
+        "skill": "customer-service",
+        "importance": "must"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 2,
+    "validForDays": 45,
+    "description": "Verwelkom gasten aan onze receptie: inchecken, reserveringen en lokale tips.\nJe spreekt uitstekend Nederlands en goed Engels. Avond- en weekenddiensten."
+  },
+  {
+    "key": "groen-store",
+    "title": "Winkelmanager",
+    "company": "groen",
+    "city": "Utrecht",
+    "language": "nl",
+    "remotePolicy": "onsite",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 38,
+    "hoursMax": 40,
+    "salaryMinMonth": 3400,
+    "salaryMaxMonth": 4200,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      }
+    ],
+    "occupation": "store-manager",
+    "seniority": "lead",
+    "skills": [
+      {
+        "skill": "retail-management",
+        "importance": "must"
+      },
+      {
+        "skill": "team-leadership",
+        "importance": "must"
+      },
+      {
+        "skill": "visual-merchandising",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 13,
+    "validForDays": 45,
+    "description": "Je geeft leiding aan een team van 15 medewerkers in onze winkel in Utrecht en bent verantwoordelijk voor omzet en klantbeleving.\nErvaring met visual merchandising is een pré."
+  },
+  {
+    "key": "canal-recruiter",
+    "title": "Talent Acquisition Specialist",
+    "company": "canal",
+    "city": "Amsterdam",
+    "language": "nl",
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 32,
+    "hoursMax": 40,
+    "salaryMinMonth": 3800,
+    "salaryMaxMonth": 4800,
+    "languageRequirements": [
+      {
+        "language": "nl",
+        "level": "C1",
+        "required": true
+      },
+      {
+        "language": "en",
+        "level": "B2",
+        "required": false
+      }
+    ],
+    "occupation": "recruiter",
+    "seniority": "medior",
+    "skills": [
+      {
+        "skill": "recruitment",
+        "importance": "must"
+      },
+      {
+        "skill": "communication",
+        "importance": "must"
+      },
+      {
+        "skill": "labour-law",
+        "importance": "nice"
+      }
+    ],
+    "educationRequirementEqf": null,
+    "postedDaysAgo": 4,
+    "validForDays": 45,
+    "description": "Help ons dit jaar 40 dataprofessionals aan te nemen. Je verzorgt het volledige wervingsproces, van sourcing tot aanbod, en versterkt ons werkgeversmerk.\nKennis van het Nederlandse arbeidsrecht is een pré."
+  },
+  {
+    "key": "brightlane-privacy",
+    "title": "Privacy Counsel",
+    "company": "brightlane",
+    "city": "Amsterdam",
     "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "web-developer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "typescript",
-    "importance": "must"
-   },
-   {
-    "skill": "nodejs",
-    "importance": "must"
-   },
-   {
-    "skill": "react",
-    "importance": "must"
-   },
-   {
-    "skill": "postgresql",
-    "importance": "nice"
-   },
-   {
-    "skill": "aws",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 8,
-  "validForDays": 45,
-  "description": "Brightlane is hiring a Full Stack Engineer for the merchant dashboard team.\nYou build end-to-end features with TypeScript, Node.js and React, from API to UI.\nPostgreSQL and AWS experience are a bonus. We offer visa sponsorship, relocation support and a hybrid setup in Amsterdam."
- },
- {
-  "key": "lumen-devops",
-  "title": "DevOps Engineer",
-  "company": "lumen",
-  "city": "Veldhoven",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 5400,
-  "salaryMaxMonth": 7000,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "devops-engineer",
-  "seniority": "senior",
-  "skills": [
-   {
-    "skill": "kubernetes",
-    "importance": "must"
-   },
-   {
-    "skill": "ci-cd",
-    "importance": "must"
-   },
-   {
-    "skill": "linux",
-    "importance": "must"
-   },
-   {
-    "skill": "terraform",
-    "importance": "must"
-   },
-   {
-    "skill": "azure",
-    "importance": "nice"
-   },
-   {
-    "skill": "python",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 12,
-  "validForDays": 45,
-  "description": "Lumen Semiconductors is looking for a DevOps Engineer to run the build and test infrastructure for our machine software.\nYou automate CI/CD pipelines, manage Kubernetes clusters on Linux and codify infrastructure with Terraform.\nAzure and Python scripting are nice to have. English-speaking team; we are a recognised sponsor and offer relocation support."
- },
- {
-  "key": "polder-security",
-  "title": "Security Specialist OT/IT",
-  "company": "polder",
-  "city": "Rotterdam",
-  "language": "nl",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 36,
-  "hoursMax": 40,
-  "salaryMinMonth": 5000,
-  "salaryMaxMonth": 6500,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "B2",
-    "required": true
-   },
-   {
-    "language": "en",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "security-specialist",
-  "seniority": "senior",
-  "skills": [
-   {
-    "skill": "infosec",
-    "importance": "must"
-   },
-   {
-    "skill": "iso27001",
-    "importance": "must"
-   },
-   {
-    "skill": "incident-response",
-    "importance": "must"
-   },
-   {
-    "skill": "network-security",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 15,
-  "validForDays": 45,
-  "description": "Als Security Specialist bij Polder Energy bescherm je de systemen achter onze wind- en zonneparken.\nJe voert risicoanalyses uit, coördineert incident response en borgt ISO 27001.\nKennis van netwerkbeveiliging in OT-omgevingen is een pré. Je spreekt Nederlands (B2) en Engels.\nWij zijn erkend referent en kunnen sponsoring verzorgen."
- },
- {
-  "key": "hbi-ictpm",
-  "title": "ICT Projectmanager",
-  "company": "hbi",
-  "city": "Zwolle",
-  "language": "nl",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 36,
-  "hoursMax": 40,
-  "salaryMinMonth": 5000,
-  "salaryMaxMonth": 6200,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "ict-project-manager",
-  "seniority": "senior",
-  "skills": [
-   {
-    "skill": "project-management",
-    "importance": "must"
-   },
-   {
-    "skill": "stakeholder-management",
-    "importance": "must"
-   },
-   {
-    "skill": "prince2",
-    "importance": "must"
-   },
-   {
-    "skill": "agile",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 18,
-  "validForDays": 45,
-  "description": "Hollandse Bouw & Infra digitaliseert haar bouwprocessen. Als ICT Projectmanager leid je de invoering van een nieuw ERP-systeem.\nJe stuurt leveranciers aan, managet stakeholders van directie tot uitvoering en werkt volgens PRINCE2.\nErvaring met agile werken is een pré. Uitstekende beheersing van het Nederlands is vereist."
- },
- {
-  "key": "brightlane-pm",
-  "title": "Product Manager – Merchant Onboarding",
-  "company": "brightlane",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 6000,
-  "salaryMaxMonth": 7600,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "product-manager",
-  "seniority": "senior",
-  "skills": [
-   {
-    "skill": "product-management",
-    "importance": "must"
-   },
-   {
-    "skill": "stakeholder-management",
-    "importance": "must"
-   },
-   {
-    "skill": "requirements-analysis",
-    "importance": "must"
-   },
-   {
-    "skill": "user-research",
-    "importance": "nice"
-   },
-   {
-    "skill": "sql",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 7,
-  "validForDays": 45,
-  "description": "Own the onboarding journey for thousands of European merchants.\nYou define the roadmap, analyse requirements with compliance and engineering, and measure impact.\nUser research experience and basic SQL are a plus. We offer visa sponsorship and a hybrid way of working."
- },
- {
-  "key": "tulip-ux",
-  "title": "UX Designer",
-  "company": "tulip",
-  "city": "Utrecht",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 32,
-  "hoursMax": 40,
-  "salaryMinMonth": 4000,
-  "salaryMaxMonth": 5300,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "B2",
-    "required": true
-   },
-   {
-    "language": "nl",
-    "level": "B1",
-    "required": false
-   }
-  ],
-  "occupation": "ux-designer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "ux-design",
-    "importance": "must"
-   },
-   {
-    "skill": "user-research",
-    "importance": "must"
-   },
-   {
-    "skill": "figma",
-    "importance": "must"
-   },
-   {
-    "skill": "prototyping",
-    "importance": "nice"
-   },
-   {
-    "skill": "html-css",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 5,
-  "validForDays": 45,
-  "description": "Design planning tools that make life easier for nurses and childcare workers.\nYou run user research, turn insights into flows and designs in Figma and test prototypes with real users.\nDutch is helpful for user interviews but not required. Visa sponsorship possible."
- },
- {
-  "key": "groen-ux",
-  "title": "UX/UI Designer E-commerce",
-  "company": "groen",
-  "city": "Den Haag",
-  "language": "nl",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 32,
-  "hoursMax": 40,
-  "salaryMinMonth": 3500,
-  "salaryMaxMonth": 4500,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "ux-designer",
-  "seniority": "junior",
-  "skills": [
-   {
-    "skill": "ui-design",
-    "importance": "must"
-   },
-   {
-    "skill": "figma",
-    "importance": "must"
-   },
-   {
-    "skill": "user-research",
-    "importance": "nice"
-   },
-   {
-    "skill": "prototyping",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 10,
-  "validForDays": 45,
-  "description": "Als UX/UI Designer ontwerp je de webshop en app van Groen & Co.\nJe maakt ontwerpen in Figma, werkt nauw samen met developers en test met klanten.\nErvaring met gebruikersonderzoek en prototypes is een pré. Starters met een sterk portfolio zijn welkom."
- },
- {
-  "key": "maasoever-vpk",
-  "title": "Verpleegkundige Interne Geneeskunde",
-  "company": "maasoever",
-  "city": "Rotterdam",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time",
-   "part_time"
-  ],
-  "hoursMin": 24,
-  "hoursMax": 36,
-  "salaryMinMonth": 3300,
-  "salaryMaxMonth": 4700,
-  "visaSponsorship": null,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "nurse",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "patient-care",
-    "importance": "must"
-   },
-   {
-    "skill": "medication",
-    "importance": "must"
-   },
-   {
-    "skill": "care-plans",
-    "importance": "must"
-   },
-   {
-    "skill": "wound-care",
-    "importance": "nice"
-   },
-   {
-    "skill": "medical-records",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 3,
-  "validForDays": 45,
-  "description": "Op onze afdeling Interne Geneeskunde zorg je voor patiënten met complexe ziektebeelden.\nJe verleent patiëntenzorg, dient medicatie toe en stelt zorgplannen op in samenwerking met artsen.\nErvaring met wondverzorging en rapporteren in het ECD is een pré. BIG-registratie is vereist.\n24-36 uur, onregelmatigheidstoeslag en een eigen opleidingsbudget."
- },
- {
-  "key": "dijkstra-wijk",
-  "title": "Wijkverpleegkundige",
-  "company": "dijkstra",
-  "city": "Utrecht",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "part_time"
-  ],
-  "hoursMin": 24,
-  "hoursMax": 32,
-  "salaryMinMonth": 3400,
-  "salaryMaxMonth": 4800,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "nurse",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "patient-care",
-    "importance": "must"
-   },
-   {
-    "skill": "care-plans",
-    "importance": "must"
-   },
-   {
-    "skill": "medication",
-    "importance": "must"
-   },
-   {
-    "skill": "elderly-care",
-    "importance": "nice"
-   },
-   {
-    "skill": "dementia-care",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 6,
-  "validForDays": 45,
-  "description": "Als wijkverpleegkundige in Utrecht-Oost bezoek je cliënten thuis en stel je zorgplannen op.\nJe werkt zelfstandig in een klein team en hebt veel contact met huisartsen en mantelzorgers.\nKennis van ouderenzorg en dementiezorg is een pré. Fiets of e-bike van de zaak."
- },
- {
-  "key": "dijkstra-vig",
-  "title": "Verzorgende IG",
-  "company": "dijkstra",
-  "city": "Nieuwegein",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "part_time"
-  ],
-  "hoursMin": 16,
-  "hoursMax": 28,
-  "salaryMinMonth": 2600,
-  "salaryMaxMonth": 3400,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "care-assistant",
-  "seniority": "junior",
-  "skills": [
-   {
-    "skill": "elderly-care",
-    "importance": "must"
-   },
-   {
-    "skill": "patient-care",
-    "importance": "must"
-   },
-   {
-    "skill": "dementia-care",
-    "importance": "nice"
-   },
-   {
-    "skill": "medication",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 2,
-  "validForDays": 45,
-  "description": "Voor ons woonzorgcentrum in Nieuwegein zoeken wij een Verzorgende IG.\nJe ondersteunt bewoners bij de dagelijkse zorg en bent een vertrouwd gezicht voor familie.\nErvaring in de psychogeriatrie is een pré. Ook herintreders zijn welkom; wij bieden begeleiding."
- },
- {
-  "key": "atlas-cra",
-  "title": "Clinical Research Associate",
-  "company": "atlas",
-  "city": "Leiden",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 4200,
-  "salaryMaxMonth": 5400,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   },
-   {
-    "language": "nl",
-    "level": "B2",
-    "required": false
-   }
-  ],
-  "occupation": "clinical-research-associate",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "clinical-research",
-    "importance": "must"
-   },
-   {
-    "skill": "gmp",
-    "importance": "must"
-   },
-   {
-    "skill": "medical-records",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 21,
-  "validForDays": 45,
-  "description": "Monitor clinical studies for our diagnostic tests across Dutch and Belgian hospitals.\nYou ensure studies follow ICH-GCP and GMP, visit sites and work with investigators.\nDutch is an advantage. We are a recognised sponsor."
- },
- {
-  "key": "atlas-lab",
-  "title": "Laboratory Technician Molecular Diagnostics",
-  "company": "atlas",
-  "city": "Leiden",
-  "language": "en",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 36,
-  "hoursMax": 40,
-  "salaryMinMonth": 3300,
-  "salaryMaxMonth": 4200,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "lab-technician",
-  "seniority": "junior",
-  "skills": [
-   {
-    "skill": "lab-techniques",
-    "importance": "must"
-   },
-   {
-    "skill": "gmp",
-    "importance": "must"
-   },
-   {
-    "skill": "molecular-biology",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 4,
-  "validForDays": 45,
-  "description": "Run PCR and ELISA assays in our GMP laboratory in the Leiden Bio Science Park.\nYou document results carefully and help improve lab procedures. Knowledge of molecular biology or cell culture is a plus.\nEnglish-speaking lab; visa sponsorship available for graduates (zoekjaar-friendly)."
- },
- {
-  "key": "maasoever-lab",
-  "title": "Analist Klinisch Chemisch Laboratorium",
-  "company": "maasoever",
-  "city": "Rotterdam",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time",
-   "part_time"
-  ],
-  "hoursMin": 32,
-  "hoursMax": 36,
-  "salaryMinMonth": 3000,
-  "salaryMaxMonth": 4100,
-  "visaSponsorship": null,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "lab-technician",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "lab-techniques",
-    "importance": "must"
-   },
-   {
-    "skill": "quality-control",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": 4,
-  "postedDaysAgo": 16,
-  "validForDays": 45,
-  "description": "Je voert analyses uit in ons klinisch chemisch laboratorium en werkt in een rooster inclusief avonddiensten.\nEen afgeronde MLO-opleiding is vereist; ervaring met kwaliteitscontrole is een pré."
- },
- {
-  "key": "finwise-acc",
-  "title": "Assistent-accountant",
-  "company": "finwise",
-  "city": "Amersfoort",
-  "language": "nl",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time",
-   "part_time"
-  ],
-  "hoursMin": 32,
-  "hoursMax": 40,
-  "salaryMinMonth": 3200,
-  "salaryMaxMonth": 4300,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "accountant",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "accounting",
-    "importance": "must"
-   },
-   {
-    "skill": "financial-reporting",
-    "importance": "must"
-   },
-   {
-    "skill": "tax",
-    "importance": "must"
-   },
-   {
-    "skill": "exact-online",
-    "importance": "nice"
-   },
-   {
-    "skill": "auditing",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": 6,
-  "postedDaysAgo": 9,
-  "validForDays": 45,
-  "description": "Bij FinWise stel je jaarrekeningen op voor mkb-klanten, verzorg je aangiften en adviseer je ondernemers.\nKennis van Exact Online en controlewerkzaamheden is een pré. Een HBO-diploma Accountancy is vereist."
- },
- {
-  "key": "polder-controller",
-  "title": "Financial Controller",
-  "company": "polder",
-  "city": "Rotterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 6000,
-  "salaryMaxMonth": 7800,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   },
-   {
-    "language": "nl",
-    "level": "B2",
-    "required": false
-   }
-  ],
-  "occupation": "financial-controller",
-  "seniority": "senior",
-  "skills": [
-   {
-    "skill": "financial-reporting",
-    "importance": "must"
-   },
-   {
-    "skill": "budgeting",
-    "importance": "must"
-   },
-   {
-    "skill": "ifrs",
-    "importance": "must"
-   },
-   {
-    "skill": "sap",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 13,
-  "validForDays": 45,
-  "description": "Polder Energy is looking for a Financial Controller for our renewable assets division.\nYou own the monthly closing and IFRS reporting, and drive budgeting and forecasting with business partners.\nSAP knowledge is a plus, as is Dutch. We are a recognised sponsor."
- },
- {
-  "key": "brightlane-fa",
-  "title": "Financial Analyst (FP&A)",
-  "company": "brightlane",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 4800,
-  "salaryMaxMonth": 6000,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "financial-analyst",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "financial-analysis",
-    "importance": "must"
-   },
-   {
-    "skill": "excel",
-    "importance": "must"
-   },
-   {
-    "skill": "budgeting",
-    "importance": "must"
-   },
-   {
-    "skill": "sql",
-    "importance": "nice"
-   },
-   {
-    "skill": "power-bi",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 5,
-  "validForDays": 45,
-  "description": "Build the financial models that steer Brightlane's growth.\nYou analyse unit economics, prepare board reporting and support budgeting cycles.\nSQL or Power BI skills are a bonus. Visa sponsorship available."
- },
- {
-  "key": "finwise-boekhouder",
-  "title": "Boekhouder (parttime)",
-  "company": "finwise",
-  "city": "Amersfoort",
-  "language": "nl",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "part_time"
-  ],
-  "hoursMin": 20,
-  "hoursMax": 28,
-  "salaryMinMonth": 2800,
-  "salaryMaxMonth": 3500,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "bookkeeper",
-  "seniority": "junior",
-  "skills": [
-   {
-    "skill": "bookkeeping",
-    "importance": "must"
-   },
-   {
-    "skill": "exact-online",
-    "importance": "must"
-   },
-   {
-    "skill": "tax",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 12,
-  "validForDays": 45,
-  "description": "Voor 20-28 uur per week zoeken wij een boekhouder die de financiële administratie van klanten verzorgt in Exact Online.\nKennis van btw-aangiftes is een pré. Flexibele werktijden, deels thuiswerken mogelijk."
- },
- {
-  "key": "noordzee-payroll",
-  "title": "Salarisadministrateur",
-  "company": "noordzee",
-  "city": "Rotterdam",
-  "language": "nl",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 36,
-  "hoursMax": 40,
-  "salaryMinMonth": 3300,
-  "salaryMaxMonth": 4200,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "payroll-specialist",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "payroll",
-    "importance": "must"
-   },
-   {
-    "skill": "labour-law",
-    "importance": "must"
-   },
-   {
-    "skill": "excel",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 19,
-  "validForDays": 45,
-  "description": "Je verzorgt de salarisadministratie voor 1.200 medewerkers en bent aanspreekpunt voor vragen over loon en cao.\nKennis van arbeidsrecht en Excel is een pré."
- },
- {
-  "key": "canal-marketing",
-  "title": "Digital Marketing Specialist",
-  "company": "canal",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 32,
-  "hoursMax": 40,
-  "salaryMinMonth": 3800,
-  "salaryMaxMonth": 4800,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "digital-marketer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "digital-marketing",
-    "importance": "must"
-   },
-   {
-    "skill": "seo",
-    "importance": "must"
-   },
-   {
-    "skill": "google-analytics",
-    "importance": "must"
-   },
-   {
-    "skill": "content-marketing",
-    "importance": "nice"
-   },
-   {
-    "skill": "copywriting",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 6,
-  "validForDays": 45,
-  "description": "Grow Canal Analytics' brand in the Benelux and DACH markets.\nYou run campaigns, improve SEO and measure everything in Google Analytics. Content marketing and strong copywriting are a plus.\nWe are a recognised sponsor."
- },
- {
-  "key": "groen-seo",
-  "title": "SEO/SEA Specialist",
-  "company": "groen",
-  "city": "Den Haag",
-  "language": "nl",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 32,
-  "hoursMax": 40,
-  "salaryMinMonth": 3400,
-  "salaryMaxMonth": 4400,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "digital-marketer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "seo",
-    "importance": "must"
-   },
-   {
-    "skill": "sea",
-    "importance": "must"
-   },
-   {
-    "skill": "google-analytics",
-    "importance": "must"
-   },
-   {
-    "skill": "content-marketing",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 8,
-  "validForDays": 45,
-  "description": "Je optimaliseert de vindbaarheid van onze webshop en beheert Google Ads-campagnes.\nJe rapporteert in Google Analytics en werkt samen met het contentteam."
- },
- {
-  "key": "vanhouten-am",
-  "title": "Accountmanager Industrie",
-  "company": "vanhouten",
-  "city": "Helmond",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 4200,
-  "salaryMaxMonth": 5500,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "C1",
-    "required": true
-   },
-   {
-    "language": "de",
-    "level": "B1",
-    "required": false
-   }
-  ],
-  "occupation": "account-manager",
-  "seniority": "senior",
-  "skills": [
-   {
-    "skill": "account-management",
-    "importance": "must"
-   },
-   {
-    "skill": "b2b-sales",
-    "importance": "must"
-   },
-   {
-    "skill": "negotiation",
-    "importance": "must"
-   },
-   {
-    "skill": "crm",
-    "importance": "nice"
-   },
-   {
-    "skill": "mech-engineering",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 17,
-  "validForDays": 45,
-  "description": "Als accountmanager bouw je relaties op met industriële klanten in Nederland en Duitsland.\nJe onderhandelt over contracten en werkt nauw samen met onze engineers. Duits is een pré, technische affiniteit ook.\nAuto van de zaak."
- },
- {
-  "key": "brightlane-sdr",
-  "title": "Sales Development Representative (DACH)",
-  "company": "brightlane",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 3300,
-  "salaryMaxMonth": 4000,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   },
-   {
-    "language": "de",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "account-manager",
-  "seniority": "junior",
-  "skills": [
-   {
-    "skill": "lead-generation",
-    "importance": "must"
-   },
-   {
-    "skill": "crm",
-    "importance": "must"
-   },
-   {
-    "skill": "salesforce",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 3,
-  "validForDays": 45,
-  "description": "Generate new business with online merchants in Germany, Austria and Switzerland.\nYou prospect, qualify leads and book meetings for our account executives. Salesforce experience is a plus.\nFluent German and English required. Visa sponsorship available."
- },
- {
-  "key": "brightlane-cs",
-  "title": "Customer Support Agent (English)",
-  "company": "brightlane",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time",
-   "part_time"
-  ],
-  "hoursMin": 24,
-  "hoursMax": 40,
-  "salaryMinMonth": 2800,
-  "salaryMaxMonth": 3300,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "customer-service-agent",
-  "seniority": "junior",
-  "skills": [
-   {
-    "skill": "customer-service",
-    "importance": "must"
-   },
-   {
-    "skill": "communication",
-    "importance": "must"
-   },
-   {
-    "skill": "crm",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 1,
-  "validForDays": 45,
-  "description": "Help our merchants solve payment questions by chat, email and phone.\nYou are customer-minded, communicate clearly in English and like solving puzzles.\nPart-time possible. Note: you need an existing right to work in the Netherlands."
- },
- {
-  "key": "frisia-marketing",
-  "title": "Marketingmanager Consumentenmerken",
-  "company": "frisia",
-  "city": "Leeuwarden",
-  "language": "nl",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 5200,
-  "salaryMaxMonth": 6600,
-  "visaSponsorship": null,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "C1",
-    "required": true
-   },
-   {
-    "language": "en",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "marketing-manager",
-  "seniority": "lead",
-  "skills": [
-   {
-    "skill": "marketing-strategy",
-    "importance": "must"
-   },
-   {
-    "skill": "brand-management",
-    "importance": "must"
-   },
-   {
-    "skill": "team-leadership",
-    "importance": "must"
-   },
-   {
-    "skill": "digital-marketing",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 22,
-  "validForDays": 45,
-  "description": "Je bent verantwoordelijk voor de marketingstrategie van onze zuivelmerken in Nederland en geeft leiding aan een team van zes marketeers.\nErvaring met digitale marketing is een pré."
- },
- {
-  "key": "noordzee-planner",
-  "title": "Logistiek Planner",
-  "company": "noordzee",
-  "city": "Rotterdam",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 3200,
-  "salaryMaxMonth": 4000,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "logistics-planner",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "transport-planning",
-    "importance": "must"
-   },
-   {
-    "skill": "planning",
-    "importance": "must"
-   },
-   {
-    "skill": "customs",
-    "importance": "nice"
-   },
-   {
-    "skill": "excel",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 4,
-  "validForDays": 45,
-  "description": "Je plant dagelijks de ritten van 60 vrachtwagens tussen de haven en onze klanten.\nKennis van douaneprocessen en Excel is een pré. Werken in ploegendienst (vroeg/laat)."
- },
- {
-  "key": "noordzee-warehouse",
-  "title": "Magazijnmedewerker (heftruck)",
-  "company": "noordzee",
-  "city": "Waalwijk",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 38,
-  "hoursMax": 40,
-  "salaryMinMonth": 2500,
-  "salaryMaxMonth": 2900,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "A2",
-    "required": true
-   }
-  ],
-  "occupation": "warehouse-worker",
-  "seniority": "junior",
-  "skills": [
-   {
-    "skill": "warehouse-ops",
-    "importance": "must"
-   },
-   {
-    "skill": "forklift",
-    "importance": "must"
-   },
-   {
-    "skill": "inventory",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 2,
-  "validForDays": 45,
-  "description": "Orderpicken, laden en lossen in ons distributiecentrum in Waalwijk. Een geldig heftruckcertificaat is vereist.\nBasiskennis Nederlands is voldoende; je werkt in een internationaal team."
- },
- {
-  "key": "frisia-sc",
-  "title": "Supply Chain Analyst",
-  "company": "frisia",
-  "city": "Leeuwarden",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 4200,
-  "salaryMaxMonth": 5400,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "supply-chain-analyst",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "supply-chain",
-    "importance": "must"
-   },
-   {
-    "skill": "data-analysis",
-    "importance": "must"
-   },
-   {
-    "skill": "excel",
-    "importance": "must"
-   },
-   {
-    "skill": "sap",
-    "importance": "nice"
-   },
-   {
-    "skill": "power-bi",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 10,
-  "validForDays": 45,
-  "description": "Optimise our dairy supply chain from farm to export.\nYou analyse demand, inventory and transport data and build forecasts with planners. SAP and Power BI are a plus.\nWe are a recognised sponsor and our innovation centre works in English."
- },
- {
-  "key": "lumen-mech",
-  "title": "Mechanical Design Engineer",
-  "company": "lumen",
-  "city": "Veldhoven",
-  "language": "en",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 5000,
-  "salaryMaxMonth": 6600,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "mechanical-engineer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "mech-engineering",
-    "importance": "must"
-   },
-   {
-    "skill": "cad",
-    "importance": "must"
-   },
-   {
-    "skill": "solidworks",
-    "importance": "must"
-   },
-   {
-    "skill": "root-cause",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": 7,
-  "postedDaysAgo": 5,
-  "validForDays": 45,
-  "description": "Design precision modules for our lithography systems.\nYou work in SolidWorks, perform tolerance analyses and collaborate with suppliers. Root cause analysis experience is a plus.\nA master's degree in mechanical engineering is required. We sponsor visas and help with relocation."
- },
- {
-  "key": "vanhouten-e",
-  "title": "Elektrotechnisch Engineer",
-  "company": "vanhouten",
-  "city": "Helmond",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 4000,
-  "salaryMaxMonth": 5200,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "electrical-engineer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "elec-engineering",
-    "importance": "must"
-   },
-   {
-    "skill": "plc",
-    "importance": "must"
-   },
-   {
-    "skill": "cad",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 11,
-  "validForDays": 45,
-  "description": "Je ontwerpt de elektrotechnische installaties en besturingen van onze machines en programmeert PLC's (Siemens S7).\nErvaring met AutoCAD Electrical is een pré."
- },
- {
-  "key": "vanhouten-monteur",
-  "title": "Onderhoudsmonteur",
-  "company": "vanhouten",
-  "city": "Helmond",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 3000,
-  "salaryMaxMonth": 3800,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "B1",
-    "required": true
-   }
-  ],
-  "occupation": "maintenance-technician",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "machine-maintenance",
-    "importance": "must"
-   },
-   {
-    "skill": "plc",
-    "importance": "nice"
-   },
-   {
-    "skill": "electrical-installation",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 7,
-  "validForDays": 45,
-  "description": "Je zorgt voor preventief onderhoud en lost storingen op aan onze productielijnen.\nKennis van PLC's en NEN 3140 is een pré. Storingsdienst eens per zes weken."
- },
- {
-  "key": "lumen-quality",
-  "title": "Quality Engineer",
-  "company": "lumen",
-  "city": "Veldhoven",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 4800,
-  "salaryMaxMonth": 6200,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "quality-engineer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "quality-control",
-    "importance": "must"
-   },
-   {
-    "skill": "root-cause",
-    "importance": "must"
-   },
-   {
-    "skill": "lean",
-    "importance": "must"
-   },
-   {
-    "skill": "mech-engineering",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 9,
-  "validForDays": 45,
-  "description": "Improve the quality of our supply base and production.\nYou lead root cause analyses (8D, FMEA), drive Lean improvements and work with suppliers worldwide. We are a recognised sponsor."
- },
- {
-  "key": "frisia-plc",
-  "title": "PLC Engineer",
-  "company": "frisia",
-  "city": "Leeuwarden",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 4200,
-  "salaryMaxMonth": 5400,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "B2",
-    "required": true
-   },
-   {
-    "language": "en",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "automation-engineer",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "plc",
-    "importance": "must"
-   },
-   {
-    "skill": "elec-engineering",
-    "importance": "must"
-   },
-   {
-    "skill": "machine-maintenance",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 15,
-  "validForDays": 45,
-  "description": "Als PLC Engineer programmeer en optimaliseer je de besturingen van onze productielijnen.\nJe werkt aan nieuwe installaties en verbeteringen. Frisia is erkend referent en kan sponsoring verzorgen."
- },
- {
-  "key": "polder-solar",
-  "title": "Monteur Zonnepanelen",
-  "company": "polder",
-  "city": "Dordrecht",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 2900,
-  "salaryMaxMonth": 3600,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "B1",
-    "required": true
-   }
-  ],
-  "occupation": "solar-installer",
-  "seniority": "junior",
-  "skills": [
-   {
-    "skill": "solar",
-    "importance": "must"
-   },
-   {
-    "skill": "electrical-installation",
-    "importance": "must"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 3,
-  "validForDays": 45,
-  "description": "Je installeert zonnepanelen op daken van woningen en bedrijven in de regio Rotterdam-Dordrecht.\nJe werkt veilig volgens NEN 1010. Starters met een MBO-diploma Elektrotechniek zijn welkom, wij leiden je op."
- },
- {
-  "key": "polder-energy-analyst",
-  "title": "Energy Market Analyst",
-  "company": "polder",
-  "city": "Rotterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 5200,
-  "salaryMaxMonth": 6800,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "energy-analyst",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "energy-markets",
-    "importance": "must"
-   },
-   {
-    "skill": "data-analysis",
-    "importance": "must"
-   },
-   {
-    "skill": "python",
-    "importance": "must"
-   },
-   {
-    "skill": "sustainability",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 6,
-  "validForDays": 45,
-  "description": "Analyse European power markets and support our trading desk with forecasts.\nYou combine market knowledge with data analysis in Python. Knowledge of ESG / sustainability reporting is a plus.\nVisa sponsorship available."
- },
- {
-  "key": "rijnland-wiskunde",
-  "title": "Docent Wiskunde",
-  "company": "rijnland",
-  "city": "Leiden",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time",
-   "part_time"
-  ],
-  "hoursMin": 24,
-  "hoursMax": 40,
-  "salaryMinMonth": 3600,
-  "salaryMaxMonth": 5600,
-  "visaSponsorship": null,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "C2",
-    "required": true
-   }
-  ],
-  "occupation": "secondary-teacher",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "mathematics",
-    "importance": "must"
-   },
-   {
-    "skill": "lesson-planning",
-    "importance": "must"
-   },
-   {
-    "skill": "classroom-management",
-    "importance": "must"
-   }
-  ],
-  "educationRequirementEqf": 7,
-  "postedDaysAgo": 20,
-  "validForDays": 45,
-  "description": "Voor ons gymnasium zoeken wij een enthousiaste docent wiskunde voor de bovenbouw.\nEen eerstegraads bevoegdheid (WO-master) is vereist. Je spreekt Nederlands op moedertaalniveau."
- },
- {
-  "key": "rijnland-pm",
-  "title": "Pedagogisch Medewerker Kinderopvang",
-  "company": "rijnland",
-  "city": "Leiden",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "part_time"
-  ],
-  "hoursMin": 24,
-  "hoursMax": 32,
-  "salaryMinMonth": 2600,
-  "salaryMaxMonth": 3200,
-  "visaSponsorship": null,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "childcare-worker",
-  "seniority": "junior",
-  "skills": [
-   {
-    "skill": "childcare",
-    "importance": "must"
-   },
-   {
-    "skill": "communication",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": 4,
-  "postedDaysAgo": 8,
-  "validForDays": 45,
-  "description": "Je begeleidt kinderen van 0-4 jaar op ons kinderdagverblijf en onderhoudt contact met ouders.\nEen relevant MBO-diploma is vereist volgens de cao Kinderopvang."
- },
- {
-  "key": "gracht-chef",
-  "title": "Sous-chef",
-  "company": "gracht",
-  "city": "Amsterdam",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 38,
-  "hoursMax": 40,
-  "salaryMinMonth": 3000,
-  "salaryMaxMonth": 3700,
-  "visaSponsorship": null,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "B1",
-    "required": false
-   },
-   {
-    "language": "en",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "chef",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "cooking",
-    "importance": "must"
-   },
-   {
-    "skill": "haccp",
-    "importance": "must"
-   },
-   {
-    "skill": "team-leadership",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 5,
-  "validForDays": 45,
-  "description": "Our boutique hotel restaurant is looking for a sous-chef. You run the kitchen during service and work with seasonal Dutch produce.\nHACCP knowledge required; leadership experience is a plus. Our kitchen team speaks English; Dutch is a plus."
- },
- {
-  "key": "gracht-reception",
-  "title": "Front Office Medewerker",
-  "company": "gracht",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time",
-   "part_time"
-  ],
-  "hoursMin": 24,
-  "hoursMax": 38,
-  "salaryMinMonth": 2500,
-  "salaryMaxMonth": 2900,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   },
-   {
-    "language": "nl",
-    "level": "B2",
-    "required": true
-   }
-  ],
-  "occupation": "hotel-receptionist",
-  "seniority": "junior",
-  "skills": [
-   {
-    "skill": "front-desk",
-    "importance": "must"
-   },
-   {
-    "skill": "customer-service",
-    "importance": "must"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 2,
-  "validForDays": 45,
-  "description": "Welcome international guests at our front desk: check-in, reservations and local tips.\nYou speak excellent English and good Dutch. Evening and weekend shifts. You must already be allowed to work in the Netherlands."
- },
- {
-  "key": "groen-store",
-  "title": "Winkelmanager",
-  "company": "groen",
-  "city": "Utrecht",
-  "language": "nl",
-  "remotePolicy": "onsite",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 38,
-  "hoursMax": 40,
-  "salaryMinMonth": 3400,
-  "salaryMaxMonth": 4200,
-  "visaSponsorship": false,
-  "languageRequirements": [
-   {
-    "language": "nl",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "store-manager",
-  "seniority": "lead",
-  "skills": [
-   {
-    "skill": "retail-management",
-    "importance": "must"
-   },
-   {
-    "skill": "team-leadership",
-    "importance": "must"
-   },
-   {
-    "skill": "visual-merchandising",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 13,
-  "validForDays": 45,
-  "description": "Je geeft leiding aan een team van 15 medewerkers in onze winkel in Utrecht en bent verantwoordelijk voor omzet en klantbeleving.\nErvaring met visual merchandising is een pré."
- },
- {
-  "key": "canal-recruiter",
-  "title": "Talent Acquisition Specialist",
-  "company": "canal",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 32,
-  "hoursMax": 40,
-  "salaryMinMonth": 3800,
-  "salaryMaxMonth": 4800,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C1",
-    "required": true
-   }
-  ],
-  "occupation": "recruiter",
-  "seniority": "medior",
-  "skills": [
-   {
-    "skill": "recruitment",
-    "importance": "must"
-   },
-   {
-    "skill": "communication",
-    "importance": "must"
-   },
-   {
-    "skill": "labour-law",
-    "importance": "nice"
-   }
-  ],
-  "educationRequirementEqf": null,
-  "postedDaysAgo": 4,
-  "validForDays": 45,
-  "description": "Help us hire 40 data professionals this year. You run full-cycle recruitment, from sourcing to offer, and improve our employer brand.\nKnowledge of Dutch labour law is a plus. Visa sponsorship available."
- },
- {
-  "key": "brightlane-privacy",
-  "title": "Privacy Counsel",
-  "company": "brightlane",
-  "city": "Amsterdam",
-  "language": "en",
-  "remotePolicy": "hybrid",
-  "employmentTypes": [
-   "full_time"
-  ],
-  "hoursMin": 40,
-  "hoursMax": 40,
-  "salaryMinMonth": 6000,
-  "salaryMaxMonth": 7800,
-  "visaSponsorship": true,
-  "languageRequirements": [
-   {
-    "language": "en",
-    "level": "C2",
-    "required": true
-   }
-  ],
-  "occupation": "privacy-officer",
-  "seniority": "senior",
-  "skills": [
-   {
-    "skill": "gdpr",
-    "importance": "must"
-   },
-   {
-    "skill": "compliance",
-    "importance": "must"
-   },
-   {
-    "skill": "contract-law",
-    "importance": "must"
-   }
-  ],
-  "educationRequirementEqf": 7,
-  "postedDaysAgo": 10,
-  "validForDays": 45,
-  "description": "Advise Brightlane on GDPR, payments regulation and data processing agreements.\nYou have 5+ years of experience in privacy law. A law degree (LLM) is required. We sponsor visas."
- }
+    "remotePolicy": "hybrid",
+    "employmentTypes": ["full_time"],
+    "hoursMin": 40,
+    "hoursMax": 40,
+    "salaryMinMonth": 6000,
+    "salaryMaxMonth": 7800,
+    "languageRequirements": [
+      {
+        "language": "en",
+        "level": "C2",
+        "required": true
+      }
+    ],
+    "occupation": "privacy-officer",
+    "seniority": "senior",
+    "skills": [
+      {
+        "skill": "gdpr",
+        "importance": "must"
+      },
+      {
+        "skill": "compliance",
+        "importance": "must"
+      },
+      {
+        "skill": "contract-law",
+        "importance": "must"
+      }
+    ],
+    "educationRequirementEqf": 7,
+    "postedDaysAgo": 10,
+    "validForDays": 45,
+    "description": "Advise Brightlane on GDPR, payments regulation and data processing agreements.\nYou have 5+ years of experience in privacy law. A law degree (LLM) is required."
+  }
 ]

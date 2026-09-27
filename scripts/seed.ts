@@ -44,7 +44,6 @@ interface SeedCompany {
   key: string;
   name: string;
   domain: string;
-  isRecognisedSponsor: boolean;
   size: string;
   type: string;
   city: string;
@@ -62,7 +61,6 @@ interface SeedJob {
   hoursMax: number | null;
   salaryMinMonth: number | null;
   salaryMaxMonth: number | null;
-  visaSponsorship: boolean | null;
   languageRequirements: { language: string; level: string; required: boolean }[];
   occupation: string;
   seniority: string;
@@ -80,9 +78,6 @@ interface SeedCandidate {
   headline: string;
   seniority: string;
   educationLevel: number;
-  needsSponsorship: boolean;
-  permitType: string;
-  salaryNormCategory: string | null;
   preferences: {
     desiredOccupations: string[];
     city: string;
@@ -211,8 +206,6 @@ async function main() {
         companies.map((c) => ({
           name: c.name,
           domain: c.domain,
-          is_recognised_sponsor: c.isRecognisedSponsor,
-          sponsor_checked_at: new Date().toISOString(),
           size: c.size as never,
           type: c.type as never,
           website: `https://${c.domain}`,
@@ -226,9 +219,7 @@ async function main() {
   const companyId = new Map(
     companies.map((c) => [c.key, (companyRows ?? []).find((r) => r.domain === c.domain)!.id]),
   );
-  log(
-    `${companies.length} companies (${companies.filter((c) => c.isRecognisedSponsor).length} recognised sponsors)`,
-  );
+  log(`${companies.length} companies`);
 
   // 3. Matching model
   await ensureDefaultModel(admin);
@@ -302,7 +293,6 @@ async function main() {
           : null,
         language: j.language,
         language_requirements: asJson(j.languageRequirements),
-        visa_sponsorship: j.visaSponsorship,
         esco_occupation_uri: occ.uri,
         isco_code: occ.iscoCode,
         seniority: j.seniority as never,
@@ -331,9 +321,7 @@ async function main() {
   const withoutId = jobRows.filter((r) => !("id" in r));
   if (withId.length) await must(admin.from("jobs").upsert(withId), "update jobs");
   if (withoutId.length) await must(admin.from("jobs").insert(withoutId), "insert jobs");
-  log(
-    `${jobs.length} jobs (${jobs.filter((j) => j.language === "en").length} English, ${jobs.filter((j) => j.visaSponsorship).length} with sponsorship)`,
-  );
+  log(`${jobs.length} jobs (${jobs.filter((j) => j.language === "en").length} English)`);
 
   // 5. Demo connector (disabled): generic JSON feed served by the app itself (public/demo).
   const demoName = "Demo feed (lokaal)";
@@ -399,9 +387,6 @@ async function main() {
           summary: c.persona,
           seniority: c.seniority as never,
           education_level: c.educationLevel,
-          needs_sponsorship: c.needsSponsorship,
-          permit_type: c.permitType as never,
-          salary_norm_category: c.salaryNormCategory as never,
           preferences: asJson({
             desiredOccupations: desired.map((o) => ({
               uri: o.uri,

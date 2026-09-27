@@ -45,7 +45,6 @@ export interface JobClassification {
   skills: { uri: string; label: string; importance: "must" | "nice" }[];
   unmappedSkills: string[];
   languageRequirements: LanguageRequirement[];
-  visaSponsorship: boolean | null;
   remotePolicy: RemotePolicy | null;
   employmentTypes: EmploymentType[];
   hoursMin: number | null;

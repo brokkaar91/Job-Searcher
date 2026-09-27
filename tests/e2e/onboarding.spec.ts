@@ -34,10 +34,8 @@ test.describe("onboarding", () => {
     await expect(page.getByText("Alex Morgan")).toHaveCount(0);
     await page.getByRole("button", { name: "Volgende" }).click();
 
-    // 2. Work status
+    // 2. Languages
     await expect(page).toHaveURL(/\/onboarding\/status/);
-    await page.getByText("Ja, ik heb sponsoring nodig").click();
-    await page.getByText("Norm voor afgestudeerden").click();
     await page.getByRole("button", { name: "Volgende" }).click();
 
     // 3. Preferences

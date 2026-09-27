@@ -56,10 +56,6 @@ export const jobClassificationSchema = z.object({
   languageRequirements: z.array(
     z.object({ language: z.string(), level: z.enum(CEFR_LEVELS), required: z.boolean() }),
   ),
-  visaSponsorship: z
-    .boolean()
-    .nullable()
-    .describe("true only if the ad says so, false if it excludes it"),
   remotePolicy: z.enum(REMOTE_POLICIES).nullable(),
   employmentTypes: z.array(z.enum(EMPLOYMENT_TYPES)),
   hoursMin: z.number().nullable(),

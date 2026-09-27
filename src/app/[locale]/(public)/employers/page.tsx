@@ -19,7 +19,7 @@ export default async function EmployersPage({ params }: PageProps<"/[locale]/emp
   const points = [
     { icon: Filter, key: "quality" },
     { icon: Handshake, key: "fair" },
-    { icon: Building2, key: "sponsor" },
+    { icon: Building2, key: "reach" },
   ] as const;
   return (
     <div className="mx-auto max-w-5xl space-y-12 px-4 py-16 sm:px-6">

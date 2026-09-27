@@ -83,17 +83,6 @@ export function ModelEditor({
                 />
                 <span className="text-sm font-medium">{tm(`rules.${rule}`)}</span>
               </label>
-              {rule === "sponsorship" && (
-                <label className="flex items-center gap-2 text-sm">
-                  <Switch
-                    checked={cfg.knockouts.sponsorship.requireSalaryNorm}
-                    onCheckedChange={(requireSalaryNorm) =>
-                      setKo("sponsorship", { requireSalaryNorm })
-                    }
-                  />
-                  {t("requireNorm")}
-                </label>
-              )}
               {rule === "language" && (
                 <label className="flex items-center gap-2 text-sm">
                   {t("tolerance")}
@@ -139,7 +128,7 @@ export function ModelEditor({
 
         <Card>
           <CardHeader>
-            <CardTitle>{t("thresholdsAndNorms")}</CardTitle>
+            <CardTitle>{t("thresholds")}</CardTitle>
           </CardHeader>
           <div className="grid gap-3 sm:grid-cols-3">
             {(["strong", "good", "possible"] as const).map((k) => (
@@ -155,24 +144,6 @@ export function ModelEditor({
                     setCfg({
                       ...cfg,
                       thresholds: { ...cfg.thresholds, [k]: Number(e.target.value) },
-                    })
-                  }
-                />
-              </div>
-            ))}
-          </div>
-          <div className="grid gap-3 sm:grid-cols-4">
-            {(["year", "standard", "reduced", "graduate"] as const).map((k) => (
-              <div key={k} className="grid gap-1.5">
-                <Label htmlFor={`norm-${k}`}>{t(`norms.${k}`)}</Label>
-                <Input
-                  id={`norm-${k}`}
-                  type="number"
-                  value={cfg.salaryNorms[k]}
-                  onChange={(e) =>
-                    setCfg({
-                      ...cfg,
-                      salaryNorms: { ...cfg.salaryNorms, [k]: Number(e.target.value) },
                     })
                   }
                 />

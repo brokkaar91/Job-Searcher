@@ -11,7 +11,7 @@ import { getActiveModel, type ActiveModel } from "../model";
 import { parseVector, toMatchCandidate, toMatchJob } from "./mappers";
 
 const JOB_COLUMNS =
-  "id, title, language, esco_skills, language_requirements, visa_sponsorship, lat, lng, city, remote_policy, salary_min_month, salary_max_month, hours_min, hours_max, employment_types, isco_code, seniority, work_values, education_requirement, embedding, companies(name, is_recognised_sponsor, size, type), esco_occupations(riasec, work_values)";
+  "id, title, language, esco_skills, language_requirements, lat, lng, city, remote_policy, salary_min_month, salary_max_month, hours_min, hours_max, employment_types, isco_code, seniority, work_values, education_requirement, embedding, companies(name, size, type), esco_occupations(riasec, work_values)";
 
 export interface LoadedJob {
   job: MatchJob;
@@ -44,7 +44,7 @@ export async function loadCandidate(admin: AdminClient, userId: string) {
     admin
       .from("candidate_profiles")
       .select(
-        "seniority, education_level, needs_sponsorship, permit_type, salary_norm_category, preferences, riasec, work_values, onboarding_completed_at, embedding",
+        "seniority, education_level, preferences, riasec, work_values, onboarding_completed_at, embedding",
       )
       .eq("user_id", userId)
       .single(),

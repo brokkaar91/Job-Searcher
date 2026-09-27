@@ -16,11 +16,6 @@ export const modelConfigSchema = z
       practical: z.number().min(0).max(100),
     }),
     knockouts: z.object({
-      sponsorship: z.object({
-        enabled: z.boolean(),
-        /** Also require the offered salary to reach the IND knowledge-migrant norm (when known). */
-        requireSalaryNorm: z.boolean(),
-      }),
       language: z.object({
         enabled: z.boolean(),
         /** Accept this many CEFR levels below the requirement (0 = strict). */
@@ -50,13 +45,6 @@ export const modelConfigSchema = z
         (t) => t.strong > t.good && t.good > t.possible,
         "thresholds must be strong > good > possible",
       ),
-    /** IND knowledge-migrant gross monthly salary norms (excl. 8% holiday allowance). */
-    salaryNorms: z.object({
-      year: z.number().int(),
-      standard: z.number().positive(),
-      reduced: z.number().positive(),
-      graduate: z.number().positive(),
-    }),
     skills: z.object({
       mustWeight: z.number().positive(),
       niceWeight: z.number().positive(),
@@ -97,15 +85,10 @@ export const DEFAULT_WEIGHTS: Record<ComponentKey, number> = {
   practical: 10,
 };
 
-/**
- * Default model (version 1).
- * Salary norms: IND kennismigrant thresholds for 2026 — INDICATIVE, verify on ind.nl each January
- * and publish a new model version with the updated amounts.
- */
+/** Default model (version 1). */
 export const DEFAULT_MODEL_CONFIG: ModelConfig = {
   weights: DEFAULT_WEIGHTS,
   knockouts: {
-    sponsorship: { enabled: true, requireSalaryNorm: true },
     language: { enabled: true, toleranceLevels: 0 },
     location: { enabled: true, graceMinutes: 10, hybridTravelFactor: 1.25 },
     salary: { enabled: true, tolerancePct: 5 },
@@ -113,7 +96,6 @@ export const DEFAULT_MODEL_CONFIG: ModelConfig = {
     education: { enabled: true },
   },
   thresholds: { strong: 75, good: 60, possible: 45 },
-  salaryNorms: { year: 2026, standard: 5942, reduced: 4357, graduate: 3122 },
   skills: {
     mustWeight: 2,
     niceWeight: 1,

@@ -12,9 +12,6 @@ const candidateRows: CandidateRows = {
   profile: {
     seniority: "senior",
     education_level: 7,
-    needs_sponsorship: true,
-    permit_type: "needs_permit",
-    salary_norm_category: null,
     preferences: {
       location: { lat: 52.37, lng: 4.9, city: "Amsterdam" },
       remote: "hybrid",
@@ -50,7 +47,6 @@ const jobRows: JobRows = {
       { broken: true },
     ],
     language_requirements: [{ language: "en", level: "C1", required: true }],
-    visa_sponsorship: true,
     lat: 52.37,
     lng: 4.9,
     city: "Amsterdam",
@@ -65,7 +61,7 @@ const jobRows: JobRows = {
     work_values: null,
     education_requirement: { min_eqf: 7, explicit: true },
   },
-  company: { name: "Canal", is_recognised_sponsor: true, size: "medium", type: "scaleup" },
+  company: { name: "Canal", size: "medium", type: "scaleup" },
   occupation: {
     riasec: { R: 0.5, I: 0.9, A: 0.15, S: 0.15, E: 0.15, C: 0.7 },
     work_values: {
@@ -110,7 +106,6 @@ describe("toMatchJob", () => {
   it("maps rows, falls back to the occupation's work values and parses the education requirement", () => {
     const j = toMatchJob(jobRows);
     expect(j.skills).toEqual([{ uri: "urn:jm:skill:python", label: "Python", importance: "must" }]); // invalid element dropped
-    expect(j.company?.isRecognisedSponsor).toBe(true);
     expect(j.location).toEqual({ lat: 52.37, lng: 4.9, city: "Amsterdam" });
     expect(j.workValues?.achievement).toBe(0.8);
     expect(j.educationRequirement).toEqual({ minEqf: 7 });

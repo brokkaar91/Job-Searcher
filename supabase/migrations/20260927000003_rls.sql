@@ -42,12 +42,12 @@ create policy "cv_files own delete" on public.cv_files for delete to authenticat
 -- Embeddings / parse results are written by the worker (service role) only.
 revoke update on public.candidate_profiles from authenticated;
 grant update (
-  headline, summary, seniority, education_level, needs_sponsorship, permit_type, salary_norm_category,
+  headline, summary, seniority, education_level,
   preferences, riasec, riasec_answers, work_values, onboarding_step, onboarding_completed_at, current_cv_id
 ) on public.candidate_profiles to authenticated;
 revoke update on public.cv_files from authenticated;
 
--- Companies & published jobs: readable by signed-in users (and anon for companies' sponsor flag).
+-- Companies & published jobs: readable by signed-in users.
 create policy "companies read" on public.companies for select using (true);
 create policy "companies admin write" on public.companies for all to authenticated using (public.is_admin()) with check (public.is_admin());
 create policy "jobs read published" on public.jobs for select to authenticated using ((status = 'published' and is_golden) or public.is_admin());

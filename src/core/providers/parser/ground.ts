@@ -99,7 +99,6 @@ export function groundJob(
     languageRequirements: raw.languageRequirements
       .map((r) => ({ ...r, language: r.language.toLowerCase().slice(0, 2) }))
       .filter((r) => /^[a-z]{2}$/.test(r.language)),
-    visaSponsorship: raw.visaSponsorship,
     remotePolicy: raw.remotePolicy,
     employmentTypes: [...new Set(raw.employmentTypes)],
     hoursMin: raw.hoursMin,

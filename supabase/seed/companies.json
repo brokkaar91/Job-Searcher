@@ -1,162 +1,146 @@
 [
- {
-  "key": "canal",
-  "name": "Canal Analytics",
-  "domain": "canalanalytics.example",
-  "isRecognisedSponsor": true,
-  "size": "medium",
-  "type": "scaleup",
-  "city": "Amsterdam",
-  "description": "Data- en analyticsbureau dat retailers en publieke organisaties helpt met datagedreven beslissingen."
- },
- {
-  "key": "tulip",
-  "name": "Tulip Tech",
-  "domain": "tuliptech.example",
-  "isRecognisedSponsor": true,
-  "size": "medium",
-  "type": "scaleup",
-  "city": "Utrecht",
-  "description": "SaaS-platform voor planning in de zorg en kinderopvang."
- },
- {
-  "key": "polder",
-  "name": "Polder Energy",
-  "domain": "polderenergy.example",
-  "isRecognisedSponsor": true,
-  "size": "large",
-  "type": "corporate",
-  "city": "Rotterdam",
-  "description": "Energieleverancier die investeert in wind, zon en slimme netten."
- },
- {
-  "key": "dijkstra",
-  "name": "Dijkstra Zorggroep",
-  "domain": "dijkstrazorg.example",
-  "isRecognisedSponsor": false,
-  "size": "large",
-  "type": "nonprofit",
-  "city": "Utrecht",
-  "description": "Zorgorganisatie voor ouderenzorg en wijkverpleging in de regio Utrecht."
- },
- {
-  "key": "maasoever",
-  "name": "Ziekenhuis Maasoever",
-  "domain": "maasoever.example",
-  "isRecognisedSponsor": true,
-  "size": "enterprise",
-  "type": "public",
-  "city": "Rotterdam",
-  "description": "Topklinisch opleidingsziekenhuis in Rotterdam-Zuid."
- },
- {
-  "key": "noordzee",
-  "name": "Noordzee Logistics",
-  "domain": "noordzeelogistics.example",
-  "isRecognisedSponsor": false,
-  "size": "large",
-  "type": "corporate",
-  "city": "Rotterdam",
-  "description": "Logistieke dienstverlener met distributiecentra rond de Rotterdamse haven."
- },
- {
-  "key": "brightlane",
-  "name": "Brightlane Payments",
-  "domain": "brightlane.example",
-  "isRecognisedSponsor": true,
-  "size": "large",
-  "type": "scaleup",
-  "city": "Amsterdam",
-  "description": "Fintech-scale-up voor betalingen van Europese webshops."
- },
- {
-  "key": "vanhouten",
-  "name": "Van Houten Techniek",
-  "domain": "vanhoutentechniek.example",
-  "isRecognisedSponsor": false,
-  "size": "small",
-  "type": "sme",
-  "city": "Helmond",
-  "description": "Familiebedrijf in machinebouw en industriële automatisering."
- },
- {
-  "key": "lumen",
-  "name": "Lumen Semiconductors",
-  "domain": "lumensemi.example",
-  "isRecognisedSponsor": true,
-  "size": "enterprise",
-  "type": "corporate",
-  "city": "Veldhoven",
-  "description": "Hightech-bedrijf dat precisiesystemen voor de chipindustrie ontwikkelt."
- },
- {
-  "key": "groen",
-  "name": "Groen & Co",
-  "domain": "groenenco.example",
-  "isRecognisedSponsor": false,
-  "size": "large",
-  "type": "corporate",
-  "city": "Den Haag",
-  "description": "Retailketen in duurzame woon- en tuinartikelen met 80 winkels."
- },
- {
-  "key": "gracht",
-  "name": "Hotel De Gouden Gracht",
-  "domain": "goudengracht.example",
-  "isRecognisedSponsor": false,
-  "size": "small",
-  "type": "sme",
-  "city": "Amsterdam",
-  "description": "Boutiquehotel met restaurant aan de Amsterdamse grachten."
- },
- {
-  "key": "rijnland",
-  "name": "OnderwijsGroep Rijnland",
-  "domain": "onderwijsrijnland.example",
-  "isRecognisedSponsor": false,
-  "size": "large",
-  "type": "public",
-  "city": "Leiden",
-  "description": "Scholengroep met acht middelbare scholen en kinderopvang in de regio Leiden."
- },
- {
-  "key": "hbi",
-  "name": "Hollandse Bouw & Infra",
-  "domain": "hollandsebouw.example",
-  "isRecognisedSponsor": true,
-  "size": "large",
-  "type": "corporate",
-  "city": "Zwolle",
-  "description": "Bouw- en infrabedrijf voor bruggen, wegen en duurzame woningbouw."
- },
- {
-  "key": "atlas",
-  "name": "Atlas BioLabs",
-  "domain": "atlasbiolabs.example",
-  "isRecognisedSponsor": true,
-  "size": "medium",
-  "type": "scaleup",
-  "city": "Leiden",
-  "description": "Biotechbedrijf dat diagnostische tests voor zeldzame ziekten ontwikkelt."
- },
- {
-  "key": "finwise",
-  "name": "FinWise Accountants",
-  "domain": "finwise.example",
-  "isRecognisedSponsor": false,
-  "size": "small",
-  "type": "sme",
-  "city": "Amersfoort",
-  "description": "Accountantskantoor voor mkb-ondernemers in Midden-Nederland."
- },
- {
-  "key": "frisia",
-  "name": "Frisia Dairy Innovations",
-  "domain": "frisiadairy.example",
-  "isRecognisedSponsor": true,
-  "size": "large",
-  "type": "corporate",
-  "city": "Leeuwarden",
-  "description": "Zuivelcoöperatie met innovatiecentrum en internationale export."
- }
+  {
+    "key": "canal",
+    "name": "Canal Analytics",
+    "domain": "canalanalytics.example",
+    "size": "medium",
+    "type": "scaleup",
+    "city": "Amsterdam",
+    "description": "Data- en analyticsbureau dat retailers en publieke organisaties helpt met datagedreven beslissingen."
+  },
+  {
+    "key": "tulip",
+    "name": "Tulip Tech",
+    "domain": "tuliptech.example",
+    "size": "medium",
+    "type": "scaleup",
+    "city": "Utrecht",
+    "description": "SaaS-platform voor planning in de zorg en kinderopvang."
+  },
+  {
+    "key": "polder",
+    "name": "Polder Energy",
+    "domain": "polderenergy.example",
+    "size": "large",
+    "type": "corporate",
+    "city": "Rotterdam",
+    "description": "Energieleverancier die investeert in wind, zon en slimme netten."
+  },
+  {
+    "key": "dijkstra",
+    "name": "Dijkstra Zorggroep",
+    "domain": "dijkstrazorg.example",
+    "size": "large",
+    "type": "nonprofit",
+    "city": "Utrecht",
+    "description": "Zorgorganisatie voor ouderenzorg en wijkverpleging in de regio Utrecht."
+  },
+  {
+    "key": "maasoever",
+    "name": "Ziekenhuis Maasoever",
+    "domain": "maasoever.example",
+    "size": "enterprise",
+    "type": "public",
+    "city": "Rotterdam",
+    "description": "Topklinisch opleidingsziekenhuis in Rotterdam-Zuid."
+  },
+  {
+    "key": "noordzee",
+    "name": "Noordzee Logistics",
+    "domain": "noordzeelogistics.example",
+    "size": "large",
+    "type": "corporate",
+    "city": "Rotterdam",
+    "description": "Logistieke dienstverlener met distributiecentra rond de Rotterdamse haven."
+  },
+  {
+    "key": "brightlane",
+    "name": "Brightlane Payments",
+    "domain": "brightlane.example",
+    "size": "large",
+    "type": "scaleup",
+    "city": "Amsterdam",
+    "description": "Fintech-scale-up voor betalingen van Europese webshops."
+  },
+  {
+    "key": "vanhouten",
+    "name": "Van Houten Techniek",
+    "domain": "vanhoutentechniek.example",
+    "size": "small",
+    "type": "sme",
+    "city": "Helmond",
+    "description": "Familiebedrijf in machinebouw en industriële automatisering."
+  },
+  {
+    "key": "lumen",
+    "name": "Lumen Semiconductors",
+    "domain": "lumensemi.example",
+    "size": "enterprise",
+    "type": "corporate",
+    "city": "Veldhoven",
+    "description": "Hightech-bedrijf dat precisiesystemen voor de chipindustrie ontwikkelt."
+  },
+  {
+    "key": "groen",
+    "name": "Groen & Co",
+    "domain": "groenenco.example",
+    "size": "large",
+    "type": "corporate",
+    "city": "Den Haag",
+    "description": "Retailketen in duurzame woon- en tuinartikelen met 80 winkels."
+  },
+  {
+    "key": "gracht",
+    "name": "Hotel De Gouden Gracht",
+    "domain": "goudengracht.example",
+    "size": "small",
+    "type": "sme",
+    "city": "Amsterdam",
+    "description": "Boutiquehotel met restaurant aan de Amsterdamse grachten."
+  },
+  {
+    "key": "rijnland",
+    "name": "OnderwijsGroep Rijnland",
+    "domain": "onderwijsrijnland.example",
+    "size": "large",
+    "type": "public",
+    "city": "Leiden",
+    "description": "Scholengroep met acht middelbare scholen en kinderopvang in de regio Leiden."
+  },
+  {
+    "key": "hbi",
+    "name": "Hollandse Bouw & Infra",
+    "domain": "hollandsebouw.example",
+    "size": "large",
+    "type": "corporate",
+    "city": "Zwolle",
+    "description": "Bouw- en infrabedrijf voor bruggen, wegen en duurzame woningbouw."
+  },
+  {
+    "key": "atlas",
+    "name": "Atlas BioLabs",
+    "domain": "atlasbiolabs.example",
+    "size": "medium",
+    "type": "scaleup",
+    "city": "Leiden",
+    "description": "Biotechbedrijf dat diagnostische tests voor zeldzame ziekten ontwikkelt."
+  },
+  {
+    "key": "finwise",
+    "name": "FinWise Accountants",
+    "domain": "finwise.example",
+    "size": "small",
+    "type": "sme",
+    "city": "Amersfoort",
+    "description": "Accountantskantoor voor mkb-ondernemers in Midden-Nederland."
+  },
+  {
+    "key": "frisia",
+    "name": "Frisia Dairy Innovations",
+    "domain": "frisiadairy.example",
+    "size": "large",
+    "type": "corporate",
+    "city": "Leeuwarden",
+    "description": "Zuivelcoöperatie met innovatiecentrum en internationale export."
+  }
 ]
