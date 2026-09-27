@@ -148,18 +148,16 @@ export async function runConnectorSync(
       }
       seen.add(job.externalId);
       const payloadHash = createHash("sha256").update(stableStringify(raw)).digest("hex");
-      await admin
-        .from("job_raw")
-        .upsert(
-          {
-            connector_id: connectorId,
-            run_id: runId,
-            external_id: job.externalId,
-            payload: asJson(raw),
-            payload_hash: payloadHash,
-          },
-          { onConflict: "connector_id,external_id,payload_hash", ignoreDuplicates: true },
-        );
+      await admin.from("job_raw").upsert(
+        {
+          connector_id: connectorId,
+          run_id: runId,
+          external_id: job.externalId,
+          payload: asJson(raw),
+          payload_hash: payloadHash,
+        },
+        { onConflict: "connector_id,external_id,payload_hash", ignoreDuplicates: true },
+      );
       try {
         const r = await ingestJob(ctx, job);
         counts[r.outcome]++;

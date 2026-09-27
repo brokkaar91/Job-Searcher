@@ -22,6 +22,7 @@ import { toVectorLiteral } from "../src/server/matching/mappers";
 import { createEmbeddingProvider } from "../src/core/providers/embedding";
 import { MockParserProvider } from "../src/core/providers/parser";
 import { EscoIndex } from "../src/core/esco";
+import { suggestMapping } from "../src/core/connectors/mapping";
 import { dedupKey, normalizeApplyUrl, normalizeText } from "../src/core/pipeline/normalize";
 import { redactPii } from "../src/core/privacy/redact";
 import { WORK_VALUES, type WorkValueProfile } from "../src/core/matching/types";
@@ -334,7 +335,45 @@ async function main() {
     `${jobs.length} jobs (${jobs.filter((j) => j.language === "en").length} English, ${jobs.filter((j) => j.visaSponsorship).length} with sponsorship)`,
   );
 
-  // 5. Users
+  // 5. Demo connector (disabled): generic JSON feed served by the app itself (public/demo).
+  const demoName = "Demo feed (lokaal)";
+  const { data: demoConnector } = await admin
+    .from("connectors")
+    .select("id")
+    .eq("name", demoName)
+    .maybeSingle();
+  if (!demoConnector) {
+    const site = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+    const { data: created } = await admin
+      .from("connectors")
+      .insert({
+        name: demoName,
+        type: "generic_feed",
+        enabled: false,
+        config: asJson({ url: `${site}/demo/jobs-feed.json` }),
+        source_priority: 40,
+        sync_interval_minutes: 1440,
+      })
+      .select("id")
+      .single();
+    const feed = JSON.parse(
+      readFileSync(path.resolve(process.cwd(), "public/demo/jobs-feed.json"), "utf8"),
+    ) as { jobs: Record<string, unknown>[] };
+    const mapping = suggestMapping(feed.jobs[0]!, "json", "$.jobs[*]");
+    mapping.fields.companyDomain = { path: "$.company_url", transform: "domain" };
+    await admin
+      .from("field_mappings")
+      .insert({
+        connector_id: created!.id,
+        version: 1,
+        mapping: asJson(mapping),
+        sample_record: asJson(feed.jobs[0]),
+        is_active: true,
+      });
+    log(`connector "${demoName}" (disabled; run it from /admin/connectors)`);
+  }
+
+  // 6. Users
   await ensureUser(admin, "admin@jobmatch.local", "nl", "admin");
   log("admin: admin@jobmatch.local");
 
