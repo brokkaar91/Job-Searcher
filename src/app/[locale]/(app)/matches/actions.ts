@@ -37,16 +37,14 @@ async function feedback(
     .eq("user_id", user.id)
     .eq("job_id", id)
     .maybeSingle();
-  const { error } = await supabase
-    .from("match_feedback")
-    .insert({
-      user_id: user.id,
-      job_id: id,
-      match_id: match?.id ?? null,
-      type,
-      reason: reason ?? null,
-      comment: comment ?? null,
-    });
+  const { error } = await supabase.from("match_feedback").insert({
+    user_id: user.id,
+    job_id: id,
+    match_id: match?.id ?? null,
+    type,
+    reason: reason ?? null,
+    comment: comment ?? null,
+  });
   if (error) throw new Error(error.message);
   return { user, supabase };
 }

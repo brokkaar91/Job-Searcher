@@ -1,0 +1,37 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "id": "4512345678",
+      "title": "Senior <strong>Data</strong> Engineer",
+      "description": "We zoeken een data engineer met ervaring in Python en SQL. Werken in een hybride team in Amsterdam&hellip;",
+      "created": "2026-09-20T09:12:00Z",
+      "redirect_url": "https://www.adzuna.nl/details/4512345678?utm_medium=api&utm_source=abc",
+      "company": { "display_name": "Canal Analytics B.V." },
+      "location": {
+        "display_name": "Amsterdam, Noord-Holland",
+        "area": ["Nederland", "Noord-Holland", "Amsterdam"]
+      },
+      "latitude": 52.37,
+      "longitude": 4.89,
+      "salary_min": 70000,
+      "salary_max": 90000,
+      "salary_is_predicted": "0",
+      "contract_time": "full_time",
+      "contract_type": "permanent"
+    },
+    {
+      "id": "4512345679",
+      "title": "Verpleegkundige",
+      "description": "Parttime functie in Utrecht.",
+      "created": "2026-09-21T09:12:00Z",
+      "redirect_url": "https://www.adzuna.nl/details/4512345679",
+      "company": { "display_name": "Zorggroep Midden" },
+      "location": { "display_name": "Utrecht", "area": ["Nederland", "Utrecht", "Utrecht"] },
+      "salary_min": 38000,
+      "salary_max": 38000,
+      "salary_is_predicted": "1",
+      "contract_time": "part_time"
+    }
+  ]
+}

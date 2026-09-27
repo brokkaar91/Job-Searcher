@@ -1,0 +1,41 @@
+{
+  "source": "JobMatch demo feed (fictional jobs for local development and E2E tests)",
+  "jobs": [
+    {
+      "id": "demo-101",
+      "title": "Junior Data Analyst",
+      "company": "Canal Analytics",
+      "company_url": "https://canalanalytics.example",
+      "city": "Amsterdam",
+      "description": "<p>Analyse retail data with SQL and Power BI. English-speaking team, hybrid (3 days office). We offer visa sponsorship as a recognised sponsor.</p><p>Requirements: SQL, data analysis. Nice to have: Python.</p>",
+      "salary": "€3.400 - €4.200 per month",
+      "type": "Full-time",
+      "url": "https://canalanalytics.example/careers/demo-101?utm_source=feed",
+      "published": "2026-09-24"
+    },
+    {
+      "id": "demo-102",
+      "title": "Verpleegkundige Oncologie",
+      "company": "Ziekenhuis Maasoever",
+      "company_url": "https://maasoever.example",
+      "city": "Rotterdam",
+      "description": "<p>Voor de afdeling oncologie zoeken wij een verpleegkundige (24-32 uur). Je verleent patiëntenzorg, dient medicatie toe en stelt zorgplannen op. Vloeiend Nederlands vereist.</p>",
+      "salary": "€3.300 - €4.700 per maand",
+      "type": "Parttime",
+      "url": "https://maasoever.example/vacatures/demo-102",
+      "published": "2026-09-23"
+    },
+    {
+      "id": "demo-103",
+      "title": "Senior Data Engineer (m/v/x)",
+      "company": "Canal Analytics B.V.",
+      "company_url": "https://www.canalanalytics.example",
+      "city": "Amsterdam",
+      "description": "<p>Duplicate posting of an existing job: Canal Analytics is looking for a Senior Data Engineer to build and own the data platform. Python, SQL, Airflow.</p>",
+      "salary": "€6.200 - €7.800 per month",
+      "type": "Full-time",
+      "url": "https://canalanalytics.example/careers/canal-senior-de",
+      "published": "2026-09-25"
+    }
+  ]
+}

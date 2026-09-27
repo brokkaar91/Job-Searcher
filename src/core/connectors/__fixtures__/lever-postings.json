@@ -1,0 +1,20 @@
+[
+  {
+    "id": "a1b2c3d4-0000-4000-8000-000000000001",
+    "text": "Product Designer",
+    "createdAt": 1789000000000,
+    "hostedUrl": "https://jobs.eu.lever.co/brightlane/a1b2c3d4-0000-4000-8000-000000000001",
+    "applyUrl": "https://jobs.eu.lever.co/brightlane/a1b2c3d4-0000-4000-8000-000000000001/apply",
+    "country": "NL",
+    "workplaceType": "hybrid",
+    "categories": {
+      "location": "Amsterdam, Netherlands",
+      "commitment": "Full-time",
+      "team": "Design"
+    },
+    "descriptionPlain": "Design our merchant dashboard.",
+    "lists": [{ "text": "What you bring", "content": "<li>Figma</li><li>User research</li>" }],
+    "additionalPlain": "Relocation support available.",
+    "salaryRange": { "min": 60000, "max": 75000, "currency": "EUR", "interval": "per-year-salary" }
+  }
+]

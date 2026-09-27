@@ -17,15 +17,13 @@ export async function saveAlertSettings(input: z.input<typeof schema>) {
   const user = await getUser();
   if (!user) throw new Error("not authenticated");
   const supabase = await createClient();
-  const { error } = await supabase
-    .from("alert_settings")
-    .upsert({
-      user_id: user.id,
-      enabled: d.enabled,
-      frequency: d.frequency,
-      min_score: d.minScore,
-      only_sponsoring: d.onlySponsoring,
-    });
+  const { error } = await supabase.from("alert_settings").upsert({
+    user_id: user.id,
+    enabled: d.enabled,
+    frequency: d.frequency,
+    min_score: d.minScore,
+    only_sponsoring: d.onlySponsoring,
+  });
   if (error) throw new Error(error.message);
   revalidatePath("/[locale]/alerts", "page");
 }

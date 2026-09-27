@@ -1,0 +1,17 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "id": "4512345680",
+      "title": "Logistiek planner",
+      "description": "Planner gezocht.",
+      "created": "2026-09-22T09:00:00Z",
+      "redirect_url": "https://www.adzuna.nl/details/4512345680",
+      "company": { "display_name": "Noordzee Logistics" },
+      "location": {
+        "display_name": "Rotterdam",
+        "area": ["Nederland", "Zuid-Holland", "Rotterdam"]
+      }
+    }
+  ]
+}

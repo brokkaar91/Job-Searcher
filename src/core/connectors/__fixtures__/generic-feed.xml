@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed>
+  <job ref="HB-001">
+    <functie>Projectleider Infra</functie>
+    <omschrijving>&lt;p&gt;Je leidt infraprojecten in de regio Zwolle.&lt;/p&gt;</omschrijving>
+    <bedrijf>Hollandse Bouw &amp; Infra</bedrijf>
+    <plaats>Zwolle</plaats>
+    <salaris>€ 4.800 - € 6.200 per maand</salaris>
+    <dienstverband>Fulltime</dienstverband>
+    <link>https://hollandsebouw.example/vacatures/hb-001</link>
+    <datum>2026-09-12</datum>
+  </job>
+  <job ref="HB-002">
+    <functie>Werkvoorbereider</functie>
+    <omschrijving>Werkvoorbereiding voor bruggen.</omschrijving>
+    <bedrijf>Hollandse Bouw &amp; Infra</bedrijf>
+    <plaats>Zwolle</plaats>
+    <dienstverband>Parttime 32 uur</dienstverband>
+    <link>https://hollandsebouw.example/vacatures/hb-002</link>
+  </job>
+</feed>
