@@ -2,6 +2,129 @@
   "meta": {
     "description": "Explainable job matches for international professionals in the Netherlands."
   },
-  "common": { "skipToContent": "Skip to content" },
-  "home": { "title": "Find work that fits you – and understand why." }
+  "common": {
+    "skipToContent": "Skip to content"
+  },
+  "home": {
+    "title": "Find work that fits you – and understand why."
+  },
+  "matching": {
+    "labels": {
+      "strong": "Strong match",
+      "good": "Good match",
+      "possible": "Possible match",
+      "weak": "Weak match"
+    },
+    "components": {
+      "skills": "Skills",
+      "experience": "Relevant experience",
+      "occupation": "Occupation & level",
+      "interests": "Interests",
+      "values": "Work values",
+      "practical": "Practical fit"
+    },
+    "rules": {
+      "sponsorship": "Visa sponsorship",
+      "language": "Language requirement",
+      "location": "Location & travel time",
+      "salary": "Salary",
+      "contract": "Contract & hours",
+      "education": "Education requirement"
+    },
+    "knockout": {
+      "sponsorship": {
+        "notNeeded": "You don't need sponsorship.",
+        "noSponsorship": "This job does not offer visa sponsorship.",
+        "notRecognised": "This employer is not an IND recognised sponsor.",
+        "salaryUnknown": "Salary unknown – check it meets the highly skilled migrant threshold (€{norm, number, integer}).",
+        "belowNorm": "The salary (€{offered, number, integer}) is below the highly skilled migrant threshold of €{norm, number, integer}.",
+        "recognised": "Recognised sponsor – can sponsor your visa."
+      },
+      "language": {
+        "none": "No hard language requirement.",
+        "unknown": "You haven't added your languages yet.",
+        "below": "Requires {language, select, nl {Dutch} en {English} de {German} fr {French} es {Spanish} other {{language}}} at level {required} (you: {actual}).",
+        "met": "You meet the language requirements."
+      },
+      "location": {
+        "remote": "Fully remote.",
+        "remoteOnly": "You're looking for remote only; this job is on-site.",
+        "remoteOnlyHybrid": "You're looking for remote only; this job is hybrid.",
+        "noLimit": "You haven't set a maximum travel time.",
+        "unknown": "Travel time unknown.",
+        "tooFar": "About {minutes} min travel – more than your maximum of {max} min.",
+        "within": "About {minutes} min travel (max {max} min)."
+      },
+      "salary": {
+        "noMinimum": "You haven't set a minimum salary.",
+        "unknown": "Salary not stated.",
+        "below": "Salary up to €{offered, number, integer} – below your minimum of €{min, number, integer}.",
+        "met": "Salary up to €{offered, number, integer} meets your minimum."
+      },
+      "contract": {
+        "type": "The contract type doesn't match your preference.",
+        "tooManyHours": "At least {jobHours} hours – more than your maximum of {max}.",
+        "tooFewHours": "At most {jobHours} hours – less than your minimum of {min}.",
+        "unknown": "Contract type and hours not stated.",
+        "met": "Contract and hours fit."
+      },
+      "education": {
+        "none": "No explicit education requirement.",
+        "unknown": "The job explicitly requires education level EQF {minEqf}; your level is unknown.",
+        "below": "The job explicitly requires at least education level EQF {minEqf}.",
+        "met": "You meet the explicit education requirement."
+      }
+    },
+    "component": {
+      "skills": {
+        "noData": "The job lists no recognisable skills.",
+        "summary": "{matched} of {total} requested skills ({mustMatched}/{mustTotal} required)."
+      },
+      "experience": {
+        "noData": "Not calculated yet.",
+        "high": "Your previous roles closely resemble this work.",
+        "medium": "Your previous roles partly resemble this work.",
+        "low": "Your previous roles differ from this work."
+      },
+      "occupation": {
+        "noData": "Not enough information about occupation and level.",
+        "seniorityOnly": "Only the level could be compared.",
+        "same": "Same occupational group as your (desired) roles.",
+        "related": "Related occupational group.",
+        "different": "Different occupational group."
+      },
+      "interests": {
+        "noData": "Take the interest profiler to calculate this.",
+        "summary": "Your interest profile {person} vs. this occupation {job}."
+      },
+      "values": {
+        "noData": "Rank your work values to calculate this.",
+        "top": "Scores well on {value, select, achievement {achievement} independence {independence} recognition {recognition} relationships {relationships} support {support} working_conditions {working conditions} other {{value}}}, which matters to you.",
+        "weak": "Moderate fit with what matters to you."
+      },
+      "practical": {
+        "noData": "Not enough practical information.",
+        "summary": "Based on {known} practical factors."
+      }
+    },
+    "reason": {
+      "sponsor": "Recognised sponsor – this employer can sponsor your visa.",
+      "skillsAllMust": "You have all {count} required skills, such as {examples}.",
+      "skills": "You have {matched} of the {total} requested skills, such as {examples}.",
+      "experience": "Your previous work closely resembles this role.",
+      "occupationSame": "This is your field and level.",
+      "occupationRelated": "This role is close to your field.",
+      "interests": "Fits your interests ({code}).",
+      "values": "Offers a lot of {value, select, achievement {achievement} independence {independence} recognition {recognition} relationships {relationships} support {support} working_conditions {working conditions} other {{value}}} – important to you.",
+      "salary": "Salary up to €{amount, number, integer} per month fits your wish.",
+      "remote": "You can work fully remotely.",
+      "travel": "Short commute: about {minutes} minutes.",
+      "englishFriendly": "English-language job without a Dutch requirement.",
+      "fallback": "This job partly fits your profile."
+    },
+    "note": {
+      "knockedOut": "Falls outside one of your hard requirements – hidden by default.",
+      "limitedData": "Limited data: this score is less certain."
+    }
+  }
 }

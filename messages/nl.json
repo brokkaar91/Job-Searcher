@@ -2,6 +2,129 @@
   "meta": {
     "description": "Uitlegbare vacaturematches voor internationale professionals in Nederland."
   },
-  "common": { "skipToContent": "Naar de inhoud" },
-  "home": { "title": "Vind werk dat bij je past – en begrijp waarom." }
+  "common": {
+    "skipToContent": "Naar de inhoud"
+  },
+  "home": {
+    "title": "Vind werk dat bij je past – en begrijp waarom."
+  },
+  "matching": {
+    "labels": {
+      "strong": "Sterke match",
+      "good": "Goede match",
+      "possible": "Mogelijke match",
+      "weak": "Zwakke match"
+    },
+    "components": {
+      "skills": "Vaardigheden",
+      "experience": "Relevante ervaring",
+      "occupation": "Beroep en niveau",
+      "interests": "Interesses",
+      "values": "Werkwaarden",
+      "practical": "Praktische fit"
+    },
+    "rules": {
+      "sponsorship": "Visumsponsoring",
+      "language": "Taaleis",
+      "location": "Locatie en reistijd",
+      "salary": "Salaris",
+      "contract": "Contract en uren",
+      "education": "Opleidingseis"
+    },
+    "knockout": {
+      "sponsorship": {
+        "notNeeded": "Je hebt geen sponsoring nodig.",
+        "noSponsorship": "Deze vacature biedt geen visumsponsoring.",
+        "notRecognised": "Deze werkgever is geen erkend referent bij de IND.",
+        "salaryUnknown": "Salaris onbekend – controleer of het de kennismigrantnorm (€ {norm, number, integer}) haalt.",
+        "belowNorm": "Het salaris (€ {offered, number, integer}) ligt onder de kennismigrantnorm van € {norm, number, integer}.",
+        "recognised": "Erkend referent – kan je visum sponsoren."
+      },
+      "language": {
+        "none": "Geen harde taaleis.",
+        "unknown": "Je hebt nog geen talen opgegeven.",
+        "below": "Vereist: {language, select, nl {Nederlands} en {Engels} de {Duits} fr {Frans} es {Spaans} other {{language}}} op niveau {required} (jij: {actual}).",
+        "met": "Je voldoet aan de taaleisen."
+      },
+      "location": {
+        "remote": "Volledig remote.",
+        "remoteOnly": "Je zoekt alleen remote werk; deze functie is op locatie.",
+        "remoteOnlyHybrid": "Je zoekt alleen remote werk; deze functie is hybride.",
+        "noLimit": "Je hebt geen maximale reistijd ingesteld.",
+        "unknown": "Reistijd onbekend.",
+        "tooFar": "Circa {minutes} min reizen – meer dan je maximum van {max} min.",
+        "within": "Circa {minutes} min reizen (max. {max} min)."
+      },
+      "salary": {
+        "noMinimum": "Je hebt geen minimumsalaris ingesteld.",
+        "unknown": "Salaris niet vermeld.",
+        "below": "Salaris tot € {offered, number, integer} – onder je minimum van € {min, number, integer}.",
+        "met": "Salaris tot € {offered, number, integer} haalt je minimum."
+      },
+      "contract": {
+        "type": "Het contracttype past niet bij je voorkeur.",
+        "tooManyHours": "Minimaal {jobHours} uur – meer dan je maximum van {max}.",
+        "tooFewHours": "Maximaal {jobHours} uur – minder dan je minimum van {min}.",
+        "unknown": "Contractvorm en uren niet vermeld.",
+        "met": "Contract en uren passen."
+      },
+      "education": {
+        "none": "Geen expliciete opleidingseis.",
+        "unknown": "De vacature vraagt expliciet opleidingsniveau (EQF {minEqf}); jouw niveau is onbekend.",
+        "below": "De vacature vraagt expliciet minimaal opleidingsniveau EQF {minEqf}.",
+        "met": "Je voldoet aan de expliciete opleidingseis."
+      }
+    },
+    "component": {
+      "skills": {
+        "noData": "De vacature noemt geen herkenbare vaardigheden.",
+        "summary": "{matched} van {total} gevraagde vaardigheden ({mustMatched}/{mustTotal} vereist)."
+      },
+      "experience": {
+        "noData": "Nog niet berekend.",
+        "high": "Je eerdere functies lijken sterk op dit werk.",
+        "medium": "Je eerdere functies lijken deels op dit werk.",
+        "low": "Je eerdere functies lijken weinig op dit werk."
+      },
+      "occupation": {
+        "noData": "Onvoldoende informatie over beroep en niveau.",
+        "seniorityOnly": "Alleen het niveau kon worden vergeleken.",
+        "same": "Zelfde beroepsgroep als jouw (gewenste) functies.",
+        "related": "Verwante beroepsgroep.",
+        "different": "Andere beroepsgroep."
+      },
+      "interests": {
+        "noData": "Doe de interessetest om dit te berekenen.",
+        "summary": "Jouw interesseprofiel {person} vs. dit beroep {job}."
+      },
+      "values": {
+        "noData": "Rangschik je werkwaarden om dit te berekenen.",
+        "top": "Scoort goed op {value, select, achievement {prestatie} independence {onafhankelijkheid} recognition {erkenning} relationships {goede collega-relaties} support {ondersteuning} working_conditions {werkomstandigheden} other {{value}}}, belangrijk voor jou.",
+        "weak": "Past matig bij wat jij belangrijk vindt."
+      },
+      "practical": {
+        "noData": "Onvoldoende praktische gegevens.",
+        "summary": "Gebaseerd op {known} praktische factoren."
+      }
+    },
+    "reason": {
+      "sponsor": "Erkend referent – deze werkgever kan je visum sponsoren.",
+      "skillsAllMust": "Je hebt alle {count} vereiste vaardigheden, zoals {examples}.",
+      "skills": "Je hebt {matched} van de {total} gevraagde vaardigheden, zoals {examples}.",
+      "experience": "Je eerdere werk lijkt sterk op deze functie.",
+      "occupationSame": "Dit is jouw vakgebied en niveau.",
+      "occupationRelated": "Deze functie ligt dicht bij je vakgebied.",
+      "interests": "Past bij je interesses ({code}).",
+      "values": "Biedt veel {value, select, achievement {prestatie} independence {onafhankelijkheid} recognition {erkenning} relationships {goede collega-relaties} support {ondersteuning} working_conditions {werkomstandigheden} other {{value}}} – belangrijk voor jou.",
+      "salary": "Salaris tot € {amount, number, integer} per maand past bij je wens.",
+      "remote": "Je kunt volledig remote werken.",
+      "travel": "Korte reistijd: circa {minutes} minuten.",
+      "englishFriendly": "Engelstalige vacature zonder Nederlandse taaleis.",
+      "fallback": "Deze vacature past gedeeltelijk bij je profiel."
+    },
+    "note": {
+      "knockedOut": "Valt buiten een van je harde eisen – daarom standaard verborgen.",
+      "limitedData": "Beperkte gegevens: deze score is minder zeker."
+    }
+  }
 }
