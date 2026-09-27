@@ -5,9 +5,6 @@
   "common": {
     "skipToContent": "Skip to content"
   },
-  "home": {
-    "title": "Find work that fits you – and understand why."
-  },
   "matching": {
     "labels": {
       "strong": "Strong match",
@@ -126,5 +123,307 @@
       "knockedOut": "Falls outside one of your hard requirements – hidden by default.",
       "limitedData": "Limited data: this score is less certain."
     }
+  },
+  "nav": {
+    "main": "Main navigation",
+    "howItWorks": "How matching works",
+    "employers": "For employers",
+    "faq": "FAQ",
+    "login": "Log in",
+    "register": "Create account",
+    "myMatches": "My matches",
+    "menu": "Menu",
+    "switchLanguage": "Schakel naar Nederlands",
+    "toggleTheme": "Toggle light/dark theme"
+  },
+  "footer": {
+    "tagline": "Explainable job matches for international professionals in the Netherlands.",
+    "product": "Product",
+    "legal": "Legal",
+    "howItWorks": "How our matching works",
+    "employers": "For employers",
+    "faq": "Frequently asked questions",
+    "privacy": "Privacy statement",
+    "aiStatement": "AI statement",
+    "euHosted": "Hosted in the EU"
+  },
+  "home": {
+    "badge": "For international professionals in the Netherlands",
+    "title": "Find work that fits you – and understand why.",
+    "subtitle": "Upload your CV, answer a few short questions and get matches with a clear explanation: which skills fit, what is still missing and whether the employer can sponsor your visa.",
+    "ctaPrimary": "Start for free",
+    "ctaSecondary": "How it works",
+    "reassurance": "Done in under 10 minutes. No photo, age or nationality needed.",
+    "preview": {
+      "aria": "Example of a match",
+      "label": "Strong match",
+      "sponsor": "Recognised sponsor",
+      "hybrid": "Hybrid",
+      "r1": "You have all 3 required skills, such as Python and SQL.",
+      "r2": "Recognised sponsor – can sponsor your visa.",
+      "r3": "Your previous work closely resembles this role.",
+      "skills": "Skills",
+      "experience": "Experience",
+      "practical": "Practical"
+    },
+    "pillarsTitle": "Why JobMatch",
+    "pillars": {
+      "explainable": {
+        "title": "Explainable",
+        "text": "Every match shows why: a score per factor, the top 3 reasons and what is still missing."
+      },
+      "fair": {
+        "title": "Fair",
+        "text": "We never use your name, age, gender, photo or nationality. Only what matters for the job."
+      },
+      "sponsor": {
+        "title": "Visa-aware",
+        "text": "Need sponsorship? You only see jobs from recognised sponsors that meet the salary threshold."
+      }
+    },
+    "stepsTitle": "Four steps to your matches",
+    "stepsSubtitle": "Evidence-based, without personality tests.",
+    "steps": {
+      "cv": {
+        "title": "Upload your CV",
+        "text": "PDF or Word. We extract your skills, experience and languages."
+      },
+      "check": {
+        "title": "Review and improve",
+        "text": "You decide what's right: edit skills using the ESCO standard."
+      },
+      "preferences": {
+        "title": "Preferences and interests",
+        "text": "Work status, commute, salary and a short interest profiler (O*NET)."
+      },
+      "matches": {
+        "title": "Get explainable matches",
+        "text": "Save, dismiss or apply – and track everything in your own tracker."
+      }
+    },
+    "ctaBlock": {
+      "title": "Ready to start?",
+      "text": "Create a free account and see your first matches today."
+    }
+  },
+  "howItWorks": {
+    "title": "How our matching works",
+    "intro": "We believe you should be able to see how a match is made. Below you'll find exactly which factors count, how much they weigh and what we never use.",
+    "modelVersion": "Active model version {version}",
+    "layerA": {
+      "title": "Layer 1 – hard requirements (knock-outs)",
+      "intro": "First we check your hard requirements. If a job falls outside them, we hide it by default – with an explanation. You can always choose to show it anyway. Missing data never excludes a job.",
+      "rules": {
+        "sponsorship": "Need sponsorship? Then we only show jobs from IND recognised sponsors, and only if the salary meets the highly skilled migrant threshold (from €{norm} gross per month, depending on your situation).",
+        "language": "If the job requires a language at a certain level (CEFR), we compare it with your level.",
+        "location": "Your maximum travel time and preference for on-site, hybrid or remote work.",
+        "salary": "Your minimum salary, if the job states a salary.",
+        "contract": "Contract type and hours per week.",
+        "education": "Only when the job explicitly requires a degree. Education never earns bonus points."
+      }
+    },
+    "layerB": {
+      "title": "Layer 2 – weighted score (0-100)",
+      "intro": "Jobs that pass layer 1 get a score on six factors. When information is missing, we redistribute its weight over the other factors and show that.",
+      "components": {
+        "skills": "Overlap with the requested skills using the European ESCO standard. Required skills count double, recently used skills weigh more.",
+        "experience": "How similar your previous roles and tasks are to this job in content. Not the number of years.",
+        "occupation": "Distance between occupational groups (ESCO/ISCO) and whether the level fits.",
+        "interests": "Congruence between your interest profile (RIASEC, O*NET Interest Profiler) and the occupation.",
+        "values": "How well the work fits what matters to you (six work values).",
+        "practical": "Salary, commute, remote work, hours and type of organisation."
+      }
+    },
+    "labels": "Labels: Strong match from {strong}, Good match from {good}, Possible match from {possible}.",
+    "never": {
+      "title": "What we never use",
+      "text": "Name, age or date of birth, gender, photo, nationality, address or marital status. Your CV is stripped of name, contact details, address and date of birth before processing. An automated test verifies that these attributes never change the outcome."
+    },
+    "control": {
+      "title": "You stay in control",
+      "text": "We never reject you automatically. You see all reasons, can show hidden jobs anyway, edit your data and delete your account at any time. Every calculation is logged with the model version used."
+    },
+    "science": {
+      "title": "Scientific basis",
+      "text": "We use the European Commission's ESCO taxonomy for skills and occupations, the O*NET Interest Profiler (public domain) for interests and the O*NET work values. We deliberately use no personality or cognitive tests."
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": {
+      "free": {
+        "q": "Does JobMatch cost anything?",
+        "a": "No, JobMatch is free for job seekers."
+      },
+      "sponsor": {
+        "q": "What is a 'recognised sponsor'?",
+        "a": "Employers recognised by the IND (Dutch immigration service) may sponsor highly skilled migrants. If you need sponsorship, we show only their jobs by default, and only if the salary meets the threshold."
+      },
+      "data": {
+        "q": "Which data do you use for matching?",
+        "a": "Your skills, work experience, languages, work status, preferences, interest profile and work values. Nothing else."
+      },
+      "photo": {
+        "q": "Why don't you ask for a photo, age or nationality?",
+        "a": "Because they say nothing about how well you fit a job and can lead to discrimination. We only ask whether you need sponsorship and which residence document you hold."
+      },
+      "cv": {
+        "q": "What happens to my CV?",
+        "a": "Your CV is stored encrypted in the EU. Before processing we remove your name, contact details, address and date of birth. You can delete earlier versions at any time."
+      },
+      "score": {
+        "q": "How is my score calculated?",
+        "a": "In two layers: hard requirements (knock-outs) and a weighted score on six factors. All weights are listed on 'How our matching works'."
+      },
+      "reject": {
+        "q": "Can JobMatch reject me?",
+        "a": "No. We make no automated decisions about you. You always see why a job is hidden and can show it anyway."
+      },
+      "delete": {
+        "q": "How do I delete my account?",
+        "a": "In the Privacy centre you can download all your data or delete your account including all data. We delete inactive accounts after 12 months, after an e-mail warning."
+      }
+    }
+  },
+  "privacyPage": {
+    "title": "Privacy statement",
+    "todo": "TODO: draft text – must be reviewed by a lawyer before launch.",
+    "controller": {
+      "title": "Who we are",
+      "text": "JobMatch (TODO: legal entity, Chamber of Commerce number, address) is the controller of the personal data you share through this platform."
+    },
+    "data": {
+      "title": "Which data",
+      "text": "Account data (e-mail address, language preference), your CV, the skills, work experience and languages derived from it, your work status (sponsorship needed and residence document – no nationality), preferences, interest profile, work values, your feedback on matches, your application tracker and your consents."
+    },
+    "purposes": {
+      "title": "Purposes",
+      "text": "Calculating and explaining job matches, keeping track of your applications, improving and auditing the matching (including audit logging) and complying with legal obligations."
+    },
+    "legalBasis": {
+      "title": "Legal basis",
+      "text": "Performance of the agreement and your explicit consent for automated matching. You can withdraw consent at any time in the Privacy centre."
+    },
+    "processors": {
+      "title": "Processors",
+      "text": "Hosting and database: Supabase (EU) and Vercel (EU functions). CV analysis: Anthropic (Claude) on de-identified text – TODO: record DPA and transfer mechanism. Nothing is shared with employers without separate consent."
+    },
+    "retention": {
+      "title": "Retention",
+      "text": "As long as your account is active. After 12 months of inactivity we delete your account, after an e-mail warning 30 days in advance. Audit logs of match calculations contain no CV content and are retained for TODO."
+    },
+    "rights": {
+      "title": "Your rights",
+      "text": "Access, rectification, erasure, restriction, portability (JSON export in the Privacy centre) and objection. You can also lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens)."
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "TODO: privacy@… and details of the data protection officer."
+    }
+  },
+  "aiPage": {
+    "title": "AI statement",
+    "todo": "TODO: draft text – must be reviewed by a lawyer before launch (EU AI Act, Annex III, point 4).",
+    "system": {
+      "title": "What the system does",
+      "text": "JobMatch ranks job vacancies for job seekers based on skills, experience, occupation, interests, work values and practical preferences, and explains every match."
+    },
+    "riskClass": {
+      "title": "Risk classification",
+      "text": "Because the system is used in the context of employment, we treat it as a high-risk AI system under the EU AI Act and apply the corresponding requirements on data quality, transparency, human oversight, logging and robustness."
+    },
+    "data": {
+      "title": "Which data",
+      "text": "Only work-related data. Name, age, gender, photo and nationality are never used; CV text is stripped of identifying details before analysis."
+    },
+    "logic": {
+      "title": "How it works",
+      "text": "A combination of hard requirements and a weighted score, as described on 'How our matching works'. A language model (Claude) helps to read CVs and job ads; the score itself is calculated with transparent, tested rules."
+    },
+    "oversight": {
+      "title": "Human oversight",
+      "text": "There are no automated rejections. Users see the reasons and can show hidden jobs anyway. Administrators can only change weights by creating a new, logged model version."
+    },
+    "logging": {
+      "title": "Logging",
+      "text": "Every match calculation is recorded with a hash of its input and the model version used, so outcomes are reproducible."
+    },
+    "limitations": {
+      "title": "Limitations",
+      "text": "Reading CVs and job ads can contain errors, which is why you review your skills yourself. Travel times are estimates. A score is a tool, not a judgement about you."
+    },
+    "contact": {
+      "title": "Questions or objections",
+      "text": "TODO: contact address for questions about the AI system and objections."
+    }
+  },
+  "employers": {
+    "title": "For employers",
+    "soon": "Coming soon",
+    "intro": "JobMatch connects you with international professionals who are in the Netherlands or want to come here. The employer portal is under development – leave your details and we'll get in touch.",
+    "points": {
+      "quality": {
+        "title": "Candidates who fit",
+        "text": "Matching on skills and relevant experience, not keywords."
+      },
+      "fair": {
+        "title": "Fair and explainable",
+        "text": "No protected characteristics in matching and full transparency."
+      },
+      "sponsor": {
+        "title": "Recognised sponsor?",
+        "text": "Candidates who need sponsorship will see your jobs."
+      }
+    },
+    "form": {
+      "title": "Get in touch",
+      "name": "Name",
+      "email": "E-mail address",
+      "company": "Organisation",
+      "message": "Message",
+      "submit": "Send",
+      "sending": "Sending…",
+      "thanks": "Thank you! We'll be in touch soon.",
+      "error": "Please check the fields and try again."
+    }
+  },
+  "auth": {
+    "email": "E-mail address",
+    "sending": "Working…",
+    "submitLogin": "Send me a login link",
+    "submitRegister": "Create account",
+    "or": "or",
+    "google": "Continue with Google",
+    "noAccount": "No account yet?",
+    "haveAccount": "Already have an account?",
+    "toRegister": "Create account",
+    "toLogin": "Log in",
+    "login": {
+      "title": "Log in",
+      "subtitle": "We'll e-mail you a secure login link."
+    },
+    "register": {
+      "title": "Create account",
+      "subtitle": "Free, and done in a few minutes."
+    },
+    "sent": {
+      "title": "Check your inbox",
+      "text": "We've sent you a link. Click it to continue. The link is valid for 1 hour."
+    },
+    "errors": {
+      "invalid": "Please enter a valid e-mail address.",
+      "consent": "Please give both consents to continue.",
+      "noAccount": "We don't know this e-mail address yet.",
+      "failed": "Something went wrong. Please try again later."
+    },
+    "consent": {
+      "legend": "Consent",
+      "terms": "I agree to the terms of use and the <privacy>privacy statement</privacy>.",
+      "ai": "I consent to automated analysis of my CV and answers for job matching (see the <ai>AI statement</ai>).",
+      "employerLater": "Your data is not shared with employers. We will ask for separate consent for that later."
+    },
+    "consentTitle": "One more step",
+    "consentSubtitle": "We need your consent to calculate your matches.",
+    "consentSubmit": "Give consent and continue"
   }
 }

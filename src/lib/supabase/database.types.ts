@@ -301,6 +301,19 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
+                },"contact_messages": {
+                  Row: {
+                    "company": string | null,"created_at": string,"email": string,"handled_at": string | null,"id": string,"locale": string | null,"message": string,"name": string
+                  }
+                  Insert: {
+                    "company"?: string | null,"created_at"?: string,"email": string,"handled_at"?: string | null,"id"?: string,"locale"?: string | null,"message": string,"name": string
+                  }
+                  Update: {
+                    "company"?: string | null,"created_at"?: string,"email"?: string,"handled_at"?: string | null,"id"?: string,"locale"?: string | null,"message"?: string,"name"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"cv_files": {
                   Row: {
                     "created_at": string,"file_name": string,"id": string,"mime_type": string,"parse_error": string | null,"parse_status": Database["public"]['Enums']["cv_parse_status"],"parsed_at": string | null,"size_bytes": number,"storage_path": string,"user_id": string,"version": number

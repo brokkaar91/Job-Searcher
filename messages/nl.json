@@ -5,9 +5,6 @@
   "common": {
     "skipToContent": "Naar de inhoud"
   },
-  "home": {
-    "title": "Vind werk dat bij je past – en begrijp waarom."
-  },
   "matching": {
     "labels": {
       "strong": "Sterke match",
@@ -126,5 +123,307 @@
       "knockedOut": "Valt buiten een van je harde eisen – daarom standaard verborgen.",
       "limitedData": "Beperkte gegevens: deze score is minder zeker."
     }
+  },
+  "nav": {
+    "main": "Hoofdnavigatie",
+    "howItWorks": "Zo werkt matching",
+    "employers": "Voor werkgevers",
+    "faq": "FAQ",
+    "login": "Inloggen",
+    "register": "Account maken",
+    "myMatches": "Mijn matches",
+    "menu": "Menu",
+    "switchLanguage": "Switch to English",
+    "toggleTheme": "Wissel licht/donker thema"
+  },
+  "footer": {
+    "tagline": "Uitlegbare vacaturematches voor internationale professionals in Nederland.",
+    "product": "Product",
+    "legal": "Juridisch",
+    "howItWorks": "Zo werkt onze matching",
+    "employers": "Voor werkgevers",
+    "faq": "Veelgestelde vragen",
+    "privacy": "Privacyverklaring",
+    "aiStatement": "AI-verklaring",
+    "euHosted": "Gehost in de EU"
+  },
+  "home": {
+    "badge": "Voor internationale professionals in Nederland",
+    "title": "Vind werk dat bij je past – en begrijp waarom.",
+    "subtitle": "Upload je cv, beantwoord een paar korte vragen en ontvang matches met een heldere uitleg: welke vaardigheden passen, wat nog ontbreekt en of de werkgever je visum kan sponsoren.",
+    "ctaPrimary": "Start gratis",
+    "ctaSecondary": "Zo werkt het",
+    "reassurance": "Klaar in minder dan 10 minuten. Geen foto, leeftijd of nationaliteit nodig.",
+    "preview": {
+      "aria": "Voorbeeld van een match",
+      "label": "Sterke match",
+      "sponsor": "Erkend referent",
+      "hybrid": "Hybride",
+      "r1": "Je hebt alle 3 vereiste vaardigheden, zoals Python en SQL.",
+      "r2": "Erkend referent – kan je visum sponsoren.",
+      "r3": "Je eerdere werk lijkt sterk op deze functie.",
+      "skills": "Vaardigheden",
+      "experience": "Ervaring",
+      "practical": "Praktisch"
+    },
+    "pillarsTitle": "Waarom JobMatch",
+    "pillars": {
+      "explainable": {
+        "title": "Uitlegbaar",
+        "text": "Elke match laat zien waarom: per factor een score, de top 3 redenen en wat er nog ontbreekt."
+      },
+      "fair": {
+        "title": "Eerlijk",
+        "text": "We gebruiken nooit je naam, leeftijd, geslacht, foto of nationaliteit. Alleen wat relevant is voor het werk."
+      },
+      "sponsor": {
+        "title": "Visum-bewust",
+        "text": "Heb je sponsoring nodig? Dan zie je alleen vacatures van erkend referenten die de salarisnorm halen."
+      }
+    },
+    "stepsTitle": "In vier stappen naar je matches",
+    "stepsSubtitle": "Wetenschappelijk onderbouwd, zonder persoonlijkheidstests.",
+    "steps": {
+      "cv": {
+        "title": "Upload je cv",
+        "text": "PDF of Word. We lezen je vaardigheden, ervaring en talen uit."
+      },
+      "check": {
+        "title": "Controleer en verbeter",
+        "text": "Jij bepaalt wat klopt: pas vaardigheden aan met de ESCO-standaard."
+      },
+      "preferences": {
+        "title": "Voorkeuren en interesses",
+        "text": "Werkstatus, reistijd, salaris en een korte interessetest (O*NET)."
+      },
+      "matches": {
+        "title": "Ontvang uitlegbare matches",
+        "text": "Bewaar, wijs af of solliciteer – en volg alles in je eigen tracker."
+      }
+    },
+    "ctaBlock": {
+      "title": "Klaar om te beginnen?",
+      "text": "Maak gratis een account en zie vandaag nog je eerste matches."
+    }
+  },
+  "howItWorks": {
+    "title": "Zo werkt onze matching",
+    "intro": "We geloven dat je moet kunnen zien hoe een match tot stand komt. Hieronder staat precies welke factoren meetellen, hoe zwaar ze wegen en wat we nooit gebruiken.",
+    "modelVersion": "Actieve modelversie {version}",
+    "layerA": {
+      "title": "Laag 1 – harde eisen (knock-outs)",
+      "intro": "Eerst controleren we je harde eisen. Valt een vacature daarbuiten, dan verbergen we haar standaard – met uitleg. Je kunt altijd kiezen om haar toch te tonen. Ontbrekende gegevens sluiten nooit uit.",
+      "rules": {
+        "sponsorship": "Heb je sponsoring nodig? Dan tonen we alleen vacatures van IND-erkend referenten, en alleen als het salaris de kennismigrantnorm haalt (vanaf € {norm} bruto per maand, afhankelijk van jouw situatie).",
+        "language": "Vraagt de vacature een taal op een bepaald niveau (ERK/CEFR), dan vergelijken we dat met jouw niveau.",
+        "location": "Je maximale reistijd en voorkeur voor op locatie, hybride of remote werken.",
+        "salary": "Je minimumsalaris, als de vacature een salaris noemt.",
+        "contract": "Contractvorm en aantal uren per week.",
+        "education": "Alleen als de vacature expliciet een diploma eist. Opleiding levert nooit bonuspunten op."
+      }
+    },
+    "layerB": {
+      "title": "Laag 2 – gewogen score (0-100)",
+      "intro": "Vacatures die door laag 1 komen, krijgen een score op zes factoren. Ontbreekt informatie, dan verdelen we het gewicht over de andere factoren en tonen we dat erbij.",
+      "components": {
+        "skills": "Overlap met de gevraagde vaardigheden volgens de Europese ESCO-standaard. Vereiste vaardigheden tellen dubbel, recent gebruikte vaardigheden zwaarder.",
+        "experience": "Hoe inhoudelijk vergelijkbaar je eerdere functies en taken zijn met deze vacature. Niet het aantal jaren.",
+        "occupation": "Afstand tussen beroepsgroepen (ESCO/ISCO) en of het niveau aansluit.",
+        "interests": "Overeenkomst tussen je interesseprofiel (RIASEC, O*NET Interest Profiler) en het beroep.",
+        "values": "Hoe goed het werk past bij wat jij belangrijk vindt (zes werkwaarden).",
+        "practical": "Salaris, reistijd, thuiswerken, uren en type organisatie."
+      }
+    },
+    "labels": "Labels: Sterke match vanaf {strong}, Goede match vanaf {good}, Mogelijke match vanaf {possible}.",
+    "never": {
+      "title": "Wat we nooit gebruiken",
+      "text": "Naam, leeftijd of geboortedatum, geslacht, foto, nationaliteit, adres of burgerlijke staat. Je cv wordt vóór verwerking ontdaan van naam, contactgegevens, adres en geboortedatum. Een test controleert automatisch dat deze kenmerken de uitkomst nooit veranderen."
+    },
+    "control": {
+      "title": "Jij houdt de regie",
+      "text": "We wijzen je nergens automatisch voor af. Jij ziet alle redenen, kunt verborgen vacatures toch tonen, je gegevens aanpassen en je account op elk moment verwijderen. Elke berekening wordt gelogd met de gebruikte modelversie."
+    },
+    "science": {
+      "title": "Wetenschappelijke basis",
+      "text": "We gebruiken de ESCO-taxonomie van de Europese Commissie voor vaardigheden en beroepen, de O*NET Interest Profiler (publiek domein) voor interesses en de O*NET-werkwaarden. We gebruiken bewust geen persoonlijkheids- of cognitieve tests."
+    }
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "items": {
+      "free": {
+        "q": "Kost JobMatch iets?",
+        "a": "Nee, JobMatch is gratis voor werkzoekenden."
+      },
+      "sponsor": {
+        "q": "Wat betekent 'erkend referent'?",
+        "a": "Werkgevers die door de IND zijn erkend, mogen kennismigranten sponsoren. Heb je sponsoring nodig, dan tonen we standaard alleen hun vacatures, en alleen als het salaris de kennismigrantnorm haalt."
+      },
+      "data": {
+        "q": "Welke gegevens gebruiken jullie voor de matching?",
+        "a": "Je vaardigheden, werkervaring, talen, werkstatus, voorkeuren, interesseprofiel en werkwaarden. Meer niet."
+      },
+      "photo": {
+        "q": "Waarom vragen jullie geen foto, leeftijd of nationaliteit?",
+        "a": "Omdat die niets zeggen over hoe goed je bij een functie past, en tot discriminatie kunnen leiden. We vragen alleen of je sponsoring nodig hebt en welk verblijfsdocument je hebt."
+      },
+      "cv": {
+        "q": "Wat gebeurt er met mijn cv?",
+        "a": "Je cv staat versleuteld opgeslagen in de EU. Voor verwerking verwijderen we naam, contactgegevens, adres en geboortedatum. Je kunt eerdere versies op elk moment verwijderen."
+      },
+      "score": {
+        "q": "Hoe komt mijn score tot stand?",
+        "a": "Via twee lagen: harde eisen (knock-outs) en een gewogen score op zes factoren. Op de pagina 'Zo werkt onze matching' staan alle gewichten."
+      },
+      "reject": {
+        "q": "Kan JobMatch mij afwijzen?",
+        "a": "Nee. We nemen geen geautomatiseerde beslissingen over jou. Je ziet altijd waarom een vacature verborgen is en kunt haar toch tonen."
+      },
+      "delete": {
+        "q": "Hoe verwijder ik mijn account?",
+        "a": "In het Privacycentrum kun je al je gegevens downloaden of je account met alle data verwijderen. Inactieve accounts verwijderen we na 12 maanden, na een waarschuwing per e-mail."
+      }
+    }
+  },
+  "privacyPage": {
+    "title": "Privacyverklaring",
+    "todo": "TODO: concepttekst – moet vóór livegang juridisch worden beoordeeld.",
+    "controller": {
+      "title": "Wie zijn wij",
+      "text": "JobMatch (TODO: rechtsvorm, KvK-nummer, adres) is verwerkingsverantwoordelijke voor de persoonsgegevens die je via dit platform deelt."
+    },
+    "data": {
+      "title": "Welke gegevens",
+      "text": "Accountgegevens (e-mailadres, taalvoorkeur), je cv, de daaruit afgeleide vaardigheden, werkervaring en talen, je werkstatus (sponsoring nodig en verblijfsdocument – geen nationaliteit), voorkeuren, interesseprofiel, werkwaarden, je feedback op matches, je sollicitatietracker en je toestemmingen."
+    },
+    "purposes": {
+      "title": "Waarvoor",
+      "text": "Het berekenen en uitleggen van vacaturematches, het bijhouden van je sollicitaties, het verbeteren en controleren van de matching (inclusief audit-logging) en het naleven van wettelijke verplichtingen."
+    },
+    "legalBasis": {
+      "title": "Grondslag",
+      "text": "Uitvoering van de overeenkomst en jouw uitdrukkelijke toestemming voor de geautomatiseerde matching. Toestemming kun je altijd intrekken in het Privacycentrum."
+    },
+    "processors": {
+      "title": "Verwerkers",
+      "text": "Hosting en database: Supabase (EU) en Vercel (EU-functies). Cv-analyse: Anthropic (Claude) op basis van geanonimiseerde tekst – TODO: DPA en doorgiftemechanisme vastleggen. Er wordt niets aan werkgevers gedeeld zonder aparte toestemming."
+    },
+    "retention": {
+      "title": "Bewaartermijnen",
+      "text": "Zolang je account actief is. Na 12 maanden inactiviteit verwijderen we je account, na een waarschuwing per e-mail 30 dagen vooraf. Audit-logs van matchberekeningen bevatten geen cv-inhoud en worden TODO bewaard."
+    },
+    "rights": {
+      "title": "Jouw rechten",
+      "text": "Inzage, rectificatie, verwijdering, beperking, overdraagbaarheid (JSON-export in het Privacycentrum) en bezwaar. Je kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens."
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "TODO: privacy@… en gegevens van de functionaris gegevensbescherming."
+    }
+  },
+  "aiPage": {
+    "title": "AI-verklaring",
+    "todo": "TODO: concepttekst – moet vóór livegang juridisch worden beoordeeld (EU AI Act, bijlage III, punt 4).",
+    "system": {
+      "title": "Wat het systeem doet",
+      "text": "JobMatch rangschikt vacatures voor werkzoekenden op basis van vaardigheden, ervaring, beroep, interesses, werkwaarden en praktische voorkeuren, en legt elke match uit."
+    },
+    "riskClass": {
+      "title": "Risicoclassificatie",
+      "text": "Omdat het systeem wordt ingezet in de context van werkgelegenheid, behandelen we het als hoog-risico AI-systeem onder de EU AI Act en passen we de bijbehorende eisen toe op het gebied van datakwaliteit, transparantie, menselijk toezicht, logging en robuustheid."
+    },
+    "data": {
+      "title": "Welke gegevens",
+      "text": "Alleen werkgerelateerde gegevens. Naam, leeftijd, geslacht, foto en nationaliteit worden nooit gebruikt; cv-tekst wordt vóór analyse ontdaan van identificerende gegevens."
+    },
+    "logic": {
+      "title": "Hoe het werkt",
+      "text": "Een combinatie van harde eisen en een gewogen score, zoals beschreven op 'Zo werkt onze matching'. Een taalmodel (Claude) helpt bij het uitlezen van cv's en vacatures; de score zelf wordt berekend met transparante, geteste regels."
+    },
+    "oversight": {
+      "title": "Menselijk toezicht",
+      "text": "Er zijn geen geautomatiseerde afwijzingen. Gebruikers zien de redenen en kunnen verborgen vacatures toch tonen. Beheerders kunnen gewichten alleen wijzigen door een nieuwe, gelogde modelversie te maken."
+    },
+    "logging": {
+      "title": "Logging",
+      "text": "Elke matchberekening wordt vastgelegd met een hash van de invoer en de gebruikte modelversie, zodat uitkomsten reproduceerbaar zijn."
+    },
+    "limitations": {
+      "title": "Beperkingen",
+      "text": "Het uitlezen van cv's en vacatures kan fouten bevatten; daarom controleer je zelf je vaardigheden. Reistijden zijn schattingen. Een score is een hulpmiddel, geen oordeel over jou."
+    },
+    "contact": {
+      "title": "Vragen of bezwaar",
+      "text": "TODO: contactadres voor vragen over het AI-systeem en voor bezwaar."
+    }
+  },
+  "employers": {
+    "title": "Voor werkgevers",
+    "soon": "Binnenkort",
+    "intro": "JobMatch verbindt je met internationale professionals die al in Nederland zijn of willen komen. Het werkgeversportaal is in ontwikkeling – laat je gegevens achter en we nemen contact op.",
+    "points": {
+      "quality": {
+        "title": "Kandidaten die passen",
+        "text": "Matching op vaardigheden en relevante ervaring, niet op trefwoorden."
+      },
+      "fair": {
+        "title": "Eerlijk en uitlegbaar",
+        "text": "Geen beschermde kenmerken in de matching en volledige transparantie."
+      },
+      "sponsor": {
+        "title": "Erkend referent?",
+        "text": "Kandidaten die sponsoring nodig hebben zien jouw vacatures juist wel."
+      }
+    },
+    "form": {
+      "title": "Neem contact op",
+      "name": "Naam",
+      "email": "E-mailadres",
+      "company": "Organisatie",
+      "message": "Bericht",
+      "submit": "Versturen",
+      "sending": "Bezig met versturen…",
+      "thanks": "Bedankt! We nemen snel contact met je op.",
+      "error": "Controleer de velden en probeer het opnieuw."
+    }
+  },
+  "auth": {
+    "email": "E-mailadres",
+    "sending": "Bezig…",
+    "submitLogin": "Stuur mij een inloglink",
+    "submitRegister": "Account maken",
+    "or": "of",
+    "google": "Doorgaan met Google",
+    "noAccount": "Nog geen account?",
+    "haveAccount": "Heb je al een account?",
+    "toRegister": "Account maken",
+    "toLogin": "Inloggen",
+    "login": {
+      "title": "Inloggen",
+      "subtitle": "We sturen je een veilige inloglink per e-mail."
+    },
+    "register": {
+      "title": "Account maken",
+      "subtitle": "Gratis, en klaar in een paar minuten."
+    },
+    "sent": {
+      "title": "Check je inbox",
+      "text": "We hebben je een link gestuurd. Klik erop om verder te gaan. De link is 1 uur geldig."
+    },
+    "errors": {
+      "invalid": "Vul een geldig e-mailadres in.",
+      "consent": "Geef beide toestemmingen om verder te gaan.",
+      "noAccount": "We kennen dit e-mailadres nog niet.",
+      "failed": "Er ging iets mis. Probeer het later opnieuw."
+    },
+    "consent": {
+      "legend": "Toestemming",
+      "terms": "Ik ga akkoord met de gebruiksvoorwaarden en de <privacy>privacyverklaring</privacy>.",
+      "ai": "Ik geef toestemming om mijn cv en antwoorden geautomatiseerd te laten analyseren voor vacaturematches (zie de <ai>AI-verklaring</ai>).",
+      "employerLater": "Je gegevens worden niet met werkgevers gedeeld. Daar vragen we later apart toestemming voor."
+    },
+    "consentTitle": "Nog één stap",
+    "consentSubtitle": "Om je matches te kunnen berekenen hebben we je toestemming nodig.",
+    "consentSubmit": "Toestemming geven en doorgaan"
   }
 }
