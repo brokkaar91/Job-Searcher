@@ -134,18 +134,16 @@ export async function saveReviewData(input: ReviewInput): Promise<ActionResult> 
   const dedup = [...new Map(skills.map((s) => [s.escoUri ?? s.label.toLowerCase(), s])).values()];
   await supabase.from("candidate_skills").delete().eq("user_id", user.id);
   if (dedup.length) {
-    const { error } = await supabase
-      .from("candidate_skills")
-      .insert(
-        dedup.map((s) => ({
-          user_id: user.id,
-          esco_uri: s.escoUri,
-          label: s.label,
-          last_used_year: s.lastUsedYear,
-          source: "user",
-          confirmed: true,
-        })),
-      );
+    const { error } = await supabase.from("candidate_skills").insert(
+      dedup.map((s) => ({
+        user_id: user.id,
+        esco_uri: s.escoUri,
+        label: s.label,
+        last_used_year: s.lastUsedYear,
+        source: "user",
+        confirmed: true,
+      })),
+    );
     if (error) return { ok: false, error: error.message };
   }
   await supabase.from("candidate_experiences").delete().eq("user_id", user.id);
@@ -251,7 +249,8 @@ export async function savePreferences(input: PreferencesInput): Promise<ActionRe
 
 const answersSchema = z.record(z.string(), z.number().int().min(1).max(5));
 
-export async function saveInterests(answers: Record<string, number>): Promise<ActionResult> {
+/** Saves (partial) answers and the derived RIASEC profile without leaving the step. */
+export async function saveInterestAnswers(answers: Record<string, number>): Promise<ActionResult> {
   const parsed = answersSchema.safeParse(answers);
   if (!parsed.success) return { ok: false, error: "invalid" };
   const valid = Object.fromEntries(
@@ -262,9 +261,14 @@ export async function saveInterests(answers: Record<string, number>): Promise<Ac
     .from("candidate_profiles")
     .update({ riasec_answers: asJson(valid), riasec: asJson(scoreInterests(valid)) })
     .eq("user_id", user.id);
-  if (error) return { ok: false, error: error.message };
+  return error ? { ok: false, error: error.message } : { ok: true };
+}
+
+export async function saveInterests(answers: Record<string, number>): Promise<ActionResult> {
+  const r = await saveInterestAnswers(answers);
+  if (!r.ok) return r;
   await advance("interests");
-  return { ok: true };
+  return r;
 }
 
 // ─── Step 5: work values → complete ──────────────────────────────────────────

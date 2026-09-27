@@ -45,10 +45,7 @@ export function EscoAutocomplete({
   const abort = useRef<AbortController | null>(null);
 
   useEffect(() => {
-    if (q.trim().length < 2) {
-      setOptions([]);
-      return;
-    }
+    if (q.trim().length < 2) return;
     const timer = setTimeout(async () => {
       abort.current?.abort();
       abort.current = new AbortController();
@@ -78,6 +75,8 @@ export function EscoAutocomplete({
     return () => clearTimeout(timer);
   }, [q, kind, locale, exclude]);
 
+  const visible = q.trim().length >= 2 ? options : [];
+
   function choose(o: EscoOption, mapped = true) {
     onSelect({ ...o, mapped });
     setQ("");
@@ -93,7 +92,7 @@ export function EscoAutocomplete({
       <Input
         id={id}
         role="combobox"
-        aria-expanded={open && options.length > 0}
+        aria-expanded={open && visible.length > 0}
         aria-controls={`${id}-list`}
         aria-autocomplete="list"
         aria-activedescendant={active >= 0 ? `${id}-opt-${active}` : undefined}
@@ -104,25 +103,25 @@ export function EscoAutocomplete({
         onKeyDown={(e) => {
           if (e.key === "ArrowDown") {
             e.preventDefault();
-            setActive((a) => Math.min(a + 1, options.length - 1));
+            setActive((a) => Math.min(a + 1, visible.length - 1));
           } else if (e.key === "ArrowUp") {
             e.preventDefault();
             setActive((a) => Math.max(a - 1, 0));
           } else if (e.key === "Enter") {
             e.preventDefault();
-            if (active >= 0 && options[active]) choose(options[active]);
+            if (active >= 0 && visible[active]) choose(visible[active]);
             else if (allowFreeText && q.trim().length >= 2)
               choose({ uri: "", label: q.trim() }, false);
           } else if (e.key === "Escape") setOpen(false);
         }}
       />
-      {open && options.length > 0 && (
+      {open && visible.length > 0 && (
         <ul
           id={`${id}-list`}
           role="listbox"
           className="bg-popover shadow-soft absolute z-30 mt-1 max-h-64 w-full overflow-auto rounded-lg border p-1"
         >
-          {options.map((o, i) => (
+          {visible.map((o, i) => (
             <li
               key={o.uri}
               id={`${id}-opt-${i}`}

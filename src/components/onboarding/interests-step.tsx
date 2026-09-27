@@ -1,50 +1,32 @@
 "use client";
-import { useEffect, useState, useTransition } from "react";
+import { useState, useTransition } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MINI_IP_ITEMS } from "@/core/assessments/mini-ip";
-import { saveInterests } from "@/app/[locale]/(app)/onboarding/actions";
+import { saveInterestAnswers, saveInterests } from "@/app/[locale]/(app)/onboarding/actions";
 import { cn } from "@/lib/utils";
 import { StepFooter } from "./step-footer";
 
 const PAGE_SIZE = 6;
 const SCALE = [1, 2, 3, 4, 5] as const;
-const STORAGE_KEY = "jobmatch.interests.v1";
 
 /** O*NET-based interest profiler: 30 activities, like/dislike on a 5-point scale, 6 per page. */
 export function InterestsStep({ initial }: { initial: Record<string, number> }) {
   const t = useTranslations("onboarding.interests");
   const locale = useLocale();
   const [answers, setAnswers] = useState<Record<string, number>>(initial);
-  const [page, setPage] = useState(0);
+  // Resume on the first page with unanswered items.
+  const [page, setPage] = useState(() => {
+    const first = MINI_IP_ITEMS.findIndex((i) => !initial[i.id]);
+    return first < 0 ? 0 : Math.floor(first / PAGE_SIZE);
+  });
   const [error, setError] = useState<string | null>(null);
   const [pending, start] = useTransition();
   const pages = Math.ceil(MINI_IP_ITEMS.length / PAGE_SIZE);
   const items = MINI_IP_ITEMS.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
   const pageComplete = items.every((i) => answers[i.id]);
   const answered = Object.keys(answers).length;
-
-  // Resume unsaved answers (per-browser convenience only; the server copy is authoritative).
-  useEffect(() => {
-    try {
-      const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "{}") as Record<
-        string,
-        number
-      >;
-      if (Object.keys(stored).length > Object.keys(initial).length)
-        setAnswers({ ...initial, ...stored });
-    } catch {
-      /* storage unavailable */
-    }
-  }, [initial]);
-  useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-    } catch {
-      /* ignore */
-    }
-  }, [answers]);
 
   return (
     <form
@@ -53,21 +35,17 @@ export function InterestsStep({ initial }: { initial: Record<string, number> }) 
         e.preventDefault();
         if (!pageComplete) return setError(t("answerAll"));
         setError(null);
-        if (page < pages - 1) {
-          setPage(page + 1);
-          window.scrollTo({ top: 0, behavior: "smooth" });
-          return;
-        }
         start(async () => {
+          if (page < pages - 1) {
+            // Save progress per page so the user can resume later.
+            const r = await saveInterestAnswers(answers);
+            if (!r.ok) return setError(t("error"));
+            setPage(page + 1);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            return;
+          }
           const r = await saveInterests(answers);
           if (r && !r.ok) setError(t("error"));
-          else {
-            try {
-              localStorage.removeItem(STORAGE_KEY);
-            } catch {
-              /* ignore */
-            }
-          }
         });
       }}
     >

@@ -49,13 +49,17 @@ test.describe("onboarding", () => {
     // 4. Interests: 5 pages × 6 items
     await expect(page).toHaveURL(/\/onboarding\/interests/);
     for (let p = 0; p < 5; p++) {
+      await expect(page.getByText(`pagina ${p + 1} van 5`)).toBeVisible();
       const groups = page.locator("fieldset");
       const count = await groups.count();
       for (let i = 0; i < count; i++) {
-        await groups
+        // options: 1..5 → click "Leuk" (4) or "Weet niet" (3) via its visible label
+        const option = groups
           .nth(i)
-          .getByRole("radio", { name: i % 2 ? "Leuk" : "Weet niet", exact: true })
-          .check({ force: true });
+          .locator("label")
+          .nth(i % 2 ? 3 : 2);
+        await option.click();
+        await expect(option.locator("input")).toBeChecked();
       }
       await page.getByRole("button", { name: p < 4 ? "Volgende vragen" : "Volgende" }).click();
     }
