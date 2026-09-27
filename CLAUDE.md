@@ -15,7 +15,10 @@ not optional.
 - Next.js 16 (App Router, Turbopack, `src/proxy.ts` instead of middleware), TypeScript strict
   (+ `noUncheckedIndexedAccess`), Tailwind v4, shadcn-style UI primitives in `src/components/ui`
   (hand-written, built on the unified `radix-ui` package – the shadcn registry is not reachable
-  from the dev container).
+  from the dev container), plus `cmdk` (⌘K palette) and `vaul` (drawer). Decorative/showcase
+  components (score ring, marquee, number ticker, bento, aurora, …) live in `src/components/magic`.
+  Design tokens (incl. `--highlight`, `--brand-gradient`, `glass`/`bg-grid` utilities) are in
+  `src/app/globals.css`; every new colour pair must pass the axe AA checks in light and dark.
 - next-intl v4: locales `nl` (default) and `en`, `localePrefix: "as-needed"` → `/…` is Dutch,
   `/en/…` is English. Messages in `messages/{nl,en}.json` (typed via `src/global.d.ts`; `nl.json`
   is the source of truth for keys – keep `en.json` in sync, a Vitest test checks this).
