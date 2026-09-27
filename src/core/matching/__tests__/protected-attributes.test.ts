@@ -23,7 +23,12 @@ function allKeys(schema: unknown, acc = new Set<string>()): Set<string> {
     }
   ).def;
   if (!def) return acc;
-  if (def.shape) for (const [k, v] of Object.entries(def.shape)) (acc.add(k), allKeys(v, acc));
+  if (def.shape) {
+    for (const [k, v] of Object.entries(def.shape)) {
+      acc.add(k);
+      allKeys(v, acc);
+    }
+  }
   if (def.element) allKeys(def.element, acc);
   if (def.innerType) allKeys(def.innerType, acc);
   return acc;

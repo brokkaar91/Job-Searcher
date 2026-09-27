@@ -154,6 +154,9 @@ importers:
       '@huggingface/transformers':
         specifier: ^4.3.0
         version: 4.3.0(@types/node@20.19.43)
+      nodemailer:
+        specifier: ^10.0.11
+        version: 10.0.11
 
 packages:
 
@@ -3479,6 +3482,10 @@ packages:
   node-releases@2.0.57:
     resolution: {integrity: sha512-kQK9LGGFiHtrWiNhZtA7Qbw17AQz+dmsEKODRIVTXA9+e5MS/2gZEBhYJt13GrAz5/IOZKddH/0Z3TP/Zgo+yw==}
     engines: {node: '>=18'}
+
+  nodemailer@10.0.11:
+    resolution: {integrity: sha512-/c4P7U7aGpiNu2Rl08q525q2zECkUpSaf2zQPgIStCcAjHAkkQQKwD4sTyi3l91mGcLQrKzL1syXPHymo+Ogtw==}
+    engines: {node: '>=20.0.0'}
 
   non-error@0.1.0:
     resolution: {integrity: sha512-TMB1uHiGsHRGv1uYclfhivcnf0/PdFp2pNqRxXjncaAsjYMoisaQJI+SSZCqRq+VliwRTC8tsMQfmrWjDMhkPQ==}
@@ -7577,6 +7584,9 @@ snapshots:
       semver: 6.3.1
 
   node-releases@2.0.57: {}
+
+  nodemailer@10.0.11:
+    optional: true
 
   non-error@0.1.0: {}
 
