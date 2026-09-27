@@ -361,15 +361,13 @@ async function main() {
     ) as { jobs: Record<string, unknown>[] };
     const mapping = suggestMapping(feed.jobs[0]!, "json", "$.jobs[*]");
     mapping.fields.companyDomain = { path: "$.company_url", transform: "domain" };
-    await admin
-      .from("field_mappings")
-      .insert({
-        connector_id: created!.id,
-        version: 1,
-        mapping: asJson(mapping),
-        sample_record: asJson(feed.jobs[0]),
-        is_active: true,
-      });
+    await admin.from("field_mappings").insert({
+      connector_id: created!.id,
+      version: 1,
+      mapping: asJson(mapping),
+      sample_record: asJson(feed.jobs[0]),
+      is_active: true,
+    });
     log(`connector "${demoName}" (disabled; run it from /admin/connectors)`);
   }
 

@@ -154,13 +154,11 @@ export async function updateConnectorAction(
         ...(existing ? decryptJson<Record<string, string>>(existing.ciphertext) : {}),
         ...credentials,
       };
-      await db
-        .from("connector_secrets")
-        .upsert({
-          connector_id: id,
-          ciphertext: encryptJson(merged),
-          updated_at: new Date().toISOString(),
-        });
+      await db.from("connector_secrets").upsert({
+        connector_id: id,
+        ciphertext: encryptJson(merged),
+        updated_at: new Date().toISOString(),
+      });
     }
     await writeAudit(db, {
       actorId: admin.id,
@@ -306,16 +304,14 @@ export async function saveMapping(id: string, mapping: unknown, sample: unknown)
     .maybeSingle();
   const version = (last?.version ?? 0) + 1;
   await db.from("field_mappings").update({ is_active: false }).eq("connector_id", id);
-  const { error } = await db
-    .from("field_mappings")
-    .insert({
-      connector_id: id,
-      version,
-      mapping: asJson(m),
-      sample_record: sample ? asJson(sample) : null,
-      is_active: true,
-      created_by: admin.id,
-    });
+  const { error } = await db.from("field_mappings").insert({
+    connector_id: id,
+    version,
+    mapping: asJson(m),
+    sample_record: sample ? asJson(sample) : null,
+    is_active: true,
+    created_by: admin.id,
+  });
   if (error) throw new Error(error.message);
   await writeAudit(db, {
     actorId: admin.id,

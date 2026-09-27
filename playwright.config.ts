@@ -30,6 +30,8 @@ export default defineConfig({
         command: `pnpm start --port ${PORT}`,
         url: baseURL,
         reuseExistingServer: !process.env.CI,
+        // No worker runs during E2E: admin "sync now" runs inline.
+        env: { INLINE_SYNC: "1" },
         timeout: 120_000,
       },
 });

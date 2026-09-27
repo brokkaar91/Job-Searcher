@@ -15,7 +15,7 @@ export async function LabelBadge({ label, score }: { label: MatchLabel; score?: 
   return (
     <Badge variant={LABEL_VARIANT[label]} className="text-[13px]">
       {t(label)}
-      {score != null && <span className="tabular-nums opacity-80">· {Math.round(score)}</span>}
+      {score != null && <span className="tabular-nums">· {Math.round(score)}</span>}
     </Badge>
   );
 }
